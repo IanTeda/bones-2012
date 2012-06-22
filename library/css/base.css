@@ -716,11 +716,13 @@ BUTTONS
 GENERAL STYLES
 *********************/
 body {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 87.5%;
-  line-height: 1.5em;
+  font: 87.5%/1.5em "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   color: #656565;
   background-color: #f9f6ea;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+
+  -webkit-text-size-adjust: 100%;
 }
 /********************
 WORDPRESS BODY CLASSES
@@ -770,26 +772,15 @@ LAYOUT & GRID STYLES
 }
 .description {
   margin: 24px 0 0 0;
-  font-size: 1.2em;
+  font-size: 17px;
+  font-weight: 300;
+  max-width: 1030px;
 }
-dl,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-ul,
-pre,
-table,
-address,
-fieldset,
-blockquote,
-article,
-p {
-  margin-top: 24px;
+article {
+  margin-bottom: 24px;
+}
+article a img {
+  margin-bottom: 12px;
 }
 /*
 No Grid? Say Whaaaat?
@@ -846,6 +837,7 @@ h5,
   text-transform: uppercase;
   font-weight: normal;
   margin: 24px 0 0 0;
+  vertical-align: text-bottom;
   /* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -893,6 +885,10 @@ h5,
   letter-spacing: 2px;
   font-weight: bold;
 }
+.underlined {
+  padding-bottom: 12px;
+  border-bottom: solid 1px #e8e8e8;
+}
 /*********************
 HEADER SYTLES
 *********************/
@@ -912,6 +908,8 @@ HEADER SYTLES
   color: #000000;
 }
 #menu-main-navigation {
+  /** Menu in Wordpress needs to named "Main Navigation" same as div **/
+
   display: none ;
   /** Hide for mobiles  **/
 }
@@ -992,6 +990,30 @@ select {
 select {
   height: 36px;
   width: 100%;
+}
+.latest-carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.latest-carousel li {
+  width: 220px;
+  /** Add mixin for this once you figure out the setup **/
+
+  margin: 24px auto 0 auto;
+  display: block;
+}
+.latest-carousel li a {
+  text-decoration: none;
+  display: block;
+  border-bottom: solid 1px #e8e8e8;
+}
+.latest-carousel li a span {
+  display: block;
+  padding-bottom: 20px;
+  margin-top: -5px;
+  font-style: italic;
+  color: #8f8f8f;
 }
 /*********************
 POSTS & CONTENT STYLES

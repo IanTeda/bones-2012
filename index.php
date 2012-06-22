@@ -1,12 +1,10 @@
-<?php get_header(); ?>
+<?php get_header(); ?>		
+	<div id="content">
+		<div id="inner-content" class="wrap clearfix">
+			<p class="description text-center"><?php bloginfo('description'); ?></p>
 			
-			<div id="content">
-			
-				<div id="inner-content" class="wrap clearfix">
-			
-				    <div id="main" class="eightcol first clearfix" role="main">
-
-					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<div id="main" class="eightcol first clearfix" role="main">
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						

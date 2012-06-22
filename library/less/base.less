@@ -12,14 +12,22 @@ and will be used across all viewports.
 ******************************************************************/
 
 /*********************
+IMPORTING STYLES
+*********************/
+/** Had to put imports in to compile less without erros **/
+/* import reset */
+@import "normalize.less";
+/* import mixins */
+@import "mixins.less";
+
+/*********************
 GENERAL STYLES
 *********************/
 
 body {
-	font-family: Georgia, serif;
-	font-size: 14px;
-	line-height: 1.5;
+	#typography > .body;
 	color: #565656;
+	background-color: @sand;
 }
 
 /********************
@@ -86,11 +94,11 @@ LINK STYLES
 *********************/
 
 a, a:visited { 
-	color: @bones-pink;
+	color: @turquesa;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: lighten(@bones-pink, 9%);
+		color: lighten(@turquesa, 9%);
 	}
 	
 	/* on click */
@@ -114,9 +122,9 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { 
-	font-family: sans-serif; 
 	text-rendering : optimizelegibility;
 	font-weight: 500; 
+	margin: 0;
 	/* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -129,39 +137,59 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 { 
-	font-size: 2.5em; 
-	line-height: 1.333em; 
+	#typography > .h1;
 }
 
 h2, .h2 { 
-	font-size: 1.75em; 
-	line-height: 1.4em; 
-	margin-bottom: 0.375em; 
+	#typography > .h2;
 }
 
 h3, .h3 { 
-	font-size: 1.125em; 
+	#typography > .h3;
 }
 
 h4, .h4 { 
-	font-size: 1.1em; 
-	font-weight: 700; 
+	#typography > .h4;
 }
 
 h5, .h5 { 
-	font-size: 0.846em; 
-	line-height: 2.09em; 
-	text-transform: uppercase; 
-	letter-spacing: 2px; 
+	#typography > .h5;
+}
+
+/** Load font mixins into classes for css **/
+.sans-serif { 
+	font-family: @sans-serif;
+}
+
+.sans-serif-alt {
+	font-family: @sans-serif-alt;
+}
+
+.serif { 
+	font-family: @serif; 
+}
+
+.script {
+	font-family: @script; 
 }
 
 /*********************
 HEADER SYTLES
 *********************/
 
-.header {}
+.header {
+	border-top: 6px solid @brown;
+	height: @vertSpacing * 2;
+	background-color: @white;
+	border-bottom: 2px solid @brown;
+	#inner-header {
+		.logo {
+			margin-top: 4px;
+		}
+	}
+}
 
-	#logo {}
+#logo {}
 	
 /*********************
 NAVIGATION STYLES

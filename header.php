@@ -54,3 +54,7 @@
 					<option value="audi">Audi</option>
 				</select>
 			</div>
+			
+			<nav role="navigation">
+				<?php select_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+			</nav>		

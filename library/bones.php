@@ -232,6 +232,15 @@ function bones_main_nav() {
 	));
 } /* end bones main nav */
 
+function select_main_nav() {
+	// Display menu as a select box
+	wp_nav_menu(array(
+		'theme_location' => 'main-nav',
+		'container' => false,
+		'walker' => new Walker_Responsive_Menu()
+	));
+}
+
 // the footer menu (should you choose to use one)
 function bones_footer_links() { 
 	// display the wp3 menu if available

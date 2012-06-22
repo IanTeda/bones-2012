@@ -3,14 +3,18 @@
 	<div id="inner-content" class="wrap clearfix">
 		<p class="description text-center"><?php bloginfo('description'); ?></p>
 			
-		<div id="main" class="eightcol first clearfix" role="main">
+		<div id="main" class="clearfix" role="main">
 			<h3 class="underlined">Latest Posts</h3>
 			    <ul id="mycarousel" class="latest-carousel">
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php $summary = new WP_query('showposts=3'); //Only the latest 3 posts ?>
+                	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
                     	<li>
-                           	<a href="#">
-								<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/altered-full-1-220x140.jpg">
-                                <h5 class="article-title text-center">Altered</h5><span class="article-categories text-center">design / illustration</span>
+                           	<a href="<?php the_permalink() ?>" title="Take me to <?php the_title(); ?>" >
+								<?php feature_image_220x140(); ?>
+                                <h4 class="article-title text-center">
+									<?php the_title(); ?>
+                                </h4>
+                                <span class="article-categories text-center"><?php category_name(); ?></span>
                             </a>
 						</li><!-- end post li -->
 					<?php endwhile; ?>	

@@ -718,7 +718,7 @@ GENERAL STYLES
 body {
   font: 87.5%/1.5em "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   color: #656565;
-  background-color: #f9f6ea;
+  background-color: #fdfcf7;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
 
@@ -877,13 +877,13 @@ h4,
 .h4 {
   font-size: 15px;
   line-height: 24px;
+  font-weight: 400;
 }
 h5,
 .h5 {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 400;
 }
 .underlined {
   padding-bottom: 12px;

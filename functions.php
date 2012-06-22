@@ -51,7 +51,7 @@ require_once('library/assets/dropdown-menus.php');
 
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'post-thumb-(220x140)', 220, 140, true );
 /* 
 to add more sizes, simply copy a line from above 
 and change the dimensions & name. As long as you
@@ -156,5 +156,49 @@ function bones_wpsearch($form) {
     </form>';
     return $form;
 } // don't remove this bracket!
+
+/***************************************************
+Call feature image thumbnails
+****************************************************/
+function feature_image_220x140(){
+	if ( has_post_thumbnail() ) {
+	 	the_post_thumbnail( array( 220, 140 ), array('class' => 'resizeable') );
+	} else { ?>
+		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(220x140).png" alt="No Feature Image Set" />
+	<?php };
+}
+
+/**********************************************
+Category image with link function
+***********************************************/
+
+function category_link(){
+	$exclude = array("Featured");
+	foreach((get_the_category()) as $category) { 
+		if (!in_array($category->cat_name, $exclude)) {
+			$category->cat_name . ' '; ?>
+		    <?php echo get_category_link(get_cat_id($category->cat_name)); ?>"<?php
+		}
+	} 
+}
+
+function category_image(){
+	$exclude = array("Featured", "Uncat");
+	foreach((get_the_category()) as $category) {
+		if (!in_array($category->cat_name, $exclude)) { ?>
+			<?php bloginfo('template_directory'); ?>/library/images/ic_cat_<?php
+	    	echo $category->cat_name . '.png"'; ?><?php
+		}
+	}
+}
+
+function category_name(){
+	$exclude = array("Featured");
+	foreach((get_the_category()) as $category) { 
+		if (!in_array($category->cat_name, $exclude)) {
+			echo $category->cat_name . ' '; ?><?php
+		}
+	} 	
+}
 
 ?>

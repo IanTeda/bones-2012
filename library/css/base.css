@@ -948,7 +948,7 @@ HEADER SYTLES
 .header #inner-header .logo span {
   color: #000000;
 }
-.header #inner-header .menu ul {
+#menu-main-navigation {
   display: none ;
   /** Hide for mobiles  **/
 }

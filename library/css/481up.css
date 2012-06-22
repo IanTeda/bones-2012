@@ -15,6 +15,19 @@ upon your base.scss styles.
 
 ******************************************************************/
 /*********************
+HEADER SYTLES
+*********************/
+#menu-main-navigation {
+  display: none;
+  /** Still working on this one  **/
+
+}
+#header-dropdown-menu {
+  display: none;
+  /** Hide for above mobiles  **/
+
+}
+/*********************
 NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */

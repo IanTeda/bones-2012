@@ -45,6 +45,8 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
+require_once('library/assets/dropdown-menus.php');
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
@@ -154,43 +156,5 @@ function bones_wpsearch($form) {
     </form>';
     return $form;
 } // don't remove this bracket!
-
-
-/**
- * Custom Menu Walker for Responsive Menus
- *
- * Creates a <select> menu instead of the default
- * unordered list menus.
- *
- **/
-class Walker_Responsive_Menu extends Walker_Nav_Menu {
-	function start_el(&$output, $item, $depth, $args) {
-		global $wp_query;		
-
-		// Create a visual indent in the list if we have a child item.
-		$visual_indent = ( $depth ) ? str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;', $depth) : '';
-
-		// Load the item URL
-		$attributes .= ! empty( $item->url ) ? ' value="'   . esc_attr( $item->url ) .'"' : '';
-
-		$output .= '<form name="menu_selector" method="post" action="#">'; // Create the form wrapper for the URLs to work.
-		$output .= '<select name="url_list" onchange="gotosite()">'; // Set up the select list and load the javascript function
-		$output .= '<option value="" selected="selected" disabled="disabled">Please select...</option>'; // Create a default selected item.
-
-		// If we have hierarchy for the item, add the indent, if not, leave it out.
-		// Loop through and output each menu item as this.
-		if($depth != 0) {
-			$item_output .= '<option ' . $attributes .'>'. $visual_indent . apply_filters( 'the_title', $item->title, $item->ID ) . '</option>';
-		} else {
-			$item_output .= '<option ' . $attributes .'>'.$prepend.apply_filters( 'the_title', $item->title, $item->ID ).'</option>';
-		}
-
-		$output .= '</select>';
-		$output .= '</form>';
-
-		// Make the output happen.
-		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
-	}
-}
 
 ?>

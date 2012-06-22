@@ -232,14 +232,23 @@ function bones_main_nav() {
 	));
 } /* end bones main nav */
 
-function select_main_nav() {
-	// Display menu as a select box
-	wp_nav_menu(array(
-		'theme_location' => 'main-nav',
-		'container' => false,
-		'walker' => new Walker_Responsive_Menu()
+function bones_main_nav_dropdown() {
+	// display the wp3 menu if available
+    dropdown_menu(array( 								// function from asset /library/asset/dropdown-menus.php
+    	'container' => false,                           // remove nav container
+    	'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
+    	'menu' => 'The Main Menu',                      // nav name
+		'dropdown_title' => 'Navigation',				// Dropdown title
+    	'menu_class' => 'dropdown',         			// adding custom nav class
+    	'theme_location' => 'main-nav',                 // where it's located in the theme
+    	'before' => '',                                 // before the menu
+        'after' => '',                                  // after the menu
+        'link_before' => '',                            // before each link
+        'link_after' => '',                             // after each link
+        'depth' => 0,                                   // limit the depth of the nav
+    	'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
 	));
-}
+} /* end bones main nav */
 
 // the footer menu (should you choose to use one)
 function bones_footer_links() { 

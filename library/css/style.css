@@ -1821,7 +1821,7 @@ HEADER SYTLES
 .header #inner-header .logo span {
   color: #000000;
 }
-.header #inner-header .menu ul {
+#menu-main-navigation {
   display: none ;
   /** Hide for mobiles  **/
 }
@@ -2276,6 +2276,19 @@ tweeners.
   upon your base.scss styles.
   
   ******************************************************************/
+  /*********************
+  HEADER SYTLES
+  *********************/
+  #menu-main-navigation {
+    display: none;
+    /** Still working on this one  **/
+  
+  }
+  #header-dropdown-menu {
+    display: none;
+    /** Hide for above mobiles  **/
+  
+  }
   /*********************
   NAVIGATION STYLES
   *********************/

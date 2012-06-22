@@ -47,14 +47,6 @@
 			</header> <!-- end header -->
 			
 			<div id="header-dropdown-menu" class="wrap clearfix">
-				<select class="dropdown">
-					<option value="volvo">Volvo</option>
-					<option value="saab">Saab</option>
-					<option value="mercedes">Mercedes</option>
-					<option value="audi">Audi</option>
-				</select>
+				<?php bones_main_nav_dropdown(); // Adjust using Menus in Wordpress Admin ?>
 			</div>
-			
-			<nav role="navigation">
-				<?php select_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-			</nav>		
+

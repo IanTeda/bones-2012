@@ -26,7 +26,7 @@ GENERAL STYLES
 
 body {
 	#typography > .body;
-	color: #565656;
+	color: @greyDark;
 	background-color: @sand;
 }
 
@@ -185,7 +185,25 @@ HEADER SYTLES
 	#inner-header {
 		.logo {
 			margin-top: 4px;
+			span {
+				color: @black;	
+			}
 		}
+		.menu {
+			ul {
+				display: none ; /** Hide for mobiles  **/	
+			}
+		}
+	}
+}
+
+#header-dropdown-menu {
+	margin-top: @vertSpacing;
+	.dropdown {
+		background-image: url(../images/ic_select_button.png);
+		background-position: center right;
+		background-repeat: no-repeat;
+		width: 100%;	
 	}
 }
 
@@ -273,6 +291,26 @@ and moe scalable.
 	}  /* end current highlighters */
 			
 } /* end .nav */
+
+select {
+	-webkit-appearance: none; /* Fix for Mobile Safari */
+	background-color: @offWhite;
+	border: 1px solid @greyLight;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+			box-shadow: none;
+	padding: 5px 10px;
+	border-radius: 0;
+	color: @greyDark;
+}
+
+select {
+	height: @vertSpacing * 1.5;
+	width: 100%;
+}
 
 
 /*********************

@@ -39,12 +39,18 @@
 			<header class="header" role="banner">
 				<div id="inner-header" class="wrap clearfix">
 					<h2 class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow">Ian <span>Teda</span></a></h2>
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
+
 					<nav role="navigation">
 						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
-				
 				</div> <!-- end #inner-header -->
-			
 			</header> <!-- end header -->
+			
+			<div id="header-dropdown-menu" class="wrap clearfix">
+				<select class="dropdown">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="audi">Audi</option>
+				</select>
+			</div>

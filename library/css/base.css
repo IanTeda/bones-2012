@@ -758,7 +758,7 @@ body {
   font-size: 87.5%;
   line-height: 1.5em;
   font-weight: normal;
-  color: #565656;
+  color: #656565;
   background-color: #f9f6ea;
 }
 /********************
@@ -945,6 +945,22 @@ HEADER SYTLES
 .header #inner-header .logo {
   margin-top: 4px;
 }
+.header #inner-header .logo span {
+  color: #000000;
+}
+.header #inner-header .menu ul {
+  display: none ;
+  /** Hide for mobiles  **/
+}
+#header-dropdown-menu {
+  margin-top: 24px;
+}
+#header-dropdown-menu .dropdown {
+  background-image: url(../images/ic_select_button.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 100%;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -994,6 +1010,26 @@ and moe scalable.
   padding-left: 30px;
 }
 /* end .nav */
+select {
+  -webkit-appearance: none;
+  /* Fix for Mobile Safari */
+
+  background-color: #f8f8f8;
+  border: 1px solid #e8e8e8;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 5px 10px;
+  border-radius: 0;
+  color: #656565;
+}
+select {
+  height: 36px;
+  width: 100%;
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

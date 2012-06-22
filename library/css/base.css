@@ -516,58 +516,6 @@ http://0to255.com/
 /*********************
 TYPOGRAPHY
 *********************/
-#typography {
-  /** Font size & line height based on http://thehappybit.com/2012/03/05/flexible-css-typographic-scale/ **/
-
-}
-#typography .h1 {
-  font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3.4285714285714284em;
-  line-height: 72px;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-#typography .h2 {
-  font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.2857142857142856em;
-  line-height: 48px;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-#typography .h3 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.7142857142857142em;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-#typography .h4 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.5em;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-#typography .h5 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.2857142857142858em;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-#typography .body {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 87.5%;
-  line-height: 1.5em;
-  font-weight: normal;
-}
-#typography .p {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  margin-bottom: 1.5em;
-}
 /* Font face kit gernerator http://www.fontsquirrel.com/fontface/generator */
 @font-face {
   font-family: 'BebasNeueRegular';
@@ -587,6 +535,20 @@ TYPOGRAPHY
   font-family: 'YanoneKaffeesatzRegular';
   src: url('../fonts/YanoneKaffeesatz-Regular-webfont.eot');
   src: url('../fonts/YanoneKaffeesatz-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/YanoneKaffeesatz-Regular-webfont.woff') format('woff'), url('../fonts/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'), url('../fonts/YanoneKaffeesatz-Regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSans-Light-webfont.eot');
+  src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+  src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-ExtraBold-webfont.svg#OpenSansLight') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -757,7 +719,6 @@ body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 87.5%;
   line-height: 1.5em;
-  font-weight: normal;
   color: #656565;
   background-color: #f9f6ea;
 }
@@ -811,6 +772,25 @@ LAYOUT & GRID STYLES
   margin: 24px 0 0 0;
   font-size: 1.2em;
 }
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+blockquote,
+article,
+p {
+  margin-top: 24px;
+}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -860,9 +840,12 @@ h4,
 .h4,
 h5,
 .h5 {
-  text-rendering: optimizelegibility;
-  font-weight: 500;
-  margin: 0;
+  /**text-rendering : optimizelegibility;**/
+
+  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 24px 0 0 0;
   /* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -885,57 +868,30 @@ h5 a,
 }
 h1,
 .h1 {
-  font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3.4285714285714284em;
+  font-size: 32px;
   line-height: 72px;
-  text-transform: uppercase;
-  font-weight: normal;
 }
 h2,
 .h2 {
-  font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.2857142857142856em;
+  font-size: 28px;
   line-height: 48px;
-  text-transform: uppercase;
-  font-weight: normal;
 }
 h3,
 .h3 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.7142857142857142em;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-size: 17px;
+  line-height: 36px;
 }
 h4,
 .h4 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 15px;
   line-height: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 h5,
 .h5 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.2857142857142858em;
+  font-size: 14px;
   line-height: 24px;
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
-}
-/** Load font mixins into classes for css **/
-.sans-serif {
-  font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.sans-serif-alt {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-}
-.serif {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
-}
-.script {
-  font-family: BallparkWeiner, "Brush Script MT", cursive;
 }
 /*********************
 HEADER SYTLES
@@ -947,7 +903,10 @@ HEADER SYTLES
   border-bottom: 2px solid #3d2423;
 }
 .header #inner-header .logo {
-  margin-top: 4px;
+  font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 44px;
+  margin: 0;
+  padding-top: 4px;
 }
 .header #inner-header .logo span {
   color: #000000;

@@ -25,7 +25,9 @@ GENERAL STYLES
 *********************/
 
 body {
-	#typography > .body;
+	font-family: @sans-serif;
+	font-size: 87.5%;
+	line-height: 1.5em;
 	color: @greyDark;
 	background-color: @sand;
 }
@@ -85,6 +87,7 @@ LAYOUT & GRID STYLES
 	font-size: 1.2em;
 }
 
+dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset,blockquote,article,p { margin-top: @vertSpacing; }
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -127,9 +130,11 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { 
-	text-rendering : optimizelegibility;
-	font-weight: 500; 
-	margin: 0;
+	/**text-rendering : optimizelegibility;**/
+	font-family: @sans-serif-heading;
+	text-transform: uppercase;
+	font-weight: normal; 
+	margin: @vertSpacing 0 0 0;
 	/* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -142,40 +147,30 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 { 
-	#typography > .h1;
+	font-size: @font-size-1;
+	line-height: @vertSpacing * 3;
 }
 
 h2, .h2 { 
-	#typography > .h2;
+	font-size: @font-size-2;
+	line-height: @vertSpacing * 2;
 }
 
 h3, .h3 { 
-	#typography > .h3;
+	font-size: @font-size-3;
+	line-height: @vertSpacing * 1.5;
 }
 
 h4, .h4 { 
-	#typography > .h4;
+	font-size: @font-size-4;
+	line-height: @vertSpacing;
 }
 
 h5, .h5 { 
-	#typography > .h5;
-}
-
-/** Load font mixins into classes for css **/
-.sans-serif { 
-	font-family: @sans-serif;
-}
-
-.sans-serif-alt {
-	font-family: @sans-serif-alt;
-}
-
-.serif { 
-	font-family: @serif; 
-}
-
-.script {
-	font-family: @script; 
+	font-size: @font-size-5;
+	line-height: @vertSpacing;
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 
 /*********************
@@ -189,7 +184,10 @@ HEADER SYTLES
 	border-bottom: 2px solid @brown;
 	#inner-header {
 		.logo {
-			margin-top: 4px;
+			font-family: @sans-serif-title;
+			line-height: (@vertSpacing * 2) - 4;
+			margin: 0;
+			padding-top: 4px;
 			span {
 				color: @black;
 			}

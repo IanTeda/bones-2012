@@ -5,9 +5,8 @@
 			
 			<div id="main" class="eightcol first clearfix" role="main">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
+					<h3>Latest Posts</h3>
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						
 						    <header class="article-header">
 							
 							    <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
@@ -17,7 +16,7 @@
 						    </header> <!-- end article header -->
 					
 						    <section class="post-content clearfix">
-							    <?php the_content(); ?>
+							    <?php //the_content(); ?>
 						    </section> <!-- end article section -->
 						
 						    <footer class="article-footer">
@@ -63,7 +62,7 @@
 			
 				    </div> <!-- end #main -->
     
-				    <?php get_sidebar(); // sidebar 1 ?>
+				    <?php //get_sidebar(); // sidebar 1 ?>
 				    
 				</div> <!-- end #inner-content -->
     

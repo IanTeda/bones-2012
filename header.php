@@ -38,7 +38,7 @@
 		<div id="container">
 			<header class="header" role="banner">
 				<div id="inner-header" class="wrap clearfix">
-					<h2 class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow">Ian <span>Teda</span></a></h2>
+					<h1 class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow">Ian <span>Teda</span></a></h1>
 
 					<nav role="navigation">
 						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>

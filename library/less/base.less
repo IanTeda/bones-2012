@@ -353,7 +353,40 @@ select {
 				color: @grey;
 			}
 		}
-		
+	}
+}
+
+.popular-carousel {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@thumb-size: 33px;
+	@pad-left: @thumb-size + 4;
+	li {
+		width: 300px; /** Add mixin for this once you figure out the setup **/
+		min-height: 100px;
+		overflow: hidden;
+		margin: @vertSpacing auto 0 auto;
+		display: block;
+		a {
+			text-decoration: none;
+			display: block;
+			border-bottom: solid 1px @greyLight;
+			img {
+				float: left
+			}
+			h4 {
+				margin: 0;
+				line-height: @thumb-size / 2;
+				padding-left: @pad-left;
+			}
+			span {
+				display: block;
+				padding-bottom: @vertSpacing;
+				padding-left: @pad-left;
+				color: @grey;
+			}
+		}
 	}
 }
 

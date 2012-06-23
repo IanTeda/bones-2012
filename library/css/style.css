@@ -1820,6 +1820,39 @@ select {
   font-style: italic;
   color: #8f8f8f;
 }
+.popular-carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.popular-carousel li {
+  width: 300px;
+  /** Add mixin for this once you figure out the setup **/
+
+  height: 144px;
+  overflow: hidden;
+  margin: 24px auto 0 auto;
+  display: block;
+}
+.popular-carousel li a {
+  text-decoration: none;
+  display: block;
+  border-bottom: solid 1px #e8e8e8;
+}
+.popular-carousel li a img {
+  float: left;
+}
+.popular-carousel li a h4 {
+  margin: 0;
+  line-height: 16.5px;
+  padding-left: 37px;
+}
+.popular-carousel li a span {
+  display: block;
+  padding-bottom: 24px;
+  padding-left: 37px;
+  color: #8f8f8f;
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

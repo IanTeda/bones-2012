@@ -8,7 +8,7 @@
 			    <ul id="mycarousel" class="latest-carousel">
 					<?php $summary = new WP_query('showposts=3'); //Only the latest 3 posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
-                    	<li>
+                    	<li class="clearfix">
                            	<a href="<?php the_permalink() ?>" title="Take me to <?php the_title(); ?>" >
 								<?php feature_image_220x140(); ?>
                                 <h4 class="article-title text-center">
@@ -38,6 +38,37 @@
 			</div> <!-- end #main -->
     
 			<?php //get_sidebar(); // sidebar 1 ?>
+            
+			<h3 class="underlined">Popular Posts</h3>
+			    <ul id="mycarousel" class="popular-carousel">
+            		<li class="clearfix">
+                    	<a href="#">
+                        	<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/river-night.png">
+                            <h4>This is a blog post</h4>
+                            <span>This is the excerpt for the post with some detail about what is in the post so people can get an idea if they click on it</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#">
+                        	<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/river-night-thin.png">
+                            <h4>This is a blog post</h4>
+                            <span>This is the excerpt for the post with some detail about what is in the post so people can get an idea if they click on it</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#">
+                        	<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/river-night.png">
+                            <h4>This is a blog post</h4>
+                            <span>This is the excerpt for the post with some detail about what is in the post so people can get an idea if they click on it</span>
+                        </a>
+                    </li>
+            	</ul>
+   			<h3 class="underlined">Album Chart</h3>
+            
+            
+   			<h3 class="underlined">Bookself</h3>
+
+
 				    
 	</div> <!-- end #inner-content -->
 </div> <!-- end #content -->

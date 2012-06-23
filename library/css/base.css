@@ -886,8 +886,9 @@ h5,
   font-weight: 400;
 }
 .underlined {
-  padding-bottom: 12px;
+  padding-bottom: 6px;
   border-bottom: solid 1px #e8e8e8;
+  margin-bottom: 12px;
 }
 /*********************
 HEADER SYTLES
@@ -991,22 +992,33 @@ select {
   height: 36px;
   width: 100%;
 }
-.latest-carousel {
-  margin: 0;
+/*********************
+JCAROUSEL STYLES
+*********************/
+.carousel {
+  margin: 24px 0 0 0;
   padding: 0;
   list-style: none;
 }
-.latest-carousel li {
-  width: 220px;
+.carousel li {
+  width: 300px;
   /** Add mixin for this once you figure out the setup **/
 
-  margin: 24px auto 0 auto;
+  margin: 0 auto;
   display: block;
 }
-.latest-carousel li a {
+.carousel li a {
   text-decoration: none;
   display: block;
   border-bottom: solid 1px #e8e8e8;
+}
+.latest-carousel li a {
+  padding-top: 24px;
+}
+.latest-carousel li a img {
+  width: 220px;
+  margin: 0 auto;
+  display: block;
 }
 .latest-carousel li a span {
   display: block;
@@ -1015,36 +1027,25 @@ select {
   font-style: italic;
   color: #8f8f8f;
 }
-.popular-carousel {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .popular-carousel li {
-  width: 300px;
-  /** Add mixin for this once you figure out the setup **/
-
-  height: 144px;
   overflow: hidden;
-  margin: 24px auto 0 auto;
-  display: block;
 }
 .popular-carousel li a {
-  text-decoration: none;
-  display: block;
-  border-bottom: solid 1px #e8e8e8;
+  height: 100px;
+  padding: 12px 0;
 }
 .popular-carousel li a img {
   float: left;
 }
 .popular-carousel li a h4 {
   margin: 0;
-  line-height: 16.5px;
   padding-left: 37px;
+  /** Unable to align text top **/
+
+  margin-top: -7px;
 }
 .popular-carousel li a span {
   display: block;
-  padding-bottom: 24px;
   padding-left: 37px;
   color: #8f8f8f;
 }

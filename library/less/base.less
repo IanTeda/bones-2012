@@ -185,8 +185,9 @@ h5, .h5 {
 }
 
 .underlined {
-	padding-bottom: @vertSpacing/2;
-	border-bottom: solid 1px @greyLight;	
+	padding-bottom: @vertSpacing/4;
+	border-bottom: solid 1px @greyLight;
+	margin-bottom: @vertSpacing/2;
 }
 
 /*********************
@@ -331,19 +332,35 @@ select {
 	width: 100%;
 }
 
-.latest-carousel {
-	margin: 0;
+
+/*********************
+JCAROUSEL STYLES
+*********************/
+
+.carousel {
+	margin: @vertSpacing 0 0 0;
 	padding: 0;
 	list-style: none;
 	li {
-		width: 220px; /** Add mixin for this once you figure out the setup **/
-		margin: @vertSpacing auto 0 auto;
+		width: 300px; /** Add mixin for this once you figure out the setup **/
+		margin: 0 auto;
 		display: block;
 		a {
 			text-decoration: none;
 			display: block;
 			border-bottom: solid 1px @greyLight;
-			h5 {
+		}
+	}
+}
+
+.latest-carousel {
+	li {
+		a {
+			padding-top: @vertSpacing;
+			img {
+				width: 220px;
+				margin: 0 auto;
+				display: block;
 			}
 			span {
 				display: block;
@@ -357,32 +374,24 @@ select {
 }
 
 .popular-carousel {
-	margin: 0;
-	padding: 0;
-	list-style: none;
 	@thumb-size: 33px;
 	@pad-left: @thumb-size + 4;
 	li {
-		width: 300px; /** Add mixin for this once you figure out the setup **/
-		min-height: 100px;
 		overflow: hidden;
-		margin: @vertSpacing auto 0 auto;
-		display: block;
 		a {
-			text-decoration: none;
-			display: block;
-			border-bottom: solid 1px @greyLight;
+			height: 100px;
+			padding: (@vertSpacing / 2) 0;
 			img {
 				float: left
 			}
 			h4 {
 				margin: 0;
-				line-height: @thumb-size / 2;
 				padding-left: @pad-left;
+				/** Unable to align text top **/
+				margin-top: -7px;
 			}
 			span {
 				display: block;
-				padding-bottom: @vertSpacing;
 				padding-left: @pad-left;
 				color: @grey;
 			}

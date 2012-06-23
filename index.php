@@ -5,7 +5,7 @@
 			
 		<div id="main" class="clearfix" role="main">
 			<h3 class="underlined">Latest Posts</h3>
-			    <ul id="mycarousel" class="latest-carousel">
+			    <ul id="mycarousel" class="carousel latest-carousel">
 					<?php $summary = new WP_query('showposts=3'); //Only the latest 3 posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
                     	<li class="clearfix">
@@ -40,10 +40,10 @@
 			<?php //get_sidebar(); // sidebar 1 ?>
             
 			<h3 class="underlined">Popular Posts</h3>
-			    <ul id="mycarousel" class="popular-carousel">
+			    <ul id="mycarousel" class="carousel popular-carousel">
             		<li class="clearfix">
                     	<a href="#">
-                        	<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/river-night.png">
+                        	<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/river-night-thin.png">
                             <h4>This is a blog post</h4>
                             <span>This is the excerpt for the post with some detail about what is in the post so people can get an idea if they click on it</span>
                         </a>
@@ -57,7 +57,7 @@
                     </li>
                     <li class="clearfix">
                     	<a href="#">
-                        	<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/river-night.png">
+                        	<img class="resizeable" src="<?php echo get_template_directory_uri(); ?>/library/images/river-night-thin.png">
                             <h4>This is a blog post</h4>
                             <span>This is the excerpt for the post with some detail about what is in the post so people can get an idea if they click on it</span>
                         </a>

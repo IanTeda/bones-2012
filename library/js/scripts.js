@@ -47,10 +47,14 @@ jQuery(document).ready(function($) {
         
     }
     
-	
 	// add all your scripts here
 	
- 
+	$.getScript('libs/last.fm.records.js',function(){
+		$("#lastfmrecords_elem").lastFmRecords(
+			{"period": "recentttracks", "user": "t33d5", "count": "4"}
+		);
+	});
+	
 }); /* end of as page load scripts */
 
 

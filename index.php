@@ -98,6 +98,7 @@
 						</a>
 					</li>
 				</ul>
+				<div id="lastfmrecords"></div>
 			</div><!-- End of lastfm list -->
 			
 

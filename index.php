@@ -64,11 +64,72 @@
                     </li>
             	</ul>
    			<h3 class="underlined">Album Chart</h3>
-            
-            
+			<ul id="lastfm" class="">
+				<li class="clearfix">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm1.png">
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm2.jpg">
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm1.png">
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm2.jpg">
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm1.png">
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm2.jpg">
+					</a>
+				</li>
+			<ul><!-- End of lastfm list -->
+
    			<h3 class="underlined">Bookself</h3>
-
-
+			<ul>
+				<li>
+					<a href="#">
+						<img src="http://photo.goodreads.com/books/1333561518m/13497.jpg" alt="A Feast for Crows (A Song of Ice and Fire #4) by George R.R. Martin">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://photo.goodreads.com/books/1266648176m/6342483.jpg" alt="Avempartha (The Riyria Revelations, #2) by Michael J.  Sullivan" class="hoverZoomLink">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://photo.goodreads.com/books/1329188100m/62291.jpg" alt="A Storm of Swords (A Song of Ice and Fire, #3) by George R.R. Martin">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://photo.goodreads.com/books/1328416621m/10572.jpg" alt="A Clash of Kings (A Song of Ice and Fire, #2) by George R.R. Martin">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://photo.goodreads.com/books/1330834644m/13496.jpg" alt="A Game of Thrones (A Song of Ice and Fire, #1) by George R.R. Martin" class="hoverZoomLink">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://photo.goodreads.com/books/1312541516m/12174312.jpg" alt="Percepliquis (The Riyria Revelations, #6) by Michael J.  Sullivan" class="hoverZoomLink">
+					</a>
+				</li>
+			</ul><!-- End of Goodreads list -->
 				    
 	</div> <!-- end #inner-content -->
 </div> <!-- end #content -->

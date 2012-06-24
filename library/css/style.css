@@ -1596,6 +1596,25 @@ small screen, so let's only bring it in
 when we're ready for it.
 */
 /*********************
+IMAGE STYLES
+*********************/
+.book-cover {
+  /** Use image ration 0.66 W/H **/
+
+  max-width: 150px;
+  width: 75px;
+  max-height: 225px;
+  height: 112.5px;
+  padding: 1px;
+}
+.album-cover {
+  max-width: 174px;
+  width: 75px;
+  max-height: 174px;
+  height: 75px;
+  padding: 1px;
+}
+/*********************
 LINK STYLES
 *********************/
 a,
@@ -1807,8 +1826,6 @@ JCAROUSEL STYLES
 }
 .carousel li {
   width: 300px;
-  /** Add mixin for this once you figure out the setup **/
-
   margin: 0 auto;
   display: block;
 }
@@ -1853,6 +1870,27 @@ JCAROUSEL STYLES
   display: block;
   padding-left: 37px;
   color: #8f8f8f;
+}
+/*********************
+LIST STYLES
+*********************/
+.image-matrix {
+  padding: 0;
+  list-style: none;
+  margin: 24px auto 0 auto;
+  min-width: 300px;
+  /** Might make this a fixed width??? **/
+
+}
+.image-matrix li {
+  float: left;
+  width: 33.333333333333336%;
+}
+.image-matrix li a {
+  display: block;
+  text-align: center;
+  /** Not sure if this will center image across all browsers**/
+
 }
 /*********************
 POSTS & CONTENT STYLES

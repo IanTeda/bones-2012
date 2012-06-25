@@ -233,21 +233,6 @@ HEADER SYTLES
 	}
 }
 
-#menu-main-navigation {
-	/** Menu in Wordpress needs to named "Main Navigation" same as div **/
-	display: none ; /** Hide for mobiles  **/	
-}
-
-#header-dropdown-menu {
-	margin-top: @vertSpacing;
-	.dropdown {
-		background-image: url(../images/ic_select_button.png);
-		background-position: center right;
-		background-repeat: no-repeat;
-		width: 100%;	
-	}
-}
-
 #logo {}
 	
 /*********************
@@ -263,16 +248,13 @@ and moe scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
-
+	margin: 0;
+	padding: 0;
 	li {
-			
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 10px 10px;
-			background-color: #eee;
+			line-height: @vertSpacing;
 			border-bottom: 1px solid #ccc; 
 					
 			/*
@@ -353,6 +335,37 @@ select {
 	width: 100%;
 }
 
+/*********************
+MENU STYLES
+*********************/
+
+
+#menu-main-navigation {
+	/** Menu in Wordpress needs to named "Main Navigation" same as div **/
+	display: none ; /** Hide for mobiles  **/	
+}
+
+#header-dropdown-menu {
+	margin-top: @vertSpacing;
+	.dropdown {
+		background-image: url(../images/ic_select_button.png);
+		background-position: center right;
+		background-repeat: no-repeat;
+		width: 100%;	
+	}
+}
+
+#footer-navigation {
+	padding: 0;
+	margin-top: @vertSpacing;
+	ul {
+		li {
+			display: inline;
+			list-style: none;
+			border-bottom: 1px dotted @greyFootLight;
+		}
+	}
+}
 
 /*********************
 JCAROUSEL STYLES
@@ -1003,13 +1016,25 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	height: @vertSpacing * 5;
+	min-height: @vertSpacing * 5;
 	background-color: @greyDarker;
+	color: @greyFooter;
+	a {
+		color: @greyFooter;
+		text-transform: uppercase;
+		font-size: @font-size-s;
+	}
 }
 
- .footer-bottom {
-	height: @vertSpacing * 1.5;
+.footer-bottom {
+	min-height: @vertSpacing * 1.5;
 	background-color: @greyDarkest;
+	color: @greyFooter;
+	a {
+		color: @greyFooter;
+		text-transform: uppercase;
+		font-size: @font-size-s;
+	}
 }
 	/*
 	if you checked out the link above:

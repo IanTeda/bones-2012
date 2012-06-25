@@ -1,7 +1,9 @@
 			<footer class="footer" role="contentinfo">
 				<div id="inner-footer" class="wrap clearfix">
 					<nav role="navigation">
-    					<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+						<div id="footer-navigation">
+    						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+						</div>
 	                </nav>
 					
 					<blockquote id="footer-quote">

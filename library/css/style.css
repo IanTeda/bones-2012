@@ -1732,21 +1732,6 @@ HEADER SYTLES
 .header #inner-header .logo span {
   color: #000000;
 }
-#menu-main-navigation {
-  /** Menu in Wordpress needs to named "Main Navigation" same as div **/
-
-  display: none ;
-  /** Hide for mobiles  **/
-}
-#header-dropdown-menu {
-  margin-top: 24px;
-}
-#header-dropdown-menu .dropdown {
-  background-image: url(../images/ic_select_button.png);
-  background-position: center right;
-  background-repeat: no-repeat;
-  width: 100%;
-}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -1758,8 +1743,8 @@ the navs on the site and our css is cleaner
 and moe scalable.
 */
 .nav {
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  margin: 0;
+  padding: 0;
   /* end .menu li */
 
   /* highlight current page */
@@ -1780,8 +1765,7 @@ and moe scalable.
 .nav li a {
   display: block;
   text-decoration: none;
-  padding: 10px 10px;
-  background-color: #eee;
+  line-height: 24px;
   border-bottom: 1px solid #ccc;
   /*
 			remember this is for mobile ONLY, so there's no need
@@ -1815,6 +1799,33 @@ select {
 select {
   height: 36px;
   width: 100%;
+}
+/*********************
+MENU STYLES
+*********************/
+#menu-main-navigation {
+  /** Menu in Wordpress needs to named "Main Navigation" same as div **/
+
+  display: none ;
+  /** Hide for mobiles  **/
+}
+#header-dropdown-menu {
+  margin-top: 24px;
+}
+#header-dropdown-menu .dropdown {
+  background-image: url(../images/ic_select_button.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#footer-navigation {
+  padding: 0;
+  margin-top: 24px;
+}
+#footer-navigation ul li {
+  display: inline;
+  list-style: none;
+  border-bottom: 1px dotted #4b4b4b;
 }
 /*********************
 JCAROUSEL STYLES
@@ -2226,12 +2237,24 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
-  height: 120px;
+  min-height: 120px;
   background-color: #3a3a3a;
+  color: #868686;
+}
+.footer a {
+  color: #868686;
+  text-transform: uppercase;
+  font-size: 10px;
 }
 .footer-bottom {
-  height: 36px;
+  min-height: 36px;
   background-color: #303030;
+  color: #868686;
+}
+.footer-bottom a {
+  color: #868686;
+  text-transform: uppercase;
+  font-size: 10px;
 }
 /*
 	if you checked out the link above:

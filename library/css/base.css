@@ -1421,7 +1421,12 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
-  clear: both;
+  height: 120px;
+  background-color: #3a3a3a;
+}
+.footer-bottom {
+  height: 36px;
+  background-color: #303030;
 }
 /*
 	if you checked out the link above:

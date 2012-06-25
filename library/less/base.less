@@ -1003,9 +1003,14 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
+	height: @vertSpacing * 5;
+	background-color: @greyDarker;
 }
-	
+
+ .footer-bottom {
+	height: @vertSpacing * 1.5;
+	background-color: @greyDarkest;
+}
 	/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
@@ -1015,16 +1020,12 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
-	
-		ul {
-		
-			li {}
-		
-		}
-		
-	} /* end .footer-links */
+.footer-links {
+	ul {
+		li {}
+	}
+} /* end .footer-links */
 
 			
-	.attribution {}
+.attribution {}
 	

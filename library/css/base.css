@@ -916,7 +916,7 @@ HEADER SYTLES
   border-top: 6px solid #3d2423;
   height: 48px;
   background-color: #ffffff;
-  border-bottom: 2px solid #3d2423;
+  border-bottom: 1px solid #3d2423;
 }
 .header #inner-header .logo {
   font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;

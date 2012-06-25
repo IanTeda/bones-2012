@@ -35,7 +35,7 @@
       // - topalbums6month
       // - topalbums12month
       // - topalbumsoverall
-      'period'            : 'recenttracks',
+      'period'            : 'topalbums3month',
 
       // in pixels
       'imgwidth'          : 150,
@@ -56,13 +56,13 @@
       'debug'             : false,
 
       // timezone offset
-      'gmt_offset'        : '+10',
+      'gmt_offset'        : '+1',
 
       // open links in new browser screen
       'linknewscreen'     : false,
 
       // capitals to pretend these are constants
-      'LASTFM_APIKEY'     : 'fbfa856cc3af93c43359b57921b1e64e',
+      'LASTFM_APIKEY'     : '41476a798f46ddfc5a0ae55b5c594cd6',
       'LASTFM_WS_URL'     : 'http://ws.audioscrobbler.com/2.0/',
 
       // last.fm added a default album image, and I don't like it
@@ -424,11 +424,11 @@
       _logStatus('adding temporary cd covers to div ' + _elem.attr("id"));
 
       // add an ol to the element div
-      var _ol = jQuery("<ol></ol>").appendTo(_elem);
+      var _ol = jQuery("<ol></ol>").attr('class', 'image-matrix').appendTo(_elem);
 
       var _img, _li;
       for (var i = 0; i < _settings.count; i++) {
-        _li  = jQuery('<li></li>'); //.attr('style', 'display: inline;');
+        _li  = jQuery('<li></li>').attr('class', 'clearfix'); //.attr('style', 'display: inline;');
 
         _a   = jQuery('<a></a>').bind('click', _dontFollowLink).attr('href', '').appendTo(_li);
 
@@ -450,6 +450,7 @@
         _img = jQuery('<img></img>')
                  .attr('src', _settings.defaultthumb)
                  .attr('id', 'lfr_' + _elem.attr("id") + "_" + i)
+				 .attr('class', 'album-cover')
                  .error(
                    function() {
                      jQuery(this).attr("src", _settings.defaultthumb);
@@ -544,7 +545,7 @@
         // save settings for this element to the element, so callback functions can use them
         $this.data('settings', settings);
 
-        _addStylesheet($this);
+        /** _addStylesheet($this); /** I have my own styling **/
         _addTempCovers($this);
         _getLastFmData($this);
       }

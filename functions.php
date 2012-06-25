@@ -201,4 +201,13 @@ function category_name(){
 	} 	
 }
 
+/**********************************************
+Load LastFm jQuery plugin
+***********************************************/
+function load_lastfm(){
+	wp_register_script( 'lastfm-records', get_template_directory_uri() . '/library/js/libs/last.fm.records.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'lastfm-records' );
+
+}
+
 ?>

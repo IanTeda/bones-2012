@@ -66,38 +66,6 @@
 				
 			<div id="lastfm" class="clearfix">
 				<h3 class="underlined">Album Chart</h3>
-				<ul class="image-matrix">
-					<li class="clearfix">
-						<a href="#">
-							<img class="album-cover" src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm1.png">
-						</a>
-					</li>
-					<li class="clearfix">
-						<a href="#">
-							<img class="album-cover" src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm2.jpg">
-						</a>
-					</li>
-					<li class="clearfix">
-						<a href="#">
-							<img class="album-cover" src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm1.png">
-						</a>
-					</li>
-					<li class="clearfix">
-						<a href="#">
-							<img class="album-cover" src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm2.jpg">
-						</a>
-					</li>
-					<li class="clearfix">
-						<a href="#">
-							<img class="album-cover" src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm1.png">
-						</a>
-					</li>
-					<li class="clearfix">
-						<a href="#">
-							<img class="album-cover" src="<?php echo get_template_directory_uri(); ?>/library/images/lastfm2.jpg">
-						</a>
-					</li>
-				</ul>
 				<div id="lastfmrecords"></div>
 			</div><!-- End of lastfm list -->
 			
@@ -140,5 +108,7 @@
 				    
 	</div> <!-- end #inner-content -->
 </div> <!-- end #content -->
+
+<?php load_lastfm(); ?>
 
 <?php get_footer(); ?>

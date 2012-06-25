@@ -46,7 +46,6 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
 require_once('library/assets/dropdown-menus.php');
-//require_once('library/assets/wordpress-goodreads-bookshelf.php');
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 

@@ -5,18 +5,15 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						<header class="post-header">
-						<?php feature_image_1132x336(); ?>
+						<?php feature_image_1140x336(); ?>
 							<h3 class="underlined clearfix">
 								<?php the_title(); ?>
 								<span>
 									<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
 								</span>
 							</h3>
-							<p class="post-tags">
-								<a class="button-small" href="#" rel="tag">php</a>
-								<a class="button-small" href="#" rel="tag">tutorial</a>
-								<a class="button-small" href="#" rel="tag">wordpress</a>
-							</p>
+                            
+                            <?php the_tags('<p class="post-tags">', ' ', '</p>'); ?>
 						</header> <!-- end article header -->
 						
 						<section class="post-content clearfix">
@@ -44,17 +41,6 @@
 						</footer> <!-- end article footer -->
 						
 					</article> <!-- end article -->
-                    
-                    <div id="single-post-nav" class="menu-horz clearfix">
-                        <ul>
-                            <li class="text-left">
-                                <?php previous_post_link('%link','<img src="' . get_bloginfo("template_directory") . '/library/images/ic_arrow_prev.png" /><span>Prev</span>'); ?>
-                            </li>
-                            <li class="text-right">
-                                <?php next_post_link('%link','<span>Next</span><img src="' . get_bloginfo("template_directory") . '/library/images/ic_arrow_next.png" />'); ?>
-                            </li>
-                        </ul>
-                    </div>
 						
 					<?php comments_template(); ?>
 						

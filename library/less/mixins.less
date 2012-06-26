@@ -309,9 +309,10 @@ BUTTONS
 *********************/
 
 .button, .button:visited {
-	border: 1px solid darken(@bones-pink, 13%);
-	border-top-color: darken(@bones-pink, 7%);
-	border-left-color: darken(@bones-pink, 7%);
+	@buttonColor: @bones-pink;
+	border: 1px solid darken(@buttonColor, 13%);
+	border-top-color: darken(@buttonColor, 7%);
+	border-left-color: darken(@buttonColor, 7%);
 	padding: 4px 12px;
 	color: @white;
 	display: inline-block;
@@ -324,18 +325,18 @@ BUTTONS
 	line-height: 21px;
 	.transition();
 	.rounded(4px);
-	.css-gradient(@bones-pink,darken(@bones-pink, 5%));
+	.css-gradient(@buttonColor,darken(@buttonColor, 5%));
 
 	&:hover, &:focus {
 		color: @white;
-	  	border: 1px solid darken(@bones-pink, 13%);
-	  	border-top-color: darken(@bones-pink, 20%);
-	 	border-left-color: darken(@bones-pink, 20%);
-		.css-gradient(darken(@bones-pink, 5%),darken(@bones-pink, 10%));
+	  	border: 1px solid darken(@buttonColor, 13%);
+	  	border-top-color: darken(@buttonColor, 20%);
+	 	border-left-color: darken(@buttonColor, 20%);
+		.css-gradient(darken(@buttonColor, 5%),darken(@buttonColor, 10%));
 	}
 	
 	&:active {
-		.css-gradient(darken(@bones-pink, 5%),@bones-pink);
+		.css-gradient(darken(@buttonColor, 5%),@bones-pink);
 	}	
 }
 
@@ -344,7 +345,7 @@ BUTTONS
 	border: 1px solid darken(@buttonColor, 13%);
 	border-top-color: darken(@buttonColor, 7%);
 	border-left-color: darken(@buttonColor, 7%);
-	padding: @vertSpacing / 4;
+	padding: 6px 8px;
 	color: darken(@buttonColor, 50%);
 	display: inline-block;
 	font-size: @font-size-s;
@@ -352,7 +353,7 @@ BUTTONS
 	cursor: pointer;
 	line-height: @font-size-s;
 	.transition();
-	.rounded(4px);
+	.rounded(2px);
 	.css-gradient(@buttonColor,darken(@buttonColor, 2%));
 
 	&:hover, &:focus {

@@ -705,7 +705,7 @@ BUTTONS
   border: 1px solid #c3c3c3;
   border-top-color: #d2d2d2;
   border-left-color: #d2d2d2;
-  padding: 6px;
+  padding: 6px 8px;
   color: #656565;
   display: inline-block;
   font-size: 10px;
@@ -720,12 +720,12 @@ BUTTONS
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
   background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
@@ -1544,7 +1544,7 @@ BUTTONS
   border: 1px solid #c3c3c3;
   border-top-color: #d2d2d2;
   border-left-color: #d2d2d2;
-  padding: 6px;
+  padding: 6px 8px;
   color: #656565;
   display: inline-block;
   font-size: 10px;
@@ -1559,12 +1559,12 @@ BUTTONS
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
   background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
@@ -2091,6 +2091,146 @@ POSTS & CONTENT STYLES
 .post-header h3 span a {
   font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
+.post-tags a {
+  border: 1px solid #c3c3c3;
+  border-top-color: #d2d2d2;
+  border-left-color: #d2d2d2;
+  padding: 6px 8px;
+  color: #656565;
+  display: inline-block;
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  border: 1px solid #c3c3c3;
+  border-top-color: #d2d2d2;
+  border-left-color: #d2d2d2;
+  padding: 6px 8px;
+  color: #656565;
+  display: inline-block;
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+}
+.post-tags a:hover,
+.post-tags a:focus {
+  color: #ffffff;
+  border: 1px solid #c3c3c3;
+  border-top-color: #b1b1b1;
+  border-left-color: #b1b1b1;
+  background-color: #cbcbcb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+  background-color: #cbcbcb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+}
+.post-tags a:active {
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+}
+.post-tags a:hover,
+.post-tags a:focus {
+  color: #ffffff;
+  border: 1px solid #c3c3c3;
+  border-top-color: #b1b1b1;
+  border-left-color: #b1b1b1;
+  background-color: #cbcbcb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+  background-color: #cbcbcb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
+  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+}
+.post-tags a:active {
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
+  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
+  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+}
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
@@ -2107,6 +2247,7 @@ POSTS & CONTENT STYLES
 }
 /* post content */
 .post-content {
+  margin-top: 24px;
   /*
 	image alignment on a screen this size may be
 	a bit difficult. It's set to start aligning 

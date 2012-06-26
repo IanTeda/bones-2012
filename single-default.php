@@ -14,7 +14,12 @@
 						
 						<header>
 							
-							<h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
+														<h3 class="underlined clearfix">
+								<?php the_title(); ?>
+								<span>
+									<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
+								</span>
+							</h3>
 							
 							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
 						

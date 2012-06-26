@@ -52,7 +52,7 @@ require_once('library/assets/dropdown-menus.php');
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'feature_image_(220x140)', 220, 140, true );
-add_image_size( 'feature_image_(1132x336)', 1132, 336, true );
+add_image_size( 'feature_image_(1140x336)', 1140, 336, true );
 /* 
 to add more sizes, simply copy a line from above 
 and change the dimensions & name. As long as you
@@ -169,11 +169,11 @@ function feature_image_220x140(){
 	<?php };
 }
 
-function feature_image_1132x336(){
+function feature_image_1140x336(){
 	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 1132, 336 ), array('class' => 'resizeable') );
+	 	the_post_thumbnail( array( 1140, 336 ), array('class' => 'resizeable') );
 	} else { ?>
-		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(1132x336).png" alt="No Feature Image Set" />
+		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(1140x336).png" alt="No Feature Image Set" />
 	<?php };
 }
 

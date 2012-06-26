@@ -13,7 +13,12 @@
 							
 							<header>
 								
-								<h1><?php the_title(); ?></h1>
+							<h3 class="underlined clearfix">
+								<?php the_title(); ?>
+								<span>
+									<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
+								</span>
+							</h3>>
 								
 								<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php echo get_the_term_list( get_the_ID(), 'custom_cat', "" ) ?>.</p>
 							

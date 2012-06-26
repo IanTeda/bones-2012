@@ -17,27 +17,16 @@
 						</header> <!-- end article header -->
 						
 						<section class="post-content clearfix">
-                        	<div class="post-text">
+                        	<div class="post-text underlined">
 								<?php the_content(); ?>
                             </div>
-                            
-							<div class="post-meta-image">
-                            	<div id="synopsis">
-                                	<h3>Synopsis</h3>
-        							<ul class="post-meta">
-										<li><strong>Author: </strong>Ian</li>
-                                        <li><strong>Date: </strong>Fri, 17-Aug-07</li>
-                                        <li><strong>Category: </strong><a href="http://www.teda.id.au/category/trails/" title="View all posts in Trails" rel="category tag">Trails</a></li>
-                                        <li><strong>Taged as: </strong><a href="http://www.teda.id.au/tag/hill-training/" rel="tag">Hill Training</a>, <a href="http://www.teda.id.au/tag/running/" rel="tag">Running</a></li>
-                                    </ul>
-                                    <p class="post-excerpt">A great location for getting those hill runs in and building endurance and strength.</p>
-        							<a class="post-edit-link" href="http://www.teda.id.au/wp-admin/post.php?post=153&amp;action=edit" title="Edit Post">Edit</a>
-								</div><!-- end post meta -->
-							</div><!-- end post meta and image -->
 						</section> <!-- end article section -->
 							
-						<footer>
-							<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">Custom Tags:</span> ', ', ' ) ?></p>
+						<footer class="post-meta">
+							<p>
+								<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?>. It was posted under <?php the_category(', ') ?> <?php the_tags(' and taged as ', ', ', ''); ?>
+								<?php edit_post_link('Edit', '', ''); ?>
+							</p>
 						</footer> <!-- end article footer -->
 						
 					</article> <!-- end article -->

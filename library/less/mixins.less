@@ -309,7 +309,7 @@ BUTTONS
 *********************/
 
 .button, .button:visited {
-	@buttonColor: @bones-pink;
+	@buttonColor: @turquesa;
 	border: 1px solid darken(@buttonColor, 13%);
 	border-top-color: darken(@buttonColor, 7%);
 	border-left-color: darken(@buttonColor, 7%);
@@ -319,18 +319,17 @@ BUTTONS
 	font-size: 11px;
 	font-weight: bold;
 	text-decoration: none;
-	text-shadow: 0 1px rgba(0,0,0, .75);
 	cursor: pointer;
 	margin-bottom: 20px;
 	line-height: 21px;
 	.transition();
 	.rounded(4px);
-	.css-gradient(@buttonColor,darken(@buttonColor, 5%));
+	.css-gradient(@buttonColor,darken(@buttonColor, 1%));
 
 	&:hover, &:focus {
 		color: @white;
 	  	border: 1px solid darken(@buttonColor, 13%);
-	  	border-top-color: darken(@buttonColor, 20%);
+	  	border-top-color: darken(@buttonColor, 20%);	
 	 	border-left-color: darken(@buttonColor, 20%);
 		.css-gradient(darken(@buttonColor, 5%),darken(@buttonColor, 10%));
 	}

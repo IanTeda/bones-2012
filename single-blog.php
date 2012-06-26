@@ -1,19 +1,22 @@
 <?php get_header(); ?>
 	<div id="content">
 		<div id="inner-content" class="wrap clearfix">
-			<div id="main" class="eightcol clearfix" role="main">
+			<div id="main" class="clearfix" role="main">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						<header>
-                        	<div id="single-blog-header">
-								<?php post_title_image(); ?>
-								<div id="single-blog-title-block">
-									<a href="<?php category_link(); ?>">
-                                    	<img class="cat-icon" src="<?php category_image(); ?>"/>
-                                    </a>
-                                	<h2><?php the_title(); ?></h2>
-                                </div>
-                            </div>
+						<header class="post-header">
+						<?php feature_image_1132x336(); ?>
+							<h3 class="underlined clearfix">
+								<?php the_title(); ?>
+								<span>
+									<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
+								</span>
+							</h3>
+							<p class="post-tags">
+								<a class="button-small" href="#" rel="tag">php</a>
+								<a class="button-small" href="#" rel="tag">tutorial</a>
+								<a class="button-small" href="#" rel="tag">wordpress</a>
+							</p>
 						</header> <!-- end article header -->
 						
 						<section class="post-content clearfix">

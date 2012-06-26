@@ -339,6 +339,35 @@ BUTTONS
 	}	
 }
 
+.button-small, .button-small:visited {
+	@buttonColor: @greyLight;
+	border: 1px solid darken(@buttonColor, 13%);
+	border-top-color: darken(@buttonColor, 7%);
+	border-left-color: darken(@buttonColor, 7%);
+	padding: @vertSpacing / 4;
+	color: darken(@buttonColor, 50%);
+	display: inline-block;
+	font-size: @font-size-s;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: @font-size-s;
+	.transition();
+	.rounded(4px);
+	.css-gradient(@buttonColor,darken(@buttonColor, 2%));
+
+	&:hover, &:focus {
+		color: @white;
+	  	border: 1px solid darken(@buttonColor, 13%);
+	  	border-top-color: darken(@buttonColor, 20%);
+	 	border-left-color: darken(@buttonColor, 20%);
+		.css-gradient(darken(@buttonColor, 5%),darken(@buttonColor, 10%));
+	}
+	
+	&:active {
+		.css-gradient(darken(@buttonColor, 5%),@buttonColor);
+	}	
+}
+
 .blue-button, .blue-button:visited {
 	border-color: darken(@bones-blue, 10%);
 	text-shadow: 0 1px 1px darken(@bones-blue, 10%);

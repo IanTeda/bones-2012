@@ -1,56 +1,51 @@
 			<footer class="footer" role="contentinfo">
 				<div id="inner-footer" class="wrap clearfix">
-					<nav role="navigation">
-						<div id="footer-navigation">
-    						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
-						</div>
-	                </nav>
-					
-					<blockquote id="footer-quote">
-						<div id="quotescollection_randomquote-0" class="quotescollection_randomquote">
-							<p>
-								<q>If you want others to be happy, practice compassion. If you want to be happy, practice compassion</q> 
-								<cite>&mdash;&nbsp;<span class="quotescollection_author">Dalai Lama</span></cite>
-							</p>
-						</div>
-					</blockquote>
-					
-					<div id="ss-social-links-2" class="widget ss-social-links">
-						<span class="widget-title">Stay Connected</span>
-						<ul class="social-links">
-							<li class="dribbble">
-								<a href="#" target="_blank">Dribbble</a>
+					<h4>
+						<a href="<?php bloginfo('url'); ?>/wp-admin">www.teda.id.au</a> is powered by <a href="http://wordpress.org/">Wordpress</a>
+					</h4>
+					<div id="social-list">
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/ian.teda">
+									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_facebook.png">
+								</a>
 							</li>
-							<li class="facebook">
-								<a href="#" target="_blank">Facebook</a>
+							<li>
+								<a href="http://www.goodreads.com/user/show/997558-ian">
+									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_goodreads.png">
+								</a>
 							</li>
-							<li class="skype">
-								<a href="#" target="_blank">Skype</a>
+							<li>
+								<a href="http://www.last.fm/user/t33d5">
+									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_lastfm.png">
+								</a>
 							</li>
-							<li class="twitter">
-								<a href="http://twitter.com/#" target="_blank">Twitter</a>
+							<li>
+								<a href="http://www.linkedin.com/profile/view?id=97294811">
+									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_linkedin.png">
+								</a>
 							</li>
-							<li class="vimeo">
-								<a href="#" target="_blank">Vimeo</a>
+							<li>
+								<a href="https://twitter.com/#!/IanTeda">
+									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_twitter.png">
+								</a>
 							</li>
-							<li class="youtube">
-								<a href="#" target="_blank">Youtube</a>
+							<li>
+								<a href="https://vimeo.com/ianteda">
+									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_vimeo.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_rss.png">
+								</a>
 							</li>
 						</ul>
-					</div><!-- end .social-links -->
-				</div> <!-- end #inner-footer -->
+					</div><!-- end #social-list -->
+					
+ 				</div> <!-- end #inner-footer -->
 				
 			</footer> <!-- end footer -->
-			
-			<footer class="footer-bottom" role="contentinfo">
-				<div id="inner-footer" class="wrap clearfix">
-					<ul>
-						<li>SmartStart © 2012</li>
-						<li><a href="#">Legal Notice</a></li>
-						<li><a href="#">Terms</a></li>
-					</ul>
-				</div> <!-- end #inner-footer -->	
-			</footer> <!-- end footer-bottom -->
 		
 		</div> <!-- end #container -->
 		

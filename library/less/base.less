@@ -127,6 +127,14 @@ IMAGE STYLES
 	padding: 1px;
 }
 
+.footer-icon {
+	max-width: 32px;
+	width: @vertSpacing;
+	max-height: 32px;
+	height: @vertSpacing;
+	padding: 1px;
+}
+
 
 /*********************
 LINK STYLES
@@ -355,18 +363,6 @@ MENU STYLES
 	}
 }
 
-#footer-navigation {
-	padding: 0;
-	margin-top: @vertSpacing;
-	ul {
-		li {
-			display: inline;
-			list-style: none;
-			border-bottom: 1px dotted @greyFootLight;
-		}
-	}
-}
-
 /*********************
 JCAROUSEL STYLES
 *********************/
@@ -448,6 +444,23 @@ LIST STYLES
 			display: block;
 			text-align: center; /** Not sure if this will center image across all browsers**/
 		}
+	}
+}
+
+#social-list {
+	ul {
+		padding: 0;
+		list-style: none;
+		margin: 0 auto;
+		width: @mobileWidth; /** Might make this a fixed width??? **/
+		li {
+			float: left;
+			width: 100% / 7;
+			a {
+				display: block;
+				text-align: center; /** Not sure if this will center image across all browsers**/
+			}
+		}		
 	}
 }
 
@@ -1016,24 +1029,20 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	min-height: @vertSpacing * 5;
-	background-color: @greyDarker;
-	color: @greyFooter;
-	a {
-		color: @greyFooter;
-		text-transform: uppercase;
-		font-size: @font-size-s;
-	}
-}
-
-.footer-bottom {
+	margin-top: @vertSpacing;
 	min-height: @vertSpacing * 1.5;
-	background-color: @greyDarkest;
-	color: @greyFooter;
-	a {
-		color: @greyFooter;
-		text-transform: uppercase;
-		font-size: @font-size-s;
+	background-color: @greyLight;
+	color: @greyDark;
+	border-top: 1px solid @autumn;
+	h4 {
+		font-family: @sans-serif-title;
+		font-weight: normal;
+		margin: 0;
+		line-height: @vertSpacing * 1.5;
+		text-align: center;
+		a {
+			color: @black;
+		}
 	}
 }
 	/*

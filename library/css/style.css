@@ -1523,7 +1523,7 @@ GENERAL STYLES
 body {
   font: 87.5%/1.5em "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   color: #656565;
-  background-color: #fdfcf7;
+  background-color: #f9f7ea;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
 
@@ -1612,6 +1612,13 @@ IMAGE STYLES
   width: 75px;
   max-height: 174px;
   height: 75px;
+  padding: 1px;
+}
+.footer-icon {
+  max-width: 32px;
+  width: 24px;
+  max-height: 32px;
+  height: 24px;
   padding: 1px;
 }
 /*********************
@@ -1711,7 +1718,7 @@ h5,
 }
 .underlined {
   padding-bottom: 6px;
-  border-bottom: solid 1px #e8e8e8;
+  border-bottom: solid 1px #e4e4e4;
   margin-bottom: 12px;
 }
 /*********************
@@ -1785,7 +1792,7 @@ select {
   /* Fix for Mobile Safari */
 
   background-color: #f8f8f8;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #e4e4e4;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -1818,15 +1825,6 @@ MENU STYLES
   background-repeat: no-repeat;
   width: 100%;
 }
-#footer-navigation {
-  padding: 0;
-  margin-top: 24px;
-}
-#footer-navigation ul li {
-  display: inline;
-  list-style: none;
-  border-bottom: 1px dotted #4b4b4b;
-}
 /*********************
 JCAROUSEL STYLES
 *********************/
@@ -1843,7 +1841,7 @@ JCAROUSEL STYLES
 .carousel li a {
   text-decoration: none;
   display: block;
-  border-bottom: solid 1px #e8e8e8;
+  border-bottom: solid 1px #e4e4e4;
 }
 .latest-carousel li a {
   padding-top: 24px;
@@ -1898,6 +1896,24 @@ LIST STYLES
   width: 33.333333333333336%;
 }
 .image-matrix li a {
+  display: block;
+  text-align: center;
+  /** Not sure if this will center image across all browsers**/
+
+}
+#social-list ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  width: 300px;
+  /** Might make this a fixed width??? **/
+
+}
+#social-list ul li {
+  float: left;
+  width: 14.285714285714286%;
+}
+#social-list ul li a {
   display: block;
   text-align: center;
   /** Not sure if this will center image across all browsers**/
@@ -2237,24 +2253,21 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
-  min-height: 120px;
-  background-color: #3a3a3a;
-  color: #868686;
-}
-.footer a {
-  color: #868686;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-.footer-bottom {
+  margin-top: 24px;
   min-height: 36px;
-  background-color: #303030;
-  color: #868686;
+  background-color: #e4e4e4;
+  color: #656565;
+  border-top: 1px solid #ab362e;
 }
-.footer-bottom a {
-  color: #868686;
-  text-transform: uppercase;
-  font-size: 10px;
+.footer h4 {
+  font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  line-height: 36px;
+  text-align: center;
+}
+.footer h4 a {
+  color: #000000;
 }
 /*
 	if you checked out the link above:

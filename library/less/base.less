@@ -224,7 +224,6 @@ h5, .h5 {
 
 .underlined {
 	border-bottom: solid 1px @greyLight;
-	margin-bottom: @vertSpacing/2;
 }
 
 /*********************
@@ -499,8 +498,9 @@ POSTS & CONTENT STYLES
 .post-meta {
 	text-align: center;
 	font-style: italic;	
+	line-height: @vertSpacing;
+	.underlined;
 }
-
 
 #content { 
 
@@ -539,6 +539,8 @@ POSTS & CONTENT STYLES
 /* post content */
 .post-content {
 	margin-top: @vertSpacing;
+	padding-bottom: @vertSpacing;
+	.underlined;
 	p {}
 	ul, ol, table, dl {}
 	ul, ol {

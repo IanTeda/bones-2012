@@ -13,7 +13,7 @@
 						</h3>
 					</header> <!-- end article header -->
 						
-					<section class="post-content clearfix underlined">
+					<section class="post-content clearfix">
 						<?php the_content(); ?>
 					</section> <!-- end article section -->
 							
@@ -54,10 +54,4 @@
 			</div> <!-- end #content -->
 			
 <?php load_fitvids(); ?>
-<script>
-  $(document).ready(function(){
-    // Target your .container, .wrapper, .post, etc.
-    jQuery(".post-content").fitVids();
-  });
-</script>
 <?php get_footer(); ?>

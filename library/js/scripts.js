@@ -48,8 +48,6 @@ jQuery(document).ready(function($) {
     }
     
 	// add all your scripts here
-	jQuery("#lastfmrecords").lastFmRecords();
-	jQuery(".post-content").fitVids();
 	
 }); /* end of as page load scripts */
 

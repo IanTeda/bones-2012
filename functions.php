@@ -215,13 +215,24 @@ Load jQuery plugins
 ***********************************************/
 function load_lastfm(){
 	wp_register_script( 'lastfm-records', get_template_directory_uri() . '/library/js/libs/last.fm.records.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'lastfm-records' );
-
+	wp_enqueue_script( 'lastfm-records' );?>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery("#lastfmrecords").lastFmRecords();
+		});
+	</script><?php
 }
 
 function load_fitvids(){
 	wp_register_script( 'fitvids', get_template_directory_uri() . '/library/js/libs/jquery.fitvids.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'fitvids' );
+	wp_enqueue_script( 'fitvids' ); ?>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('.post-content').fitVids();
+		});
+	</script><?php
 }
 
 ?>

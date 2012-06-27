@@ -1874,7 +1874,6 @@ h5,
 }
 .underlined {
   border-bottom: solid 1px #e4e4e4;
-  margin-bottom: 12px;
 }
 /*********************
 HEADER SYTLES
@@ -2232,6 +2231,8 @@ POSTS & CONTENT STYLES
 .post-meta {
   text-align: center;
   font-style: italic;
+  line-height: 24px;
+  border-bottom: solid 1px #e4e4e4;
 }
 /* end .hentry */
 /* want to style individual post classes? Booya! */
@@ -2250,6 +2251,8 @@ POSTS & CONTENT STYLES
 /* post content */
 .post-content {
   margin-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #e4e4e4;
   /*
 	image alignment on a screen this size may be
 	a bit difficult. It's set to start aligning 

@@ -3,20 +3,17 @@
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="clearfix" role="main">
-			<h2 class="archive-title">
-				<?php single_cat_title(); ?> Posts
-			</h2>
-			
+	
 			<div id="blog-archive">
 				<?php $year = ''; ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php //the_date('F Y', '<p class="the_date"><span>', '</span></p>'); ?>
 					<?php if (get_the_time('Y') != $year): ?>
 						<?php $year = get_the_time('Y'); ?>
-						<h3 class="blog-archive-year"><?php echo $year; ?></h3>
+						<h3 class="blog-archive-year"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
 					<?php endif; ?>
 					
-					<div class="blog-archive-post">
+					<div class="post-<?php the_ID(); ?> blog-archive-post">
 						<h4>
 							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 								<?php the_title(); ?>

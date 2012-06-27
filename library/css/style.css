@@ -2302,8 +2302,9 @@ POSTS & CONTENT STYLES
   margin-bottom: 1.5em;
 }
 .post-content img {
-  margin: 0 0 1.5em 0;
   max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 .post-content video,
 .post-content object {
@@ -2601,7 +2602,7 @@ SIDEBARS & ASIDES
 /*********************
 ARCHIVE STYLES
 *********************/
-.blog-archive-year {
+.archive-year {
   border-top: solid 1px #e4e4e4;
   margin: 24px 0 0 0;
 }
@@ -2617,6 +2618,25 @@ ARCHIVE STYLES
 }
 .blog-archive-post p {
   font-style: italic;
+}
+.photo-archive-post {
+  position: relative;
+  max-width: 220px;
+  margin: 0 auto;
+}
+.photo-archive-post img {
+  box-shadow: 0px 0px 0.5em #000000;
+  width: 100%;
+}
+.photo-archive-post .caption {
+  position: absolute;
+  padding: 0.25em;
+  top: 1em;
+  left: 0;
+  right: 0;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 /*********************
 FOOTER STYLES

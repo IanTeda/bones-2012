@@ -19,10 +19,7 @@
 					</section> <!-- end article section -->
 							
 					<footer class="post-meta clearfix">
-						<p>
-							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?><?php the_tags('<span class="amp"> & </span> taged as ', ', ', ''); ?>
-							<?php edit_post_link('Edit', '', ''); ?>
-						</p>
+						<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?><?php the_tags('<span class="amp"> & </span> taged as ', ', ', ''); ?>
 					</footer> <!-- end article footer -->
 						
 				</article> <!-- end article -->

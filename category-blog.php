@@ -1,4 +1,3 @@
-<!-- archive category-blog -->
 <?php get_header(); ?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
@@ -7,10 +6,11 @@
 			<div id="blog-archive">
 				<?php $year = ''; ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<?php //the_date('F Y', '<p class="the_date"><span>', '</span></p>'); ?>
+					
+					<?php // Lets show the year but only once ?>				
 					<?php if (get_the_time('Y') != $year): ?>
 						<?php $year = get_the_time('Y'); ?>
-						<h3 class="blog-archive-year"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
+						<h3 class="archive-year"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
 					<?php endif; ?>
 					
 					<div class="post-<?php the_ID(); ?> blog-archive-post">

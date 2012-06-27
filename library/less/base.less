@@ -471,6 +471,36 @@ LIST STYLES
 	}
 }
 
+#blog-archive {
+	@thumb-size: 33px;
+	@pad-left: @thumb-size + 4;
+	article{
+		section {
+			li {
+				overflow: hidden;
+				a {
+					height: 100px;
+					padding: (@vertSpacing / 2) 0;
+					img {
+						float: left
+					}
+					h4 {
+						margin: 0;
+						padding-left: @pad-left;
+						/** Unable to align text top **/
+						margin-top: -7px;
+					}
+					span {
+						display: block;
+						padding-left: @pad-left;
+						color: @grey;
+					}
+				}
+			}
+		}
+	}
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/

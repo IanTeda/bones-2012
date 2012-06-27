@@ -2073,6 +2073,28 @@ LIST STYLES
   /** Not sure if this will center image across all browsers**/
 
 }
+#blog-archive article section li {
+  overflow: hidden;
+}
+#blog-archive article section li a {
+  height: 100px;
+  padding: 12px 0;
+}
+#blog-archive article section li a img {
+  float: left;
+}
+#blog-archive article section li a h4 {
+  margin: 0;
+  padding-left: 37px;
+  /** Unable to align text top **/
+
+  margin-top: -7px;
+}
+#blog-archive article section li a span {
+  display: block;
+  padding-left: 37px;
+  color: #8f8f8f;
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

@@ -51,6 +51,7 @@ require_once('library/assets/dropdown-menus.php');
 
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
+add_image_size( 'feature_image_(33x140)', 33, 100, true );
 add_image_size( 'feature_image_(220x140)', 220, 140, true );
 add_image_size( 'feature_image_(1140x336)', 1140, 336, true );
 /* 
@@ -161,6 +162,14 @@ function bones_wpsearch($form) {
 /***************************************************
 Call feature image thumbnails
 ****************************************************/
+function feature_image_33x100(){
+	if ( has_post_thumbnail() ) {
+	 	the_post_thumbnail( array( 33, 100 ), array('class' => 'resizeable') );
+	} else { ?>
+		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(33x100).png" alt="No Feature Image Set" />
+	<?php };
+}
+
 function feature_image_220x140(){
 	if ( has_post_thumbnail() ) {
 	 	the_post_thumbnail( array( 220, 140 ), array('class' => 'resizeable') );
@@ -233,6 +242,19 @@ function load_fitvids(){
 			jQuery('.post-content').fitVids();
 		});
 	</script><?php
+}
+
+/***************************************
+Excerpt function
+****************************************/
+
+function get_custom_excerpt($postid){
+	if(has_excerpt($postid)) {
+		//This post have an excerpt, let's display it
+		the_excerpt();
+	} else {
+		echo '<p>There are no excerpt for this post.</p>';
+	}	
 }
 
 ?>

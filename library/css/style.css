@@ -2230,6 +2230,7 @@ POSTS & CONTENT STYLES
   background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
 }
 .post-meta {
+  text-align: center;
   font-style: italic;
 }
 /* end .hentry */

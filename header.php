@@ -31,6 +31,11 @@
 			
 		<!-- drop Google Analytics Here -->
 		<!-- end analytics -->
+		<script type="text/javascript">
+	    	jQuery(document).ready(function() {
+    			jQuery('.post-content').fitVids();
+    		});
+		</script>>
 		
 	</head>
 	

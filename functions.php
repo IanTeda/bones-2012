@@ -211,12 +211,17 @@ function category_name(){
 }
 
 /**********************************************
-Load LastFm jQuery plugin
+Load jQuery plugins
 ***********************************************/
 function load_lastfm(){
 	wp_register_script( 'lastfm-records', get_template_directory_uri() . '/library/js/libs/last.fm.records.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'lastfm-records' );
 
+}
+
+function load_fitvids(){
+	wp_register_script( 'fitvids', get_template_directory_uri() . '/library/js/libs/jquery.fitvids.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'fitvids' );
 }
 
 ?>

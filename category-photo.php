@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
-		<div id="main" class="eightcol first clearfix" role="main">
+		<div id="main" class="clearfix" role="main">
 		
 			<div id="photo-archive">
 				<?php $year = ''; ?>
@@ -15,8 +15,10 @@
 					<?php endif; ?>
 					
 					<div class="post-<?php the_ID(); ?> photo-archive-post clearfix">
-						<?php feature_image_220x140(); ?>
-						<h4 class="caption"><?php the_title(); ?></h4>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+							<?php feature_image_220x140(); ?>
+							<h4 class="caption"><?php the_title(); ?></h4>
+						</a>
 					</div><!-- end blog-archive-post -->
 
 				    <?php endwhile; ?>	

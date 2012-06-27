@@ -172,7 +172,7 @@ function feature_image_33x100(){
 
 function feature_image_220x140(){
 	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 220, 140 ), array('class' => 'resizeable') );
+	 	the_post_thumbnail( array( 220, 140 ), array('class' => 'resizeable image-box-shadow') );
 	} else { ?>
 		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(220x140).png" alt="No Feature Image Set" />
 	<?php };

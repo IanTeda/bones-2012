@@ -1091,16 +1091,16 @@ ARCHIVE STYLES
 .photo-archive-post {
 	position : relative;
     max-width : 220px;
-    margin:0 auto;
+    margin: @vertSpacing auto 0 auto;
 	img  {
-		box-shadow: 0px 0px 0.5em #000000;
+		.image-box-shadow;
 		width:100%;
 	}
 	.caption {
 	    position:absolute;
 		padding:0.25em;
 		top:1em; left:0; right:0;
-		color:black;
+		color: @white;
 		background-color:rgba(0,0,0,0.2);
 		text-align:center;	
 	}

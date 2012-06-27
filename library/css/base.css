@@ -504,6 +504,9 @@ TOOLS
   white-space: nowrap;
   overflow: hidden;
 }
+.image-box-shadow {
+  box-shadow: 0px 0px 0.5em #000000;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -1624,7 +1627,7 @@ ARCHIVE STYLES
 .photo-archive-post {
   position: relative;
   max-width: 220px;
-  margin: 0 auto;
+  margin: 24px auto 0 auto;
 }
 .photo-archive-post img {
   box-shadow: 0px 0px 0.5em #000000;
@@ -1636,7 +1639,7 @@ ARCHIVE STYLES
   top: 1em;
   left: 0;
   right: 0;
-  color: black;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
 }

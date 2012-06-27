@@ -40,6 +40,9 @@ TOOLS
   white-space: nowrap;
   overflow: hidden;
 }
+.image-box-shadow {
+  box-shadow: 0px 0px 0.5em #000000;
+}
 /*********************
 DIMENSIONS
 *********************/

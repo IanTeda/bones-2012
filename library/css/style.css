@@ -1875,6 +1875,9 @@ h5,
 .underlined {
   border-bottom: solid 1px #e4e4e4;
 }
+.overlined {
+  border-top: solid 1px #e4e4e4;
+}
 /*********************
 HEADER SYTLES
 *********************/
@@ -2090,7 +2093,7 @@ LIST STYLES
 
   margin-top: -7px;
 }
-#blog-archive article section li a span {
+#blog-archive article section li a span p {
   display: block;
   padding-left: 37px;
   color: #8f8f8f;
@@ -2254,6 +2257,7 @@ POSTS & CONTENT STYLES
   text-align: center;
   font-style: italic;
   line-height: 24px;
+  padding: 12px 0;
   border-bottom: solid 1px #e4e4e4;
 }
 .category-photo .post-content {
@@ -2593,6 +2597,27 @@ SIDEBARS & ASIDES
 .widget ul li {
   /* deep nesting */
 
+}
+/*********************
+ARCHIVE STYLES
+*********************/
+.blog-archive-year {
+  border-top: solid 1px #e4e4e4;
+  margin: 0;
+  padding-top: 12px;
+}
+.blog-archive-post {
+  margin: 0 0 24px 0;
+}
+.blog-archive-post h4 {
+  margin: 0;
+  display: block;
+}
+.blog-archive-post h4 a {
+  text-decoration: none;
+}
+.blog-archive-post p {
+  font-style: italic;
 }
 /*********************
 FOOTER STYLES

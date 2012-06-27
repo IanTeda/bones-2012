@@ -226,6 +226,10 @@ h5, .h5 {
 	border-bottom: solid 1px @greyLight;
 }
 
+.overlined {
+	border-top: solid 1px @greyLight;
+}
+
 /*********************
 HEADER SYTLES
 *********************/
@@ -491,9 +495,11 @@ LIST STYLES
 						margin-top: -7px;
 					}
 					span {
-						display: block;
-						padding-left: @pad-left;
-						color: @grey;
+						p {
+							display: block;
+							padding-left: @pad-left;
+							color: @grey;
+						}
 					}
 				}
 			}
@@ -529,6 +535,7 @@ POSTS & CONTENT STYLES
 	text-align: center;
 	font-style: italic;	
 	line-height: @vertSpacing;
+	padding: (@vertSpacing / 2) 0;
 	.underlined;
 }
 
@@ -1055,6 +1062,34 @@ SIDEBARS & ASIDES
 		}
 	
 	}
+	
+	
+/*********************
+ARCHIVE STYLES
+*********************/
+#blog-archive {
+
+}
+
+.blog-archive-year {
+	.overlined;
+	margin: 0;
+	padding-top: @vertSpacing / 2;
+}
+
+.blog-archive-post {
+	margin: 0 0 @vertSpacing 0;
+	h4 {
+		margin: 0;
+		display: block;
+		a {
+			text-decoration: none;
+		}
+	}
+	p {
+		font-style: italic;
+	}
+}
 
 /*********************
 FOOTER STYLES

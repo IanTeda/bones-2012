@@ -3,28 +3,32 @@
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="clearfix" role="main">
-			<h3 class="archive-title underlined">
+			<h2 class="archive-title">
 				<?php single_cat_title(); ?> Posts
-			</h3>
-
-			<ul id="archive-blog" class="carousel">
+			</h2>
+			
+			<div id="blog-archive">
+				<?php $year = ''; ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-					    <section class="post-content clearfix">
-							<li class="clearfix">
-								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-									<?php feature_image_33x100(); ?>
-									<h4><?php the_title(); ?></h4>
-									<span><?php get_custom_excerpt(get_the_ID()); ?></span>
-								</a>
-							</li>
-						</section> <!-- end article section -->
-						
-						<footer class="article-footer">
-						</footer> <!-- end article footer -->
-					</article> <!-- end article -->
+					<?php //the_date('F Y', '<p class="the_date"><span>', '</span></p>'); ?>
+					<?php if (get_the_time('Y') != $year): ?>
+						<?php $year = get_the_time('Y'); ?>
+						<h3 class="blog-archive-year"><?php echo $year; ?></h3>
+					<?php endif; ?>
+					
+					<div class="blog-archive-post">
+						<h4>
+							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</h4>
+						<?php the_tags('<span class="post-tags">', ' ', '</span>'); ?>
+						<p>Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
+					</div><!-- end blog-archive-post -->
+					
 				<?php endwhile; ?>
-			</ul>	
+			</div><!-- end blog-archive -->
+
 			
 			<?php if (function_exists('bones_page_navi')) { // if experimental feature is active ?>
 				<?php bones_page_navi(); // use the page navi function ?>

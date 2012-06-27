@@ -12,17 +12,14 @@
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
-						<header>
+						<header class="post-header">
 							
 														<h3 class="underlined clearfix">
 								<?php the_title(); ?>
 								<span>
 									<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
 								</span>
-							</h3>
-							
-							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
-						
+							</h3>						
 						</header> <!-- end article header -->
 					
 						<section class="post-content clearfix" itemprop="articleBody">
@@ -31,11 +28,12 @@
 					
 						</section> <!-- end article section -->
 						
-						<footer>
-			
-							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ', ', '</p>'); ?>
-							
-						</footer> <!-- end article footer -->
+					<footer class="post-meta clearfix">
+						<p>
+							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?><?php the_tags('<span class="amp"> & </span> taged as ', ', ', ''); ?>
+							<?php edit_post_link('Edit', '', ''); ?>
+						</p>
+					</footer> <!-- end article footer -->
 						
 						<?php comments_template(); ?>
 					

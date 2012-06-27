@@ -24,7 +24,7 @@
 							
 					<footer class="post-meta clearfix">
 						<p>
-							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?>. It was filed under <?php the_category(', ') ?> <span class="amp">&</span> taged as <?php the_tags('', ', ', ''); ?>
+							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?><?php the_tags('<span class="amp"> & </span> taged as ', ', ', ''); ?>
 							<?php edit_post_link('Edit', '', ''); ?>
 						</p>
 					</footer> <!-- end article footer -->

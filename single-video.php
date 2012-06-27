@@ -34,7 +34,7 @@
 						
 						<article id="post-not-found">
 						    <header>
-						    	<h1>Not Found</h1>
+						    	<h3 class="underlined">Not Found</h3>
 						    </header>
 						    <section class="post-content">
 						    	<p>Sorry, but the requested resource was not found on this site.</p>

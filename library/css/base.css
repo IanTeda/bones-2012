@@ -1236,6 +1236,14 @@ POSTS & CONTENT STYLES
   line-height: 24px;
   border-bottom: solid 1px #e4e4e4;
 }
+.category-photo .post-content {
+  text-align: center;
+}
+.category-photo .post-content img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */

@@ -39,16 +39,6 @@
 					
 					</article> <!-- end article -->
 						
-						<div id="single-post-nav" class="menu-horz clearfix">
-                            <ul>
-                                <li class="text-left">
-                                    <?php previous_post_link('%link','<img src="' . get_bloginfo("template_directory") . '/library/images/ic_arrow_prev.png" /><span>Prev</span>'); ?>
-                                </li>
-                                <li class="text-right">
-                                    <?php next_post_link('%link','<span>Next</span><img src="' . get_bloginfo("template_directory") . '/library/images/ic_arrow_next.png" />'); ?>
-                                </li>
-                            </ul>
-                        </div>
 						<?php endwhile; ?>			
 						
 						<?php else : ?>
@@ -68,7 +58,7 @@
                     
 					</div> <!-- end #main -->
     				
-					<?php get_sidebar(); // sidebar 1 ?>
+					<?php //get_sidebar(); // sidebar 1 ?>
     			
     			</div> <!-- #inner-content -->
     			

@@ -51,7 +51,6 @@ require_once('library/assets/dropdown-menus.php');
 
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'feature_image_(33x140)', 33, 100, true );
 add_image_size( 'feature_image_(220x140)', 220, 140, true );
 add_image_size( 'feature_image_(1140x336)', 1140, 336, true );
 /* 
@@ -73,6 +72,25 @@ for the 600 x 100 image:
 You can change the names and dimensions to whatever
 you like. Enjoy!
 */
+
+/***************************************************
+Call feature image thumbnails
+****************************************************/
+function feature_image_220x140(){
+	if ( has_post_thumbnail() ) {
+	 	the_post_thumbnail( array( 220, 140 ), array('class' => 'resizeable image-box-shadow') );
+	} else { ?>
+		<img class="resizeable image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(220x140).png" alt="No Feature Image Set" />
+	<?php };
+}
+
+function feature_image_1140x336(){
+	if ( has_post_thumbnail() ) {
+	 	the_post_thumbnail( array( 1140, 336 ), array('class' => 'resizeable image-box-shadow') );
+	} else { ?>
+		<img class="resizeable image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(1140x336).png" alt="No Feature Image Set" />
+	<?php };
+}
 
 /************* ACTIVE SIDEBARS ********************/
 
@@ -159,33 +177,6 @@ function bones_wpsearch($form) {
     return $form;
 } // don't remove this bracket!
 
-/***************************************************
-Call feature image thumbnails
-****************************************************/
-function feature_image_33x100(){
-	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 33, 100 ), array('class' => 'resizeable') );
-	} else { ?>
-		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(33x100).png" alt="No Feature Image Set" />
-	<?php };
-}
-
-function feature_image_220x140(){
-	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 220, 140 ), array('class' => 'resizeable image-box-shadow') );
-	} else { ?>
-		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(220x140).png" alt="No Feature Image Set" />
-	<?php };
-}
-
-function feature_image_1140x336(){
-	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 1140, 336 ), array('class' => 'resizeable') );
-	} else { ?>
-		<img class="resizeable" src="<?php bloginfo('template_url')?>/library/images/no_image_(1140x336).png" alt="No Feature Image Set" />
-	<?php };
-}
-
 /**********************************************
 Category image with link function
 ***********************************************/
@@ -256,10 +247,5 @@ function get_custom_excerpt($postid){
 		echo '<p>There are no excerpt for this post.</p>';
 	}	
 }
-
-/***************************************
-MONTHLY ARCHIVE
-****************************************/
-
 
 ?>

@@ -21,7 +21,7 @@
 						</h4>
 						<?php the_tags('<span class="post-tags">', ' ', '</span>'); ?>
 						<p>Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
-					</div><!-- end blog-archive-post -->
+					</div>
 					
 				<?php endwhile; ?>
 			</div><!-- end blog-archive -->

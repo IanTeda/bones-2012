@@ -19,7 +19,7 @@
 							<?php feature_image_220x140(); ?>
 							<h4 class="caption"><?php the_title(); ?></h4>
 						</a>
-					</div><!-- end blog-archive-post -->
+					</div>
 
 				    <?php endwhile; ?>	
 					

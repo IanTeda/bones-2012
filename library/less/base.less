@@ -116,6 +116,7 @@ when we're ready for it.
 IMAGE STYLES
 *********************/
 .book-cover {
+	.image-box-shadow;
 	/** Use image ration 0.66 W/H **/
 	max-width: 150px;
 	width: 75px;
@@ -124,6 +125,7 @@ IMAGE STYLES
 	padding: 1px;
 }
 .album-cover {
+	.image-box-shadow;
 	max-width: 174px;
 	width: 75px;
 	max-height: 174px;
@@ -414,32 +416,6 @@ JCAROUSEL STYLES
 	}
 }
 
-.popular-carousel {
-	@thumb-size: 33px;
-	@pad-left: @thumb-size + 4;
-	li {
-		overflow: hidden;
-		a {
-			height: 100px;
-			padding: (@vertSpacing / 2) 0;
-			img {
-				float: left
-			}
-			h4 {
-				margin: 0;
-				padding-left: @pad-left;
-				/** Unable to align text top **/
-				margin-top: -7px;
-			}
-			span {
-				display: block;
-				padding-left: @pad-left;
-				color: @grey;
-			}
-		}
-	}
-}
-
 /*********************
 LIST STYLES
 *********************/
@@ -502,6 +478,36 @@ LIST STYLES
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+.ordered-list {
+
+}
+
+#popular-posts {
+	font-style: italic;
+	color: @autumn;
+	line-height: @vertSpacing;
+	margin: 0  0 0 30px;
+	padding: 0;
+	li {
+		font-style: normal;
+		margin-top: @vertSpacing / 2;
+		a {
+			text-decoration: none;
+			h4 {
+				margin: 0;
+				span {
+					color: @black;	
+				}
+			}
+			p {
+				color: @greyDark;
+				margin-top: -8px;
+				font-style: italic;
 			}
 		}
 	}
@@ -613,6 +619,7 @@ POSTS & CONTENT STYLES
 		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
+		.image-box-shadow;
 	}
 			
 	/*

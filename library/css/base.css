@@ -849,6 +849,7 @@ when we're ready for it.
 IMAGE STYLES
 *********************/
 .book-cover {
+  box-shadow: 0px 0px 0.5em #000000;
   /** Use image ration 0.66 W/H **/
 
   max-width: 150px;
@@ -858,6 +859,7 @@ IMAGE STYLES
   padding: 1px;
 }
 .album-cover {
+  box-shadow: 0px 0px 0.5em #000000;
   max-width: 174px;
   width: 75px;
   max-height: 174px;
@@ -1114,28 +1116,6 @@ JCAROUSEL STYLES
   font-style: italic;
   color: #8f8f8f;
 }
-.popular-carousel li {
-  overflow: hidden;
-}
-.popular-carousel li a {
-  height: 100px;
-  padding: 12px 0;
-}
-.popular-carousel li a img {
-  float: left;
-}
-.popular-carousel li a h4 {
-  margin: 0;
-  padding-left: 37px;
-  /** Unable to align text top **/
-
-  margin-top: -7px;
-}
-.popular-carousel li a span {
-  display: block;
-  padding-left: 37px;
-  color: #8f8f8f;
-}
 /*********************
 LIST STYLES
 *********************/
@@ -1196,6 +1176,31 @@ LIST STYLES
   display: block;
   padding-left: 37px;
   color: #8f8f8f;
+}
+#popular-posts {
+  font-style: italic;
+  color: #ab362e;
+  line-height: 24px;
+  margin: 0  0 0 30px;
+  padding: 0;
+}
+#popular-posts li {
+  font-style: normal;
+  margin-top: 12px;
+}
+#popular-posts li a {
+  text-decoration: none;
+}
+#popular-posts li a h4 {
+  margin: 0;
+}
+#popular-posts li a h4 span {
+  color: #000000;
+}
+#popular-posts li a p {
+  color: #656565;
+  margin-top: -8px;
+  font-style: italic;
 }
 /*********************
 POSTS & CONTENT STYLES
@@ -1310,6 +1315,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  box-shadow: 0px 0px 0.5em #000000;
 }
 .post-content video,
 .post-content object {

@@ -519,30 +519,37 @@ a:active {
  * Addresses font sizes and margins set differently in IE6/7
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
+/** Not sure if I should have this in or out?
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-size: 2em;
+    margin: 0.67em 0;
 }
+
 h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
+    font-size: 1.5em;
+    margin: 0.83em 0;
 }
+
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
+    font-size: 1.17em;
+    margin: 1em 0;
 }
+
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
+    font-size: 1em;
+    margin: 1.33em 0;
 }
+
 h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
+    font-size: 0.83em;
+    margin: 1.67em 0;
 }
+
 h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0;
+    font-size: 0.75em;
+    margin: 2.33em 0;
 }
+**/
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
@@ -1308,6 +1315,10 @@ MENU STYLES
 #main-menu-dropdown {
   display: none;
 }
+.latest-carousel li {
+  float: left;
+  width: 50%;
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1486,13 +1497,68 @@ HEADER SYTLES
 /*********************
 NAVIGATION STYLES
 *********************/
-/** Deleted nav glass for now, should put back in once developing +768up **/
+.nav {
+  background: #eee;
+  border: 0;
+  /* end .menu ul li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.nav li {
+  /*
+		plan your menus and drop-downs wisely.
+		*/
+
+  /* showing sub-menus */
+
+}
+.nav li ul.sub-menu,
+.nav li ul.children {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  position: absolute;
+  display: none;
+  z-index: 8999;
+  /* highlight sub-menu current page */
+
+}
+.nav li ul.sub-menu li,
+.nav li ul.children li {
+  /*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+
+}
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  border-right: 0;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.nav li ul.sub-menu li:last-child a,
+.nav li ul.children li:last-child a {
+  border-bottom: 0;
+}
+.nav li:hover ul {
+  top: auto;
+  display: block;
+}
+/* end .nav */
 /*********************
 MENU STYLES
 *********************/
 #main-menu {
   width: auto;
   border-bottom: none;
+}
+.latest-carousel li {
+  width: 33.333333333333336%;
 }
 /*********************
 SIDEBARS & ASIDES

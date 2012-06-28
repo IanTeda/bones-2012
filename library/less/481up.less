@@ -38,21 +38,64 @@ HEADER SYTLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.nav {
-}
-
 /* .menu is clearfixed inside mixins.scss */
 .menu {
 } /* end .menu */
 
+.nav {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	li {
+		position: relative;
+		a {
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+		
+			}
+		}
+		&:first-child {}
+		&:last-child {}		
+		/** 
+		Plan your menus and drop-downs wisely. 
+		**/
+		ul.sub-menu,
+		ul.children {
+			/** Hide submenus for this screen size as more then likely touch screen **/
+			display: none; 
+		}
+				
+		/* showing sub-menus */
+		&:hover ul {
+			/** Hide submenus for this screen size as more then likely touch screen **/
+			display: none; 
+		}
+				
+	} /* end .menu ul li */
+			
+	/* highlight current page */
+	li.current-menu-item, 
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+	
+} /* end .nav */
+
 /*********************
 MENU STYLES
 *********************/
-#main-nav{
+#main-menu {
 	display: block;
 	float: right;
-	min-width: 481px - 80;
+	min-width: 433px;
+	width: 100%;
+	.underlined;
 	ul {
+		text-align: center;
 		li {
 			padding: 4px 0 0 0.5em;
 			display: inline;
@@ -63,7 +106,7 @@ MENU STYLES
 	}
 }
 
-#main-nav-dropdown {
+#main-menu-dropdown {
 	display: none;
 }
 

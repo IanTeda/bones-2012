@@ -595,6 +595,12 @@ span.amp {
   border-color: #deeaae;
   background: #e6efc2;
 }
+.underlined {
+  border-bottom: solid 1px #e4e4e4;
+}
+.overlined {
+  border-top: solid 1px #e4e4e4;
+}
 /*********************
 BORDER RADIUS
 *********************/
@@ -975,12 +981,6 @@ h5,
   line-height: 24px;
   font-weight: 400;
 }
-.underlined {
-  border-bottom: solid 1px #e4e4e4;
-}
-.overlined {
-  border-top: solid 1px #e4e4e4;
-}
 /*********************
 HEADER SYTLES
 *********************/
@@ -1035,16 +1035,16 @@ select {
 /*********************
 MENU STYLES
 *********************/
-#main-nav {
+#main-menu {
   /** Menu in Wordpress needs to named "Main Navigation" same as div **/
 
   display: none ;
   /** Hide for mobiles  **/
 }
-#main-nav-dropdown {
+#main-menu-dropdown {
   margin-top: 24px;
 }
-#main-nav-dropdown .dropdown {
+#main-menu-dropdown .dropdown {
   background-image: url(../images/ic_select_button.png);
   background-position: center right;
   background-repeat: no-repeat;

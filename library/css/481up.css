@@ -599,6 +599,12 @@ span.amp {
   border-color: #deeaae;
   background: #e6efc2;
 }
+.underlined {
+  border-bottom: solid 1px #e4e4e4;
+}
+.overlined {
+  border-top: solid 1px #e4e4e4;
+}
 /*********************
 BORDER RADIUS
 *********************/
@@ -776,22 +782,66 @@ NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */
 /* end .menu */
+.nav {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /* end .menu ul li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.nav li {
+  position: relative;
+  /** 
+		Plan your menus and drop-downs wisely. 
+		**/
+
+  /* showing sub-menus */
+
+}
+.nav li a {
+  /*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+
+}
+.nav li ul.sub-menu,
+.nav li ul.children {
+  /** Hide submenus for this screen size as more then likely touch screen **/
+
+  display: none;
+}
+.nav li:hover ul {
+  /** Hide submenus for this screen size as more then likely touch screen **/
+
+  display: none;
+}
+/* end .nav */
 /*********************
 MENU STYLES
 *********************/
-#main-nav {
+#main-menu {
   display: block;
   float: right;
-  min-width: 401px;
+  min-width: 433px;
+  width: 100%;
+  border-bottom: solid 1px #e4e4e4;
 }
-#main-nav ul li {
+#main-menu ul {
+  text-align: center;
+}
+#main-menu ul li {
   padding: 4px 0 0 0.5em;
   display: inline;
 }
-#main-nav ul li a {
+#main-menu ul li a {
   line-height: 48px;
 }
-#main-nav-dropdown {
+#main-menu-dropdown {
   display: none;
 }
 /*********************

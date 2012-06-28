@@ -215,7 +215,7 @@ MENUS & NAVIGATION
 *********************/	
  
 // the main menu 
-function bones_main_nav() {
+function main_menu() {
 	// display the wp3 menu if available
     wp_nav_menu(array( 
     	'container' => false,                           // remove nav container
@@ -232,7 +232,7 @@ function bones_main_nav() {
 	));
 } /* end bones main nav */
 
-function bones_main_nav_dropdown() {
+function main_menu_dropdown() {
 	// display the wp3 menu if available
     dropdown_menu(array( 								// function from asset /library/asset/dropdown-menus.php
     	'container' => false,                           // remove nav container
@@ -246,37 +246,16 @@ function bones_main_nav_dropdown() {
         'link_before' => '',                            // before each link
         'link_after' => '',                             // after each link
         'depth' => 0,                                   // limit the depth of the nav
-    	'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
+    	'fallback_cb' => 'main_nav_fallback'      // fallback function
 	));
 } /* end bones main nav */
 
-// the footer menu (should you choose to use one)
-function bones_footer_links() { 
-	// display the wp3 menu if available
-    wp_nav_menu(array( 
-    	'container' => '',                              // remove nav container
-    	'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
-    	'menu' => 'Footer Links',                       // nav name
-    	'menu_class' => 'nav footer-nav clearfix',      // adding custom nav class
-    	'theme_location' => 'footer-links',             // where it's located in the theme
-    	'before' => '',                                 // before the menu
-        'after' => '',                                  // after the menu
-        'link_before' => '',                            // before each link
-        'link_after' => '',                             // after each link
-        'depth' => 0,                                   // limit the depth of the nav
-    	'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-	));
-} /* end bones footer link */
  
 // this is the fallback for header menu
-function bones_main_nav_fallback() { 
+function main_nav_fallback() { 
 	wp_page_menu( 'show_home=Home' ); 
 }
 
-// this is the fallback for footer menu
-function bones_footer_links_fallback() { 
-	/* you can put a default here if you like */ 
-}
 
 /*********************
 RELATED POSTS FUNCTION

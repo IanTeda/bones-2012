@@ -38,15 +38,16 @@
 		<header class="header" role="banner">
 			<div id="inner-header" class="wrap clearfix">
 
-				<nav id="main-nav" role="navigation">
-					<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-				</nav>
-                    
 				<h1 class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow">Ian <span>Teda</span></a></h1>
+
+				<nav id="main-menu" role="navigation">
+					<?php main_menu(); // Adjust using Menus in Wordpress Admin ?>
+				</nav>
+
 			</div> <!-- end #inner-header -->
 		</header> <!-- end header -->
 			
-		<div id="main-nav-dropdown" class="wrap clearfix" role="navigation">
-			<?php bones_main_nav_dropdown(); // Adjust using Menus in Wordpress Admin ?>
+		<div id="main-menu-dropdown" class="wrap clearfix" role="navigation">
+			<?php main_menu_dropdown(); // Adjust using Menus in Wordpress Admin ?>
 		</div><!-- end main-nav-dropdown -->
 

@@ -1,7 +1,7 @@
 <?php get_header(); ?>		
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
-		<p class="description text-center"><?php bloginfo('description'); ?></p>
+		<p class="description text-center clearfix"><?php bloginfo('description'); ?></p>
 			
 		<div id="main" class="clearfix" role="main">
 			<h3 class="underlined clearfix">Latest Posts</h3>

@@ -593,6 +593,12 @@ span.amp {
   border-color: #deeaae;
   background: #e6efc2;
 }
+.underlined {
+  border-bottom: solid 1px #e4e4e4;
+}
+.overlined {
+  border-top: solid 1px #e4e4e4;
+}
 /*********************
 BORDER RADIUS
 *********************/
@@ -1434,6 +1440,12 @@ span.amp {
   border-color: #deeaae;
   background: #e6efc2;
 }
+.underlined {
+  border-bottom: solid 1px #e4e4e4;
+}
+.overlined {
+  border-top: solid 1px #e4e4e4;
+}
 /*********************
 BORDER RADIUS
 *********************/
@@ -1884,12 +1896,6 @@ h5,
   line-height: 24px;
   font-weight: 400;
 }
-.underlined {
-  border-bottom: solid 1px #e4e4e4;
-}
-.overlined {
-  border-top: solid 1px #e4e4e4;
-}
 /*********************
 HEADER SYTLES
 *********************/
@@ -1944,16 +1950,16 @@ select {
 /*********************
 MENU STYLES
 *********************/
-#main-nav {
+#main-menu {
   /** Menu in Wordpress needs to named "Main Navigation" same as div **/
 
   display: none ;
   /** Hide for mobiles  **/
 }
-#main-nav-dropdown {
+#main-menu-dropdown {
   margin-top: 24px;
 }
-#main-nav-dropdown .dropdown {
+#main-menu-dropdown .dropdown {
   background-image: url(../images/ic_select_button.png);
   background-position: center right;
   background-repeat: no-repeat;
@@ -2239,6 +2245,7 @@ POSTS & CONTENT STYLES
   line-height: 24px;
   padding: 12px 0;
   border-bottom: solid 1px #e4e4e4;
+  border-bottom: solid 1px #e4e4e4;
 }
 .category-photo .post-content {
   text-align: center;
@@ -2266,6 +2273,7 @@ POSTS & CONTENT STYLES
 .post-content {
   margin-top: 24px;
   padding-bottom: 24px;
+  border-bottom: solid 1px #e4e4e4;
   border-bottom: solid 1px #e4e4e4;
   /*
 	image alignment on a screen this size may be
@@ -2321,6 +2329,7 @@ POSTS & CONTENT STYLES
 PAGE NAVI STYLES
 ******************************************************************/
 .subpage-navigation {
+  border-bottom: solid 1px #e4e4e4;
   border-bottom: solid 1px #e4e4e4;
   margin: 0;
   padding: 0;
@@ -2601,6 +2610,7 @@ SIDEBARS & ASIDES
 ARCHIVE STYLES
 *********************/
 .archive-year {
+  border-top: solid 1px #e4e4e4;
   border-top: solid 1px #e4e4e4;
   margin: 24px 0 0 0;
 }
@@ -3280,6 +3290,12 @@ tweeners.
     border-color: #deeaae;
     background: #e6efc2;
   }
+  .underlined {
+    border-bottom: solid 1px #e4e4e4;
+  }
+  .overlined {
+    border-top: solid 1px #e4e4e4;
+  }
   /*********************
   BORDER RADIUS
   *********************/
@@ -3457,22 +3473,66 @@ tweeners.
   *********************/
   /* .menu is clearfixed inside mixins.scss */
   /* end .menu */
+  .nav {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    /* end .menu ul li */
+  
+    /* highlight current page */
+  
+    /* end current highlighters */
+  
+  }
+  .nav li {
+    position: relative;
+    /** 
+  		Plan your menus and drop-downs wisely. 
+  		**/
+  
+    /* showing sub-menus */
+  
+  }
+  .nav li a {
+    /*
+  			you can use hover styles here even though this size
+  			has the possibility of being a mobile device.
+  			*/
+  
+  }
+  .nav li ul.sub-menu,
+  .nav li ul.children {
+    /** Hide submenus for this screen size as more then likely touch screen **/
+  
+    display: none;
+  }
+  .nav li:hover ul {
+    /** Hide submenus for this screen size as more then likely touch screen **/
+  
+    display: none;
+  }
+  /* end .nav */
   /*********************
   MENU STYLES
   *********************/
-  #main-nav {
+  #main-menu {
     display: block;
     float: right;
-    min-width: 401px;
+    min-width: 433px;
+    width: 100%;
+    border-bottom: solid 1px #e4e4e4;
   }
-  #main-nav ul li {
+  #main-menu ul {
+    text-align: center;
+  }
+  #main-menu ul li {
     padding: 4px 0 0 0.5em;
     display: inline;
   }
-  #main-nav ul li a {
+  #main-menu ul li a {
     line-height: 48px;
   }
-  #main-nav-dropdown {
+  #main-menu-dropdown {
     display: none;
   }
   /*********************
@@ -3663,75 +3723,14 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  .nav {
-    background: #eee;
-    border: 0;
-    /* end .menu ul li */
-  
-    /* highlight current page */
-  
-    /* end current highlighters */
-  
+  /** Deleted nav glass for now, should put back in once developing +768up **/
+  /*********************
+  MENU STYLES
+  *********************/
+  #main-menu {
+    width: auto;
+    border-bottom: none;
   }
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-  		plan your menus and drop-downs wisely.
-  		*/
-  
-    /* showing sub-menus */
-  
-  }
-  .nav li a {
-    border-bottom: 0;
-    /*
-  			you can use hover styles here even though this size
-  			has the possibility of being a mobile device.
-  			*/
-  
-  }
-  .nav li a:hover,
-  .nav li a:focus {
-    background-color: #dedede;
-  }
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    width: 200px;
-    border: 1px solid #ccc;
-    border-top: 0;
-    position: absolute;
-    display: none;
-    z-index: 8999;
-    /* highlight sub-menu current page */
-  
-  }
-  .nav li ul.sub-menu li,
-  .nav li ul.children li {
-    /*
-  				if you need to go deeper, go nuts
-  				just remember deeper menus suck
-  				for usability. k, bai.
-  				*/
-  
-  }
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
-    display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
-  }
-  .nav li ul.sub-menu li:last-child a,
-  .nav li ul.children li:last-child a {
-    border-bottom: 0;
-  }
-  .nav li:hover ul {
-    top: auto;
-    display: block;
-  }
-  /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/

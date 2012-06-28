@@ -313,12 +313,12 @@ BUTTONS
 *********************/
 
 .button, .button:visited {
-	@buttonColor: @turquesa;
+	@buttonColor: @greyLight;
 	border: 1px solid darken(@buttonColor, 13%);
 	border-top-color: darken(@buttonColor, 7%);
 	border-left-color: darken(@buttonColor, 7%);
 	padding: 4px 12px;
-	color: @white;
+	color: @black;
 	display: inline-block;
 	font-size: 11px;
 	font-weight: bold;
@@ -327,7 +327,7 @@ BUTTONS
 	margin-bottom: 20px;
 	line-height: 21px;
 	.transition();
-	.rounded(4px);
+	.rounded(2px);
 	.css-gradient(@buttonColor,darken(@buttonColor, 1%));
 
 	&:hover, &:focus {

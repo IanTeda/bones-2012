@@ -1,69 +1,45 @@
+<!-- archive.php -->
 <?php get_header(); ?>
-			
-			<div id="content">
-			
-				<div id="inner-content" class="wrap clearfix">
-				
-				    <div id="main" class="eightcol first clearfix" role="main">
-				
-					    <?php if (is_category()) { ?>
-						    <h1 class="archive-title h2">
-							    <span><?php _e("Posts Categorized:", "bonestheme"); ?></span> <?php single_cat_title(); ?>
-					    	</h1>
-					    
+<div id="content">
+	<div id="inner-content" class="wrap clearfix">
+		<div id="main" class="clearfix" role="main">
+			<?php $year = ''; ?>
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						
+				<?php // Lets show the year but only once ?>				
+				<?php if (get_the_time('Y') != $year): ?>
+					<?php $year = get_the_time('Y'); ?>
+					<h3 class="archive-year">
+					
+						<?php if (is_category()) { ?>
+							<?php single_cat_title(); ?> Category
 					    <?php } elseif (is_tag()) { ?> 
-						    <h1 class="archive-title h2">
-							    <span><?php _e("Posts Tagged:", "bonestheme"); ?></span> <?php single_tag_title(); ?>
-						    </h1>
-					    
-					    <?php } elseif (is_author()) { ?>
-						    <h1 class="archive-title h2">
-						    	<span><?php _e("Posts By:", "bonestheme"); ?></span> <?php get_the_author_meta('display_name'); ?>
-						    </h1>
-					    
-					    <?php } elseif (is_day()) { ?>
-						    <h1 class="archive-title h2">
-	    						<span><?php _e("Daily Archives:", "bonestheme"); ?></span> <?php the_time('l, F j, Y'); ?>
-						    </h1>
-		
-		    			<?php } elseif (is_month()) { ?>
-			    		    <h1 class="archive-title h2">
-				    	    	<span><?php _e("Monthly Archives:", "bonestheme"); ?></span> <?php the_time('F Y'); ?>
-					        </h1>
-					
-					    <?php } elseif (is_year()) { ?>
-					        <h1 class="archive-title h2">
-					    	    <span><?php _e("Yearly Archives:", "bonestheme"); ?></span> <?php the_time('Y'); ?>
-					        </h1>
+							<?php single_tag_title(''); ?> Tag
+						<?php } elseif (is_author()) { ?>
+							<?php get_the_author_meta('display_name'); ?> Author
+						<?php } elseif (is_day()) { ?>
+							<?php the_time('l, F j, Y'); ?>
+						<?php } elseif (is_month()) { ?>
+							<?php the_time('F Y'); ?>
 					    <?php } ?>
-
-					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+									
+						<?php echo $year; ?>
+					</h3>
+				<?php endif; ?>
 						
-						    <header class="article-header">
-							
-							    <h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-							
-							    <p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
-						
-						    </header> <!-- end article header -->
+				<div class="post-<?php the_ID(); ?> archive-post">
+					<h4>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+							<?php the_title(); ?>
+						</a>
+					</h4>
+					<?php if (!is_tag()) { ?> 
+						<?php the_tags('<span class="post-tags">', ' ', '</span>'); ?>
+					<?php } ?>
+					<p>Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
+				</div>
 					
-						    <section class="post-content clearfix">
-						
-							    <?php the_post_thumbnail( 'bones-thumb-300' ); ?>
-						
-							    <?php the_excerpt(); ?>
-					
-						    </section> <!-- end article section -->
-						
-						    <footer class="article-footer">
-							
-						    </footer> <!-- end article footer -->
-					
-					    </article> <!-- end article -->
-					
-					    <?php endwhile; ?>	
+		    <?php endwhile; ?>	
 					
 					        <?php if (function_exists('bones_page_navi')) { // if experimental feature is active ?>
 						

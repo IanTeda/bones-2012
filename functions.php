@@ -248,4 +248,33 @@ function get_custom_excerpt($postid){
 	}	
 }
 
+//breadcrumb function
+function rm_bread_crumbs() {
+	 global $post;
+	
+	 //if the page has a parent add title and link of parent
+	 if($post->post_parent) {
+	 	$crumbs .= '<a href="'.get_permalink($post->post_parent).'">'.get_the_title($post->post_parent).'</a>';
+	 }
+	
+	 // if it's not the front page of the site, but isn't the blog either
+	 if((!is_front_page()) && (is_page())) {
+	 	$crumbs .= ' &raquo; '.get_the_title($post->ID);
+	 }
+	
+	 //if it's the news/blog home page or any type of archive
+	 if((is_home() ||(is_archive()))) {
+	 	$crumbs .= ' &raquo; '.get_the_title(get_option(page_for_posts));
+	 }
+	
+	 //if it's a single news/blog post
+	 if(is_single()) {
+	 	$crumbs .= ' &raquo; <a href="'.get_permalink(get_option(page_for_posts)).'">'.get_the_title(get_option(page_for_posts)).'</a>';
+	 	$crumbs .= ' &raquo; '.get_the_title($post->ID);
+	 }
+	 
+	 $crumbs .=    '</p>'."\n";
+	 echo $crumbs;
+}
+
 ?>

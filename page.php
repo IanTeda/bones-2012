@@ -8,16 +8,16 @@
 					<header class="post-header">
 						<?php feature_image_1140x336(); ?>
 						<h3 class="underlined clearfix">
-							<?php the_title(); ?>
-						</h3>       
-						<ul class="subpage-navigation">
-							<li>
-								<a href="#">Social</a>
-							</li>
-							<li>
-								<a href="#">Site</a>
-							</li>
-						</ul>
+							<?php rm_bread_crumbs(); ?>
+						</h3>
+						
+						<?php $children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');?>
+						<?php if ($children) { ?>
+							<ul class="subpage-navigation">
+								<?php echo $children; ?>
+							</ul>
+						<?php } ?>
+						
 					</header> <!-- end article header -->
 					
 						    <section class="post-content clearfix" itemprop="articleBody">

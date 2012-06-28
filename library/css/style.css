@@ -2000,10 +2000,9 @@ JCAROUSEL STYLES
 .latest-carousel li a {
   width: 220px;
   padding-top: 24px;
+  margin: 0 auto;
 }
 .latest-carousel li a img {
-  width: 220px;
-  margin: 0 auto;
   display: block;
 }
 .latest-carousel li a span {
@@ -2027,6 +2026,7 @@ LIST STYLES
 .image-matrix li {
   float: left;
   width: 33.333333333333336%;
+  margin-top: 24px;
 }
 .image-matrix li a {
   display: block;

@@ -254,23 +254,23 @@ function rm_bread_crumbs() {
 	
 	 //if the page has a parent add title and link of parent
 	 if($post->post_parent) {
-	 	$crumbs .= '<a href="'.get_permalink($post->post_parent).'">'.get_the_title($post->post_parent).'</a>';
+	 	$crumbs .= '<a href="'.get_permalink($post->post_parent).'">'.get_the_title($post->post_parent).'</a>'.' &raquo; ';
 	 }
 	
 	 // if it's not the front page of the site, but isn't the blog either
 	 if((!is_front_page()) && (is_page())) {
-	 	$crumbs .= ' &raquo; '.get_the_title($post->ID);
+	 	$crumbs .= get_the_title($post->ID);
 	 }
 	
 	 //if it's the news/blog home page or any type of archive
 	 if((is_home() ||(is_archive()))) {
-	 	$crumbs .= ' &raquo; '.get_the_title(get_option(page_for_posts));
+	 	$crumbs .= ' &raquo; 2 '.get_the_title(get_option(page_for_posts));
 	 }
 	
 	 //if it's a single news/blog post
 	 if(is_single()) {
-	 	$crumbs .= ' &raquo; <a href="'.get_permalink(get_option(page_for_posts)).'">'.get_the_title(get_option(page_for_posts)).'</a>';
-	 	$crumbs .= ' &raquo; '.get_the_title($post->ID);
+	 	$crumbs .= ' &raquo; 3 <a href="'.get_permalink(get_option(page_for_posts)).'">'.get_the_title(get_option(page_for_posts)).'</a>';
+	 	$crumbs .= ' &raquo; 4 '.get_the_title($post->ID);
 	 }
 	 
 	 $crumbs .=    '</p>'."\n";

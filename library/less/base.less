@@ -154,6 +154,7 @@ LINK STYLES
 
 a, a:visited { 
 	color: @turquesa;
+	text-decoration: none;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -186,6 +187,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-transform: uppercase;
 	font-weight: normal; 
 	vertical-align: text-bottom;
+	margin: @vertSpacing 0 0 0;
 	/* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -678,6 +680,23 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
+.subpage-navigation {
+	.underlined;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+	text-align: center;
+	li {
+		display: inline;
+		padding: 0 12px;
+		a {
+			text-decoration: none;
+			line-height: @vertSpacing * 2;
+		}
+	}
+}
+
 .page-navigation, 
 .wp-prev-next { 
 	margin: 1.1em 0 2.2em; 

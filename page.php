@@ -1,22 +1,24 @@
 <?php get_header(); ?>
-			
-			<div id="content">
-			
-				<div id="inner-content" class="wrap clearfix">
-			
-				    <div id="main" class="eightcol first clearfix" role="main">
+<div id="content">
+	<div id="inner-content" class="wrap clearfix">
+		<div id="main" class="clearfix" role="main">
 
-					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						
-						    <header class="article-header">
-							
-							    <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-							
-							    <p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?>.</p>
-						
-						    </header> <!-- end article header -->
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+					<header class="post-header">
+						<?php feature_image_1140x336(); ?>
+						<h3 class="underlined clearfix">
+							<?php the_title(); ?>
+						</h3>       
+						<ul class="subpage-navigation">
+							<li>
+								<a href="#">Social</a>
+							</li>
+							<li>
+								<a href="#">Site</a>
+							</li>
+						</ul>
+					</header> <!-- end article header -->
 					
 						    <section class="post-content clearfix" itemprop="articleBody">
 							    <?php the_content(); ?>
@@ -52,7 +54,7 @@
 			
     				</div> <!-- end #main -->
     
-				    <?php get_sidebar(); // sidebar 1 ?>
+				    <?php //get_sidebar(); // sidebar 1 ?>
 				    
 				</div> <!-- end #inner-content -->
     

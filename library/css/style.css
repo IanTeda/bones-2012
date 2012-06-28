@@ -1794,6 +1794,7 @@ LINK STYLES
 a,
 a:visited {
   color: #25706b;
+  text-decoration: none;
   /* on hover */
 
   /* on click */
@@ -1835,6 +1836,7 @@ h5,
   text-transform: uppercase;
   font-weight: normal;
   vertical-align: text-bottom;
+  margin: 24px 0 0 0;
   /* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -2353,6 +2355,22 @@ POSTS & CONTENT STYLES
 /* gallery caption styles *//******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
+.subpage-navigation {
+  border-bottom: solid 1px #e4e4e4;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+}
+.subpage-navigation li {
+  display: inline;
+  padding: 0 12px;
+}
+.subpage-navigation li a {
+  text-decoration: none;
+  line-height: 48px;
+}
 .page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;

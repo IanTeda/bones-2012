@@ -15,6 +15,15 @@ upon your base.scss styles.
 
 ******************************************************************/
 
+/*********************
+IMPORTING STYLES
+*********************/
+/** Had to put imports in to compile less without erros **/
+/* import reset */
+@import "normalize.less";
+/* import mixins */
+@import "mixins.less";
+
 
 /*********************
 HEADER SYTLES
@@ -23,66 +32,41 @@ HEADER SYTLES
 .header {
 }
 
-#menu-main-navigation {
-	display: none; /** Still working on this one  **/
-}
-
-#header-dropdown-menu {
-	/** display: none;  Hide for above mobiles  **/
-}
-
 #logo {}
 
 	
 /*********************
 NAVIGATION STYLES
 *********************/
+.nav {
+}
 
-.nav {}
+/* .menu is clearfixed inside mixins.scss */
+.menu {
+} /* end .menu */
 
-	/* .menu is clearfixed inside mixins.scss */
-	.menu {
-		ul {
-			li {
-				a {
-					
-					/*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/
-					&:hover, &:focus {
-					
-					}
-				}
-				
-				&:first-child {}
-				&:last-child {}
-				
-				/*
-				plan your menus and drop-downs wisely.
-				*/
-				ul.sub-menu,
-				ul.children {
-					li {
-						a {
-							&:hover,
-							&:focus {}
-							&:link {}
-						}
-						&:first-child {}
-						&:last-child {}
-					}
-				}
-			} /* end .menu ul li */
-			
-			/* highlight current page */
-			li.current-menu-item, 
-			li.current_page_item,
-			li.current-page-ancestor {
-				a {}
-			}  /* end current highlighters */
-		} /* end .menu ul */
-	} /* end .menu */
+/*********************
+MENU STYLES
+*********************/
+#main-nav{
+	display: block;
+	float: right;
+	min-width: 481px - 80;
+	ul {
+		li {
+			padding: 4px 0 0 0.5em;
+			display: inline;
+			 a {
+				line-height: (@vertSpacing * 2);
+			 }
+		}
+	}
+}
+
+#main-nav-dropdown {
+	display: none;
+}
+
 
 /*********************
 POSTS & CONTENT STYLES
@@ -90,8 +74,6 @@ POSTS & CONTENT STYLES
 
 /* post content */
 .post-content {
-			
-	
 	/* at this larger size, we can start to align images */
 	.alignleft, img.alignleft { 
 		margin-right: 1.5em; 

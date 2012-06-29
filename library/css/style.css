@@ -4599,8 +4599,8 @@ you can add resource intensive styles.
   SLIDER STYLES
   ***************************/
   .flexslider {
-    margin-top: 24px;
     width: 80%;
+    text-align: center;
   }
   /*********************
   SIDEBARS & ASIDES

@@ -5,16 +5,17 @@
 			
 		<div id="main" class="clearfix" role="main">
 		
-			<div class="flexslider">
-				<ul class="slides">
-                	<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
-					<?php while($featured->have_posts()) : $featured->the_post();?>
-						<li><?php feature_image_1140x336(); ?></li>
-					<?php endwhile; ?>
-                </ul>
- 			</div><!-- end slider-container -->
-		
-		
+        	<div class="flex-container">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
+                        <?php while($featured->have_posts()) : $featured->the_post();?>
+                            <li><a href="<?php the_permalink() ?>"><?php feature_image_1140x336(); ?></a></li>
+                            <p class="flex-caption">This is the caption</p>
+                        <?php endwhile; ?>
+                    </ul>
+                </div><!-- end flexslider -->
+            </div><!-- end flex-container -->
 		
 			<div id="latest-posts-container" class="clearfix">
 				<h3 class="underlined">Latest Posts</h3>

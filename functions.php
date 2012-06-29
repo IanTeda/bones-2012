@@ -239,9 +239,12 @@ function load_slider(){
 	wp_register_script( 'flexslider', get_template_directory_uri() . '/library/js/libs/jquery.flexslider.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'flexslider' ); ?>
 	
-	<script type="text/javascript">
+	<script type="text/javascript" charset="utf-8">
 		jQuery(window).load(function() {
-    		jQuery('.flexslider').flexslider();
+    		jQuery('.flexslider').flexslider({
+				animation: "fade",
+		        controlsContainer: ".flex-container"	
+			});
 		});
 	</script>
 	
@@ -256,9 +259,9 @@ Excerpt function
 function get_custom_excerpt($postid){
 	if(has_excerpt($postid)) {
 		//This post have an excerpt, let's display it
-		the_excerpt();
+		the_excerpt($postid);
 	} else {
-		echo '<p>There are no excerpt for this post.</p>';
+		echo 'There is no excerpt for this post.';
 	}	
 }
 

@@ -4,6 +4,21 @@
 		<p class="description text-center clearfix"><?php bloginfo('description'); ?></p>
 			
 		<div id="main" class="clearfix" role="main">
+		
+			<div id="slider-container">
+				<div id="slider" class="nivoSlider">
+					<?php $featured = new WP_Query("category_name=featured&showposts=5"); 
+							while($featured->have_posts()) : $featured->the_post();?>
+									<a href="<?php the_permalink() ?>">
+										<?php feature_image_1140x336(); ?>
+									</a>
+							<?php endwhile; 
+						?>
+				</div><!-- end slider -->
+			</div><!-- end slider-container -->
+		
+		
+		
 			<div id="latest-posts-container">
 				<h3 class="underlined clearfix">Latest Posts</h3>
 			    <ul class="liquid-matrix latest-post-list">
@@ -100,5 +115,6 @@
 </div> <!-- end #content -->
 
 <?php load_lastfm(); ?>
+<?php load_nivo_slider(); ?>
 
 <?php get_footer(); ?>

@@ -235,6 +235,17 @@ function load_fitvids(){
 	</script><?php
 }
 
+function load_nivo_slider(){
+	wp_register_script( 'nivo-slider', get_template_directory_uri() . '/library/js/libs/jquery.nivo.slider.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'nivo-slider' ); ?>
+	
+	<script type="text/javascript">
+		$(window).load(function() {
+    		$('#slider').nivoSlider();
+		});
+	</script><?php
+}
+
 /***************************************
 Excerpt function
 ****************************************/

@@ -2619,6 +2619,23 @@ MENU STYLES
   width: auto;
   border-bottom: none;
 }
+/***************************
+NIVO SLIDER STYLES
+***************************/
+.nivoSlider {
+  position: relative;
+  background: url(../images/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.nivoSlider a {
+  border: 0;
+  display: block;
+}
 /*********************
 SIDEBARS & ASIDES
 *********************/

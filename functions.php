@@ -235,32 +235,18 @@ function load_fitvids(){
 	</script><?php
 }
 
-function load_nivo_slider(){
-	wp_register_script( 'nivo-slider', get_template_directory_uri() . '/library/js/libs/jquery.nivo.slider.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'nivo-slider' ); ?>
+function load_slider(){
+	wp_register_script( 'flexslider', get_template_directory_uri() . '/library/js/libs/jquery.flexslider.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'flexslider' ); ?>
 	
 	<script type="text/javascript">
 		jQuery(window).load(function() {
-    		jQuery('#slider').nivoSlider({
-				effect: 'slideInLeft', 			// Specify sets like: 'fold,fade,sliceDown'
-				slices: 15, 				// For slice animations
-		        boxCols: 8, 				// For box animations
-		        boxRows: 4, 				// For box animations
-		        animSpeed: 500, 			// Slide transition speed
-		        pauseTime: 3000, 			// How long each slide will show
-		        startSlide: 0, 				// Set starting Slide (0 index)
-		        directionNav: true, 		// Next & Prev navigation
-		        directionNavHide: true, 	// Only show on hover
-		        controlNav: true, 			// 1,2,3... navigation
-		        controlNavThumbs: false, 	// Use thumbnails for Control Nav
-		        pauseOnHover: true, 		// Stop animation while hovering
-		        manualAdvance: false, 		// Force manual transitions
-		        prevText: 'Prev', 			// Prev directionNav text
-		        nextText: 'Next', 			// Next directionNav text
-        		randomStart: false, 		// Start on a random slide	
-			});
+    		jQuery('.flexslider').flexslider();
 		});
-	</script><?php
+	</script>
+	
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/js/libs/flexslider.css" type="text/css">
+	<?php
 }
 
 /***************************************

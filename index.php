@@ -4,8 +4,9 @@
 		<p class="description text-center clearfix"><?php bloginfo('description'); ?></p>
 			
 		<div id="main" class="clearfix" role="main">
-			<h3 class="underlined clearfix">Latest Posts</h3>
-			    <ul id="mycarousel" class="carousel latest-carousel">
+			<div id="latest-posts-container">
+				<h3 class="underlined clearfix">Latest Posts</h3>
+			    <ul class="liquid-matrix latest-post-list">
 					<?php $summary = new WP_query('showposts=6'); //Only the latest 3 posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
                     	<li class="clearfix">
@@ -19,6 +20,7 @@
 						</li><!-- end post li -->
 					<?php endwhile; ?>	
 				</ul>
+			</div>
 					
 				<?php else : ?>
 					<article id="post-not-found" class="hentry clearfix">
@@ -38,9 +40,9 @@
 			</div> <!-- end #main -->
     
 			<?php //get_sidebar(); // sidebar 1 ?>
-            
-			<h3 class="underlined clearfix">Popular Posts</h3>
-			    <ol id="popular-posts" class="numbered-list">
+            <div id="popular-posts-container">
+				<h3 class="underlined clearfix">Popular Posts</h3>
+			    <ol id="popular-posts" class="liquid-matrix numbered-list">
             		<li>
                     	<a href="#">
                             <h4><span>Blog: </span>This is a blog post</h4>
@@ -59,16 +61,35 @@
 							<p>Posted by ian &bull; Tue, 19 June 12</p>
                         </a>
                     </li>
+					<li>
+                    	<a href="#">
+                            <h4><span>Video: </span>Delta Force Paint Ball</h4>
+							<p>Posted by ian &bull; Tue, 19 June 12</p>
+                        </a>
+                    </li>
+					<li>
+                    	<a href="#">
+                            <h4><span>Trail: </span>Check out this trail</h4>
+							<p>Posted by ian &bull; Tue, 19 June 12</p>
+                        </a>
+                    </li>
+					<li>
+                    	<a href="#">
+                            <h4><span>Misc: </span>This is a blog post</h4>
+							<p>Posted by ian &bull; Tue, 19 June 12</p>
+                        </a>
+                    </li>
             	</ol>
+			</div>
 				
-			<div id="lastfm" class="clearfix">
+			<div id="lastfm-container" class="clearfix">
 				<h3 class="underlined">Album Chart</h3>
 				<div id="lastfmrecords">
 				</div>
 			</div><!-- End of lastfm list -->
 			
 
-			<div id="goodreads" class=" clearfix">
+			<div id="goodreads-container" class=" clearfix">
 				<h3 class="underlined">Bookself</h3>
 				<ul class="image-matrix">
 					<?php if(function_exists('bookshelf')) { bookshelf(); } ?>

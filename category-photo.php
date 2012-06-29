@@ -5,7 +5,7 @@
 		<div id="main" class="clearfix" role="main">
 		
 			<div id="photo-archive">
-				<ul class="photo-archive-list clearfix carousel">
+				<ul class="liquid-matrix photo-archive-list clearfix">
 					<?php $year = ''; ?>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -14,7 +14,7 @@
 							<?php $year = get_the_time('Y'); ?>
 				</ul>
 							<h3 class="archive-year clearfix"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
-				<ul class="photo-archive-list clearfix carousel">
+				<ul class="liquid-matrix  photo-archive-list clearfix">
 						<?php endif; ?>
 						
 						<li class="post-<?php the_ID(); ?> photo-archive-post clearfix">

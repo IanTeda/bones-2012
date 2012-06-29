@@ -12,6 +12,14 @@ come into play. Have fun!
 
 ******************************************************************/
 
+/*********************
+IMPORTING STYLES
+*********************/
+/** Had to put imports in to compile less without erros **/
+/* import reset */
+@import "normalize.less";
+/* import mixins */
+@import "mixins.less";
 
 /*********************
 GENERAL STYLES
@@ -66,6 +74,13 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	max-width: 1140px;
+}
+
+.liquid-matrix {
+	li {
+		float: left;
+		width: 100% / 3;
+	}
 }
 	/*
 		This is a combination of the 1140 grid and Twitter Boostrap.
@@ -189,18 +204,21 @@ NAVIGATION STYLES
 	
 } /* end .nav */
 
+
+.social-list {
+	margin: 0;
+	li {
+		float: left;
+		width: 35px;
+	}	
+}
+
 /*********************
 MENU STYLES
 *********************/
 #main-menu {
 	width:auto;	
 	border-bottom: none;
-}
-
-.latest-carousel {
-	li {
-		width: 100% / 3;
-	}
 }
 
 /*********************
@@ -329,6 +347,17 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
+.copyright {
+	float: left;
+	margin-top: 2px;
+}
+
+#social-list-container {
+	margin-top: @vertSpacing / 2;
+	float: right;
+	width: 247px;
+}
+
 
 /*
 you'll probably need to do quite a bit

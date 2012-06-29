@@ -1,10 +1,10 @@
 			<footer class="footer" role="contentinfo">
 				<div id="inner-footer" class="wrap clearfix">
-					<h4>
+					<h3 class="copyright">
 						<a href="<?php bloginfo('url'); ?>/wp-admin">www.teda.id.au</a> is powered by <a href="http://wordpress.org/">Wordpress</a>
-					</h4>
-					<div id="social-list">
-						<ul>
+					</h3>
+					<div id="social-list-container">
+						<ul class="social-list">
 							<li>
 								<a href="https://www.facebook.com/ian.teda">
 									<img class="footer-icon" src="<?php echo get_template_directory_uri(); ?>/library/images/ic_facebook.png">

@@ -850,6 +850,19 @@ article {
 article a img {
   margin-bottom: 12px;
 }
+.liquid-matrix {
+  margin: 24px 0 0 0;
+  padding: 0;
+}
+.liquid-matrix li {
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+}
+.liquid-matrix li a {
+  text-decoration: none;
+  display: block;
+}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -1069,41 +1082,24 @@ MENU STYLES
   width: 100%;
 }
 /*********************
-JCAROUSEL STYLES
+LIST STYLES
 *********************/
-.carousel {
-  margin: 24px 0 0 0;
-  padding: 0;
-  list-style: none;
-}
-.carousel li {
-  width: 300px;
-  margin: 0 auto;
-  display: block;
-}
-.carousel li a {
-  text-decoration: none;
-  display: block;
-  border-bottom: solid 1px #e4e4e4;
-}
-.latest-carousel li a {
+.latest-post-list li a {
   width: 220px;
   padding-top: 24px;
   margin: 0 auto;
+  border-bottom: solid 1px #e4e4e4;
 }
-.latest-carousel li a img {
+.latest-post-list li a img {
   display: block;
 }
-.latest-carousel li a span {
+.latest-post-list li a span {
   display: block;
   padding-bottom: 20px;
   margin-top: -5px;
   font-style: italic;
   color: #8f8f8f;
 }
-/*********************
-LIST STYLES
-*********************/
 .image-matrix {
   padding: 0;
   list-style: none;
@@ -1135,19 +1131,17 @@ LIST STYLES
 .photo-archive-list li a img {
   display: block;
 }
-#social-list ul {
+.social-list {
   padding: 0;
   list-style: none;
   margin: 0 auto;
   width: 300px;
-  /** Might make this a fixed width??? **/
-
 }
-#social-list ul li {
+.social-list li {
   float: left;
   width: 14.285714285714286%;
 }
-#social-list ul li a {
+.social-list li a {
   display: block;
   text-align: center;
   /** Not sure if this will center image across all browsers**/
@@ -1175,27 +1169,26 @@ LIST STYLES
   padding-left: 37px;
   color: #8f8f8f;
 }
-#popular-posts {
+.numbered-list {
   font-style: italic;
   color: #ab362e;
   line-height: 24px;
-  margin: 0  0 0 30px;
+  margin: 0 0 0 25px;
+  /** Pad in the numbers **/
+
   padding: 0;
 }
-#popular-posts li {
+.numbered-list li {
+  display: list-item;
   font-style: normal;
-  margin-top: 12px;
 }
-#popular-posts li a {
-  text-decoration: none;
-}
-#popular-posts li a h4 {
+.numbered-list li a h4 {
   margin: 0;
 }
-#popular-posts li a h4 span {
+.numbered-list li a h4 span {
   color: #000000;
 }
-#popular-posts li a p {
+.numbered-list li a p {
   color: #656565;
   margin-top: -8px;
   font-style: italic;
@@ -1659,14 +1652,14 @@ FOOTER STYLES
   color: #656565;
   border-top: 1px solid #ab362e;
 }
-.footer h4 {
+.copyright {
   font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0;
-  line-height: 36px;
+  line-height: 48px;
   text-align: center;
 }
-.footer h4 a {
+.copyright a {
   color: #000000;
 }
 /*

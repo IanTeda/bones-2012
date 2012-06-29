@@ -785,8 +785,15 @@ BUTTONS
 HEADER SYTLES
 *********************/
 /*********************
-NAVIGATION STYLES
+LAYOUT & GRID STYLES
 *********************/
+.liquid-matrix li {
+  float: left;
+  width: 50%;
+}
+/**************************
+NAVIGATION AND LIST STYLES
+**************************/
 /* .menu is clearfixed inside mixins.scss */
 /* end .menu */
 .nav {

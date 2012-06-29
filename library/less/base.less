@@ -141,6 +141,16 @@ IMAGE STYLES
 	padding: 1px;
 }
 
+/** Add transparent caption to image **/
+.caption {
+    position:absolute;
+	padding:0.25em;
+	top:1em; left:0; right:0;
+	color: @white;
+	background-color:rgba(0,0,0,0.3);
+	text-align:center;	
+}
+
 /* Resize image to suit screen size */
 .resizeable {
 	display: block;
@@ -364,6 +374,24 @@ LIST STYLES
 		a {
 			display: block;
 			text-align: center; /** Not sure if this will center image across all browsers**/
+		}
+	}
+}
+
+.archive-year {
+	.overlined;
+	margin: @vertSpacing 0 0 0;
+}
+
+.photo-archive-list{
+	li {
+		a {
+			width: 220px;
+			padding-top: @vertSpacing;
+			margin: 0 auto;
+			img {
+				display: block;
+			}
 		}
 	}
 }
@@ -1027,11 +1055,6 @@ SIDEBARS & ASIDES
 ARCHIVE STYLES
 *********************/
 
-.archive-year {
-	.overlined;
-	margin: @vertSpacing 0 0 0;
-}
-
 .blog-archive-post,
 .archive-post {
 	margin: @vertSpacing 0 0 0;
@@ -1047,23 +1070,13 @@ ARCHIVE STYLES
 	}
 }
 
-.photo-archive-post {
+#photo-archive-post-container {
 	position : relative;
     max-width : 220px;
-    margin: @vertSpacing auto 0 auto;
-	img  {
-		.image-box-shadow;
-		width:100%;
-	}
-	.caption {
-	    position:absolute;
-		padding:0.25em;
-		top:1em; left:0; right:0;
-		color: @white;
-		background-color:rgba(0,0,0,0.2);
-		text-align:center;	
-	}
+	margin: 0 auto;
 }
+
+
 
 /*********************
 FOOTER STYLES

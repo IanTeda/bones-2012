@@ -251,10 +251,10 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
+  margin: 0;
 }
 dd {
-  margin: 0 0 0 40px;
+  margin: 0;
 }
 /*
  * Addresses paddings set differently in IE6/7
@@ -262,7 +262,7 @@ dd {
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px;
+  padding: 0;
 }
 /*
  * Corrects list images handled incorrectly in IE7
@@ -886,6 +886,17 @@ IMAGE STYLES
   height: 24px;
   padding: 1px;
 }
+/** Add transparent caption to image **/
+.caption {
+  position: absolute;
+  padding: 0.25em;
+  top: 1em;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
 /* Resize image to suit screen size */
 .resizeable {
   display: block;
@@ -1111,6 +1122,18 @@ LIST STYLES
   text-align: center;
   /** Not sure if this will center image across all browsers**/
 
+}
+.archive-year {
+  border-top: solid 1px #e4e4e4;
+  margin: 24px 0 0 0;
+}
+.photo-archive-list li a {
+  width: 220px;
+  padding-top: 24px;
+  margin: 0 auto;
+}
+.photo-archive-list li a img {
+  display: block;
 }
 #social-list ul {
   padding: 0;
@@ -1604,10 +1627,6 @@ SIDEBARS & ASIDES
 /*********************
 ARCHIVE STYLES
 *********************/
-.archive-year {
-  border-top: solid 1px #e4e4e4;
-  margin: 24px 0 0 0;
-}
 .blog-archive-post,
 .archive-post {
   margin: 24px 0 0 0;
@@ -1625,24 +1644,10 @@ ARCHIVE STYLES
 .archive-post p {
   font-style: italic;
 }
-.photo-archive-post {
+#photo-archive-post-container {
   position: relative;
   max-width: 220px;
-  margin: 24px auto 0 auto;
-}
-.photo-archive-post img {
-  box-shadow: 0px 0px 0.5em #000000;
-  width: 100%;
-}
-.photo-archive-post .caption {
-  position: absolute;
-  padding: 0.25em;
-  top: 1em;
-  left: 0;
-  right: 0;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.2);
-  text-align: center;
+  margin: 0 auto;
 }
 /*********************
 FOOTER STYLES

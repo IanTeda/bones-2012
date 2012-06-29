@@ -650,10 +650,10 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
+  margin: 0;
 }
 dd {
-  margin: 0 0 0 40px;
+  margin: 0;
 }
 /*
  * Addresses paddings set differently in IE6/7
@@ -661,7 +661,7 @@ dd {
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px;
+  padding: 0;
 }
 /*
  * Corrects list images handled incorrectly in IE7
@@ -1291,6 +1291,10 @@ NAVIGATION STYLES
   display: none;
 }
 /* end .nav */
+.photo-archive-list li {
+  float: left;
+  width: 50%;
+}
 /*********************
 MENU STYLES
 *********************/

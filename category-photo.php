@@ -5,23 +5,29 @@
 		<div id="main" class="clearfix" role="main">
 		
 			<div id="photo-archive">
-				<?php $year = ''; ?>
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				
-					<?php // Lets show the year but only once ?>
-					<?php if (get_the_time('Y') != $year): ?>
-						<?php $year = get_the_time('Y'); ?>
-						<h3 class="archive-year clearfix"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
-					<?php endif; ?>
+				<ul class="photo-archive-list clearfix carousel">
+					<?php $year = ''; ?>
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-					<div class="post-<?php the_ID(); ?> photo-archive-post clearfix">
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-							<?php feature_image_220x140(); ?>
-							<h4 class="caption"><?php the_title(); ?></h4>
-						</a>
-					</div>
-
-				    <?php endwhile; ?>	
+						<?php // Lets show the year but only once ?>
+						<?php if (get_the_time('Y') != $year): ?>
+							<?php $year = get_the_time('Y'); ?>
+				</ul>
+							<h3 class="archive-year clearfix"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
+				<ul class="photo-archive-list clearfix carousel">
+						<?php endif; ?>
+						
+						<li class="post-<?php the_ID(); ?> photo-archive-post clearfix">
+							<div id="photo-archive-post-container">
+								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+									<?php feature_image_220x140(); ?>
+									<h4 class="caption"><?php the_title(); ?></h4>
+								</a>
+							</div>
+						</li>
+	
+						<?php endwhile; ?>
+					</ul>
 					
 			        <?php if (function_exists('bones_page_navi')) { // if experimental feature is active ?>
 						<?php bones_page_navi(); // use the page navi function ?>

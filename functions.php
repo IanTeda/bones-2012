@@ -251,22 +251,8 @@ function load_slider(){
 	<script type="text/javascript">
 		jQuery(window).load(function() {
 			// The slider being synced must be initialized first
-			jQuery('#carousel').flexslider({
-				animation: "slide",
-				controlNav: false,
-				animationLoop: false,
-				slideshow: false,
-				itemWidth: 184,
-				itemMargin: 3,
-				asNavFor: '#slider'
-			});
-			   
-			jQuery('#slider').flexslider({
-				animation: "slide",
-				controlNav: false,
-				animationLoop: false,
-				slideshow: false,
-				sync: "#carousel"
+			jQuery('.flexslider').flexslider({
+				animation: "fade",
 			});
 		});
 	</script>

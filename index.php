@@ -17,14 +17,6 @@
                         <?php endwhile; ?>
 					</ul>
 				</div>
-				<div id="carousel" class="flexslider">
-					<ul class="slides">
-						<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
-                        <?php while($featured->have_posts()) : $featured->the_post();?>
-                            <li><?php feature_image_936x384(); ?></li>
-                        <?php endwhile; ?>
-					</ul>
-				</div>
 			</div>
 		
 			<div id="latest-posts-container" class="twelvecol">

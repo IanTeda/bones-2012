@@ -14,7 +14,7 @@
                     <ul class="slides">
                         <?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
                         <?php while($featured->have_posts()) : $featured->the_post();?>
-                            <li><a href="<?php the_permalink() ?>"><?php slider_image_1140x641(); ?></a></li>
+                            <li><a href="<?php the_permalink() ?>"><?php feature_image_936x384(); ?></a></li>
                             <p class="flex-caption">This is the caption</p>
                         <?php endwhile; ?>
                     </ul>

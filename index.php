@@ -3,8 +3,8 @@
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="clearfix" role="main">
 			
-            <div id="description-wrapper" class="twelvecol">
-                    <p class="sixcol text-center description pushThree">
+            <div id="description-wrapper" class="eightcol text-center description pushTwo">
+                    <p class="">
                         <?php bloginfo('description'); ?>
                     </p>
             </div>

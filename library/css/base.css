@@ -862,9 +862,8 @@ article a img {
   text-decoration: none;
   display: block;
 }
-#flex-wrapper {
+.flexslider-container {
   display: none;
-  margin-top: 24px;
 }
 /*
 No Grid? Say Whaaaat?

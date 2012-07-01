@@ -110,18 +110,18 @@ I merged them together, let's see how this works out.
 If you want to use 1140, the original values are commented
 out on each line.
 */
-.onecol    { width: @onecol;  }		/* 4.85%;  } /* grid_1  */
-.twocol    { width: @twocol; }		/* 13.45%; } /* grid_2  */
-.threecol  { width: @threecol; }	/* 22.05%; } /* grid_3  */
-.fourcol   { width: @fourcol; }		/* 30.75%; } /* grid_4  */
-.fivecol   { width: @fivecol; }		/* 39.45%; } /* grid_5  */
-.sixcol    { width: @sixcol; }		/* 48%;    } /* grid_6  */
-.sevencol  { width: @sevencol; }	/* 56.75%; } /* grid_7  */
-.eightcol  { width: @eightcol; }	/* 65.4%;  } /* grid_8  */
-.ninecol   { width: @ninecol; }		/* 74.05%; } /* grid_9  */
-.tencol    { width: @tencol; }		/* 82.7%;  } /* grid_10 */
-.elevencol { width: @elevencol; }	/* 91.35%; } /* grid_11 */
-.twelvecol { width: @twelvecol; }	/* 100%;   } /* grid_12 */
+.oneCol    { width: @onecol;  }		/* 4.85%;  } /* grid_1  */
+.twoCol    { width: @twocol; }		/* 13.45%; } /* grid_2  */
+.threeCol  { width: @threecol; }	/* 22.05%; } /* grid_3  */
+.fourCol   { width: @fourcol; }		/* 30.75%; } /* grid_4  */
+.fiveCol   { width: @fivecol; }		/* 39.45%; } /* grid_5  */
+.sixCol    { width: @sixcol; }		/* 48%;    } /* grid_6  */
+.sevenCol  { width: @sevencol; }	/* 56.75%; } /* grid_7  */
+.eightCol  { width: @eightcol; }	/* 65.4%;  } /* grid_8  */
+.nineCol   { width: @ninecol; }		/* 74.05%; } /* grid_9  */
+.tenCol    { width: @tencol; }		/* 82.7%;  } /* grid_10 */
+.elevenCol { width: @elevencol; }	/* 91.35%; } /* grid_11 */
+.twelveCol { width: @twelvecol; }	/* 100%;   } /* grid_12 */
 	
 /* layout & column defaults */
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol { 
@@ -284,11 +284,9 @@ MENU STYLES
 SLIDER STYLES
 ***************************/
 
-#flex-wrapper {
-	display: block;
-}
-
-.flexslider {
+.flexslider-container {
+	display: block;	
+	margin-top: @vertSpacing;
 }
 
 

@@ -95,9 +95,9 @@ function feature_image_1140x336(){
 
 function feature_image_936x384(){
 	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 936, 384 ), array('class' => 'image-box-shadow') );
+	 	the_post_thumbnail( array( 936, 384 ), array('class' => 'resizeable image-box-shadow') );
 	} else { ?>
-		<img class="image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(936x384).png" alt="No Feature Image Set" />
+		<img class="resizeable image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(936x384).png" alt="No Feature Image Set" />
 	<?php };
 }
 
@@ -248,11 +248,9 @@ function load_slider(){
 	wp_register_script( 'flexslider', get_template_directory_uri() . '/library/js/libs/jquery.flexslider.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'flexslider' ); ?>
 	
-	<script type="text/javascript" charset="utf-8">
+	<script type="text/javascript">
 		jQuery(window).load(function() {
-    		jQuery('.flexslider').flexslider({
-				animation: "fade",
-		        controlsContainer: ".flex-container"	
+			jQuery('.flexslider').flexslider({
 			});
 		});
 	</script>

@@ -3,23 +3,21 @@
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="clearfix" role="main">
 			
-            <div id="description-wrapper" class="eightcol text-center description pushTwo">
-                    <p class="">
-                        <?php bloginfo('description'); ?>
-                    </p>
+            <div id="description-wrapper" class="text-center description eightCol pushTwo clearfix">
+				<p><?php bloginfo('description'); ?></p>
             </div>
-		
-        	<div id="flex-wrapper" class="tencol pushOne">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
+			
+			<div class="flexslider-container tenCol pushOne">
+				<div class="flexslider">
+					<ul class="slides">
+						<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
                         <?php while($featured->have_posts()) : $featured->the_post();?>
                             <li><a href="<?php the_permalink() ?>"><?php feature_image_936x384(); ?></a></li>
-                            <p class="flex-caption"><?php echo substr(get_the_excerpt(), 0,130); ?></p>
+                            <!--<p class="flex-caption"><?php echo substr(get_the_excerpt(), 0,130); ?></p>-->
                         <?php endwhile; ?>
-                    </ul>
-                </div><!-- end flexslider -->
-            </div><!-- end flex-container -->
+					</ul>
+				</div>
+			</div>
 		
 			<div id="latest-posts-container" class="twelvecol">
 				<h3 class="underlined twelvecol">Latest Posts</h3>

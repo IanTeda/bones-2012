@@ -8,12 +8,20 @@
             </div>
 			
 			<div class="flexslider-container tenCol pushOne">
-				<div class="flexslider">
+				<div id="slider" class="flexslider">
 					<ul class="slides">
 						<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
                         <?php while($featured->have_posts()) : $featured->the_post();?>
                             <li><a href="<?php the_permalink() ?>"><?php feature_image_936x384(); ?></a></li>
                             <!--<p class="flex-caption"><?php echo substr(get_the_excerpt(), 0,130); ?></p>-->
+                        <?php endwhile; ?>
+					</ul>
+				</div>
+				<div id="carousel" class="flexslider">
+					<ul class="slides">
+						<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
+                        <?php while($featured->have_posts()) : $featured->the_post();?>
+                            <li><?php feature_image_936x384(); ?></li>
                         <?php endwhile; ?>
 					</ul>
 				</div>

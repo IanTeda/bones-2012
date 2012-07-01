@@ -62,6 +62,9 @@ TOOLS
 .image-box-shadow {
   box-shadow: 0px 0px 0.5em #000000;
 }
+.center-div {
+  margin: 0 auto;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -980,6 +983,9 @@ TOOLS
 }
 .image-box-shadow {
   box-shadow: 0px 0px 0.5em #000000;
+}
+.center-div {
+  margin: 0 auto;
 }
 /*********************
 DIMENSIONS
@@ -2020,6 +2026,9 @@ TOOLS
 .image-box-shadow {
   box-shadow: 0px 0px 0.5em #000000;
 }
+.center-div {
+  margin: 0 auto;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -2468,13 +2477,14 @@ LAYOUT & GRID STYLES
   float: left;
   width: 33.333333333333336%;
 }
+/**** Mixens ****/
 /*
-		This is a combination of the 1140 grid and Twitter Boostrap.
-		I liked 1140 but Boostrap's grid was way more detailed so
-		I merged them together, let's see how this works out.
-		If you want to use 1140, the original values are commented
-		out on each line.
-	*/
+This is a combination of the 1140 grid and Twitter Boostrap.
+I liked 1140 but Boostrap's grid was way more detailed so
+I merged them together, let's see how this works out.
+If you want to use 1140, the original values are commented
+out on each line.
+*/
 .onecol {
   width: 5.801104972%;
 }
@@ -2546,9 +2556,48 @@ LAYOUT & GRID STYLES
 .last {
   float: right;
 }
+.pushOne {
+  margin-left: 8.563535911%;
+}
+.pushTwo {
+  margin-left: 17.127071822%;
+}
+.pushThree {
+  margin-left: 25.690607733%;
+}
+.pushFour {
+  margin-left: 34.254143644%;
+}
+.pushFive {
+  margin-left: 42.817679555%;
+}
+.pushSix {
+  margin-left: 51.381215466%;
+}
+.pushSeven {
+  margin-left: 59.944751377%;
+}
+.pushEight {
+  margin-left: 68.508287288%;
+}
+.pushNine {
+  margin-left: 77.071823199%;
+}
+.pushTen {
+  margin-left: 85.63535911000001%;
+}
+.pushEleven {
+  margin-left: 94.198895021%;
+}
+.pushTwelve {
+  margin-left: 102.762430932%;
+}
 /*********************
 HEADER SYTLES
 *********************/
+#description-wrapper {
+  margin-top: 24px;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -2622,9 +2671,8 @@ MENU STYLES
 /***************************
 SLIDER STYLES
 ***************************/
-.flexslider {
-  width: 80%;
-  text-align: center;
+#flex-wrapper {
+  display: block;
 }
 /*********************
 SIDEBARS & ASIDES

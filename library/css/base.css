@@ -514,6 +514,9 @@ TOOLS
 .image-box-shadow {
   box-shadow: 0px 0px 0.5em #000000;
 }
+.center-div {
+  margin: 0 auto;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -842,7 +845,6 @@ LAYOUT & GRID STYLES
   margin: 24px 0 0 0;
   font-size: 17px;
   font-weight: 300;
-  max-width: 1030px;
 }
 article {
   margin-bottom: 24px;
@@ -862,6 +864,10 @@ article a img {
 .liquid-matrix li a {
   text-decoration: none;
   display: block;
+}
+#flex-wrapper {
+  display: none;
+  margin-top: 24px;
 }
 /*
 No Grid? Say Whaaaat?

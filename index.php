@@ -1,16 +1,20 @@
 <?php get_header(); ?>		
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
-		<p class="description text-center clearfix"><?php bloginfo('description'); ?></p>
-			
 		<div id="main" class="clearfix" role="main">
+			
+            <div id="description-wrapper" class="twelvecol">
+                    <p class="sixcol text-center description pushThree">
+                        <?php bloginfo('description'); ?>
+                    </p>
+            </div>
 		
-        	<div class="flex-container">
+        	<div id="flex-wrapper" class="tencol pushOne">
                 <div class="flexslider">
                     <ul class="slides">
                         <?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
                         <?php while($featured->have_posts()) : $featured->the_post();?>
-                            <li><a href="<?php the_permalink() ?>"><?php feature_image_1140x336(); ?></a></li>
+                            <li><a href="<?php the_permalink() ?>"><?php slider_image_1140x641(); ?></a></li>
                             <p class="flex-caption">This is the caption</p>
                         <?php endwhile; ?>
                     </ul>
@@ -18,7 +22,7 @@
             </div><!-- end flex-container -->
 		
 			<div id="latest-posts-container" class="clearfix">
-				<h3 class="underlined">Latest Posts</h3>
+				<h3 class="underlined twelvecol">Latest Posts</h3>
 			    <ul class="liquid-matrix latest-post-list">
 					<?php $summary = new WP_query('showposts=6'); //Only the latest 3 posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>

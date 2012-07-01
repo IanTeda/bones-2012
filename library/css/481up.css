@@ -189,7 +189,7 @@ mark {
  */
 p,
 pre {
-  margin: 1em 0;
+  margin: 0 0;
 }
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome

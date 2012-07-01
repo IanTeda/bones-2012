@@ -15,13 +15,13 @@
                         <?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
                         <?php while($featured->have_posts()) : $featured->the_post();?>
                             <li><a href="<?php the_permalink() ?>"><?php feature_image_936x384(); ?></a></li>
-                            <p class="flex-caption">This is the caption</p>
+                            <p class="flex-caption"><?php echo substr(get_the_excerpt(), 0,130); ?></p>
                         <?php endwhile; ?>
                     </ul>
                 </div><!-- end flexslider -->
             </div><!-- end flex-container -->
 		
-			<div id="latest-posts-container" class="clearfix">
+			<div id="latest-posts-container" class="twelvecol">
 				<h3 class="underlined twelvecol">Latest Posts</h3>
 			    <ul class="liquid-matrix latest-post-list">
 					<?php $summary = new WP_query('showposts=6'); //Only the latest 3 posts ?>

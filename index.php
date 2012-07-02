@@ -114,7 +114,8 @@
 					</div>
 				</div><!-- End of lastfm list -->
 				
-	
+				<div id="instagram-container" class="sixCol last">
+				</div>
 
 			</div>
 				
@@ -123,5 +124,6 @@
 
 <?php load_lastfm(); ?>
 <?php load_slider(); ?>
+<?php load_instagram(); ?>
 
 <?php get_footer(); ?>

@@ -23,33 +23,29 @@
 				<h3 class="underlined twelveCol first">Latest Posts</h3>
 				
 				<!-- Place somewhere in the <body> of your page -->
-			<div id="latest-carousel" class="flex-carousel">
-			  <ul class="slides">
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_caramel.jpg" />
-				</li>
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_cheesecake_brownie.jpg" />
-				</li>
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_donut.jpg" />
-				</li>
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_lemon.jpg" />
-				</li>
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_caramel.jpg" />
-				</li>
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_cheesecake_brownie.jpg" />
-				</li>
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_donut.jpg" />
-				</li>
-				<li>
-				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_lemon.jpg" />
-				</li>
-			  </ul>
+			<div id="latest-carousel" class="twelveCol first">
+			    <ul id="mycarousel" class="jcarousel-skin-tango">
+					<li><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/75/199481072_b4a0d09597_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/57/199481087_33ae73a8de_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/77/199481108_4359e6b971_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/58/199481143_3c148d9dd3_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/72/199481203_ad4cdcf109_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/58/199481218_264ce20da0_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/69/199481255_fdfe885f87_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/60/199480111_87d4cb3e38_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/70/229228324_08223b70fa_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/75/199481072_b4a0d09597_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/57/199481087_33ae73a8de_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/77/199481108_4359e6b971_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/58/199481143_3c148d9dd3_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/72/199481203_ad4cdcf109_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/58/199481218_264ce20da0_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/69/199481255_fdfe885f87_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/60/199480111_87d4cb3e38_s.jpg" width="220" height="140" alt="" /></li>
+					<li><img src="http://static.flickr.com/70/229228324_08223b70fa_s.jpg" width="220" height="140" alt="" /></li>
+				</ul>
 			</div>
 				
 				
@@ -58,7 +54,7 @@
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
                     	<li class="clearfix">
                            	<a href="<?php the_permalink() ?>" title="Take me to <?php the_title(); ?>" >
-								<?php feature_image_220x140(); ?>
+								<?php feature_image_220x144(); ?>
                                 <h4 class="article-title text-center">
 									<?php the_title(); ?>
                                 </h4>

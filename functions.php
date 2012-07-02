@@ -51,7 +51,7 @@ require_once('library/assets/dropdown-menus.php');
 
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'feature_image_(220x140)', 220, 140, true );
+add_image_size( 'feature_image_(220x144)', 220, 144, true );
 add_image_size( 'feature_image_(1140x336)', 1140, 336, true );
 add_image_size( 'feature_image_(936x384)', 936, 384, true );
 /* 
@@ -77,11 +77,11 @@ you like. Enjoy!
 /***************************************************
 Call feature image thumbnails
 ****************************************************/
-function feature_image_220x140(){
+function feature_image_220x144(){
 	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 220, 140 ), array('class' => 'resizeable image-box-shadow') );
+	 	the_post_thumbnail( array( 220, 144 ), array('class' => 'resizeable image-box-shadow') );
 	} else { ?>
-		<img class="resizeable image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(220x140).png" alt="No Feature Image Set" />
+		<img class="resizeable image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(220x144).png" alt="No Feature Image Set" />
 	<?php };
 }
 
@@ -267,13 +267,15 @@ function load_carousel(){
 	
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
-			jQuery('#latest-carousel').jcarousel({
+			jQuery('#mycarousel').jcarousel({
 				// Configuration goes here
+				wrap: 'circular', // Make it wrap around on itself
+				visible: 4, // Show number of pictures
 			});
 		});
 	</script>
 	
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/js/libs/skins/tango/skin.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.jcarousel.skin.css" type="text/css">
 	<?php
 }
 

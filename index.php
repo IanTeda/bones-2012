@@ -148,5 +148,6 @@
 
 <?php load_lastfm(); ?>
 <?php load_slider(); ?>
+<?php load_carousel(); ?>
 
 <?php get_footer(); ?>

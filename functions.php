@@ -257,18 +257,23 @@ function load_slider(){
 		});
 	</script>
 	
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/js/libs/flexslider.css" type="text/css">
+	<?php
+}
+
+function load_carousel(){
+	wp_register_script( 'jcarousel', get_template_directory_uri() . '/library/js/libs/jquery.jcarousel.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'jcarousel' ); ?>
+	
 	<script type="text/javascript">
-		jQuery(window).load(function() {
-			jQuery('.flex-carousel').flexslider({
-				animation: "slide",
-				animationLoop: false,
-				itemWidth: 210,
-				itemMargin: 5
+		jQuery(document).ready(function() {
+			jQuery('#latest-carousel').jcarousel({
+				// Configuration goes here
 			});
 		});
 	</script>
 	
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/js/libs/flexslider.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/js/libs/skins/tango/skin.css" type="text/css">
 	<?php
 }
 

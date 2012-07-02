@@ -99,7 +99,7 @@
 				</div>
 				
 				<div id="goodreads-container" class="sixCol last">
-					<h3 class="underlined">Bookself</h3>
+					<h3 class="underlined">Bookshelf</h3>
 					<ul class="image-matrix">
 						<?php if(function_exists('bookshelf')) { bookshelf(); } ?>
 					</ul>
@@ -115,6 +115,54 @@
 				</div><!-- End of lastfm list -->
 				
 				<div id="instagram-container" class="sixCol last">
+                <h3 class="underlined">Photo Blog</h3>
+                	<ul id="photo-list" class="image-matrix">
+                    	<li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram1.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram2.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram3.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram4.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram5.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram6.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram5.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram1.jpg" >
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram1.jpg" >
+                            </a>
+                        </li>
+                    </ul>
 				</div>
 
 			</div>

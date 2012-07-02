@@ -891,7 +891,8 @@ IMAGE STYLES
   height: 112.5px;
   padding: 1px;
 }
-.album-cover {
+.album-cover,
+.instagram-photo {
   box-shadow: 0px 0px 0.5em #000000;
   max-width: 174px;
   width: 75px;
@@ -1124,7 +1125,7 @@ LIST STYLES
 .image-matrix {
   padding: 0;
   list-style: none;
-  margin: 24px auto 0 auto;
+  margin: 0 auto;
   min-width: 300px;
   /** Might make this a fixed width??? **/
 

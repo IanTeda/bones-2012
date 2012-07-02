@@ -40,7 +40,7 @@
       // in pixels
       'imgwidth'          : 150,
 
-      'count'             : 6,
+      'count'             : 9,
 
       // can be set to simple, hover
       'stylesheet'        : false,

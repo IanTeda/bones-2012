@@ -1052,8 +1052,12 @@ NAVIGATION STYLES
 MENU STYLES
 *********************/
 #main-menu {
-  width: auto;
   border-bottom: none;
+  width: 57.182320438000005%;
+}
+#main-menu ul li {
+  padding-top: 15px;
+  line-height: 33px;
 }
 /*********************
 LIST STYLES
@@ -1063,6 +1067,10 @@ LIST STYLES
 }
 #latest-post-list li {
   width: 33.333333333333336%;
+}
+#popular-posts li {
+  float: left;
+  width: 100%;
 }
 /***************************
 SLIDER STYLES

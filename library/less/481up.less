@@ -105,10 +105,12 @@ MENU STYLES
 	ul {
 		text-align: center;
 		li {
-			padding: 4px 0 0 0.5em;
+			float: left;
+			width: 100% / 9;
 			display: inline;
+			line-height: (@vertSpacing * 2);
 			 a {
-				line-height: (@vertSpacing * 2);
+
 			 }
 		}
 	}
@@ -125,6 +127,13 @@ LIST STYLES
 #latest-post-list {
 	max-height: 253px * 3;
 	overflow: hidden;
+	li {
+		float: left;
+		width: 100% / 2;
+	}
+}
+
+#popular-posts {
 	li {
 		float: left;
 		width: 100% / 2;

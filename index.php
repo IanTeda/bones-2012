@@ -55,7 +55,7 @@
 			
 			</div> <!-- end #main -->
     
-			<div id="row_four" class="twelveCol first">
+			<div id="row-four-container" class="twelveCol first">
 				<div id="popular-posts-container" class="sixCol first">
 					<h3 class="underlined clearfix">Popular Posts</h3>
 					<ol id="popular-posts" class="liquid-matrix numbered-list">

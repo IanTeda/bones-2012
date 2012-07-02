@@ -1456,10 +1456,9 @@ MENU STYLES
   text-align: center;
 }
 #main-menu ul li {
-  padding: 4px 0 0 0.5em;
+  float: left;
+  width: 11.11111111111111%;
   display: inline;
-}
-#main-menu ul li a {
   line-height: 48px;
 }
 #main-menu-dropdown {
@@ -1473,6 +1472,10 @@ LIST STYLES
   overflow: hidden;
 }
 #latest-post-list li {
+  float: left;
+  width: 50%;
+}
+#popular-posts li {
   float: left;
   width: 50%;
 }
@@ -2702,8 +2705,12 @@ NAVIGATION STYLES
 MENU STYLES
 *********************/
 #main-menu {
-  width: auto;
   border-bottom: none;
+  width: 57.182320438000005%;
+}
+#main-menu ul li {
+  padding-top: 15px;
+  line-height: 33px;
 }
 /*********************
 LIST STYLES
@@ -2713,6 +2720,9 @@ LIST STYLES
 }
 #latest-post-list li {
   width: 33.333333333333336%;
+}
+#popular-posts li {
+  width: 100%;
 }
 /***************************
 SLIDER STYLES
@@ -2796,6 +2806,9 @@ LIST STYLES
 *********************/
 #latest-post-list li {
   width: 25%;
+}
+#popular-posts li {
+  width: 50%;
 }
 /* 
 you can call the larger styles if you want, but there's really no need 

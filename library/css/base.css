@@ -867,6 +867,9 @@ article a img {
 #latest-posts-container {
   margin-top: 24px;
 }
+#row-four-container {
+  margin-top: 24px;
+}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -1191,7 +1194,7 @@ LIST STYLES
   font-style: italic;
   color: #ab362e;
   line-height: 24px;
-  margin: 0 0 0 25px;
+  margin: 0 0 0 20px;
   /** Pad in the numbers **/
 
   padding: 0;

@@ -44,7 +44,7 @@
 					</h1>
 				</div>
 
-				<nav id="main-menu" role="navigation" class="eightcol last">
+				<nav id="main-menu" role="navigation" class="last">
 					<?php main_menu(); // Adjust using Menus in Wordpress Admin ?>
 				</nav>
 

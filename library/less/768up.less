@@ -268,8 +268,14 @@ NAVIGATION STYLES
 MENU STYLES
 *********************/
 #main-menu {
-	width:auto;	
 	border-bottom: none;
+	width: @sevencol;
+	ul {
+		li {
+			padding-top: 15px;
+			line-height: (@vertSpacing * 2) - 15;
+		}
+	}
 }
 
 /*********************
@@ -280,6 +286,12 @@ LIST STYLES
 	max-height: 253px * 2;
 	li {
 		width: 100% / 3;
+	}
+}
+
+#popular-posts {
+	li {
+		width: 100%;
 	}
 }
 

@@ -14,3 +14,6 @@ LIST STYLES
 #latest-post-list li {
   width: 25%;
 }
+#popular-posts li {
+  width: 50%;
+}

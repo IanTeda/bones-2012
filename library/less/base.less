@@ -209,7 +209,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-transform: uppercase;
 	font-weight: normal; 
 	vertical-align: text-bottom;
-	margin: @vertSpacing 0 0 0;
+	margin: 0; /* Add heading margin to post subclass */
 	/* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -261,9 +261,7 @@ HEADER SYTLES
 		.logo {
 			font-family: @sans-serif-title;
 			line-height: (@vertSpacing * 2) - 4;
-			margin: 0;
 			padding-top: 4px;
-			float: left;
 			span {
 				color: @black;
 			}

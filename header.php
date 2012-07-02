@@ -37,8 +37,12 @@
 	<div id="container">
 		<header class="header" role="banner">
 			<div id="inner-header" class="wrap clearfix">
-
-				<h1 class="logo twocol first"><a href="<?php echo home_url(); ?>" rel="nofollow">Ian <span>Teda</span></a></h1>
+				
+				<div id="logo-wrapper" class="twoCol first">
+					<h1 class="logo">
+						<a href="<?php echo home_url(); ?>" rel="nofollow">Ian <span>Teda</span></a>
+					</h1>
+				</div>
 
 				<nav id="main-menu" role="navigation" class="eightcol last">
 					<?php main_menu(); // Adjust using Menus in Wordpress Admin ?>

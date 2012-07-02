@@ -966,7 +966,9 @@ h5,
   text-transform: uppercase;
   font-weight: normal;
   vertical-align: text-bottom;
-  margin: 24px 0 0 0;
+  margin: 0;
+  /* Add heading margin to post subclass */
+
   /* 
 	if you're going to use webfonts, be sure to check your weights 
 	http://css-tricks.com/watch-your-font-weight/
@@ -1026,9 +1028,7 @@ HEADER SYTLES
 .header #inner-header .logo {
   font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 44px;
-  margin: 0;
   padding-top: 4px;
-  float: left;
 }
 .header #inner-header .logo span {
   color: #000000;

@@ -7,7 +7,7 @@
 				<p><?php bloginfo('description'); ?></p>
             </div>
 			
-			<div class="flexslider-container tenCol pushOne">
+			<div id="flexslider-wrapper" class="flexslider-container tenCol pushOne">
 				<div id="slider" class="flexslider">
 					<ul class="slides">
 						<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
@@ -19,7 +19,7 @@
 				</div>
 			</div>
 		
-			<div id="latest-posts-container" class="twelvecol">
+			<div id="latest-posts-container" class="twelveCol">
 				<h3 class="underlined twelvecol">Latest Posts</h3>
 			    <ul class="liquid-matrix latest-post-list">
 					<?php $summary = new WP_query('showposts=6'); //Only the latest 3 posts ?>

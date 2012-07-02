@@ -1088,6 +1088,20 @@ MENU STYLES
 /*********************
 LIST STYLES
 *********************/
+#latest-post-list {
+  padding: 0;
+  max-height: 1518px;
+  overflow: hidden;
+}
+#latest-post-list li {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+}
+#latest-post-list li a {
+  text-decoration: none;
+  display: block;
+}
 #latest-post-list li a {
   width: 220px;
   margin: 0 auto;

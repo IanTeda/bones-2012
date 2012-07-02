@@ -790,10 +790,6 @@ HEADER SYTLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-.liquid-matrix li {
-  float: left;
-  width: 50%;
-}
 /**************************
 NAVIGATION AND LIST STYLES
 **************************/
@@ -864,6 +860,17 @@ MENU STYLES
 }
 #main-menu-dropdown {
   display: none;
+}
+/*********************
+LIST STYLES
+*********************/
+#latest-post-list {
+  max-height: 759px;
+  overflow: hidden;
+}
+#latest-post-list li {
+  float: left;
+  width: 50%;
 }
 /*********************
 POSTS & CONTENT STYLES

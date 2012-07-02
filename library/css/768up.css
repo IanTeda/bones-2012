@@ -828,9 +828,6 @@ LAYOUT & GRID STYLES
 
   max-width: 1140px;
 }
-.liquid-matrix li {
-  width: 33.333333333333336%;
-}
 /**** Mixens ****/
 /*
 This is a combination of the 1140 grid and Twitter Boostrap.
@@ -1057,6 +1054,15 @@ MENU STYLES
 #main-menu {
   width: auto;
   border-bottom: none;
+}
+/*********************
+LIST STYLES
+*********************/
+#latest-post-list {
+  max-height: 506px;
+}
+#latest-post-list li {
+  width: 33.333333333333336%;
 }
 /***************************
 SLIDER STYLES

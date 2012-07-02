@@ -22,8 +22,8 @@
 			<div id="latest-posts-container" class="twelveCol first">
 				<h3 class="underlined twelveCol first">Latest Posts</h3>
 
-			    <ul id="latest-post-list" class="liquid-matrix twelveCol first">
-					<?php $summary = new WP_query('showposts=6'); //Only the latest 3 posts ?>
+			    <ul id="latest-post-list" class="twelveCol first">
+					<?php $summary = new WP_query('showposts=8'); //Only the latest 3 posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
                     	<li class="clearfix">
                            	<a href="<?php the_permalink() ?>" title="Take me to <?php the_title(); ?>" >
@@ -55,63 +55,69 @@
 			
 			</div> <!-- end #main -->
     
-			<?php //get_sidebar(); // sidebar 1 ?>
-            <div id="popular-posts-container">
-				<h3 class="underlined clearfix">Popular Posts</h3>
-			    <ol id="popular-posts" class="liquid-matrix numbered-list">
-            		<li>
-                    	<a href="#">
-                            <h4><span>Blog: </span>This is a blog post</h4>
-							<p>Posted by ian &bull; Tue, 19 June 12</p>
-                        </a>
-                    </li>
-                    <li>
-                    	<a href="#">
-                            <h4><span>Photo: </span>This is a blog post</h4>
-							<p>Posted by ian &bull; Tue, 19 June 12</p>
-                        </a>
-                    </li>
-                    <li>
-                    	<a href="#">
-                            <h4><span>Misc: </span>This is a blog post</h4>
-							<p>Posted by ian &bull; Tue, 19 June 12</p>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="#">
-                            <h4><span>Video: </span>Delta Force Paint Ball</h4>
-							<p>Posted by ian &bull; Tue, 19 June 12</p>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="#">
-                            <h4><span>Trail: </span>Check out this trail</h4>
-							<p>Posted by ian &bull; Tue, 19 June 12</p>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="#">
-                            <h4><span>Misc: </span>This is a blog post</h4>
-							<p>Posted by ian &bull; Tue, 19 June 12</p>
-                        </a>
-                    </li>
-            	</ol>
+			<div id="row_four" class="twelveCol first">
+				<div id="popular-posts-container" class="sixCol first">
+					<h3 class="underlined clearfix">Popular Posts</h3>
+					<ol id="popular-posts" class="liquid-matrix numbered-list">
+						<li>
+							<a href="#">
+								<h4><span>Blog: </span>This is a blog post</h4>
+								<p>Posted by ian &bull; Tue, 19 June 12</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4><span>Photo: </span>This is a blog post</h4>
+								<p>Posted by ian &bull; Tue, 19 June 12</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4><span>Misc: </span>This is a blog post</h4>
+								<p>Posted by ian &bull; Tue, 19 June 12</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4><span>Video: </span>Delta Force Paint Ball</h4>
+								<p>Posted by ian &bull; Tue, 19 June 12</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4><span>Trail: </span>Check out this trail</h4>
+								<p>Posted by ian &bull; Tue, 19 June 12</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4><span>Misc: </span>This is a blog post</h4>
+								<p>Posted by ian &bull; Tue, 19 June 12</p>
+							</a>
+						</li>
+					</ol>
+				</div>
+				
+				<div id="goodreads-container" class="sixCol last">
+					<h3 class="underlined">Bookself</h3>
+					<ul class="image-matrix">
+						<?php if(function_exists('bookshelf')) { bookshelf(); } ?>
+					</ul>
+				</div><!-- End of Goodreads -->
+				
+			</div>
+			
+			<div id="lower-social" class="twelveCol first">
+				<div id="lastfm-container" class="sixCol first">
+					<h3 class="underlined">Album Chart</h3>
+					<div id="lastfmrecords">
+					</div>
+				</div><!-- End of lastfm list -->
+				
+	
+
 			</div>
 				
-			<div id="lastfm-container" class="clearfix">
-				<h3 class="underlined">Album Chart</h3>
-				<div id="lastfmrecords">
-				</div>
-			</div><!-- End of lastfm list -->
-			
-
-			<div id="goodreads-container" class=" clearfix">
-				<h3 class="underlined">Bookself</h3>
-				<ul class="image-matrix">
-					<?php if(function_exists('bookshelf')) { bookshelf(); } ?>
-				</ul>
-			</div><!-- End of Goodreads -->
-				    
 	</div> <!-- end #inner-content -->
 </div> <!-- end #content -->
 

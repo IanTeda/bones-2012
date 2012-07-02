@@ -21,6 +21,38 @@
 		
 			<div id="latest-posts-container" class="twelveCol first">
 				<h3 class="underlined twelveCol first">Latest Posts</h3>
+				
+				<!-- Place somewhere in the <body> of your page -->
+			<div id="latest-carousel" class="flex-carousel">
+			  <ul class="slides">
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_caramel.jpg" />
+				</li>
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+				</li>
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_donut.jpg" />
+				</li>
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_lemon.jpg" />
+				</li>
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_caramel.jpg" />
+				</li>
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+				</li>
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_donut.jpg" />
+				</li>
+				<li>
+				  <img src="<?php echo get_template_directory_uri(); ?>/library/images/kitchen_adventurer_lemon.jpg" />
+				</li>
+			  </ul>
+			</div>
+				
+				
 			    <ul id="latest-post-list" class="liquid-matrix twelveCol first">
 					<?php $summary = new WP_query('showposts=6'); //Only the latest 3 posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>

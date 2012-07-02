@@ -257,6 +257,17 @@ function load_slider(){
 		});
 	</script>
 	
+	<script type="text/javascript">
+		jQuery(window).load(function() {
+			jQuery('.flex-carousel').flexslider({
+				animation: "slide",
+				animationLoop: false,
+				itemWidth: 210,
+				itemMargin: 5
+			});
+		});
+	</script>
+	
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/js/libs/flexslider.css" type="text/css">
 	<?php
 }

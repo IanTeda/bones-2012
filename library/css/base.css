@@ -1022,6 +1022,9 @@ h5,
   line-height: 24px;
   font-weight: 400;
 }
+.underlined span {
+  display: none;
+}
 /*********************
 HEADER SYTLES
 *********************/
@@ -1283,6 +1286,9 @@ POSTS & CONTENT STYLES
   padding: 12px 0;
   border-bottom: solid 1px #e4e4e4;
 }
+.post-meta span {
+  display: none;
+}
 .category-photo .post-content {
   text-align: center;
 }
@@ -1317,6 +1323,9 @@ POSTS & CONTENT STYLES
 	but it's up to you. Feel free to change it up.
 	*/
 
+}
+.post-content span {
+  display: none;
 }
 .post-content dd {
   margin-left: 0;
@@ -1369,6 +1378,9 @@ PAGE NAVI STYLES
   list-style-type: none;
   width: 100%;
   text-align: center;
+}
+.subpage-navigation span {
+  display: none;
 }
 .subpage-navigation li {
   display: inline;

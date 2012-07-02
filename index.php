@@ -20,7 +20,7 @@
 			</div>
 		
 			<div id="latest-posts-container" class="twelveCol first">
-				<h3 class="underlined twelveCol first">Latest Posts</h3>
+				<h3 class="underlined">Latest Posts<span><a href="#">Check out more posts &#8230;</a></span></h3>
 
 			    <ul id="latest-post-list" class="twelveCol first">
 					<?php $summary = new WP_query('showposts=8'); //Only the latest 3 posts ?>
@@ -57,7 +57,8 @@
     
 			<div id="row-four-container" class="twelveCol first">
 				<div id="popular-posts-container" class="sixCol first">
-					<h3 class="underlined clearfix">Popular Posts</h3>
+					<h3 class="underlined">Popular Posts <span><a href="#">View the hit list &#8230;</a></span></h3>
+                    
 					<ol id="popular-posts" class="liquid-matrix numbered-list">
 						<li>
 							<a href="#">
@@ -99,7 +100,8 @@
 				</div>
 				
 				<div id="goodreads-container" class="sixCol last">
-					<h3 class="underlined">Bookshelf</h3>
+					<h3 class="underlined">Bookshelf <span><a href="#">See the library &#8230;</a></span></h3>
+                    
 					<ul class="image-matrix">
 						<?php if(function_exists('bookshelf')) { bookshelf(); } ?>
 					</ul>
@@ -109,13 +111,15 @@
 			
 			<div id="lower-social" class="twelveCol first">
 				<div id="lastfm-container" class="sixCol first">
-					<h3 class="underlined">Album Chart</h3>
+					<h3 class="underlined">Album Chart <span><a href="#">Check out the charts &#8230;</a></span></h3>
+                    
 					<div id="lastfmrecords">
 					</div>
 				</div><!-- End of lastfm list -->
 				
 				<div id="instagram-container" class="sixCol last">
-                <h3 class="underlined">Photo Blog</h3>
+                <h3 class="underlined">Photo Blog <span><a href="#">View the matrix &#8230;</a></span></h3>
+                
                 	<ul id="photo-list" class="image-matrix">
                     	<li>
                         	<a href="#">

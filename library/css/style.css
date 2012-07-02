@@ -1947,6 +1947,9 @@ h5,
   line-height: 24px;
   font-weight: 400;
 }
+.underlined span {
+  display: none;
+}
 /*********************
 HEADER SYTLES
 *********************/
@@ -2304,6 +2307,9 @@ POSTS & CONTENT STYLES
   border-bottom: solid 1px #e4e4e4;
   border-bottom: solid 1px #e4e4e4;
 }
+.post-meta span {
+  display: none;
+}
 .category-photo .post-content {
   text-align: center;
 }
@@ -2339,6 +2345,9 @@ POSTS & CONTENT STYLES
 	but it's up to you. Feel free to change it up.
 	*/
 
+}
+.post-content span {
+  display: none;
 }
 .post-content dd {
   margin-left: 0;
@@ -2393,6 +2402,9 @@ PAGE NAVI STYLES
   list-style-type: none;
   width: 100%;
   text-align: center;
+}
+.subpage-navigation span {
+  display: none;
 }
 .subpage-navigation li {
   display: inline;
@@ -3518,27 +3530,30 @@ tweeners.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
+  /******************************************************************
+  H1, H2, H3, H4, H5 STYLES
+  ******************************************************************/
+  .underlined span {
+    display: block;
+    float: right;
+  }
+  .underlined span a {
+    font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 36px;
+  }
   /*********************
   IMAGE STYLES
   *********************/
   .book-cover {
-    box-shadow: 0px 0px 0.5em #000000;
     /** Use image ration 0.66 W/H **/
   
-    max-width: 150px;
-    width: 75px;
-    max-height: 225px;
-    height: 112.5px;
-    padding: 1px;
+    width: 100px;
+    height: 150px;
   }
   .album-cover,
   .instagram-photo {
-    box-shadow: 0px 0px 0.5em #000000;
-    max-width: 612px;
     width: 100px;
-    max-height: 612px;
     height: 100px;
-    padding: 1px;
   }
   /**************************
   NAVIGATION AND LIST STYLES
@@ -3597,6 +3612,14 @@ tweeners.
     min-width: 433px;
     width: 100%;
     border-bottom: solid 1px #e4e4e4;
+  }
+  #main-menu span {
+    display: block;
+    float: right;
+  }
+  #main-menu span a {
+    font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 36px;
   }
   #main-menu ul {
     text-align: center;

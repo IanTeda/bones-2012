@@ -261,22 +261,6 @@ function load_slider(){
 	<?php
 }
 
-function load_instagram(){
-	wp_register_script( 'instafeed', get_template_directory_uri() . '/library/js/libs/jquery.instagram.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'instafeed' ); ?>
-	
-	<script type="text/javascript">
-		jQuery(window).load(function() {
-			// The slider being synced must be initialized first
-			jQuery("#instagram-container").instagram({
-      			hash: 'love',
-				clientId: '38176b134104474fb47f0061c72e1cce'
-  			});
-		});
-	</script>
-	<?php
-}
-
 /***************************************
 Excerpt function
 ****************************************/

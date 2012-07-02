@@ -124,6 +124,5 @@
 
 <?php load_lastfm(); ?>
 <?php load_slider(); ?>
-<?php load_instagram(); ?>
 
 <?php get_footer(); ?>

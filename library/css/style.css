@@ -1773,13 +1773,12 @@ article a img {
   margin-bottom: 12px;
 }
 .liquid-matrix {
-  margin: 24px 0 0 0;
   padding: 0;
 }
 .liquid-matrix li {
   width: 100%;
   display: block;
-  margin-top: 12px;
+  margin-top: 24px;
 }
 .liquid-matrix li a {
   text-decoration: none;
@@ -1787,6 +1786,9 @@ article a img {
 }
 .flexslider-container {
   display: none;
+}
+#latest-posts-container {
+  margin-top: 24px;
 }
 /*
 No Grid? Say Whaaaat?
@@ -2011,16 +2013,16 @@ MENU STYLES
 /*********************
 LIST STYLES
 *********************/
-.latest-post-list li a {
+#latest-post-list li a {
   width: 220px;
-  padding-top: 24px;
   margin: 0 auto;
   border-bottom: solid 1px #e4e4e4;
 }
-.latest-post-list li a img {
+#latest-post-list li a img {
   display: block;
+  margin-bottom: 24px;
 }
-.latest-post-list li a span {
+#latest-post-list li a span {
   display: block;
   padding-bottom: 20px;
   margin-top: -5px;
@@ -3573,10 +3575,6 @@ tweeners.
   #main-menu-dropdown {
     display: none;
   }
-  .latest-carousel li {
-    float: left;
-    width: 50%;
-  }
   /*********************
   POSTS & CONTENT STYLES
   *********************/
@@ -4454,7 +4452,6 @@ you can add resource intensive styles.
     max-width: 1140px;
   }
   .liquid-matrix li {
-    float: left;
     width: 33.333333333333336%;
   }
   /**** Mixens ****/

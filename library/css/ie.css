@@ -1469,10 +1469,6 @@ MENU STYLES
 #main-menu-dropdown {
   display: none;
 }
-.latest-carousel li {
-  float: left;
-  width: 50%;
-}
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -2476,7 +2472,6 @@ LAYOUT & GRID STYLES
   max-width: 1140px;
 }
 .liquid-matrix li {
-  float: left;
   width: 33.333333333333336%;
 }
 /**** Mixens ****/

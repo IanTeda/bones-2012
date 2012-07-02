@@ -865,10 +865,6 @@ MENU STYLES
 #main-menu-dropdown {
   display: none;
 }
-.latest-carousel li {
-  float: left;
-  width: 50%;
-}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

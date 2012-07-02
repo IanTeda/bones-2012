@@ -98,12 +98,11 @@ article {
 }
 
 .liquid-matrix {
-	margin: @vertSpacing 0 0 0;
 	padding: 0;
 	li {
 		width: 100%;
 		display: block;
-		margin-top: @vertSpacing / 2;
+		margin-top: @vertSpacing;
 		a {
 			text-decoration: none;
 			display: block;
@@ -113,6 +112,10 @@ article {
 
 .flexslider-container {
 	display: none;	
+}
+
+#latest-posts-container {
+	margin-top: @vertSpacing;	
 }
 
 /*
@@ -333,15 +336,15 @@ MENU STYLES
 LIST STYLES
 *********************/
 
-.latest-post-list {
+#latest-post-list {
 	li {
 		a {
 			width: 220px;
-			padding-top: @vertSpacing;
 			margin: 0 auto;
 			border-bottom: solid 1px @greyLight;
 			img {
 				display: block;
+				margin-bottom: @vertSpacing;
 			}
 			span {
 				display: block;

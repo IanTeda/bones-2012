@@ -19,9 +19,9 @@
 				</div>
 			</div>
 		
-			<div id="latest-posts-container" class="twelveCol">
-				<h3 class="underlined twelvecol">Latest Posts</h3>
-			    <ul class="liquid-matrix latest-post-list">
+			<div id="latest-posts-container" class="twelveCol first">
+				<h3 class="underlined twelveCol first">Latest Posts</h3>
+			    <ul id="latest-post-list" class="liquid-matrix twelveCol first">
 					<?php $summary = new WP_query('showposts=6'); //Only the latest 3 posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
                     	<li class="clearfix">

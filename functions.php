@@ -257,25 +257,7 @@ function load_slider(){
 		});
 	</script>
 	
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/js/libs/flexslider.css" type="text/css">
-	<?php
-}
-
-function load_carousel(){
-	wp_register_script( 'jcarousel', get_template_directory_uri() . '/library/js/libs/jquery.jcarousel.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'jcarousel' ); ?>
-	
-	<script type="text/javascript">
-		jQuery(document).ready(function() {
-			jQuery('#mycarousel').jcarousel({
-				// Configuration goes here
-				wrap: 'circular', // Make it wrap around on itself
-				visible: 4, // Show number of pictures
-			});
-		});
-	</script>
-	
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.jcarousel.skin.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.flexslider.css" type="text/css">
 	<?php
 }
 

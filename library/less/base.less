@@ -159,11 +159,13 @@ IMAGE STYLES
 /** Add transparent caption to image **/
 .caption {
     position:absolute;
-	padding:0.25em;
-	top:1em; left:0; right:0;
+	padding: 0.25em;
+	top: 3em; 
+	left: 0;
+	right: 0;
 	color: @white;
-	background-color:rgba(0,0,0,0.3);
-	text-align:center;	
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;	
 }
 
 /* Resize image to suit screen size */
@@ -394,11 +396,11 @@ LIST STYLES
 	margin: @vertSpacing 0 0 0;
 }
 
-.photo-archive-list{
+#photo-archive-list{
+	.liquid-matrix;
 	li {
 		a {
 			width: 220px;
-			padding-top: @vertSpacing;
 			margin: 0 auto;
 			img {
 				display: block;

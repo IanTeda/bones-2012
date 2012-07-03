@@ -859,7 +859,7 @@ NAVIGATION AND LIST STYLES
   display: none;
 }
 /* end .nav */
-.photo-archive-list li {
+#photo-archive-list li {
   float: left;
   width: 50%;
 }

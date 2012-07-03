@@ -1414,7 +1414,7 @@ NAVIGATION AND LIST STYLES
   display: none;
 }
 /* end .nav */
-.photo-archive-list li {
+#photo-archive-list li {
   float: left;
   width: 50%;
 }
@@ -2891,7 +2891,7 @@ LIST STYLES
 
 }
 #latest-post-list li a img {
-  opacity: 0.7;
+  opacity: 0.8;
   /** Transition to roll over color **/
 
   -webkit-transition: 0.5s linear all;
@@ -2948,6 +2948,36 @@ LIST STYLES
 }
 #popular-post-list li {
   width: 100%;
+}
+#photo-archive-list {
+  margin-top: -40px;
+}
+#photo-archive-post-container a img {
+  opacity: 0.8;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+#photo-archive-post-container a:hover img {
+  opacity: 1;
 }
 /***************************
 SLIDER STYLES

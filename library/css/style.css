@@ -1803,7 +1803,7 @@ IMAGE STYLES
 .caption {
   position: absolute;
   padding: 0.25em;
-  top: 1em;
+  top: 3em;
   left: 0;
   right: 0;
   color: #ffffff;
@@ -2057,12 +2057,23 @@ LIST STYLES
   border-top: solid 1px #e4e4e4;
   margin: 24px 0 0 0;
 }
-.photo-archive-list li a {
+#photo-archive-list {
+  padding: 0;
+}
+#photo-archive-list li {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+}
+#photo-archive-list li a {
+  text-decoration: none;
+  display: block;
+}
+#photo-archive-list li a {
   width: 220px;
-  padding-top: 24px;
   margin: 0 auto;
 }
-.photo-archive-list li a img {
+#photo-archive-list li a img {
   display: block;
 }
 .social-list {
@@ -3563,7 +3574,7 @@ tweeners.
     display: none;
   }
   /* end .nav */
-  .photo-archive-list li {
+  #photo-archive-list li {
     float: left;
     width: 50%;
   }
@@ -4784,7 +4795,7 @@ you can add resource intensive styles.
   
   }
   #latest-post-list li a img {
-    opacity: 0.7;
+    opacity: 0.8;
     /** Transition to roll over color **/
   
     -webkit-transition: 0.5s linear all;
@@ -4813,6 +4824,22 @@ you can add resource intensive styles.
   }
   #popular-post-list li {
     width: 100%;
+  }
+  #photo-archive-list {
+    margin-top: -40px;
+  }
+  #photo-archive-post-container a img {
+    opacity: 0.8;
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -ms-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+  }
+  #photo-archive-post-container a:hover img {
+    opacity: 1;
   }
   /***************************
   SLIDER STYLES
@@ -4928,6 +4955,9 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  #photo-archive-list li {
+    width: 33.333333333333336%;
+  }
 }
 /* end of media query */
 /******************************************************************

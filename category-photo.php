@@ -5,16 +5,16 @@
 		<div id="main" class="clearfix" role="main">
 		
 			<div id="photo-archive">
-				<ul class="liquid-matrix photo-archive-list clearfix">
+				<ul id="photo-archive-list" class="clearfix eightCol last">
 					<?php $year = ''; ?>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 						<?php // Lets show the year but only once ?>
 						<?php if (get_the_time('Y') != $year): ?>
 							<?php $year = get_the_time('Y'); ?>
-				</ul>
-							<h3 class="archive-year clearfix"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
-				<ul class="liquid-matrix  photo-archive-list clearfix">
+							</ul>
+							<h3 class="archive-year clearfix twelveCol first"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
+							<ul id="photo-archive-list" class="clearfix eightCol last">
 						<?php endif; ?>
 						
 						<li class="post-<?php the_ID(); ?> photo-archive-post clearfix">

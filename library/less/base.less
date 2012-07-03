@@ -37,41 +37,41 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-.date-paged-1 {}              /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-.search-results {}            /* search result page */
-.search-no-results {}         /* no results search page */
-.search-paged-1 {}            /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-.postid-1 {}                  /* individual post page by id (i.e. body.postid-73) */
-.single-paged-1 {}            /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-.attachmentid-1 {}            /* individual attatchment page (i.e. body.attachmentid-763) */
-.attachment-mime-type {}      /* style mime type pages */
-.author {}                        /* author page */
-.author-nicename {}           /* user nicename (i.e. body.author-samueladams) */
-.author-paged-1 {}            /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-.category-1 {}                /* individual category page (i.e. body.category-6) */
-.category-paged-1 {}          /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-.tag-slug {}                  /* individual tag page (i.e. body.tag-news) */
-.tag-paged-1 {}               /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-.page-template-page-php {}    /* individual page template (i.e. body.page-template-contact-php */
-.page-paged-1 {}              /* replace the number to the corresponding page number */
-.page-parent {}               /* parent page template */
-.page-child {}                /* child page template */
-.parent-pageid-1 {}           /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-.paged-1 {}                   /* individual paged (i.e. body.paged-3) */
+.rtl {}						/* for sites that are read right to left (i.e. hebrew) */
+.home {}					/* home page */
+.blog {}					/* blog template page */
+.archive {}					/* archive page */
+.date {}					/* date archive page */
+.date-paged-1 {}			/* replace the number to the corresponding page number */
+.search {}					/* search page */
+.search-results {}			/* search result page */
+.search-no-results {}		/* no results search page */
+.search-paged-1 {}			/* individual paged search (i.e. body.search-paged-3) */
+.error404 {}				/* 404 page */
+.single {}					/* single post page */
+.postid-1 {}				/* individual post page by id (i.e. body.postid-73) */
+.single-paged-1 {}			/* individual paged single (i.e. body.single-paged-3) */
+.attachment {}				/* attatchment page */
+.attachmentid-1 {}			/* individual attatchment page (i.e. body.attachmentid-763) */
+.attachment-mime-type {}	/* style mime type pages */
+.author {}					/* author page */
+.author-nicename {}			/* user nicename (i.e. body.author-samueladams) */
+.author-paged-1 {}			/* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {}				/* category page */
+.category-1 {}				/* individual category page (i.e. body.category-6) */
+.category-paged-1 {}		/* replace the number to the corresponding page number */
+.tag {}						/* tag page */
+.tag-slug {}				/* individual tag page (i.e. body.tag-news) */
+.tag-paged-1 {}				/* replace the number to the corresponding page number */
+.page-template {}			/* custom page template page */
+.page-template-page-php {}	/* individual page template (i.e. body.page-template-contact-php */
+.page-paged-1 {}			/* replace the number to the corresponding page number */
+.page-parent {}				/* parent page template */
+.page-child {}				/* child page template */
+.parent-pageid-1 {}			/* replace the number to the corresponding page number */
+.logged-in {}				/* if user is logged in */
+.paged {}					/* paged items like search results or archives */
+.paged-1 {}					/* individual paged (i.e. body.paged-3) */
 
 /*********************
 LAYOUT & GRID STYLES
@@ -80,12 +80,6 @@ LAYOUT & GRID STYLES
 .wrap { 
 	width: 90%;
 	margin: 0 auto;
-}
-
-.description {
-	margin: @vertSpacing 0 0 0;
-	font-size: @font-size-3;
-	font-weight: 300;
 }
 
 article {
@@ -114,13 +108,14 @@ article {
 	display: none;	
 }
 
-#latest-posts-container {
-	margin-top: @vertSpacing;	
+#latest-posts-container,
+#popular-posts-container,
+#goodreads-container,
+#lastfm-container,
+#instagram-container {
+		
 }
 
-#row-four-container{
-	margin-top: @vertSpacing;
-}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -185,10 +180,11 @@ LINK STYLES
 a, a:visited { 
 	color: @turquesa;
 	text-decoration: none;
+	.hover-transition;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: lighten(@turquesa, 9%);
+		color: @autumn;
 	}
 	
 	/* on click */
@@ -215,8 +211,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	/**text-rendering : optimizelegibility;**/
 	font-family: @sans-serif-heading;
 	text-transform: uppercase;
-	font-weight: normal; 
-	vertical-align: text-bottom;
+	font-weight: normal;
+	padding-top: @vertSpacing;
 	margin: 0; /* Add heading margin to post subclass */
 	/* 
 	if you're going to use webfonts, be sure to check your weights 
@@ -231,28 +227,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 { 
 	font-size: @font-size-1;
-	line-height: @vertSpacing * 3;
 }
 
 h2, .h2 { 
 	font-size: @font-size-2;
-	line-height: @vertSpacing * 2;
 }
 
 h3, .h3 { 
 	font-size: @font-size-3;
-	line-height: @vertSpacing * 1.5;
 }
 
 h4, .h4 { 
 	font-size: @font-size-4;
-	line-height: @vertSpacing;
 	font-weight: 400;
 }
 
 h5, .h5 { 
 	font-size: @font-size-5;
-	line-height: @vertSpacing;
 	font-weight: 400;
 }
 
@@ -281,6 +272,12 @@ HEADER SYTLES
 			}
 		}
 	}
+}
+
+.description {
+	margin: @vertSpacing 0 0 0;
+	font-size: @font-size-3;
+	font-weight: 300;
 }
 
 #logo {}
@@ -327,7 +324,6 @@ select {
 MENU STYLES
 *********************/
 
-
 #main-menu {
 	/** Menu in Wordpress needs to named "Main Navigation" same as div **/
 	display: none ; /** Hide for mobiles  **/	
@@ -349,7 +345,7 @@ LIST STYLES
 
 #latest-post-list {
 	.liquid-matrix;
-	max-height: 253px * 6;
+	max-height: @latest-post-height * 6;
 	overflow: hidden;
 	li {
 		a {
@@ -358,12 +354,14 @@ LIST STYLES
 			border-bottom: solid 1px @greyLight;
 			img {
 				display: block;
-				margin-bottom: @vertSpacing;
+			}
+			h4 {
+				padding-top: @vertSpacing * 1.5;
 			}
 			span {
 				display: block;
 				padding-bottom: @vertSpacing - 4;
-				margin-top: -5px;
+				margin-top: -4px;
 				font-style: italic;
 				color: @grey;
 			}
@@ -371,8 +369,8 @@ LIST STYLES
 	}
 }
 
-#popular-posts {
-	
+#popular-post-list {
+
 }
 
 .image-matrix {
@@ -500,6 +498,7 @@ POSTS & CONTENT STYLES
 }
 
 .post-tags {
+	margin-top: @vertSpacing /2;
 	a {
 		.button-small
 	}
@@ -561,19 +560,34 @@ POSTS & CONTENT STYLES
 	margin-top: @vertSpacing;
 	padding-bottom: @vertSpacing;
 	.underlined;
-	p {}
-	ul, ol, table, dl {}
+	p {
+		margin-top: @vertSpacing / 2;
+	}
+	ul, ol, table, dl {
+		margin: 0;
+		padding: 0 0 0 24px;	
+	}
 	ul, ol {
 		li {}
 	}
 	ul {
-		li {}
+		li {
+			list-style: none;
+		}
 	}
 	ol {
 		li {}
 	}
 	blockquote {
+		background: #f8f8f8 url(../images/quote.png) no-repeat 17px 21px;
+		font-style: italic;
+		font-size: @font-size-4;
+		line-height: @vertSpacing;
+		padding: @vertSpacing @vertSpacing @vertSpacing (@vertSpacing * 2);
 		&:before {}
+	}
+	blockquote small { 
+		font-size: @font-size-6; 
 	}
 	dl {}
 	dt {}

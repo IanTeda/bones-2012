@@ -46,6 +46,15 @@ TOOLS
 .center-div {
   margin: 0 auto;
 }
+.hover-transition {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -243,6 +252,17 @@ BUTTONS
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
+}
+.button-small:hover,
+.button-small:visited:hover,
+.button-small:focus,
+.button-small:visited:focus {
+  color: #252525;
+  border: 1px solid #c3c3c3;
+  border-top-color: #b1b1b1;
+  border-left-color: #b1b1b1;
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
   background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
@@ -250,29 +270,10 @@ BUTTONS
   background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
   background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
 }
-.button-small:hover,
-.button-small:visited:hover,
-.button-small:focus,
-.button-small:visited:focus {
-  color: #ffffff;
-  border: 1px solid #c3c3c3;
-  border-top-color: #b1b1b1;
-  border-left-color: #b1b1b1;
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-}
 .button-small:active,
 .button-small:visited:active {
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
 }
 .blue-button,
 .blue-button:visited {

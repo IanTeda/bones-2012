@@ -518,6 +518,15 @@ TOOLS
 .center-div {
   margin: 0 auto;
 }
+.hover-transition {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -715,6 +724,17 @@ BUTTONS
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
+}
+.button-small:hover,
+.button-small:visited:hover,
+.button-small:focus,
+.button-small:visited:focus {
+  color: #252525;
+  border: 1px solid #c3c3c3;
+  border-top-color: #b1b1b1;
+  border-left-color: #b1b1b1;
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
   background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
@@ -722,29 +742,10 @@ BUTTONS
   background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
   background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
 }
-.button-small:hover,
-.button-small:visited:hover,
-.button-small:focus,
-.button-small:visited:focus {
-  color: #ffffff;
-  border: 1px solid #c3c3c3;
-  border-top-color: #b1b1b1;
-  border-left-color: #b1b1b1;
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-}
 .button-small:active,
 .button-small:visited:active {
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
 }
 .blue-button,
 .blue-button:visited {
@@ -989,7 +990,6 @@ HEADER SYTLES
 NAVIGATION STYLES
 *********************/
 .nav {
-  background: #eee;
   border: 0;
   /* end .menu ul li */
 
@@ -1056,19 +1056,61 @@ MENU STYLES
   width: 57.182320438000005%;
 }
 #main-menu ul li {
-  padding-top: 15px;
-  line-height: 33px;
+  /*
+			padding-top: 15px;
+			line-height: (@vertSpacing * 2) - 15;
+			*/
+
+  margin-top: -6px;
+}
+#main-menu ul li a {
+  display: block;
+  border-top: 6px solid #3d2423;
+}
+#main-menu ul li a:hover {
+  border-top: 6px solid #ab362e;
+  border-bottom: 1px solid #ab362e;
 }
 /*********************
 LIST STYLES
 *********************/
 #latest-post-list {
-  max-height: 506px;
+  max-height: 530px;
 }
 #latest-post-list li {
   width: 33.333333333333336%;
+  /** 768down assumed phone tablet so no hover **/
+
 }
-#popular-posts li {
+#latest-post-list li a img {
+  opacity: 0.7;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+#latest-post-list li a span {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+#latest-post-list li a:hover {
+  border-bottom: solid 1px #ab362e;
+}
+#latest-post-list li a:hover img {
+  opacity: 1;
+}
+#latest-post-list li a:hover span {
+  color: #656565;
+}
+#popular-post-list li {
   width: 100%;
 }
 /***************************

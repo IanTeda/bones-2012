@@ -181,7 +181,6 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee; 
 	border: 0;
 			
 	li {
@@ -272,8 +271,19 @@ MENU STYLES
 	width: @sevencol;
 	ul {
 		li {
+			/*
 			padding-top: 15px;
 			line-height: (@vertSpacing * 2) - 15;
+			*/
+			margin-top: -6px;
+			a {
+				display: block;
+				border-top: 6px solid @brown;
+			}
+			a:hover {
+				border-top: 6px solid @autumn;
+				border-bottom: 1px solid @autumn;
+			}
 		}
 	}
 }
@@ -283,13 +293,32 @@ LIST STYLES
 *********************/
 
 #latest-post-list {
-	max-height: 253px * 2;
+	max-height: @latest-post-height * 2;
 	li {
 		width: 100% / 3;
+		/** 768down assumed phone tablet so no hover **/
+		a {
+			img {
+				opacity: 0.7;
+				.hover-transition;
+			}
+			span {
+				.hover-transition;
+			}
+		}
+		a:hover {
+			border-bottom: solid 1px @autumn;
+			img {
+				opacity: 1;	
+			}
+			span {
+				color: @greyDark;	
+			}
+		}
 	}
 }
 
-#popular-posts {
+#popular-post-list {
 	li {
 		width: 100%;
 	}

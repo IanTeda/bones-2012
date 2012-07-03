@@ -49,7 +49,6 @@ H1, H2, H3, H4, H5 STYLES
 		float: right;
 		a {
 			font: @font-size-6 @sans-serif;
-			line-height: @vertSpacing * 1.5;
 		}
 	}
 }
@@ -156,7 +155,7 @@ LIST STYLES
 *********************/
 
 #latest-post-list {
-	max-height: 253px * 3;
+	max-height: @latest-post-height * 3;
 	overflow: hidden;
 	li {
 		float: left;
@@ -164,7 +163,7 @@ LIST STYLES
 	}
 }
 
-#popular-posts {
+#popular-post-list {
 	li {
 		float: left;
 		width: 100% / 2;

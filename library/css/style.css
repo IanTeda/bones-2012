@@ -515,6 +515,15 @@ TOOLS
 .center-div {
   margin: 0 auto;
 }
+.hover-transition {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -744,54 +753,34 @@ BUTTONS
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
 }
 .button-small:hover,
 .button-small:visited:hover,
 .button-small:focus,
 .button-small:visited:focus {
-  color: #ffffff;
+  color: #252525;
   border: 1px solid #c3c3c3;
   border-top-color: #b1b1b1;
   border-left-color: #b1b1b1;
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
 }
 .button-small:active,
 .button-small:visited:active {
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
 }
 .blue-button,
 .blue-button:visited {
@@ -1372,6 +1361,15 @@ TOOLS
 .center-div {
   margin: 0 auto;
 }
+.hover-transition {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -1601,54 +1599,34 @@ BUTTONS
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
 }
 .button-small:hover,
 .button-small:visited:hover,
 .button-small:focus,
 .button-small:visited:focus {
-  color: #ffffff;
+  color: #252525;
   border: 1px solid #c3c3c3;
   border-top-color: #b1b1b1;
   border-left-color: #b1b1b1;
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
 }
 .button-small:active,
 .button-small:visited:active {
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
 }
 .blue-button,
 .blue-button:visited {
@@ -1761,11 +1739,6 @@ LAYOUT & GRID STYLES
   width: 90%;
   margin: 0 auto;
 }
-.description {
-  margin: 24px 0 0 0;
-  font-size: 17px;
-  font-weight: 300;
-}
 article {
   margin-bottom: 24px;
 }
@@ -1786,12 +1759,6 @@ article a img {
 }
 .flexslider-container {
   display: none;
-}
-#latest-posts-container {
-  margin-top: 24px;
-}
-#row-four-container {
-  margin-top: 24px;
 }
 /*
 No Grid? Say Whaaaat?
@@ -1856,6 +1823,20 @@ a,
 a:visited {
   color: #25706b;
   text-decoration: none;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
   /* on hover */
 
   /* on click */
@@ -1867,7 +1848,7 @@ a:hover,
 a:visited:hover,
 a:focus,
 a:visited:focus {
-  color: #30938c;
+  color: #ab362e;
 }
 a:link,
 a:visited:link {
@@ -1896,7 +1877,7 @@ h5,
   font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-  vertical-align: text-bottom;
+  padding-top: 24px;
   margin: 0;
   /* Add heading margin to post subclass */
 
@@ -1923,28 +1904,23 @@ h5 a,
 h1,
 .h1 {
   font-size: 32px;
-  line-height: 72px;
 }
 h2,
 .h2 {
   font-size: 28px;
-  line-height: 48px;
 }
 h3,
 .h3 {
   font-size: 17px;
-  line-height: 36px;
 }
 h4,
 .h4 {
   font-size: 15px;
-  line-height: 24px;
   font-weight: 400;
 }
 h5,
 .h5 {
   font-size: 14px;
-  line-height: 24px;
   font-weight: 400;
 }
 .underlined span {
@@ -1966,6 +1942,11 @@ HEADER SYTLES
 }
 .header #inner-header .logo span {
   color: #000000;
+}
+.description {
+  margin: 24px 0 0 0;
+  font-size: 17px;
+  font-weight: 300;
 }
 /*********************
 NAVIGATION STYLES
@@ -2022,7 +2003,7 @@ LIST STYLES
 *********************/
 #latest-post-list {
   padding: 0;
-  max-height: 1518px;
+  max-height: 1590px;
   overflow: hidden;
 }
 #latest-post-list li {
@@ -2041,12 +2022,14 @@ LIST STYLES
 }
 #latest-post-list li a img {
   display: block;
-  margin-bottom: 24px;
+}
+#latest-post-list li a h4 {
+  padding-top: 36px;
 }
 #latest-post-list li a span {
   display: block;
   padding-bottom: 20px;
-  margin-top: -5px;
+  margin-top: -4px;
   font-style: italic;
   color: #8f8f8f;
 }
@@ -2159,6 +2142,9 @@ POSTS & CONTENT STYLES
 .post-header h3 span a {
   font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
+.post-tags {
+  margin-top: 12px;
+}
 .post-tags a {
   border: 1px solid #c3c3c3;
   border-top-color: #d2d2d2;
@@ -2184,18 +2170,8 @@ POSTS & CONTENT STYLES
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
   border: 1px solid #c3c3c3;
   border-top-color: #d2d2d2;
   border-left-color: #d2d2d2;
@@ -2220,6 +2196,15 @@ POSTS & CONTENT STYLES
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
+}
+.post-tags a:hover,
+.post-tags a:focus {
+  color: #252525;
+  border: 1px solid #c3c3c3;
+  border-top-color: #b1b1b1;
+  border-left-color: #b1b1b1;
   background-color: #dfdfdf;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
   background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
@@ -2233,71 +2218,32 @@ POSTS & CONTENT STYLES
   background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
   background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
 }
-.post-tags a:hover,
-.post-tags a:focus {
-  color: #ffffff;
-  border: 1px solid #c3c3c3;
-  border-top-color: #b1b1b1;
-  border-left-color: #b1b1b1;
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-}
 .post-tags a:active {
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
 }
 .post-tags a:hover,
 .post-tags a:focus {
-  color: #ffffff;
+  color: #252525;
   border: 1px solid #c3c3c3;
   border-top-color: #b1b1b1;
   border-left-color: #b1b1b1;
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  background-color: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
 }
 .post-tags a:active {
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
-  background-color: #e4e4e4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-  background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
 }
 .post-meta {
   text-align: center;
@@ -2348,6 +2294,29 @@ POSTS & CONTENT STYLES
 }
 .post-content span {
   display: none;
+}
+.post-content p {
+  margin-top: 12px;
+}
+.post-content ul,
+.post-content ol,
+.post-content table,
+.post-content dl {
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+.post-content ul li {
+  list-style: none;
+}
+.post-content blockquote {
+  background: #f8f8f8 url(../images/quote.png) no-repeat 17px 21px;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 24px 24px 24px 48px;
+}
+.post-content blockquote small {
+  font-size: 12px;
 }
 .post-content dd {
   margin-left: 0;
@@ -3261,6 +3230,15 @@ tweeners.
   .center-div {
     margin: 0 auto;
   }
+  .hover-transition {
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -ms-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+  }
   /*********************
   DIMENSIONS
   *********************/
@@ -3458,6 +3436,17 @@ tweeners.
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+    /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+  
+  }
+  .button-small:hover,
+  .button-small:visited:hover,
+  .button-small:focus,
+  .button-small:visited:focus {
+    color: #252525;
+    border: 1px solid #c3c3c3;
+    border-top-color: #b1b1b1;
+    border-left-color: #b1b1b1;
     background-color: #dfdfdf;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
     background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
@@ -3465,29 +3454,10 @@ tweeners.
     background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
     background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
   }
-  .button-small:hover,
-  .button-small:visited:hover,
-  .button-small:focus,
-  .button-small:visited:focus {
-    color: #ffffff;
-    border: 1px solid #c3c3c3;
-    border-top-color: #b1b1b1;
-    border-left-color: #b1b1b1;
-    background-color: #cbcbcb;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-    background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-    background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-    background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-    background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-  }
   .button-small:active,
   .button-small:visited:active {
-    background-color: #e4e4e4;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-    background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-    background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-    background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-    background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+    /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+  
   }
   .blue-button,
   .blue-button:visited {
@@ -3539,7 +3509,6 @@ tweeners.
   }
   .underlined span a {
     font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 36px;
   }
   /*********************
   IMAGE STYLES
@@ -3619,7 +3588,6 @@ tweeners.
   }
   #main-menu span a {
     font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 36px;
   }
   #main-menu ul {
     text-align: center;
@@ -3637,14 +3605,14 @@ tweeners.
   LIST STYLES
   *********************/
   #latest-post-list {
-    max-height: 759px;
+    max-height: 795px;
     overflow: hidden;
   }
   #latest-post-list li {
     float: left;
     width: 50%;
   }
-  #popular-posts li {
+  #popular-post-list li {
     float: left;
     width: 50%;
   }
@@ -4214,6 +4182,15 @@ you can add resource intensive styles.
   .center-div {
     margin: 0 auto;
   }
+  .hover-transition {
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -ms-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+  }
   /*********************
   DIMENSIONS
   *********************/
@@ -4411,6 +4388,17 @@ you can add resource intensive styles.
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+    /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+  
+  }
+  .button-small:hover,
+  .button-small:visited:hover,
+  .button-small:focus,
+  .button-small:visited:focus {
+    color: #252525;
+    border: 1px solid #c3c3c3;
+    border-top-color: #b1b1b1;
+    border-left-color: #b1b1b1;
     background-color: #dfdfdf;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
     background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
@@ -4418,29 +4406,10 @@ you can add resource intensive styles.
     background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
     background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
   }
-  .button-small:hover,
-  .button-small:visited:hover,
-  .button-small:focus,
-  .button-small:visited:focus {
-    color: #ffffff;
-    border: 1px solid #c3c3c3;
-    border-top-color: #b1b1b1;
-    border-left-color: #b1b1b1;
-    background-color: #cbcbcb;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-    background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-    background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-    background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-    background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
-  }
   .button-small:active,
   .button-small:visited:active {
-    background-color: #e4e4e4;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#e4e4e4));
-    background-image: -webkit-linear-gradient(top, #d7d7d7, #e4e4e4);
-    background-image: -moz-linear-gradient(top, #d7d7d7, #e4e4e4);
-    background-image: -o-linear-gradient(top, #d7d7d7, #e4e4e4);
-    background-image: linear-gradient(to bottom, #d7d7d7, #e4e4e4);
+    /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+  
   }
   .blue-button,
   .blue-button:visited {
@@ -4685,7 +4654,6 @@ you can add resource intensive styles.
   NAVIGATION STYLES
   *********************/
   .nav {
-    background: #eee;
     border: 0;
     /* end .menu ul li */
   
@@ -4752,19 +4720,61 @@ you can add resource intensive styles.
     width: 57.182320438000005%;
   }
   #main-menu ul li {
-    padding-top: 15px;
-    line-height: 33px;
+    /*
+  			padding-top: 15px;
+  			line-height: (@vertSpacing * 2) - 15;
+  			*/
+  
+    margin-top: -6px;
+  }
+  #main-menu ul li a {
+    display: block;
+    border-top: 6px solid #3d2423;
+  }
+  #main-menu ul li a:hover {
+    border-top: 6px solid #ab362e;
+    border-bottom: 1px solid #ab362e;
   }
   /*********************
   LIST STYLES
   *********************/
   #latest-post-list {
-    max-height: 506px;
+    max-height: 530px;
   }
   #latest-post-list li {
     width: 33.333333333333336%;
+    /** 768down assumed phone tablet so no hover **/
+  
   }
-  #popular-posts li {
+  #latest-post-list li a img {
+    opacity: 0.7;
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -ms-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+  }
+  #latest-post-list li a span {
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -ms-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+  }
+  #latest-post-list li a:hover {
+    border-bottom: solid 1px #ab362e;
+  }
+  #latest-post-list li a:hover img {
+    opacity: 1;
+  }
+  #latest-post-list li a:hover span {
+    color: #656565;
+  }
+  #popular-post-list li {
     width: 100%;
   }
   /***************************
@@ -4860,7 +4870,7 @@ you can add resource intensive styles.
   #latest-post-list li {
     width: 25%;
   }
-  #popular-posts li {
+  #popular-post-list li {
     width: 50%;
   }
 }

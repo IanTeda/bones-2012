@@ -59,7 +59,7 @@
 				<div id="popular-posts-container" class="sixCol first">
 					<h3 class="underlined">Popular Posts <span><a href="#">View the hit list &#8230;</a></span></h3>
                     
-					<ol id="popular-posts" class="liquid-matrix numbered-list">
+					<ol id="popular-post-list" class="numbered-list">
 						<li>
 							<a href="#">
 								<h4><span>Blog: </span>This is a blog post</h4>
@@ -100,7 +100,7 @@
 				</div>
 				
 				<div id="goodreads-container" class="sixCol last">
-					<h3 class="underlined">Bookshelf <span><a href="#">See the library &#8230;</a></span></h3>
+					<h3 class="underlined">Bookshelf<span><a href="#">See the library &#8230;</a></span></h3>
                     
 					<ul class="image-matrix">
 						<?php if(function_exists('bookshelf')) { bookshelf(); } ?>
@@ -109,7 +109,7 @@
 				
 			</div>
 			
-			<div id="lower-social" class="twelveCol first">
+			<div id="row-five-container" class="twelveCol first">
 				<div id="lastfm-container" class="sixCol first">
 					<h3 class="underlined">Album Chart <span><a href="#">Check out the charts &#8230;</a></span></h3>
                     

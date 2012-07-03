@@ -53,6 +53,15 @@ TOOLS
 	margin: 0 auto;	
 }
 
+.hover-transition {
+	/** Transition to roll over color **/
+	-webkit-transition: 0.5s linear all;
+	-moz-transition: 0.5s linear all;
+	-ms-transition: 0.5s linear all;
+	-o-transition: 0.5s linear all;
+	transition: 0.5s linear all;
+}
+
 /*********************
 DIMENSIONS
 *********************/
@@ -60,6 +69,7 @@ DIMENSIONS
 @horzSpacing: 1em;
 @iconSize: 33px;
 @mobileWidth: 300px;
+@latest-post-height: 265px;
 
 /*********************
 COLORS
@@ -369,18 +379,18 @@ BUTTONS
 	line-height: @font-size-s;
 	.transition();
 	.rounded(2px);
-	.css-gradient(@buttonColor,darken(@buttonColor, 2%));
+	/*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
 
 	&:hover, &:focus {
-		color: @white;
+		color: darken(@buttonColor, 75%);
 	  	border: 1px solid darken(@buttonColor, 13%);
 	  	border-top-color: darken(@buttonColor, 20%);
 	 	border-left-color: darken(@buttonColor, 20%);
-		.css-gradient(darken(@buttonColor, 5%),darken(@buttonColor, 10%));
+		.css-gradient(@buttonColor,darken(@buttonColor, 2%));
 	}
 	
 	&:active {
-		.css-gradient(darken(@buttonColor, 5%),@buttonColor);
+		/*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
 	}	
 }
 

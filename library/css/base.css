@@ -1671,13 +1671,8 @@ SIDEBARS & ASIDES
 /*********************
 ARCHIVE STYLES
 *********************/
-.blog-archive-post,
-.archive-post {
-  margin: 24px 0 0 0;
-}
 .blog-archive-post h4,
 .archive-post h4 {
-  margin: 0;
   display: block;
 }
 .blog-archive-post h4 a,

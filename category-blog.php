@@ -10,20 +10,21 @@
 					<?php // Lets show the year but only once ?>				
 					<?php if (get_the_time('Y') != $year): ?>
 						<?php $year = get_the_time('Y'); ?>
-						<h3 class="archive-year"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
+						<div class="new-year twelveCol first">
+							<h3 class="fourCol first"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
+					<?php else: ?>
+						<div class="twelveCol first">
 					<?php endif; ?>
+							<h4 class="eightCol last">
+								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</h4>
+							<p class="eightCol last">Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
+							<?php the_tags('<span class="post-tags-archive eightCol last">', ' ', '</span>'); ?>
+						</div>
 					
-					<div class="post-<?php the_ID(); ?> blog-archive-post">
-						<h4>
-							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-								<?php the_title(); ?>
-							</a>
-						</h4>
-						<?php the_tags('<span class="post-tags">', ' ', '</span>'); ?>
-						<p>Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
-					</div>
-					
-				<?php endwhile; ?>
+					<?php endwhile; ?>
 			</div><!-- end blog-archive -->
 
 			

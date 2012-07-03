@@ -2647,13 +2647,8 @@ SIDEBARS & ASIDES
 /*********************
 ARCHIVE STYLES
 *********************/
-.blog-archive-post,
-.archive-post {
-  margin: 24px 0 0 0;
-}
 .blog-archive-post h4,
 .archive-post h4 {
-  margin: 0;
   display: block;
 }
 .blog-archive-post h4 a,
@@ -4643,6 +4638,48 @@ you can add resource intensive styles.
   }
   .spanTwelve {
     padding-left: 102.762430932%;
+  }
+  #blog-archive .new-year {
+    margin-top: 24px;
+    border-top: solid 1px #e4e4e4;
+  }
+  .post-tags-archive a {
+    border: 1px solid #c3c3c3;
+    border-top-color: #d2d2d2;
+    border-left-color: #d2d2d2;
+    padding: 6px 8px;
+    color: #656565;
+    display: inline-block;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 10px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+  
+  }
+  .post-tags-archive a:hover,
+  .post-tags-archive a:focus {
+    color: #252525;
+    border: 1px solid #c3c3c3;
+    border-top-color: #b1b1b1;
+    border-left-color: #b1b1b1;
+    background-color: #dfdfdf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
+    background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
+    background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
+    background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
+    background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  }
+  .post-tags-archive a:active {
+    /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+  
   }
   /*********************
   HEADER SYTLES

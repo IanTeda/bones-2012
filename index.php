@@ -90,51 +90,10 @@
                 <h3 class="underlined">Photo Blog <span><a href="#">View the matrix &#8230;</a></span></h3>
                 
                 	<ul id="photo-list" class="image-matrix">
-                    	<li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram1.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram2.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram3.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram4.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram5.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram6.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram5.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram1.jpg" >
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img class="instagram-photo" src="<?php echo get_template_directory_uri(); ?>/library/images/instagram1.jpg" >
-                            </a>
-                        </li>
+						<?php $featured = new WP_Query("category_name=photo&showposts=9"); ?>
+                        <?php while($featured->have_posts()) : $featured->the_post();?>
+                            <li><a href="<?php the_permalink() ?>"><?php feature_image_100x100(); ?></a></li>
+                        <?php endwhile; ?>
                     </ul>
 				</div>
 

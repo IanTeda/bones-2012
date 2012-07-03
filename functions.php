@@ -54,6 +54,7 @@ add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'feature_image_(220x144)', 220, 144, true );
 add_image_size( 'feature_image_(1140x336)', 1140, 336, true );
 add_image_size( 'feature_image_(936x384)', 936, 384, true );
+add_image_size( 'feature_image_(100x100)', 100, 100, true );
 /* 
 to add more sizes, simply copy a line from above 
 and change the dimensions & name. As long as you
@@ -98,6 +99,14 @@ function feature_image_936x384(){
 	 	the_post_thumbnail( array( 936, 384 ), array('class' => 'resizeable image-box-shadow') );
 	} else { ?>
 		<img class="resizeable image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(936x384).png" alt="No Feature Image Set" />
+	<?php };
+}
+
+function feature_image_100x100(){
+	if ( has_post_thumbnail() ) {
+	 	the_post_thumbnail( array( 100, 100 ), array('class' => 'instagram-photo') );
+	} else { ?>
+		<img class="instagram-photo" src="<?php bloginfo('template_url')?>/library/images/no_image_(100x100).png" alt="No Feature Image Set" />
 	<?php };
 }
 

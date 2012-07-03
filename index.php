@@ -23,7 +23,7 @@
 				<h3 class="underlined">Latest Posts<span><a href="#">Check out more posts &#8230;</a></span></h3>
 
 			    <ul id="latest-post-list" class="twelveCol first">
-					<?php $summary = new WP_query('showposts=8'); //Only the latest 3 posts ?>
+					<?php $summary = new WP_query('showposts=8&cat=-13'); //Only the 8 latest posts ?>
                 	<?php if (have_posts()) : while ($summary->have_posts()) : $summary->the_post(); ?>
                     	<li class="clearfix">
                            	<a href="<?php the_permalink() ?>" title="Take me to <?php the_title(); ?>" >

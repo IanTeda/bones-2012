@@ -28,8 +28,8 @@
 	<!-- wordpress head functions -->
 	<?php wp_head(); ?>
 	<!-- end of wordpress head -->
-			
-	<!-- drop Google Analytics Here -->
+	
+	<!-- Google Analytics handled by plugin -->			
 	<!-- end analytics -->
 </head>
 	

@@ -1,9 +1,9 @@
 			<footer class="footer" role="contentinfo">
 				<div id="inner-footer" class="wrap clearfix">
-					<h3 class="copyright">
+					<h3 class="copyright sixCol first">
 						<a href="<?php bloginfo('url'); ?>/wp-admin">www.teda.id.au</a> is powered by <a href="http://wordpress.org/">Wordpress</a>
 					</h3>
-					<div id="social-list-container">
+					<div id="social-list-container" class="">
 						<ul class="social-list">
 							<li>
 								<a href="https://www.facebook.com/ian.teda">

@@ -2114,7 +2114,8 @@ LIST STYLES
   padding-left: 37px;
   color: #8f8f8f;
 }
-.numbered-list {
+.numbered-list,
+.wppp_list {
   font-style: italic;
   color: #ab362e;
   line-height: 24px;
@@ -2123,17 +2124,21 @@ LIST STYLES
 
   padding: 0;
 }
-.numbered-list li {
+.numbered-list li,
+.wppp_list li {
   display: list-item;
   font-style: normal;
 }
-.numbered-list li a h4 {
+.numbered-list li a h4,
+.wppp_list li a h4 {
   margin: 0;
 }
-.numbered-list li a h4 span {
+.numbered-list li a h4 span,
+.wppp_list li a h4 span {
   color: #000000;
 }
-.numbered-list li a p {
+.numbered-list li a p,
+.wppp_list li a p {
   color: #656565;
   margin-top: -8px;
   font-style: italic;
@@ -2689,6 +2694,7 @@ FOOTER STYLES
   font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0;
+  padding: 0;
   line-height: 48px;
   text-align: center;
 }

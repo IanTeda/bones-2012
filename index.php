@@ -58,45 +58,14 @@
 			<div id="row-four-container" class="twelveCol first">
 				<div id="popular-posts-container" class="sixCol first">
 					<h3 class="underlined">Popular Posts <span><a href="#">View the hit list &#8230;</a></span></h3>
-                    
-					<ol id="popular-post-list" class="numbered-list">
-						<li>
-							<a href="#">
-								<h4><span>Blog: </span>This is a blog post</h4>
-								<p>Posted by ian &bull; Tue, 19 June 12</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<h4><span>Photo: </span>This is a blog post</h4>
-								<p>Posted by ian &bull; Tue, 19 June 12</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<h4><span>Misc: </span>This is a blog post</h4>
-								<p>Posted by ian &bull; Tue, 19 June 12</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<h4><span>Video: </span>Delta Force Paint Ball</h4>
-								<p>Posted by ian &bull; Tue, 19 June 12</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<h4><span>Trail: </span>Check out this trail</h4>
-								<p>Posted by ian &bull; Tue, 19 June 12</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<h4><span>Misc: </span>This is a blog post</h4>
-								<p>Posted by ian &bull; Tue, 19 June 12</p>
-							</a>
-						</li>
-					</ol>
+					
+					<?php if (function_exists('WPPP_show_popular_posts')) {
+						WPPP_show_popular_posts("title=&number=6&days=0&magic_number=1&list_tag=ol&time_format=D, d-M-Y&format=
+												<a href='%post_permalink%' title='%post_title_attribute%'>
+													<h4><span>%post_category%: </span>%post_title%</h4>
+													<p>Posted by %post_author% - %post_time% (%post_views% Views)</p>
+												</a>");
+					} ?>
 				</div>
 				
 				<div id="goodreads-container" class="sixCol last">

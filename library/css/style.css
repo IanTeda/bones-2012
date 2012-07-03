@@ -2130,16 +2130,13 @@ LIST STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-.post-header {
-  margin-top: 24px;
-}
-.post-header img {
+#post-header img {
   margin: 24px auto 0 auto;
 }
-.post-header h3 span {
+#post-header h3 span {
   float: right;
 }
-.post-header h3 span a {
+#post-header h3 span a {
   font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
 .post-tags {
@@ -2263,6 +2260,9 @@ POSTS & CONTENT STYLES
   display: block;
   height: auto;
   max-width: 100%;
+}
+.post-text {
+  min-height: 250px;
 }
 /* end .hentry */
 /* want to style individual post classes? Booya! */

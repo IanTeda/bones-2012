@@ -321,7 +321,7 @@ function bones_page_navi($before = '', $after = '') {
 	if($start_page <= 0) {
 		$start_page = 1;
 	}
-	echo $before.'<nav class="page-navigation"><ol class="bones_page_navi clearfix">'."";
+	echo $before.'<nav class="page-navigation clearfix twelveCol first"><ol class="bones_page_navi clearfix">'."";
 	if ($start_page >= 2 && $pages_to_show < $max_page) {
 		$first_page_text = "First";
 		echo '<li class="bpn-first-page-link"><a href="'.get_pagenum_link().'" title="'.$first_page_text.'">'.$first_page_text.'</a></li>';

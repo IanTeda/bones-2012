@@ -1,4 +1,3 @@
-<!-- archive category-photo -->
 <?php get_header(); ?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
@@ -30,16 +29,18 @@
 					</ul>
 					
 			        <?php if (function_exists('bones_page_navi')) { // if experimental feature is active ?>
-						<?php bones_page_navi(); // use the page navi function ?>
+						<div id="page-navigation-wrapper" class="eightCol last">
+							<?php bones_page_navi(); // use the page navi function ?>
 
 					        <?php } else { // if it is disabled, display regular wp prev & next links ?>
-						        <nav class="wp-prev-next">
+						        <nav class="wp-prev-next  clearfix twelveCol first">
 							        <ul class="clearfix">
 								        <li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
 								        <li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
 							        </ul>
 					    	    </nav>
 					        <?php } ?>
+						</div>
 					
 					    <?php else : ?>
 					

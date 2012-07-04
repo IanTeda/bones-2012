@@ -1,4 +1,3 @@
-<!-- archive category-trail -->
 <?php get_header(); ?>
 			
 			<div id="content">

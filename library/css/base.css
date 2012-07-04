@@ -1423,11 +1423,13 @@ PAGE NAVI STYLES
   text-decoration: none;
   line-height: 48px;
 }
-.page-navigation,
-.wp-prev-next {
-  margin: 1.1em 0 2.2em;
+#page-navigation-wrapper {
+  text-align: center;
+  margin-top: 24px;
 }
 .bones_page_navi {
+  width: 290px;
+  margin: 0 auto;
   /* current page link */
   /* end .bones_page_navi .bpn-current */
 

@@ -1222,6 +1222,7 @@ LIST STYLES
 .numbered-list li a h4,
 .wppp_list li a h4 {
   margin: 0;
+  padding: 0;
 }
 .numbered-list li a h4 span,
 .wppp_list li a h4 span {

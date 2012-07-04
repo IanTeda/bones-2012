@@ -64,7 +64,40 @@
 													<h4><span>%post_category%: </span>%post_title%</h4>
 													<p>Posted by %post_author% - %post_time% (%post_views% Views)</p>
 												</a>");
-					} ?>
+					} else { ?>
+					<ol class='wppp_list'>
+						<li>
+							<a href='http://www.teda.id.au/trail/cronulla-kurnell-sand-dunes/' title='Cronulla/Kurnell Sand Dunes'>
+								<h4><span>Trail: </span>Cronulla/Kurnell Sand Dunes</h4>
+								<p>Posted by Ian - Fri, 17-Aug-2007 (4,145 Views)</p>
+							</a>
+						</li>
+						<li>
+							<a href='http://www.teda.id.au/mtb/' title='Mountain Biking'>
+								<h4><span>Blog: </span>Mountain Biking</h4>
+								<p>Posted by Ian - Sat, 30-Jun-2007 (2,574 Views)</p>
+							</a>
+						</li>
+						<li>
+							<a href='http://www.teda.id.au/photo/rubiks-cube-3x3-%e2%80%93-how-to-solve-in-6-seconds/' title='Rubik&#039;s Cube 3x3 – 6 Second Solve'>
+								<h4><span>Photoblog: </span>Rubik&#039;s Cube 3x3 – 6 Second Solve</h4>
+								<p>Posted by Ian - Wed, 23-Apr-2008 (1,421 Views)</p>
+							</a>
+						</li>
+						<li>
+							<a href='http://www.teda.id.au/trail/lady-carrington-drive/' title='Lady Carrington Drive'>
+								<h4><span>Trail: </span>Lady Carrington Drive</h4>
+								<p>Posted by Ian - Tue, 31-Jul-2007 (791 Views)</p>
+							</a>
+						</li>
+						<li>
+							<a href='http://www.teda.id.au/trail/trail-woronora-bridge-loop/' title='Woronora Bridge Loop'>
+								<h4><span>Trail: </span>Woronora Bridge Loop</h4>
+								<p>Posted by Ian - Tue, 19-Feb-2008 (720 Views)</p>
+							</a>
+						</li>
+					</ol>
+					<?php }; ?>
 				</div>
 				
 				<div id="goodreads-container" class="sixCol last">

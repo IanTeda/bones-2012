@@ -465,15 +465,18 @@ LIST STYLES
 	padding: 0;
 	li {
 		display: list-item;
-		font-style: normal;
+		margin-top: @vertSpacing;
 		a {
-			h4 {
-				margin: 0;
-				span {
-					color: @black;	
-				}
+			font-size: @font-size-4;
+			font-style: normal;
+			text-transform: uppercase;
+			font-family: @sans-serif-heading;
+			span {
+				color: @black;	
 			}
 			p {
+				text-transform: none;
+				font-family: @sans-serif;
 				color: @greyDark;
 				margin-top: -8px;
 				font-style: italic;

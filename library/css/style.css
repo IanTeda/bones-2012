@@ -2127,18 +2127,23 @@ LIST STYLES
 .numbered-list li,
 .wppp_list li {
   display: list-item;
+  margin-top: 24px;
+}
+.numbered-list li a,
+.wppp_list li a {
+  font-size: 15px;
   font-style: normal;
+  text-transform: uppercase;
+  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
-.numbered-list li a h4,
-.wppp_list li a h4 {
-  margin: 0;
-}
-.numbered-list li a h4 span,
-.wppp_list li a h4 span {
+.numbered-list li a span,
+.wppp_list li a span {
   color: #000000;
 }
 .numbered-list li a p,
 .wppp_list li a p {
+  text-transform: none;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   color: #656565;
   margin-top: -8px;
   font-style: italic;

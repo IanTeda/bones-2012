@@ -29,8 +29,10 @@
 						
 							</section> <!-- end article section -->
 							
+							<?php the_tags('<p class="post-tags fourCol first">', ' ', '</p>'); ?>
+							
 					<footer class="post-meta clearfix">
-						<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?><?php the_tags('<span class="amp"> & </span> taged as ', ', ', ''); ?>
+						<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
 					</footer> <!-- end article footer -->
 						
 						</article> <!-- end article -->

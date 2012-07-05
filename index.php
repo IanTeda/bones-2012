@@ -12,7 +12,13 @@
 					<ul class="slides">
 						<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
                         <?php while($featured->have_posts()) : $featured->the_post();?>
-                            <li><a href="<?php the_permalink() ?>"><?php feature_image_936x384(); ?></a></li>
+                            <li>
+								<a href="<?php the_permalink() ?>">
+									<?php feature_image_936x384(); ?>
+									<p class="flex-caption"><strong><?php the_title(); ?></strong> &bull; <?php get_custom_excerpt($post->ID); ?></p>
+								</a>
+							</li>
+							
                         <?php endwhile; ?>
 					</ul>
 				</div>

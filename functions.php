@@ -277,7 +277,7 @@ Excerpt function
 function get_custom_excerpt($postid){
 	if(has_excerpt($postid)) {
 		//This post have an excerpt, let's display it
-		the_excerpt($postid);
+		echo get_the_excerpt($postid);
 	} else {
 		echo 'There is no excerpt for this post.';
 	}	

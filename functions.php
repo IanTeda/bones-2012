@@ -104,9 +104,9 @@ function feature_image_936x384(){
 
 function feature_image_100x100(){
 	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 100, 100 ), array('class' => 'instagram-photo') );
+	 	the_post_thumbnail( array( 100, 100 ), array('class' => 'instagram-image') );
 	} else { ?>
-		<img class="instagram-photo" src="<?php bloginfo('template_url')?>/library/images/no_image_(100x100).png" alt="No Feature Image Set" />
+		<img class="instagram-image" src="<?php bloginfo('template_url')?>/library/images/no_image_(100x100).png" alt="No Feature Image Set" />
 	<?php };
 }
 

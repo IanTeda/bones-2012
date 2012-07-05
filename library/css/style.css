@@ -1783,7 +1783,7 @@ IMAGE STYLES
   padding: 1px;
 }
 .album-cover,
-.instagram-photo {
+.instagram-image {
   box-shadow: 0px 0px 0.5em #000000;
   box-shadow: 0px 0px 0.5em #000000;
   max-width: 174px;
@@ -2132,7 +2132,6 @@ LIST STYLES
 .numbered-list li a h4,
 .wppp_list li a h4 {
   margin: 0;
-  padding: 0;
 }
 .numbered-list li a h4 span,
 .wppp_list li a h4 span {
@@ -3535,7 +3534,7 @@ tweeners.
     height: 150px;
   }
   .album-cover,
-  .instagram-photo {
+  .instagram-image {
     width: 100px;
     height: 100px;
   }

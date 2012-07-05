@@ -2092,6 +2092,15 @@ LIST STYLES
   /** Not sure if this will center image across all browsers**/
 
 }
+#blog-archive .new-year,
+#archive .new-year {
+  margin-top: 24px;
+  border-top: solid 1px #e4e4e4;
+  border-top: solid 1px #e4e4e4;
+}
+#archive #archive-heading span {
+  color: #000000;
+}
 #blog-archive article section li {
   overflow: hidden;
 }
@@ -4662,10 +4671,6 @@ you can add resource intensive styles.
   }
   .spanTwelve {
     padding-left: 102.762430932%;
-  }
-  #blog-archive .new-year {
-    margin-top: 24px;
-    border-top: solid 1px #e4e4e4;
   }
   .post-tags-archive a {
     border: 1px solid #c3c3c3;

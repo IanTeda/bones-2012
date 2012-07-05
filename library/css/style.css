@@ -1948,6 +1948,9 @@ HEADER SYTLES
   font-size: 17px;
   font-weight: 300;
 }
+#page-header-image-wrapper {
+  margin-top: 24px;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -2160,6 +2163,9 @@ LIST STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+#post-header {
+  float: left;
+}
 #post-header img {
   margin: 24px auto 0 auto;
 }

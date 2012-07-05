@@ -6,9 +6,16 @@
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 					<header class="post-header">
-						<?php feature_image_1140x336(); ?>
-						<h3 class="underlined clearfix">
+						
+						<div id="page-header-image-wrapper" class="twelveCol first">
+							<?php feature_image_1140x336(); ?>
+						</div>
+					
+						<h3 class="underlined clearfix twelveCol first">
 							<?php rm_bread_crumbs(); ?>
+							<span>
+								<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
+							</span>
 						</h3>
 						
 						<?php $children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');?>

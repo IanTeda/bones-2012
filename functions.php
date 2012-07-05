@@ -308,7 +308,7 @@ function rm_bread_crumbs() {
 	 	$crumbs .= ' &raquo; 4 '.get_the_title($post->ID);
 	 }
 	 
-	 $crumbs .=    '</p>'."\n";
+	 $crumbs .=    "\n";
 	 echo $crumbs;
 }
 

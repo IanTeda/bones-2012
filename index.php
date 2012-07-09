@@ -7,7 +7,7 @@
 				<p><?php bloginfo('description'); ?></p>
             </div>
 			
-			<div id="flexslider-wrapper" class="flexslider-container tenCol pushOne">
+			<div id="flexslider-wrapper" class="flexslider-container tenCol pushOne clearfix">
 				<div id="slider" class="flexslider">
 					<ul class="slides">
 						<?php $featured = new WP_Query("category_name=featured&showposts=5"); ?>
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 		
-			<div id="latest-posts-container" class="twelveCol first">
+			<div id="latest-posts-container" class="twelveCol first clearfix">
 				<h3 class="underlined">Latest Posts<span><a href="#">Check out more posts &#8230;</a></span></h3>
 
 			    <ul id="latest-post-list" class="twelveCol first">
@@ -60,8 +60,8 @@
 			
 			</div> <!-- end #main -->
     
-			<div id="row-four-container" class="twelveCol first">
-				<div id="popular-posts-container" class="sixCol first">
+			<div id="row-four-container" class="twelveCol first clearfix">
+				<div id="popular-posts-container" class="sixCol first clearfix">
 					<h3 class="underlined">Popular Posts <span><a href="#">View the hit list &#8230;</a></span></h3>
 					
 					<?php if (function_exists('WPPP_show_popular_posts')) {
@@ -106,7 +106,7 @@
 					<?php }; ?>
 				</div>
 				
-				<div id="goodreads-container" class="sixCol last">
+				<div id="goodreads-container" class="sixCol last clearfix">
 					<h3 class="underlined">Bookshelf<span><a href="#">See the library &#8230;</a></span></h3>
                     
 					<ul class="image-matrix">
@@ -116,15 +116,15 @@
 				
 			</div>
 			
-			<div id="row-five-container" class="twelveCol first">
-				<div id="lastfm-container" class="sixCol first">
+			<div id="row-five-container" class="twelveCol first clearfix">
+				<div id="lastfm-container" class="sixCol first clearfix">
 					<h3 class="underlined">Album Chart <span><a href="#">Check out the charts &#8230;</a></span></h3>
                     
 					<div id="lastfmrecords">
 					</div>
 				</div><!-- End of lastfm list -->
 				
-				<div id="instagram-container" class="sixCol last">
+				<div id="instagram-container" class="sixCol last clearfix">
                 <h3 class="underlined">Photo Blog <span><a href="#">View the matrix &#8230;</a></span></h3>
                 
                 	<ul id="photo-list" class="image-matrix">

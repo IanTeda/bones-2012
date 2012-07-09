@@ -8,31 +8,42 @@ Template Name: Archive page
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="clearfix" role="main">
-
-			<?php
-				$posts_to_show = 100; //Max number of articles to display
-				$debut = 0; //The first article to be displayed
-?>
-<?php while(have_posts()) : the_post(); ?>
-<h2><?php the_title(); ?></h2>
-<ul>
-<?php
-$myposts = get_posts('numberposts=$posts_to_show&offset=$debut');
-foreach($myposts as $post) :
-?>
-<li><?php the_time('d/m/y') ?>: <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-
-<?php endforeach; ?>
-</ul>
-
-<?php endwhile; ?>
+		
+			<div id="archive">
+	
+				<?php $year = ''; ?>
+				<?php while(have_posts()) : the_post(); ?>  
+					<h2><?php the_title(); ?></h2>
+					
+					<?php $totalposts = get_posts('numberposts=200&offset=0'); ?>  
+					<?php foreach($totalposts as $post) :?> 
+					
+						<?php // Lets show the year but only once ?>				
+						<?php if (get_the_time('Y') != $year): ?>
+							<?php $year = get_the_time('Y'); ?>
+							<div class="new-year twelveCol first">
+								<h3 class="fourCol first"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
+						<?php else: ?>
+							<div class="twelveCol first">
+						<?php endif; ?> 
+					
+					
+							<h4 class="eightCol last">
+								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</h4>
+							<p class="eightCol last">Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
+							<?php the_tags('<span class="post-tags-archive eightCol last">', ' ', '</span>'); ?>
+						</div>
+					<?php endforeach; ?>  
+				   
+				<?php endwhile; ?>
+				
+			</div> <!-- end #archive -->
 			
-    				</div> <!-- end #main -->
-    
-				    <?php //get_sidebar(); // sidebar 1 ?>
-				    
-				</div> <!-- end #inner-content -->
-    
-			</div> <!-- end #content -->
+		</div> <!-- end #main -->
+	</div> <!-- end #inner-content -->
+</div> <!-- end #content -->
 
 <?php get_footer(); ?>

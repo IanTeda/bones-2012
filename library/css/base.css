@@ -860,6 +860,18 @@ article a img {
 .flexslider-container {
   display: none;
 }
+#sitemap-categories-wrapper,
+#sitemap-tagclound-wrapper,
+#sitemap-posts-wrapper,
+#sitemap-pages-wrapper {
+  margin-top: 24px;
+}
+#sitemap-tagclound-wrapper div {
+  margin-top: 24px;
+}
+#sitemap-tagclound-wrapper div #clound-wrapper {
+  margin-top: 24px;
+}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -1248,6 +1260,76 @@ LIST STYLES
   color: #656565;
   margin-top: -8px;
   font-style: italic;
+}
+#sitemap-pages-list,
+#sitemap-categories-list {
+  margin-top: 24px;
+  list-style: none;
+}
+#sitemap-pages-list li,
+#sitemap-categories-list li {
+  /**text-rendering : optimizelegibility;**/
+
+  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 24px;
+  margin: 0;
+  /* Add heading margin to post subclass */
+
+  /* 
+	if you're going to use webfonts, be sure to check your weights 
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+  /* removing text decoration from all headline links */
+
+  font-size: 17px;
+  border-top: solid 1px #e4e4e4;
+  margin-top: 24px;
+}
+#sitemap-pages-list li a,
+#sitemap-categories-list li a {
+  text-decoration: none;
+}
+#sitemap-pages-list li a,
+#sitemap-categories-list li a {
+  color: #656565;
+}
+#sitemap-pages-list li ul,
+#sitemap-categories-list li ul {
+  list-style: none;
+}
+#sitemap-pages-list li ul li,
+#sitemap-categories-list li ul li {
+  /**text-rendering : optimizelegibility;**/
+
+  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 24px;
+  margin: 0;
+  /* Add heading margin to post subclass */
+
+  /* 
+	if you're going to use webfonts, be sure to check your weights 
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+  /* removing text decoration from all headline links */
+
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  margin: 0;
+}
+#sitemap-pages-list li ul li a,
+#sitemap-categories-list li ul li a {
+  text-decoration: none;
+}
+#sitemap-pages-list li ul li a,
+#sitemap-categories-list li ul li a {
+  color: #25706b;
 }
 /*********************
 POSTS & CONTENT STYLES

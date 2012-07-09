@@ -116,6 +116,22 @@ article {
 		
 }
 
+#sitemap-categories-wrapper,
+#sitemap-tagclound-wrapper,
+#sitemap-posts-wrapper,
+#sitemap-pages-wrapper {
+	margin-top: @vertSpacing;	
+}
+
+#sitemap-tagclound-wrapper {
+	div {
+		margin-top: @vertSpacing;
+		#clound-wrapper {
+			margin-top: @vertSpacing;
+		}
+	}
+}
+
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -500,6 +516,31 @@ LIST STYLES
 				color: @greyDark;
 				margin-top: -8px;
 				font-style: italic;
+			}
+		}
+	}
+}
+
+#sitemap-pages-list,
+#sitemap-categories-list {
+	margin-top: @vertSpacing;
+	list-style: none;
+	li {
+		.h3;
+		.overlined;
+		margin-top: @vertSpacing;
+		a {
+			color: @greyDark;
+		}
+		ul {
+			list-style: none;
+			li {
+				.h4;
+				border: none;
+				margin: 0;
+				a {
+					color: @turquesa;
+				}
 			}
 		}
 	}

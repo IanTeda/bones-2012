@@ -1167,6 +1167,40 @@ LIST STYLES
 #photo-archive-post-container a:hover img {
   opacity: 1;
 }
+#sitemap-pages-list li,
+#sitemap-categories-list li {
+  width: 99.999999993%;
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+  margin-left: 0;
+  margin: 0;
+}
+#sitemap-pages-list li a,
+#sitemap-categories-list li a {
+  width: 31.491712705%;
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+  margin-left: 0;
+}
+#sitemap-pages-list li ul li,
+#sitemap-categories-list li ul li {
+  width: 65.74585634900001%;
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+  float: right;
+  padding: 0 0 24px 0;
+}
+#sitemap-pages-list li ul li a,
+#sitemap-categories-list li ul li a {
+  width: 65.74585634900001%;
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+  margin-left: 0;
+}
 /***************************
 SLIDER STYLES
 ***************************/

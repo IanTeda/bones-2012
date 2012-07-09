@@ -283,6 +283,9 @@ function get_custom_excerpt($postid){
 	}	
 }
 
+/** Add excerpts to apges **/
+add_post_type_support( 'page', 'excerpt' );
+
 //breadcrumb function
 function rm_bread_crumbs() {
 	 global $post;

@@ -1760,6 +1760,18 @@ article a img {
 .flexslider-container {
   display: none;
 }
+#sitemap-categories-wrapper,
+#sitemap-tagclound-wrapper,
+#sitemap-posts-wrapper,
+#sitemap-pages-wrapper {
+  margin-top: 24px;
+}
+#sitemap-tagclound-wrapper div {
+  margin-top: 24px;
+}
+#sitemap-tagclound-wrapper div #clound-wrapper {
+  margin-top: 24px;
+}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -2159,6 +2171,77 @@ LIST STYLES
   color: #656565;
   margin-top: -8px;
   font-style: italic;
+}
+#sitemap-pages-list,
+#sitemap-categories-list {
+  margin-top: 24px;
+  list-style: none;
+}
+#sitemap-pages-list li,
+#sitemap-categories-list li {
+  /**text-rendering : optimizelegibility;**/
+
+  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 24px;
+  margin: 0;
+  /* Add heading margin to post subclass */
+
+  /* 
+	if you're going to use webfonts, be sure to check your weights 
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+  /* removing text decoration from all headline links */
+
+  font-size: 17px;
+  border-top: solid 1px #e4e4e4;
+  border-top: solid 1px #e4e4e4;
+  margin-top: 24px;
+}
+#sitemap-pages-list li a,
+#sitemap-categories-list li a {
+  text-decoration: none;
+}
+#sitemap-pages-list li a,
+#sitemap-categories-list li a {
+  color: #656565;
+}
+#sitemap-pages-list li ul,
+#sitemap-categories-list li ul {
+  list-style: none;
+}
+#sitemap-pages-list li ul li,
+#sitemap-categories-list li ul li {
+  /**text-rendering : optimizelegibility;**/
+
+  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 24px;
+  margin: 0;
+  /* Add heading margin to post subclass */
+
+  /* 
+	if you're going to use webfonts, be sure to check your weights 
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+  /* removing text decoration from all headline links */
+
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  margin: 0;
+}
+#sitemap-pages-list li ul li a,
+#sitemap-categories-list li ul li a {
+  text-decoration: none;
+}
+#sitemap-pages-list li ul li a,
+#sitemap-categories-list li ul li a {
+  color: #25706b;
 }
 /*********************
 POSTS & CONTENT STYLES
@@ -4864,6 +4947,40 @@ you can add resource intensive styles.
   }
   #photo-archive-post-container a:hover img {
     opacity: 1;
+  }
+  #sitemap-pages-list li,
+  #sitemap-categories-list li {
+    width: 99.999999993%;
+    position: relative;
+    float: left;
+    margin-left: 2.762430939%;
+    margin-left: 0;
+    margin: 0;
+  }
+  #sitemap-pages-list li a,
+  #sitemap-categories-list li a {
+    width: 31.491712705%;
+    position: relative;
+    float: left;
+    margin-left: 2.762430939%;
+    margin-left: 0;
+  }
+  #sitemap-pages-list li ul li,
+  #sitemap-categories-list li ul li {
+    width: 65.74585634900001%;
+    position: relative;
+    float: left;
+    margin-left: 2.762430939%;
+    float: right;
+    padding: 0 0 24px 0;
+  }
+  #sitemap-pages-list li ul li a,
+  #sitemap-categories-list li ul li a {
+    width: 65.74585634900001%;
+    position: relative;
+    float: left;
+    margin-left: 2.762430939%;
+    margin-left: 0;
   }
   /***************************
   SLIDER STYLES

@@ -1214,6 +1214,7 @@ FOOTER STYLES
 .copyright {
   float: left;
   margin-top: 2px;
+  text-align: left;
 }
 #social-list-container {
   margin-top: 12px;

@@ -1496,6 +1496,7 @@ POSTS & CONTENT STYLES
 FOOTER STYLES
 *********************/
 #resize-me {
+  display: block;
   position: fixed;
   bottom: 0px;
   right: 0px;
@@ -2941,4 +2942,7 @@ header.php file to see what they are:
 .wrap {
   min-width: 960px;
   margin: 0 auto;
+}
+#resize-me {
+  display: none;
 }

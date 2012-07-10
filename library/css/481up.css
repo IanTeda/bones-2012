@@ -939,6 +939,7 @@ POSTS & CONTENT STYLES
 FOOTER STYLES
 *********************/
 #resize-me {
+  display: block;
   position: fixed;
   bottom: 0px;
   right: 0px;

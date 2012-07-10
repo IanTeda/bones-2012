@@ -2905,6 +2905,9 @@ FOOTER STYLES
 .copyright a {
   color: #000000;
 }
+#resize-me {
+  display: none;
+}
 /*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
@@ -3864,6 +3867,7 @@ tweeners.
   FOOTER STYLES
   *********************/
   #resize-me {
+    display: block;
     position: fixed;
     bottom: 0px;
     right: 0px;

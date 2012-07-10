@@ -1,4 +1,14 @@
-<?php get_header(); ?>		
+
+<?php
+/*
+Template Name: Index.php
+*/
+?>
+
+
+<?php // load header.php ?>
+<?php get_header(); ?>
+
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="clearfix" role="main">
@@ -18,11 +28,10 @@
 									<p class="flex-caption"><strong><?php the_title(); ?></strong> &bull; <?php get_custom_excerpt($post->ID); ?></p>
 								</a>
 							</li>
-							
                         <?php endwhile; ?>
 					</ul>
-				</div>
-			</div>
+				</div><!-- end #slider -->
+			</div><!-- end #flexslider-wrapper -->
 		
 			<div id="latest-posts-container" class="twelveCol first clearfix">
 				<h3 class="underlined">Latest Posts<span><a href="<?php bloginfo('url'); ?>/sitemap#sitemap-posts-wrapper">Check out more posts &#8230;</a></span></h3>
@@ -38,27 +47,24 @@
                                 </h4>
                                 <span class="article-categories text-center"><?php category_name(); ?></span>
                             </a>
-						</li><!-- end post li -->
+						</li>
 					<?php endwhile; ?>	
 				</ul>
-			</div>
+			</div><!-- end #latest-posts-container -->
 					
-				<?php else : ?>
-					<article id="post-not-found" class="hentry clearfix">
-				    	<header class="article-header">
-				        	<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-				       	</header>
-				        <section class="post-content">
-				        	<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-				        </section>
-				        <footer class="article-footer">
-				            <p><?php _e("This is the error message in the index.php template.", "bonestheme"); ?></p>
-				        </footer>
-				    </article>
-					
-				<?php endif; ?>
-			
-			</div> <!-- end #main -->
+			<?php else : ?>
+				<article id="post-not-found" class="hentry clearfix">
+			    	<header class="article-header">
+			        	<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
+			       	</header>
+			        <section class="post-content">
+			        	<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
+			        </section>
+			        <footer class="article-footer">
+			            <p><?php _e("This is the error message in the index.php template.", "bonestheme"); ?></p>
+			        </footer>
+			    </article>
+			<?php endif; ?>
     
 			<div id="row-four-container" class="twelveCol first clearfix">
 				<div id="popular-posts-container" class="sixCol first clearfix">
@@ -104,28 +110,10 @@
 						</li>
 					</ol>
 					<?php }; ?>
-				</div>
-				
-				<div id="goodreads-container" class="sixCol last clearfix">
-					<h3 class="underlined">Bookshelf<span><a href="#">See the library &#8230;</a></span></h3>
-                    
-					<ul class="image-matrix">
-						<?php if(function_exists('bookshelf')) { bookshelf(); } ?>
-					</ul>
-				</div><!-- End of Goodreads -->
-				
-			</div>
-			
-			<div id="row-five-container" class="twelveCol first clearfix">
-				<div id="lastfm-container" class="sixCol first clearfix">
-					<h3 class="underlined">Album Chart <span><a href="#">Check out the charts &#8230;</a></span></h3>
-                    
-					<div id="lastfmrecords">
-					</div>
-				</div><!-- End of lastfm list -->
+				</div><!-- end #popular-posts-container -->
 				
 				<div id="instagram-container" class="sixCol last clearfix">
-                <h3 class="underlined">Photo Blog <span><a href="#">View the matrix &#8230;</a></span></h3>
+                	<h3 class="underlined">Photo Blog <span><a href="#">View the matrix &#8230;</a></span></h3>
                 
                 	<ul id="photo-list" class="image-matrix">
 						<?php $featured = new WP_Query("category_name=photo&showposts=9"); ?>
@@ -133,14 +121,14 @@
                             <li><a href="<?php the_permalink() ?>"><?php feature_image_100x100(); ?></a></li>
                         <?php endwhile; ?>
                     </ul>
-				</div>
-
-			</div>
-				
+				</div><!-- end #instagram-container -->
+			</div><!-- end #row-four-container -->
+		</div> <!-- end #main -->
 	</div> <!-- end #inner-content -->
 </div> <!-- end #content -->
 
-<?php load_lastfm(); ?>
+<?php // load jquery plugins ?>
 <?php load_slider(); ?>
 
+<?php // load footer.php ?>
 <?php get_footer(); ?>

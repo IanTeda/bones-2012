@@ -14,7 +14,7 @@
 						<div class="new-year twelveCol first">
 						<h3 class="fourCol first">
 							<?php if (is_category()) { ?>
-								<?php single_cat_title(); ?> Category
+								<?php single_cat_title(); ?>
 							<?php } elseif (is_tag()) { ?> 
 								<?php single_tag_title(''); ?> Tag
 							<?php } elseif (is_author()) { ?>

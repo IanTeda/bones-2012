@@ -8,7 +8,7 @@
 	} elseif(in_category('photo')) {
 		include(TEMPLATEPATH.'/single-photo.php');
 	} elseif(in_category('trail')) {
-		include(TEMPLATEPATH.'/single-trail.php');
+		include(TEMPLATEPATH.'/single-blog.php');
 	} else {
 		include(TEMPLATEPATH.'/single-default.php');
 	}

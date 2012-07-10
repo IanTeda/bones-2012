@@ -51,15 +51,15 @@ Template Name: Sitemap Page
 							<?php if (get_the_time('Y') != $year): ?>
 								<?php $year = get_the_time('Y'); ?>
 								<div class="new-year twelveCol first">
-									<h3 class="fourCol first"><?php single_cat_title(); ?> <?php echo $year; ?></h3>
+									<h3 class="fourCol first"><?php echo $year; ?></h3>
 							<?php else: ?>
 								<div class="twelveCol first">
 							<?php endif; ?> 
 						
 						
-								<h4 class="eightCol last">
+								<h4 class="post-archive-title eightCol last">
 									<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-										<?php the_title(); ?>
+										<span><?php category_name(); ?>:</span> <?php the_title(); ?>
 									</a>
 								</h4>
 								<p class="eightCol last">Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>

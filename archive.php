@@ -31,7 +31,7 @@
 						<div class="twelveCol first">
 					<?php endif; ?>
 					
-							<h4 id="archive-heading" class="eightCol last">
+							<h4 id="archive-heading" class="post-archive-title eightCol last">
 								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 									<span><?php category_name(); ?>:</span> <?php the_title(); ?>
 								</a>

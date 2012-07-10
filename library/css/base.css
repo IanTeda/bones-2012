@@ -1202,7 +1202,7 @@ LIST STYLES
   margin-top: 24px;
   border-top: solid 1px #e4e4e4;
 }
-#archive #archive-heading span {
+.post-archive-title a span {
   color: #000000;
 }
 #blog-archive article section li {

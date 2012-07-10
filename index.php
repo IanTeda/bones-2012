@@ -71,7 +71,7 @@ Template Name: Index.php
 					<h3 class="underlined">Popular Posts <span><a href="#">View the hit list &#8230;</a></span></h3>
 					
 					<?php if (function_exists('WPPP_show_popular_posts')) {
-						WPPP_show_popular_posts("title=&number=6&days=0&magic_number=1&list_tag=ol&time_format=D, d-M-Y&format=
+						WPPP_show_popular_posts("title=&number=7&days=0&magic_number=1&list_tag=ol&time_format=D, d-M-Y&format=
 												<a href='%post_permalink%' title='%post_title_attribute%'>
 													<span>%post_category%: </span>%post_title%
 													<p>Posted by %post_author% - %post_time% (%post_views% Views)</p>

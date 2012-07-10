@@ -25,7 +25,7 @@
 			</div>
 		
 			<div id="latest-posts-container" class="twelveCol first clearfix">
-				<h3 class="underlined">Latest Posts<span><a href="#">Check out more posts &#8230;</a></span></h3>
+				<h3 class="underlined">Latest Posts<span><a href="<?php bloginfo('url'); ?>/sitemap#sitemap-posts-wrapper">Check out more posts &#8230;</a></span></h3>
 
 			    <ul id="latest-post-list" class="twelveCol first">
 					<?php $summary = new WP_query('showposts=8&cat=-13'); //Only the 8 latest posts ?>

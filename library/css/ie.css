@@ -1426,6 +1426,7 @@ MENU STYLES
   float: right;
   min-width: 433px;
   width: 100%;
+  list-style: none;
   border-bottom: solid 1px #e4e4e4;
   border-bottom: solid 1px #e4e4e4;
   border-bottom: solid 1px #e4e4e4;
@@ -2613,58 +2614,6 @@ HEADER SYTLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.nav {
-  border: 0;
-  /* end .menu ul li */
-
-  /* highlight current page */
-
-  /* end current highlighters */
-
-}
-.nav li {
-  /*
-		plan your menus and drop-downs wisely.
-		*/
-
-  /* showing sub-menus */
-
-}
-.nav li ul.sub-menu,
-.nav li ul.children {
-  width: 200px;
-  border: 1px solid #ccc;
-  border-top: 0;
-  position: absolute;
-  display: none;
-  z-index: 8999;
-  /* highlight sub-menu current page */
-
-}
-.nav li ul.sub-menu li,
-.nav li ul.children li {
-  /*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-
-}
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  border-right: 0;
-  display: block;
-  border-bottom: 1px solid #ccc;
-}
-.nav li ul.sub-menu li:last-child a,
-.nav li ul.children li:last-child a {
-  border-bottom: 0;
-}
-.nav li:hover ul {
-  top: auto;
-  display: block;
-}
-/* end .nav */
 .social-list {
   margin: 0;
 }
@@ -2678,17 +2627,17 @@ MENU STYLES
 #main-menu {
   border-bottom: none;
   width: 57.182320438000005%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 #main-menu ul li {
-  /*
-			padding-top: 15px;
-			line-height: (@vertSpacing * 2) - 15;
-			*/
-
+  position: relative;
   margin-top: -6px;
 }
 #main-menu ul li a {
   display: block;
+  float: left;
   border-top: 6px solid #3d2423;
 }
 #main-menu ul li a:hover {

@@ -315,4 +315,15 @@ function rm_bread_crumbs() {
 	 echo $crumbs;
 }
 
+function lets_get_related(){
+	if (function_exists('related_entries')) {
+		related_entries(array(
+			'auto_display' => false, //Only show where I want to
+			'limit' => 3,
+			'before_related' => '<h2>'.__('Related posts:','yarpp').'</h2><ol>',
+			'no_results' => '<h2>'.__('Related posts:','yarpp').'</h2><ol>'.'<li>'.__('No related posts.','yarpp').'</li></ol>'
+		));
+	};
+}
+
 ?>

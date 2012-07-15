@@ -1002,12 +1002,8 @@ MENU STYLES
 #main-menu {
   border-bottom: none;
   width: 57.182320438000005%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 #main-menu ul li {
-  position: relative;
   margin-top: -6px;
 }
 #main-menu ul li a {

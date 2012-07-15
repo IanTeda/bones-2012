@@ -3799,7 +3799,6 @@ tweeners.
     float: right;
     min-width: 433px;
     width: 100%;
-    list-style: none;
     border-bottom: solid 1px #e4e4e4;
   }
   #main-menu span {
@@ -4896,17 +4895,12 @@ you can add resource intensive styles.
   #main-menu {
     border-bottom: none;
     width: 57.182320438000005%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
   #main-menu ul li {
-    position: relative;
     margin-top: -6px;
   }
   #main-menu ul li a {
     display: block;
-    float: left;
     border-top: 6px solid #3d2423;
   }
   #main-menu ul li a:hover {

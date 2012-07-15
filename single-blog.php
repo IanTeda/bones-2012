@@ -26,7 +26,13 @@
 					<?php the_tags('<p class="post-tags fourCol first">', ' ', '</p>'); ?>
 							
 					<footer class="post-meta clearfix fourCol first">
-						<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
+						<div id="post-meta-wrapper">
+							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
+						</div>
+						
+						<div id="related-wrapper">
+							<?php lets_get_related(); ?>
+						</div>
 					</footer> <!-- end article footer -->
 						
 				</article> <!-- end article -->

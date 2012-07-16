@@ -521,11 +521,11 @@ TOOLS
 .hover-transition {
   /** Transition to roll over color **/
 
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -ms-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
 }
 /*********************
 DIMENSIONS
@@ -1015,17 +1015,25 @@ MENU STYLES
 }
 #main-menu ul li {
   margin-top: -6px;
+  border-top: 6px solid #3d2423;
   /* showing sub-menus */
 
 }
 #main-menu ul li a {
   display: block;
-  border-top: 6px solid #3d2423;
 }
-#main-menu ul li a:hover,
-#main-menu ul li a:focus {
+#main-menu ul li:hover,
+#main-menu ul li:focus {
+  margin-top: -6px;
   border-top: 6px solid #ab362e;
   border-bottom: 1px solid #ab362e;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
 }
 #main-menu ul li ul.sub-menu,
 #main-menu ul li ul.children {
@@ -1044,6 +1052,12 @@ MENU STYLES
 #main-menu ul li ul.sub-menu li,
 #main-menu ul li ul.children li {
   float: none;
+  border: 0;
+  /** Reset inherents **/
+
+  margin: 0;
+  /** Reset inherents **/
+
 }
 #main-menu ul li ul.sub-menu li a,
 #main-menu ul li ul.children li a {
@@ -1072,6 +1086,7 @@ MENU STYLES
 #main-menu ul li ul.children li.current_page_item a,
 #main-menu ul li ul.sub-menu li.current-page-ancestor a,
 #main-menu ul li ul.children li.current-page-ancestor a {
+  margin-top: -6px;
   border-top: 6px solid #ab362e;
   border-bottom: 1px solid #ab362e;
 }
@@ -1082,6 +1097,7 @@ MENU STYLES
 #main-menu ul li.current-menu-item a,
 #main-menu ul li.current_page_item a,
 #main-menu ul li.current-page-ancestor a {
+  margin-top: -6px;
   border-top: 6px solid #ab362e;
   border-bottom: 1px solid #ab362e;
 }
@@ -1101,20 +1117,20 @@ LIST STYLES
   opacity: 0.8;
   /** Transition to roll over color **/
 
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -ms-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
 }
 #latest-post-list li a span {
   /** Transition to roll over color **/
 
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -ms-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
 }
 #latest-post-list li a:hover {
   border-bottom: solid 1px #ab362e;
@@ -1135,11 +1151,11 @@ LIST STYLES
   opacity: 0.8;
   /** Transition to roll over color **/
 
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -ms-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
 }
 #photo-archive-post-container a:hover img {
   opacity: 1;

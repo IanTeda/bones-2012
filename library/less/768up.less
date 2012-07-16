@@ -195,14 +195,16 @@ MENU STYLES
 	width: @sevencol;
 	ul {
 		li {
-			margin-top: -6px;
+		  margin-top: -6px;
+      border-top: 6px solid @brown;
 			a {
 				display: block;
-				border-top: 6px solid @brown;
-				&:hover, &:focus {
-          border-top: 6px solid @autumn;
-          border-bottom: 1px solid @autumn;
-        }
+      }
+      &:hover, &:focus {
+        margin-top: -6px;
+        border-top: 6px solid @autumn;
+        border-bottom: 1px solid @autumn;
+        .hover-transition;
       }
       &:first-child {}
       &:last-child {}
@@ -218,6 +220,8 @@ MENU STYLES
         
         li {
           float: none;
+          border: 0; /** Reset inherents **/
+          margin: 0; /** Reset inherents **/
           a {
             border: 0; /** Reset inherents **/
             padding-left: 10px;
@@ -238,10 +242,9 @@ MENU STYLES
           }
         }
         /* highlight sub-menu current page */
-        li.current-menu-item, 
-        li.current_page_item,
-        li.current-page-ancestor {
+        li.current-menu-item, li.current_page_item, li.current-page-ancestor {
           a {
+            margin-top: -6px;
             border-top: 6px solid @autumn;
             border-bottom: 1px solid @autumn;
           }
@@ -258,6 +261,7 @@ MENU STYLES
 		/** highlight current page **/
     li.current-menu-item, li.current_page_item, li.current-page-ancestor {
       a {
+        margin-top: -6px;
         border-top: 6px solid @autumn;
         border-bottom: 1px solid @autumn;
       }

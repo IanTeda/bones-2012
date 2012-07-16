@@ -886,7 +886,6 @@ MENU STYLES
 #main-menu ul li {
   float: left;
   width: 14.285714285714286%;
-  display: inline;
   line-height: 48px;
 }
 #main-menu-dropdown {

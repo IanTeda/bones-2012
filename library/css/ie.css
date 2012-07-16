@@ -1443,7 +1443,6 @@ MENU STYLES
 #main-menu ul li {
   float: left;
   width: 14.285714285714286%;
-  display: inline;
   line-height: 48px;
 }
 #main-menu-dropdown {
@@ -2626,18 +2625,90 @@ MENU STYLES
 #main-menu {
   border-bottom: none;
   width: 57.182320438000005%;
+  /** end #main-menu ul **/
+
+}
+#main-menu ul {
+  /** end #main-menu ul li **/
+
+  /** highlight current page **/
+
+  /** end current highlighters **/
+
 }
 #main-menu ul li {
   margin-top: -6px;
+  /* showing sub-menus */
+
 }
 #main-menu ul li a {
   display: block;
   border-top: 6px solid #3d2423;
 }
-#main-menu ul li a:hover {
+#main-menu ul li a:hover,
+#main-menu ul li a:focus {
   border-top: 6px solid #ab362e;
   border-bottom: 1px solid #ab362e;
 }
+#main-menu ul li ul.sub-menu,
+#main-menu ul li ul.children {
+  text-align: left;
+  border: 1px solid #ccc;
+  position: absolute;
+  display: none;
+  /** Hide until hover **/
+
+  z-index: 8999;
+  background-color: #e4e4e4;
+  box-shadow: 0px 0px 0.1em #000000;
+  /* highlight sub-menu current page */
+
+}
+#main-menu ul li ul.sub-menu li,
+#main-menu ul li ul.children li {
+  float: none;
+}
+#main-menu ul li ul.sub-menu li a,
+#main-menu ul li ul.children li a {
+  border: 0;
+  /** Reset inherents **/
+
+  padding-left: 10px;
+  border-right: 0;
+  display: block;
+  width: 180px;
+  border-bottom: 1px solid #ccc;
+}
+#main-menu ul li ul.sub-menu li a:hover,
+#main-menu ul li ul.children li a:hover,
+#main-menu ul li ul.sub-menu li a:focus,
+#main-menu ul li ul.children li a:focus {
+  border-bottom: 1px solid #ab362e;
+}
+#main-menu ul li ul.sub-menu li:last-child a,
+#main-menu ul li ul.children li:last-child a {
+  border-bottom: 0;
+}
+#main-menu ul li ul.sub-menu li.current-menu-item a,
+#main-menu ul li ul.children li.current-menu-item a,
+#main-menu ul li ul.sub-menu li.current_page_item a,
+#main-menu ul li ul.children li.current_page_item a,
+#main-menu ul li ul.sub-menu li.current-page-ancestor a,
+#main-menu ul li ul.children li.current-page-ancestor a {
+  border-top: 6px solid #ab362e;
+  border-bottom: 1px solid #ab362e;
+}
+#main-menu ul li:hover ul {
+  top: auto;
+  display: block;
+}
+#main-menu ul li.current-menu-item a,
+#main-menu ul li.current_page_item a,
+#main-menu ul li.current-page-ancestor a {
+  border-top: 6px solid #ab362e;
+  border-bottom: 1px solid #ab362e;
+}
+/** end #main-menu **/
 /*********************
 LIST STYLES
 *********************/

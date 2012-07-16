@@ -1086,9 +1086,10 @@ MENU STYLES
 #main-menu ul li ul.children li.current_page_item a,
 #main-menu ul li ul.sub-menu li.current-page-ancestor a,
 #main-menu ul li ul.children li.current-page-ancestor a {
-  margin-top: -6px;
-  border-top: 6px solid #ab362e;
-  border-bottom: 1px solid #ab362e;
+  color: #ab362e;
+  margin: 0;
+  /** Reset inherents **/
+
 }
 #main-menu ul li:hover ul {
   top: auto;

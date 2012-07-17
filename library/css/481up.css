@@ -859,6 +859,12 @@ MENU STYLES
   width: 14.285714285714286%;
   line-height: 48px;
 }
+#main-menu ul li ul.sub-menu,
+#main-menu ul li ul.children {
+  display: none;
+  /** Hide submen for tablets **/
+
+}
 #main-menu-dropdown {
   display: none;
 }

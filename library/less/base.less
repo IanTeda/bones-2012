@@ -398,16 +398,22 @@ LIST STYLES
 }
 
 #post-category-list {
+	.liquid-matrix;
 	list-style: none;
-	margin-top: @vertSpacing;
 	li {
 		float: left;
 		width: 100% / 4;
 		text-align: center;
 		a {
-			img {
-				width: 98%;
-				max-width: 220px;
+			width: 95%;
+			max-width: 220px;
+			margin: 0 auto;
+			border-bottom: solid 1px @greyLight;
+			h4 {
+				display: none;
+			}
+			span {
+				display: none;
 			}
 		}
 	}

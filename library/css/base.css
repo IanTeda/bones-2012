@@ -1187,17 +1187,34 @@ LIST STYLES
   color: #8f8f8f;
 }
 #post-category-list {
+  padding: 0;
   list-style: none;
+}
+#post-category-list li {
+  width: 100%;
+  display: block;
   margin-top: 24px;
+}
+#post-category-list li a {
+  text-decoration: none;
+  display: block;
 }
 #post-category-list li {
   float: left;
   width: 25%;
   text-align: center;
 }
-#post-category-list li a img {
-  width: 98%;
+#post-category-list li a {
+  width: 95%;
   max-width: 220px;
+  margin: 0 auto;
+  border-bottom: solid 1px #e4e4e4;
+}
+#post-category-list li a h4 {
+  display: none;
+}
+#post-category-list li a span {
+  display: none;
 }
 .image-matrix {
   padding: 0;

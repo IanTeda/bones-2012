@@ -302,6 +302,36 @@ LIST STYLES
 	}
 }
 
+#post-category-list {
+	li {
+		a {
+			border-bottom: solid 1px @greyLight;
+			img {
+				
+			}
+			h4 {
+				display: block;
+				padding-top: @vertSpacing * 1.5;
+			}
+			span {
+				display: block;
+				padding-bottom: @vertSpacing - 4;
+				margin-top: -4px;
+				font-style: italic;
+				color: @grey;
+			}
+			&:hover, &:focus {
+				border-bottom: solid 1px @autumn;
+				span {
+					color: @greyDark;	
+				}
+			}
+		}
+	}
+}
+
+
+
 #popular-post-list {
 	li {
 		width: 100%;

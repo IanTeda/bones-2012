@@ -1163,6 +1163,28 @@ LIST STYLES
 #latest-post-list li a:hover span {
   color: #656565;
 }
+#post-category-list li a {
+  border-bottom: solid 1px #e4e4e4;
+}
+#post-category-list li a h4 {
+  display: block;
+  padding-top: 36px;
+}
+#post-category-list li a span {
+  display: block;
+  padding-bottom: 20px;
+  margin-top: -4px;
+  font-style: italic;
+  color: #8f8f8f;
+}
+#post-category-list li a:hover,
+#post-category-list li a:focus {
+  border-bottom: solid 1px #ab362e;
+}
+#post-category-list li a:hover span,
+#post-category-list li a:focus span {
+  color: #656565;
+}
 #popular-post-list li {
   width: 100%;
 }

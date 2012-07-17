@@ -53,25 +53,34 @@ Template Name: Index.php
 			</div><!-- end #latest-posts-container -->
 			
 			<div id="post-categories" class="twelveCol first clearfix">
+				<h3 class="underlined">Categories</h3>
 				<ul id="post-category-list">
 					<li>
 						<a href="#">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+							<h4 class="article-title text-center">Blogs</h4>
+							<span class="article-categories text-center">Category</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+							<h4 class="article-title text-center">Photos</h4>
+							<span class="article-categories text-center">Category</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+							<h4 class="article-title text-center">Trails</h4>
+							<span class="article-categories text-center">Category</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+							<h4 class="article-title text-center">Videos</h4>
+							<span class="article-categories text-center">Category</span>
 						</a>
 					</li>
 				</ul>

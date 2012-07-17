@@ -262,8 +262,12 @@ function load_fitvids(){
 
 function load_slider(){
 	wp_register_script( 'flexslider', get_template_directory_uri() . '/library/js/libs/jquery.flexslider.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'flexslider' ); ?>
+	wp_enqueue_script( 'flexslider' );
 	
+	wp_register_style( 'slider-css', get_template_directory_uri() . '/library/css/jquery.flexslider.css', array(), '20120208', 'all' );
+	wp_enqueue_style( 'slider-css' );
+	
+	?>
 	<script type="text/javascript">
 		jQuery(window).load(function() {
 			// The slider being synced must be initialized first
@@ -272,10 +276,9 @@ function load_slider(){
 			});
 		});
 	</script>
-	
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.flexslider.css" type="text/css">
 	<?php
 }
+	
 
 /***************************************
 Excerpt function

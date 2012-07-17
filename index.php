@@ -113,7 +113,7 @@ Template Name: Index.php
 				</div><!-- end #popular-posts-container -->
 				
 				<div id="instagram-container" class="sixCol last clearfix">
-                	<h3 class="underlined">Photo Blog <span><a href="#">View the matrix &#8230;</a></span></h3>
+                	<h3 class="underlined">Photo Blog <span><a href="<?php bloginfo('url'); ?>/photo/">View the matrix &#8230;</a></span></h3>
                 
                 	<ul id="photo-list" class="image-matrix">
 						<?php $featured = new WP_Query("category_name=photo&showposts=9"); ?>

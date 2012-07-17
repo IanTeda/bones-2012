@@ -530,6 +530,15 @@ TOOLS
   -o-transition: 0.4s linear all;
   transition: 0.4s linear all;
 }
+.menu-dropdown-transition {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -820,44 +829,6 @@ NAVIGATION AND LIST STYLES
 **************************/
 /* .menu is clearfixed inside mixins.scss */
 /* end .menu */
-.nav {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  /* end .menu ul li */
-
-  /* highlight current page */
-
-  /* end current highlighters */
-
-}
-.nav li {
-  position: relative;
-  /** 
-		Plan your menus and drop-downs wisely. 
-		**/
-
-  /* showing sub-menus */
-
-}
-.nav li a {
-  /*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-
-}
-.nav li ul.sub-menu,
-.nav li ul.children {
-  /** Hide submenus for this screen size as more then likely touch screen **/
-
-  display: none;
-}
-.nav li:hover ul {
-  /** Hide submenus for this screen size as more then likely touch screen **/
-
-  display: none;
-}
 /* end .nav */
 #photo-archive-list li {
   float: left;

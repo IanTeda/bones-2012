@@ -187,86 +187,90 @@ NAVIGATION STYLES
 	}	
 }
 
-/*********************
-MENU STYLES
-*********************/
+/*******************************************
+MENU STYLES - This is a mess, needs tidy up
+*******************************************/
 #main-menu {
 	border-bottom: none;
 	width: @sevencol;
 	ul {
 		li {
-		  margin-top: -6px;
-      border-top: 6px solid @brown;
+			margin-top: -6px;
+      		border-top: 6px solid @brown;
 			a {
 				display: block;
-      }
-      &:hover, &:focus {
-        margin-top: -6px;
-        border-top: 6px solid @autumn;
-        border-bottom: 1px solid @autumn;
-        .hover-transition;
-      }
-      &:first-child {}
-      &:last-child {}
+			  }
+			&:hover, &:focus {
+				margin-top: -6px;
+				border-top: 6px solid @autumn;
+				border-bottom: 1px solid @autumn;
+				.hover-transition;
+			}
+			&:first-child {}
+			&:last-child {}
       
-      ul.sub-menu, ul.children {
-        text-align: left;
-        border: 1px solid #ccc;
-        position: absolute;
-        display: none; /** Hide until hover **/
-        z-index: 8999;
-        background-color: @greyLight;
-        box-shadow: 0px 0px 0.1em #000000;
-        
-        li {
-          float: none;
-          border: 0; /** Reset inherents **/
-          margin: 0; /** Reset inherents **/
-          a {
-            border: 0; /** Reset inherents **/
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc;
-            &:hover, &:focus {
-              border-bottom: 1px solid @autumn;
-            }
-            &:link {}
-          }
-          &:first-child {}
-          &:last-child {
-            a {
-              border-bottom: 0;
-            }
-          }
-        }
-        /* highlight sub-menu current page */
-        li.current-menu-item, li.current_page_item, li.current-page-ancestor {
-          a {
-            color: @autumn;
-            margin: 0; /** Reset inherents **/
-          }
-        }
-      }
-      
-      /* showing sub-menus */
-      &:hover ul {
-        top: auto;
-        display: block;
-      }
-		}/** end #main-menu ul li **/
+			ul.sub-menu, ul.children {
+				text-align: left;
+				border: 1px solid #ccc;
+				position: absolute;
+				display: none; /** Hide until hover **/
+				z-index: 8999;
+				background-color: @greyLight;
+				box-shadow: 0px 0px 0.1em #000000;
+				margin-top: 1px;
+				
+				li {
+				  float: none;
+				  border: 0; /** Reset inherents **/
+				  margin: 0; /** Reset inherents **/
+				  a {
+					border: 0; /** Reset inherents **/
+					margin: 0; /** Reset inherents **/
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
+					color: @turquesa;
+					&:hover, &:focus {
+					  border-bottom: 1px solid @autumn;
+					  .hover-transition;
+					}
+					&:link {}
+				  }
+				  &:first-child {}
+				  &:last-child {
+					a {
+					  border-bottom: 0;
+					}
+				  }
+				}
+				/* highlight sub-menu current page */
+				li.current-menu-item, li.current_page_item, li.current-page-ancestor {
+				  a {
+					margin: 0; /** Reset inherents **/
+					color: @autumn;
+				  }
+				}
+			  }
+			  
+			  /* showing sub-menus */
+			  &:hover ul {
+				top: auto;
+				display: block;
+			  }
+			} /** end #main-menu ul li **/
 		
 		/** highlight current page **/
-    li.current-menu-item, li.current_page_item, li.current-page-ancestor {
-      a {
-        margin-top: -6px;
-        border-top: 6px solid @autumn;
-        border-bottom: 1px solid @autumn;
-      }
-    }  /** end current highlighters **/
-	}/** end #main-menu ul **/
-}/** end #main-menu **/
+		li.current-menu-item, li.current_page_item, li.current-page-ancestor {
+			a {
+				margin: -6px 0 0 0;
+				border-top: 6px solid @autumn;
+				color: @autumn;
+			  }
+		}  /** end current highlighters **/
+	} /** end #main-menu ul **/
+} /** end #main-menu **/
 
 /*********************
 LIST STYLES

@@ -524,6 +524,15 @@ TOOLS
   -o-transition: 0.4s linear all;
   transition: 0.4s linear all;
 }
+.menu-dropdown-transition {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
+}
 /*********************
 DIMENSIONS
 *********************/
@@ -1362,6 +1371,15 @@ TOOLS
   margin: 0 auto;
 }
 .hover-transition {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
+}
+.menu-dropdown-transition {
   /** Transition to roll over color **/
 
   -webkit-transition: 0.4s linear all;
@@ -3458,6 +3476,15 @@ tweeners.
     -o-transition: 0.4s linear all;
     transition: 0.4s linear all;
   }
+  .menu-dropdown-transition {
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -ms-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+  }
   /*********************
   DIMENSIONS
   *********************/
@@ -3748,44 +3775,6 @@ tweeners.
   **************************/
   /* .menu is clearfixed inside mixins.scss */
   /* end .menu */
-  .nav {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    /* end .menu ul li */
-  
-    /* highlight current page */
-  
-    /* end current highlighters */
-  
-  }
-  .nav li {
-    position: relative;
-    /** 
-  		Plan your menus and drop-downs wisely. 
-  		**/
-  
-    /* showing sub-menus */
-  
-  }
-  .nav li a {
-    /*
-  			you can use hover styles here even though this size
-  			has the possibility of being a mobile device.
-  			*/
-  
-  }
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    /** Hide submenus for this screen size as more then likely touch screen **/
-  
-    display: none;
-  }
-  .nav li:hover ul {
-    /** Hide submenus for this screen size as more then likely touch screen **/
-  
-    display: none;
-  }
   /* end .nav */
   #photo-archive-list li {
     float: left;
@@ -4419,6 +4408,15 @@ you can add resource intensive styles.
     -o-transition: 0.4s linear all;
     transition: 0.4s linear all;
   }
+  .menu-dropdown-transition {
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -ms-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+  }
   /*********************
   DIMENSIONS
   *********************/
@@ -4888,9 +4886,9 @@ you can add resource intensive styles.
     float: left;
     width: 35px;
   }
-  /*********************
-  MENU STYLES
-  *********************/
+  /*******************************************
+  MENU STYLES - This is a mess, needs tidy up
+  *******************************************/
   #main-menu {
     border-bottom: none;
     width: 57.182320438000005%;
@@ -4938,6 +4936,7 @@ you can add resource intensive styles.
     z-index: 8999;
     background-color: #e4e4e4;
     box-shadow: 0px 0px 0.1em #000000;
+    margin-top: 1px;
     /* highlight sub-menu current page */
   
   }
@@ -4956,17 +4955,28 @@ you can add resource intensive styles.
     border: 0;
     /** Reset inherents **/
   
+    margin: 0;
+    /** Reset inherents **/
+  
     padding-left: 10px;
     border-right: 0;
     display: block;
     width: 180px;
     border-bottom: 1px solid #ccc;
+    color: #25706b;
   }
   #main-menu ul li ul.sub-menu li a:hover,
   #main-menu ul li ul.children li a:hover,
   #main-menu ul li ul.sub-menu li a:focus,
   #main-menu ul li ul.children li a:focus {
     border-bottom: 1px solid #ab362e;
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -ms-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
   }
   #main-menu ul li ul.sub-menu li:last-child a,
   #main-menu ul li ul.children li:last-child a {
@@ -4978,10 +4988,10 @@ you can add resource intensive styles.
   #main-menu ul li ul.children li.current_page_item a,
   #main-menu ul li ul.sub-menu li.current-page-ancestor a,
   #main-menu ul li ul.children li.current-page-ancestor a {
-    color: #ab362e;
     margin: 0;
     /** Reset inherents **/
   
+    color: #ab362e;
   }
   #main-menu ul li:hover ul {
     top: auto;
@@ -4990,9 +5000,9 @@ you can add resource intensive styles.
   #main-menu ul li.current-menu-item a,
   #main-menu ul li.current_page_item a,
   #main-menu ul li.current-page-ancestor a {
-    margin-top: -6px;
+    margin: -6px 0 0 0;
     border-top: 6px solid #ab362e;
-    border-bottom: 1px solid #ab362e;
+    color: #ab362e;
   }
   /** end #main-menu **/
   /*********************

@@ -56,29 +56,29 @@ Template Name: Index.php
 				<h3 class="underlined">Categories</h3>
 				<ul id="post-category-list">
 					<li>
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						<a href="<?php bloginfo('url'); ?>/category/blog">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_blog.png" class="resizeable"/></img>
 							<h4 class="article-title text-center">Blogs</h4>
 							<span class="article-categories text-center">Category</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						<a href="<?php bloginfo('url'); ?>/category/photo">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_photo.png" class="resizeable"/></img>
 							<h4 class="article-title text-center">Photos</h4>
 							<span class="article-categories text-center">Category</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						<a href="<?php bloginfo('url'); ?>/category/trail">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_trail.png" class="resizeable"/></img>
 							<h4 class="article-title text-center">Trails</h4>
 							<span class="article-categories text-center">Category</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						<a href="<?php bloginfo('url'); ?>/category/video">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="resizeable"/></img>
 							<h4 class="article-title text-center">Videos</h4>
 							<span class="article-categories text-center">Category</span>
 						</a>
@@ -147,7 +147,7 @@ Template Name: Index.php
 				</div><!-- end #popular-posts-container -->
 				
 				<div id="instagram-container" class="sixCol last clearfix">
-                	<h3 class="underlined">Photo Blog <span><a href="<?php bloginfo('url'); ?>/photo/">View the matrix &#8230;</a></span></h3>
+                	<h3 class="underlined">Photo Blog <span><a href="<?php bloginfo('url'); ?>/category/photo/">View the matrix &#8230;</a></span></h3>
                 
                 	<ul id="photo-list" class="image-matrix">
 						<?php $featured = new WP_Query("category_name=photo&showposts=9"); ?>

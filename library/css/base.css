@@ -624,10 +624,10 @@ span.amp {
   background: #e6efc2;
 }
 .underlined {
-  border-bottom: solid 1px #e4e4e4;
+  border-bottom: solid 1px #dcdcdc;
 }
 .overlined {
-  border-top: solid 1px #e4e4e4;
+  border-top: solid 1px #dcdcdc;
 }
 /*********************
 BORDER RADIUS
@@ -663,9 +663,9 @@ BUTTONS
 *********************/
 .button,
 .button:visited {
-  border: 1px solid #c3c3c3;
-  border-top-color: #d2d2d2;
-  border-left-color: #d2d2d2;
+  border: 1px solid #bbbbbb;
+  border-top-color: #cacaca;
+  border-left-color: #cacaca;
   padding: 4px 12px;
   color: #000000;
   display: inline-block;
@@ -682,44 +682,44 @@ BUTTONS
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  background-color: #e1e1e1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#e1e1e1));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #e1e1e1);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #e1e1e1);
-  background-image: -o-linear-gradient(top, #e4e4e4, #e1e1e1);
-  background-image: linear-gradient(to bottom, #e4e4e4, #e1e1e1);
+  background-color: #d9d9d9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d9d9d9));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d9d9d9);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d9d9d9);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d9d9d9);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d9d9d9);
 }
 .button:hover,
 .button:visited:hover,
 .button:focus,
 .button:visited:focus {
   color: #ffffff;
-  border: 1px solid #c3c3c3;
-  border-top-color: #b1b1b1;
-  border-left-color: #b1b1b1;
-  background-color: #cbcbcb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: -o-linear-gradient(top, #d7d7d7, #cbcbcb);
-  background-image: linear-gradient(to bottom, #d7d7d7, #cbcbcb);
+  border: 1px solid #bbbbbb;
+  border-top-color: #a9a9a9;
+  border-left-color: #a9a9a9;
+  background-color: #c3c3c3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#c3c3c3));
+  background-image: -webkit-linear-gradient(top, #cfcfcf, #c3c3c3);
+  background-image: -moz-linear-gradient(top, #cfcfcf, #c3c3c3);
+  background-image: -o-linear-gradient(top, #cfcfcf, #c3c3c3);
+  background-image: linear-gradient(to bottom, #cfcfcf, #c3c3c3);
 }
 .button:active,
 .button:visited:active {
   background-color: #f01d4f;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#f01d4f));
-  background-image: -webkit-linear-gradient(top, #d7d7d7, #f01d4f);
-  background-image: -moz-linear-gradient(top, #d7d7d7, #f01d4f);
-  background-image: -o-linear-gradient(top, #d7d7d7, #f01d4f);
-  background-image: linear-gradient(to bottom, #d7d7d7, #f01d4f);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#f01d4f));
+  background-image: -webkit-linear-gradient(top, #cfcfcf, #f01d4f);
+  background-image: -moz-linear-gradient(top, #cfcfcf, #f01d4f);
+  background-image: -o-linear-gradient(top, #cfcfcf, #f01d4f);
+  background-image: linear-gradient(to bottom, #cfcfcf, #f01d4f);
 }
 .button-small,
 .button-small:visited {
-  border: 1px solid #c3c3c3;
-  border-top-color: #d2d2d2;
-  border-left-color: #d2d2d2;
+  border: 1px solid #bbbbbb;
+  border-top-color: #cacaca;
+  border-left-color: #cacaca;
   padding: 6px 8px;
-  color: #656565;
+  color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
   text-decoration: none;
@@ -739,16 +739,16 @@ BUTTONS
 .button-small:visited:hover,
 .button-small:focus,
 .button-small:visited:focus {
-  color: #252525;
-  border: 1px solid #c3c3c3;
-  border-top-color: #b1b1b1;
-  border-left-color: #b1b1b1;
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  color: #1d1d1d;
+  border: 1px solid #bbbbbb;
+  border-top-color: #a9a9a9;
+  border-left-color: #a9a9a9;
+  background-color: #d7d7d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
 }
 .button-small:active,
 .button-small:visited:active {
@@ -972,11 +972,11 @@ a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .post-tags-archive a {
-  border: 1px solid #c3c3c3;
-  border-top-color: #d2d2d2;
-  border-left-color: #d2d2d2;
+  border: 1px solid #bbbbbb;
+  border-top-color: #cacaca;
+  border-left-color: #cacaca;
   padding: 6px 8px;
-  color: #656565;
+  color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
   text-decoration: none;
@@ -994,16 +994,16 @@ a:visited:link {
 }
 .post-tags-archive a:hover,
 .post-tags-archive a:focus {
-  color: #252525;
-  border: 1px solid #c3c3c3;
-  border-top-color: #b1b1b1;
-  border-left-color: #b1b1b1;
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  color: #1d1d1d;
+  border: 1px solid #bbbbbb;
+  border-top-color: #a9a9a9;
+  border-left-color: #a9a9a9;
+  background-color: #d7d7d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
 }
 .post-tags-archive a:active {
   /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
@@ -1118,7 +1118,7 @@ select {
   /* Fix for Mobile Safari */
 
   background-color: #f8f8f8;
-  border: 1px solid #e4e4e4;
+  border: 1px solid #dcdcdc;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -1171,7 +1171,7 @@ LIST STYLES
 #latest-post-list li a {
   width: 220px;
   margin: 0 auto;
-  border-bottom: solid 1px #e4e4e4;
+  border-bottom: solid 1px #dcdcdc;
 }
 #latest-post-list li a img {
   display: block;
@@ -1208,7 +1208,6 @@ LIST STYLES
   width: 95%;
   max-width: 220px;
   margin: 0 auto;
-  border-bottom: solid 1px #e4e4e4;
 }
 #post-category-list li a h4 {
   display: none;
@@ -1236,7 +1235,7 @@ LIST STYLES
 
 }
 .archive-year {
-  border-top: solid 1px #e4e4e4;
+  border-top: solid 1px #dcdcdc;
   margin: 24px 0 0 0;
 }
 #photo-archive-list {
@@ -1277,7 +1276,7 @@ LIST STYLES
 #blog-archive .new-year,
 #archive .new-year {
   margin-top: 24px;
-  border-top: solid 1px #e4e4e4;
+  border-top: solid 1px #dcdcdc;
 }
 .post-archive-title a span {
   color: #000000;
@@ -1362,7 +1361,7 @@ LIST STYLES
   /* removing text decoration from all headline links */
 
   font-size: 17px;
-  border-top: solid 1px #e4e4e4;
+  border-top: solid 1px #dcdcdc;
   margin-top: 24px;
 }
 #sitemap-pages-list li a,
@@ -1430,11 +1429,11 @@ POSTS & CONTENT STYLES
   margin-top: 12px;
 }
 .post-tags a {
-  border: 1px solid #c3c3c3;
-  border-top-color: #d2d2d2;
-  border-left-color: #d2d2d2;
+  border: 1px solid #bbbbbb;
+  border-top-color: #cacaca;
+  border-left-color: #cacaca;
   padding: 6px 8px;
-  color: #656565;
+  color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
   text-decoration: none;
@@ -1452,16 +1451,16 @@ POSTS & CONTENT STYLES
 }
 .post-tags a:hover,
 .post-tags a:focus {
-  color: #252525;
-  border: 1px solid #c3c3c3;
-  border-top-color: #b1b1b1;
-  border-left-color: #b1b1b1;
-  background-color: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#dfdfdf));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: -o-linear-gradient(top, #e4e4e4, #dfdfdf);
-  background-image: linear-gradient(to bottom, #e4e4e4, #dfdfdf);
+  color: #1d1d1d;
+  border: 1px solid #bbbbbb;
+  border-top-color: #a9a9a9;
+  border-left-color: #a9a9a9;
+  background-color: #d7d7d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
 }
 .post-tags a:active {
   /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
@@ -1472,7 +1471,7 @@ POSTS & CONTENT STYLES
   font-style: italic;
   line-height: 24px;
   padding: 12px 0;
-  border-bottom: solid 1px #e4e4e4;
+  border-bottom: solid 1px #dcdcdc;
 }
 .post-meta span {
   display: none;
@@ -1506,7 +1505,7 @@ POSTS & CONTENT STYLES
 .post-content {
   margin-top: 24px;
   padding-bottom: 24px;
-  border-bottom: solid 1px #e4e4e4;
+  border-bottom: solid 1px #dcdcdc;
   /*
 	image alignment on a screen this size may be
 	a bit difficult. It's set to start aligning 
@@ -1585,7 +1584,7 @@ POSTS & CONTENT STYLES
 PAGE NAVI STYLES
 ******************************************************************/
 .subpage-navigation {
-  border-bottom: solid 1px #e4e4e4;
+  border-bottom: solid 1px #dcdcdc;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1892,7 +1891,7 @@ FOOTER STYLES
 .footer {
   margin-top: 24px;
   min-height: 36px;
-  background-color: #e4e4e4;
+  background-color: #dcdcdc;
   color: #656565;
   border-top: 1px solid #ab362e;
 }

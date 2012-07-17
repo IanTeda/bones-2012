@@ -24,8 +24,19 @@
 					<footer class="post-meta clearfix fourCol first">
 						<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
 					</footer> <!-- end article footer -->
+					
+					<div id="related-posts" class="fourCol first">
+						<h3 class="underlined">Related Posts</h2>
+						<ol class="numbered-list">
+							<li><a href="#"><span>Blog: </span>Laura's Blog</a></li>
+							<li><a href="#"><span>Video: </span>Lake Yarrunga Saffari</a></li>
+							<li><a href="#"><span>Video: </span>Around the Lake</a></li>
+							<li><a href="#"><span>Photo: </span>Long Beach Holiday</a></li>
+							<li><a href="#"><span>Blog: </span>Grose Valley Hike</a></li>
+						</ol>
+					</div>
 						
-						</article> <!-- end article -->
+				</article> <!-- end article -->
                         
 						<?php comments_template(); ?>
 						

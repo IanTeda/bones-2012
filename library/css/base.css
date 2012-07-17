@@ -1378,6 +1378,9 @@ LIST STYLES
 #sitemap-categories-list li ul li a {
   color: #25706b;
 }
+#related-posts ol li {
+  margin-top: 12px;
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

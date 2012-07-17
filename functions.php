@@ -223,9 +223,16 @@ function category_name(){
 	$exclude = array("Featured");
 	foreach((get_the_category()) as $category) { 
 		if (!in_array($category->cat_name, $exclude)) {
-			echo $category->cat_name . ' '; ?><?php
+			echo $category->cat_name . ''; ?><?php
 		}
 	} 	
+}
+
+function get_my_post_category(){
+	$post_cats = $wp_get_object_terms( $post->ID, 'category' );
+	foreach( $post_cats as $cat ){
+    	echo '<a href="/' . $cat->slug . '" title="' . $cat->name . ' Category">' . $cat->name . '</a>';
+	}	
 }
 
 /**********************************************
@@ -313,17 +320,6 @@ function rm_bread_crumbs() {
 	 
 	 $crumbs .=    "\n";
 	 echo $crumbs;
-}
-
-function lets_get_related(){
-	if (function_exists('related_entries')) {
-		related_entries(array(
-			'auto_display' => false, //Only show where I want to
-			'limit' => 5,
-			'before_related' => '<h2>'.__('Related posts:','yarpp').'</h2><ol>',
-			'no_results' => '<h2>'.__('Related posts:','yarpp').'</h2><ol>'.'<li>'.__('No related posts.','yarpp').'</li></ol>'
-		));
-	};
 }
 
 ?>

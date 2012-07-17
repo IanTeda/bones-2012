@@ -26,14 +26,9 @@
 					</footer> <!-- end article footer -->
 					
 					<div id="related-posts" class="fourCol first">
-						<h3 class="underlined">Related Posts</h2>
-						<ol class="numbered-list">
-							<li><a href="#"><span>Blog: </span>Laura's Blog</a></li>
-							<li><a href="#"><span>Video: </span>Lake Yarrunga Saffari</a></li>
-							<li><a href="#"><span>Video: </span>Around the Lake</a></li>
-							<li><a href="#"><span>Photo: </span>Long Beach Holiday</a></li>
-							<li><a href="#"><span>Blog: </span>Grose Valley Hike</a></li>
-						</ol>
+						<?php if (function_exists('related_posts')){ ?>  
+      						<?php related_entries();?>  
+						<?php }?> 
 					</div>
 						
 				</article> <!-- end article -->

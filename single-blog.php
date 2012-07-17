@@ -29,11 +29,13 @@
 						<div id="post-meta-wrapper">
 							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
 						</div>
-						
-						<div id="related-wrapper">
-							<?php lets_get_related(); ?>
-						</div>
 					</footer> <!-- end article footer -->
+					
+					<div id="related-posts" class="fourCol first">
+						<?php if (function_exists('related_posts')){ ?>  
+							<?php related_entries();?>  
+						<?php }?> 
+					</div>
 						
 				</article> <!-- end article -->
 						

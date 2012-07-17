@@ -51,6 +51,31 @@ Template Name: Index.php
 					<?php endwhile; ?>	
 				</ul>
 			</div><!-- end #latest-posts-container -->
+			
+			<div id="post-categories" class="twelveCol first clearfix">
+				<ul id="post-category-list">
+					<li>
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="image-box-shadow resizeable"/></img>
+						</a>
+					</li>
+				</ul>
+			</div>
 					
 			<?php else : ?>
 				<article id="post-not-found" class="hentry clearfix">

@@ -1186,6 +1186,19 @@ LIST STYLES
   font-style: italic;
   color: #8f8f8f;
 }
+#post-category-list {
+  list-style: none;
+  margin-top: 24px;
+}
+#post-category-list li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+#post-category-list li a img {
+  width: 98%;
+  max-width: 220px;
+}
 .image-matrix {
   padding: 0;
   list-style: none;

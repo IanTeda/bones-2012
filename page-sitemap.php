@@ -10,6 +10,18 @@ Template Name: Sitemap Page
 		<div id="main" class="clearfix" role="main">
 		
 			<div id="archive">
+			
+				<div id="sitemap-search-wrapper" class="twelveCol first clearfix">
+				<h2>Search</h2>
+					<div id="sitemap-search" class="overlined twelveCol first">
+						<h3 class="fourCol first">Site Search</h3>
+						<div id="sitemap-search-form" class="eightCol last">
+							<form method="get" id="navsearchform" action="<?php bloginfo('url'); ?>/">
+            					<input type="text" class="search-text" value="Search this site... " name="s" id="sitemap-search-box" onfocus="if (this.value == 'Search this site... ') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this site... ';}" />
+								<button id="sitemap-search-submit" class="button-small" type="submit">Submit Search</button>        					</form>
+						</div>
+					</div>
+				</div>
 	
 				<div id="sitemap-categories-wrapper" class="twelveCol first clearfix">
 					<h2>Categories</h2>

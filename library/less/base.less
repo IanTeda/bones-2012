@@ -116,6 +116,9 @@ article {
 		
 }
 
+#sitemap-search-wrapper,
+#sitemap-search,
+#sitemap-search-form,
 #sitemap-categories-wrapper,
 #sitemap-tagclound-wrapper,
 #sitemap-posts-wrapper,
@@ -128,6 +131,27 @@ article {
 		margin-top: @vertSpacing;
 		#clound-wrapper {
 			margin-top: @vertSpacing;
+		}
+	}
+}
+
+#sitemap-search-form {
+	form {
+		#sitemap-search-box {
+			float: left;
+			width: 97%;
+			border: 1px solid @greyLight;
+			background-color: @white;
+			color: @grey;
+			line-height: @vertSpacing - 4;
+			padding-left: 12px;
+		}
+		&:hover, &:focus {
+			outline: @autumn;
+		}
+		#sitemap-search-submit {
+			margin-top: @vertSpacing;
+			float: right;	
 		}
 	}
 }

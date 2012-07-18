@@ -214,7 +214,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 4px 12px;
+  padding: 3px 12px;
   color: #000000;
   display: inline-block;
   font-size: 11px;
@@ -316,7 +316,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -1122,7 +1122,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 4px 12px;
+  padding: 3px 12px;
   color: #000000;
   display: inline-block;
   font-size: 11px;
@@ -1224,7 +1224,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -1364,6 +1364,15 @@ HEADER SYTLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+#sitemap-search-form form #sitemap-search-box {
+  width: 70%;
+  margin-right: 2%;
+}
+#sitemap-search-form form #sitemap-search-submit {
+  float: left;
+  width: 25%;
+  margin: 0;
+}
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -2164,7 +2173,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 4px 12px;
+  padding: 3px 12px;
   color: #000000;
   display: inline-block;
   font-size: 11px;
@@ -2266,7 +2275,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;

@@ -664,7 +664,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 4px 12px;
+  padding: 3px 12px;
   color: #000000;
   display: inline-block;
   font-size: 11px;
@@ -741,7 +741,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -1519,7 +1519,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 4px 12px;
+  padding: 3px 12px;
   color: #000000;
   display: inline-block;
   font-size: 11px;
@@ -1596,7 +1596,7 @@ BUTTONS
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -1778,6 +1778,9 @@ article a img {
 .flexslider-container {
   display: none;
 }
+#sitemap-search-wrapper,
+#sitemap-search,
+#sitemap-search-form,
 #sitemap-categories-wrapper,
 #sitemap-tagclound-wrapper,
 #sitemap-posts-wrapper,
@@ -1789,6 +1792,23 @@ article a img {
 }
 #sitemap-tagclound-wrapper div #clound-wrapper {
   margin-top: 24px;
+}
+#sitemap-search-form form #sitemap-search-box {
+  float: left;
+  width: 97%;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  color: #8f8f8f;
+  line-height: 20px;
+  padding-left: 12px;
+}
+#sitemap-search-form form:hover,
+#sitemap-search-form form:focus {
+  outline: #ab362e;
+}
+#sitemap-search-form form #sitemap-search-submit {
+  margin-top: 24px;
+  float: right;
 }
 /*
 No Grid? Say Whaaaat?
@@ -1893,7 +1913,7 @@ a:visited:link {
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -1919,7 +1939,7 @@ a:visited:link {
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -2415,7 +2435,7 @@ POSTS & CONTENT STYLES
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -2441,7 +2461,7 @@ POSTS & CONTENT STYLES
   border: 1px solid #bbbbbb;
   border-top-color: #cacaca;
   border-left-color: #cacaca;
-  padding: 6px 8px;
+  padding: 5px 8px;
   color: #5d5d5d;
   display: inline-block;
   font-size: 10px;
@@ -3648,7 +3668,7 @@ tweeners.
     border: 1px solid #bbbbbb;
     border-top-color: #cacaca;
     border-left-color: #cacaca;
-    padding: 4px 12px;
+    padding: 3px 12px;
     color: #000000;
     display: inline-block;
     font-size: 11px;
@@ -3700,7 +3720,7 @@ tweeners.
     border: 1px solid #bbbbbb;
     border-top-color: #cacaca;
     border-left-color: #cacaca;
-    padding: 6px 8px;
+    padding: 5px 8px;
     color: #5d5d5d;
     display: inline-block;
     font-size: 10px;
@@ -3778,6 +3798,15 @@ tweeners.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
+  #sitemap-search-form form #sitemap-search-box {
+    width: 70%;
+    margin-right: 2%;
+  }
+  #sitemap-search-form form #sitemap-search-submit {
+    float: left;
+    width: 25%;
+    margin: 0;
+  }
   /******************************************************************
   H1, H2, H3, H4, H5 STYLES
   ******************************************************************/
@@ -4586,7 +4615,7 @@ you can add resource intensive styles.
     border: 1px solid #bbbbbb;
     border-top-color: #cacaca;
     border-left-color: #cacaca;
-    padding: 4px 12px;
+    padding: 3px 12px;
     color: #000000;
     display: inline-block;
     font-size: 11px;
@@ -4638,7 +4667,7 @@ you can add resource intensive styles.
     border: 1px solid #bbbbbb;
     border-top-color: #cacaca;
     border-left-color: #cacaca;
-    padding: 6px 8px;
+    padding: 5px 8px;
     color: #5d5d5d;
     display: inline-block;
     font-size: 10px;

@@ -1304,6 +1304,11 @@ LIST STYLES
 #archive .post-excerpt {
   margin-top: 12px;
 }
+#search-results .post-archive-meta,
+#blog-archive .post-archive-meta,
+#archive .post-archive-meta {
+  font-style: italic;
+}
 .post-archive-title a span {
   color: #000000;
 }

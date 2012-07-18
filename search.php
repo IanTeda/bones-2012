@@ -19,12 +19,12 @@
 					<?php else: ?>
 						<div class="twelveCol first">
 					<?php endif; ?>
-							<h4 class="eightCol last">
+							<h4 class="post-archive-title eightCol last">
 								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-									<?php the_title(); ?>
+									<span><?php category_name(); ?>:</span> <?php the_title(); ?>
 								</a>
 							</h4>
-							<p class="eightCol last">Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
+							<p class="post-archive-meta eightCol last">Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
 							<?php the_tags('<span class="post-tags-archive eightCol last">', ' ', '</span>'); ?>
 							
 							<section class="post-excerpt eightCol last">

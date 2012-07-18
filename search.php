@@ -1,73 +1,70 @@
 <?php get_header(); ?>
+<div id="content">
+	<div id="inner-content" class="wrap clearfix">
+		<div id="main" class="ninecol first clearfix" role="main">
+		
+			<h2 class="archive-title">
+				<span>Search Results for:</span> <?php echo esc_attr(get_search_query()); ?>
+			</h2>
 			
-			<div id="content">
-
-				<div id="inner-content" class="wrap clearfix">
-			
-					<div id="main" class="ninecol first clearfix" role="main">
+			<div id="search-results" class="clearfix">
+				<?php $year = ''; ?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
-						<h1 class="archive-title"><span>Search Results for:</span> <?php echo esc_attr(get_search_query()); ?></h1>
-
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						
-								<header class="article-header">
+					<?php // Lets show the year but only once ?>				
+					<?php if (get_the_time('Y') != $year): ?>
+						<?php $year = get_the_time('Y'); ?>
+						<div class="new-year twelveCol first overlined">
+							<h3 class="fourCol first"><?php echo $year; ?></h3>
+					<?php else: ?>
+						<div class="twelveCol first">
+					<?php endif; ?>
+							<h4 class="eightCol last">
+								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</h4>
+							<p class="eightCol last">Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>
+							<?php the_tags('<span class="post-tags-archive eightCol last">', ' ', '</span>'); ?>
 							
-									<h3 class="search-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-							
-									<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+							<section class="post-excerpt eightCol last">
+								<?php the_excerpt('<span class="read-more">Read more &raquo;</span>'); ?>
+							</section> <!-- end excerpt section -->
+						</div>
+				<?php endwhile; ?>	
 						
-								</header> <!-- end article header -->
-					
-								<section class="post-content">
-								    <?php the_excerpt('<span class="read-more">Read more &raquo;</span>'); ?>
-					
-								</section> <!-- end article section -->
+				<?php if (function_exists('bones_page_navi')) { // if expirimental feature is active ?>
+					<?php bones_page_navi(); // use the page navi function ?>
+				<?php } else { // if it is disabled, display regular wp prev & next links ?>
+					<nav class="wp-prev-next">
+						<ul class="clearfix">
+							<li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
+							<li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
+						</ul>
+					</nav>
+				<?php } ?>			
+				
+				<?php else : ?>
+					<article id="post-not-found" class="hentry clearfix">
+						<header class="article-header">
+							<h1><?php _e("Sorry, No Results.", "bonestheme"); ?></h1>
+						</header>
 						
-								<footer class="article-footer">
-							
-								</footer> <!-- end article footer -->
-					
-							</article> <!-- end article -->
-					
-						<?php endwhile; ?>	
-					
-						    <?php if (function_exists('bones_page_navi')) { // if expirimental feature is active ?>
+						<section class="post-content">
+							<p><?php _e("UTry your search again.", "bonestheme"); ?></p>
+						</section>
 						
-						        <?php bones_page_navi(); // use the page navi function ?>
+						<footer class="article-footer">
+							<p><?php _e("This is the error message in the search.php template.", "bonestheme"); ?></p>
+						</footer>
+					</article>
 						
-					        <?php } else { // if it is disabled, display regular wp prev & next links ?>
-						        <nav class="wp-prev-next">
-							        <ul class="clearfix">
-								        <li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
-								        <li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
-							        </ul>
-						        </nav>
-					        <?php } ?>			
-					
-					    <?php else : ?>
-					
-    					    <article id="post-not-found" class="hentry clearfix">
-    					    	<header class="article-header">
-    					    		<h1><?php _e("Sorry, No Results.", "bonestheme"); ?></h1>
-    					    	</header>
-    					    	<section class="post-content">
-    					    		<p><?php _e("UTry your search again.", "bonestheme"); ?></p>
-    					    	</section>
-    					    	<footer class="article-footer">
-    					    	    <p><?php _e("This is the error message in the search.php template.", "bonestheme"); ?></p>
-    					    	</footer>
-    					    </article>
-					
-					    <?php endif; ?>
+				<?php endif; ?>
+			</div> <!-- end #search-results -->
 			
-				    </div> <!-- end #main -->
+		</div> <!-- end #main -->
     			
-    			    <?php //get_sidebar(); // sidebar 1 ?>
-    			
-    			</div> <!-- end #inner-content -->
+    </div> <!-- end #inner-content -->
     
-			</div> <!-- end #content -->
-
+</div> <!-- end #content -->
 <?php get_footer(); ?>

@@ -21,7 +21,13 @@
 					<?php endif; ?>
 							<h4 class="post-archive-title eightCol last">
 								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-									<span><?php category_name(); ?>:</span> <?php the_title(); ?>
+									<span>
+										<?php if($post->post_type == 'page') { ?>
+											Page:
+										<?php } else { ?>
+											<?php category_name() ?>:
+										<?php } ?>
+									</span> <?php the_title(); ?>
 								</a>
 							</h4>
 							<p class="post-archive-meta eightCol last">Posted by <?php the_author() ?> &bull; <?php the_time('D, d F y') ?></p>

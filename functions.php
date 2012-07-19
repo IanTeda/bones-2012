@@ -325,4 +325,14 @@ function rm_bread_crumbs() {
 	 echo $crumbs;
 }
 
+/*****************************************
+Add allowable mime types uploaded
+********************************************/
+function add_upload_mimes($mimes=array()) {
+    $mimes['kml']='application/vnd.google-earth.kml+xml';
+    $mimes['kmz']='application/vnd.google-earth.kmz';
+    return $mimes;
+}
+add_filter("upload_mimes","add_upload_mimes");
+
 ?>

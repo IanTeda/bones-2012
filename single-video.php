@@ -12,7 +12,6 @@
 								<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
 							</span>
 						</h3>
-						
 					</header> <!-- end article header -->
 						
 					<section class="post-content clearfix underlined eightCol last">

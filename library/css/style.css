@@ -1810,6 +1810,9 @@ article a img {
   margin-top: 24px;
   float: right;
 }
+.flxmap-container {
+  margin-top: 24px;
+}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -2423,6 +2426,23 @@ LIST STYLES
 }
 #related-posts ol li {
   margin-top: 12px;
+}
+#library-bookself-read {
+  padding: 0;
+}
+#library-bookself-read li {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+}
+#library-bookself-read li a {
+  text-decoration: none;
+  display: block;
+}
+#library-bookself-read li {
+  float: left;
+  width: 33.333333333333336%;
+  text-align: center;
 }
 /*********************
 POSTS & CONTENT STYLES
@@ -3901,6 +3921,9 @@ tweeners.
     float: left;
     width: 50%;
   }
+  #library-bookself-read li {
+    width: 25%;
+  }
   /*********************
   POSTS & CONTENT STYLES
   *********************/
@@ -5197,6 +5220,9 @@ you can add resource intensive styles.
     margin-left: 2.762430939%;
     margin-left: 0;
   }
+  #library-bookself-read li {
+    width: 16.666666666666668%;
+  }
   /***************************
   SLIDER STYLES
   ***************************/
@@ -5293,6 +5319,9 @@ you can add resource intensive styles.
   }
   #popular-post-list li {
     width: 50%;
+  }
+  #library-bookself-read li {
+    width: 14.285714285714286%;
   }
 }
 /* end of media query */

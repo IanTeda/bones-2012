@@ -1238,6 +1238,9 @@ LIST STYLES
   margin-left: 2.762430939%;
   margin-left: 0;
 }
+#library-bookself-read li {
+  width: 16.666666666666668%;
+}
 /***************************
 SLIDER STYLES
 ***************************/

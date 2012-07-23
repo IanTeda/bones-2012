@@ -892,6 +892,9 @@ LIST STYLES
   float: left;
   width: 50%;
 }
+#library-bookself-read li {
+  width: 25%;
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

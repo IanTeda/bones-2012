@@ -17,3 +17,6 @@ LIST STYLES
 #popular-post-list li {
   width: 50%;
 }
+#library-bookself-read li {
+  width: 14.285714285714286%;
+}

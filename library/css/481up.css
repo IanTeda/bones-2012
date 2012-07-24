@@ -892,6 +892,7 @@ LIST STYLES
   float: left;
   width: 50%;
 }
+#lastfm-records li,
 #library-bookself-read li {
   width: 25%;
 }

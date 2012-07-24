@@ -2427,18 +2427,22 @@ LIST STYLES
 #related-posts ol li {
   margin-top: 12px;
 }
+#lastfm-records,
 #library-bookself-read {
   padding: 0;
 }
+#lastfm-records li,
 #library-bookself-read li {
   width: 100%;
   display: block;
   margin-top: 24px;
 }
+#lastfm-records li a,
 #library-bookself-read li a {
   text-decoration: none;
   display: block;
 }
+#lastfm-records li,
 #library-bookself-read li {
   float: left;
   width: 33.333333333333336%;
@@ -3921,6 +3925,7 @@ tweeners.
     float: left;
     width: 50%;
   }
+  #lastfm-records li,
   #library-bookself-read li {
     width: 25%;
   }
@@ -5220,6 +5225,7 @@ you can add resource intensive styles.
     margin-left: 2.762430939%;
     margin-left: 0;
   }
+  #lastfm-records li,
   #library-bookself-read li {
     width: 16.666666666666668%;
   }
@@ -5320,6 +5326,7 @@ you can add resource intensive styles.
   #popular-post-list li {
     width: 50%;
   }
+  #lastfm-records li,
   #library-bookself-read li {
     width: 14.285714285714286%;
   }

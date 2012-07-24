@@ -244,7 +244,9 @@ function load_lastfm(){
 	
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
-			jQuery("#lastfmrecords").lastFmRecords();
+			jQuery("#lastfmrecords").lastFmRecords(
+				{"period": "topalbums12month", "user": "t33d5", "count": "50"}									   
+			);
 		});
 	</script><?php
 }

@@ -424,11 +424,11 @@
       _logStatus('adding temporary cd covers to div ' + _elem.attr("id"));
 
       // add an ol to the element div
-      var _ol = jQuery("<ol></ol>").attr('class', 'image-matrix').appendTo(_elem);
+      var _ol = jQuery("<ol></ol>").attr('id', 'lastfm-records').appendTo(_elem);
 
       var _img, _li;
       for (var i = 0; i < _settings.count; i++) {
-        _li  = jQuery('<li></li>').attr('class', 'clearfix'); //.attr('style', 'display: inline;');
+        _li  = jQuery('<li></li>'); //.attr('style', 'display: inline;');
 
         _a   = jQuery('<a></a>').bind('click', _dontFollowLink).attr('href', '').appendTo(_li);
 

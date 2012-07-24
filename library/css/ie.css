@@ -1458,6 +1458,7 @@ LIST STYLES
   float: left;
   width: 50%;
 }
+#lastfm-records li,
 #library-bookself-read li {
   width: 25%;
 }
@@ -2929,6 +2930,7 @@ LIST STYLES
   margin-left: 2.762430939%;
   margin-left: 0;
 }
+#lastfm-records li,
 #library-bookself-read li {
   width: 16.666666666666668%;
 }
@@ -3019,6 +3021,7 @@ LIST STYLES
 #popular-post-list li {
   width: 50%;
 }
+#lastfm-records li,
 #library-bookself-read li {
   width: 14.285714285714286%;
 }

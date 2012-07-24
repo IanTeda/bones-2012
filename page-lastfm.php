@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Goodreads Bookself Template
+Template Name: last Fm Template
 */
 ?>
 <?php get_header(); ?>
@@ -33,13 +33,7 @@ Template Name: Goodreads Bookself Template
 					</header> <!-- end article header -->
 					
 						    <section class="clearfix">
-							    <div id="goodreads-container">
-									<ul id="library-bookself-read">
-										<?php if(function_exists('bookshelf')) { 
-											bookshelf(); 
-										} ?>
-									</ul>
-								</div><!-- End of Goodreads -->	
+								<div id="lastfmrecords"></div>
 							</section> <!-- end article section -->
 						
 						    <footer class="article-footer">
@@ -77,5 +71,5 @@ Template Name: Goodreads Bookself Template
 				</div> <!-- end #inner-content -->
     
 			</div> <!-- end #content -->
-
+<?php load_lastfm(); ?>
 <?php get_footer(); ?>

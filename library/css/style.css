@@ -1869,13 +1869,6 @@ IMAGE STYLES
   height: auto;
   max-width: 100%;
 }
-.post-feature-image {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  box-shadow: 0px 0px 0.5em #000000;
-  box-shadow: 0px 0px 0.5em #000000;
-}
 /*********************
 LINK STYLES
 *********************/
@@ -2083,8 +2076,11 @@ h5,
   font-size: 14px;
   font-weight: 400;
 }
-.underlined span {
-  display: none;
+.underlined {
+  border-bottom: solid 1px #dcdcdc;
+}
+.overlined {
+  border-top: solid 1px #dcdcdc;
 }
 /*********************
 HEADER SYTLES
@@ -2182,6 +2178,8 @@ LIST STYLES
   width: 220px;
   margin: 0 auto;
   border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
 }
 #latest-post-list li a img {
   display: block;
@@ -2247,6 +2245,7 @@ LIST STYLES
 .archive-year {
   border-top: solid 1px #dcdcdc;
   border-top: solid 1px #dcdcdc;
+  border-top: solid 1px #dcdcdc;
   margin: 24px 0 0 0;
 }
 #photo-archive-list {
@@ -2288,6 +2287,7 @@ LIST STYLES
 #blog-archive .new-year,
 #archive .new-year {
   margin-top: 24px;
+  border-top: solid 1px #dcdcdc;
   border-top: solid 1px #dcdcdc;
   border-top: solid 1px #dcdcdc;
 }
@@ -2386,6 +2386,7 @@ LIST STYLES
   font-size: 17px;
   border-top: solid 1px #dcdcdc;
   border-top: solid 1px #dcdcdc;
+  border-top: solid 1px #dcdcdc;
   margin-top: 24px;
 }
 #sitemap-pages-list li a,
@@ -2456,137 +2457,240 @@ LIST STYLES
   text-align: center;
 }
 /*********************
-POSTS & CONTENT STYLES
+     POST STYLES
 *********************/
-.photo-post .post-feature-image,
-.video-post .post-feature-image {
-  display: none;
+/** single.php post style **/
+.post {
+  /** Post header **/
+
+  /** end post-header **/
+
+  /* post content */
+
+  /* end .post-content */
+
+  /** Post footer **/
+
+  /** end post-footer **/
+
 }
-#post-header {
-  float: left;
+.post .post-header {
+  /** Post title **/
+
+  /** end post-title **/
+
+  /** Post feature image style **/
+
+  /** end post-feature-image **/
+
+  /** Post tags **/
+
+  /** end post-tags **/
+
 }
-#post-header img {
-  margin: 24px auto 0 auto;
+.post .post-header .post-title {
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  /** Navigation within post title **/
+
 }
-#post-header h3 span {
+.post .post-header .post-title .post-title-navigation {
   float: right;
 }
-#post-header h3 span a {
+.post .post-header .post-title .post-title-navigation a {
   font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
-.post-tags {
+.post .post-header .post-feature-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0px 0px 0.5em #000000;
+  box-shadow: 0px 0px 0.5em #000000;
+  margin: 24px auto 0 auto;
+}
+.post .post-header .post-tags {
+  margin-top: 24px;
+}
+.post .post-header .post-tags a {
+  border: 1px solid #bbbbbb;
+  border-top-color: #cacaca;
+  border-left-color: #cacaca;
+  padding: 5px 8px;
+  color: #5d5d5d;
+  display: inline-block;
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
+  border: 1px solid #bbbbbb;
+  border-top-color: #cacaca;
+  border-left-color: #cacaca;
+  padding: 5px 8px;
+  color: #5d5d5d;
+  display: inline-block;
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
+
+}
+.post .post-header .post-tags a:hover,
+.post .post-header .post-tags a:focus {
+  color: #1d1d1d;
+  border: 1px solid #bbbbbb;
+  border-top-color: #a9a9a9;
+  border-left-color: #a9a9a9;
+  background-color: #d7d7d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
+  background-color: #d7d7d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
+}
+.post .post-header .post-tags a:active {
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
+}
+.post .post-header .post-tags a:hover,
+.post .post-header .post-tags a:focus {
+  color: #1d1d1d;
+  border: 1px solid #bbbbbb;
+  border-top-color: #a9a9a9;
+  border-left-color: #a9a9a9;
+  background-color: #d7d7d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
+  background-color: #d7d7d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
+  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
+}
+.post .post-header .post-tags a:active {
+  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
+
+}
+.post .post-content {
+  margin-top: 24px;
+  min-height: 250px;
+  /*
+		image alignment on a screen this size may be
+		a bit difficult. It's set to start aligning 
+		and floating images at the next breakpoint,
+		but it's up to you. Feel free to change it up.
+		*/
+
+}
+.post .post-content p {
   margin-top: 12px;
 }
-.post-tags a {
-  border: 1px solid #bbbbbb;
-  border-top-color: #cacaca;
-  border-left-color: #cacaca;
-  padding: 5px 8px;
-  color: #5d5d5d;
-  display: inline-block;
-  font-size: 10px;
-  text-decoration: none;
-  cursor: pointer;
-  line-height: 10px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
-
-  border: 1px solid #bbbbbb;
-  border-top-color: #cacaca;
-  border-left-color: #cacaca;
-  padding: 5px 8px;
-  color: #5d5d5d;
-  display: inline-block;
-  font-size: 10px;
-  text-decoration: none;
-  cursor: pointer;
-  line-height: 10px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  /*.css-gradient(@buttonColor,darken(@buttonColor, 2%));*/
-
+.post .post-content ul,
+.post .post-content ol,
+.post .post-content table,
+.post .post-content dl {
+  margin: 0;
+  padding: 0 0 0 24px;
 }
-.post-tags a:hover,
-.post-tags a:focus {
-  color: #1d1d1d;
-  border: 1px solid #bbbbbb;
-  border-top-color: #a9a9a9;
-  border-left-color: #a9a9a9;
-  background-color: #d7d7d7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
-  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
-  background-color: #d7d7d7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
-  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
+.post .post-content ul li {
+  list-style: none;
 }
-.post-tags a:active {
-  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
-
+.post .post-content blockquote {
+  background: #f8f8f8 url(../images/quote.png) no-repeat 17px 21px;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 24px 24px 24px 48px;
 }
-.post-tags a:hover,
-.post-tags a:focus {
-  color: #1d1d1d;
-  border: 1px solid #bbbbbb;
-  border-top-color: #a9a9a9;
-  border-left-color: #a9a9a9;
-  background-color: #d7d7d7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
-  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
-  background-color: #d7d7d7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#d7d7d7));
-  background-image: -webkit-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -moz-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: -o-linear-gradient(top, #dcdcdc, #d7d7d7);
-  background-image: linear-gradient(to bottom, #dcdcdc, #d7d7d7);
+.post .post-content blockquote small {
+  font-size: 12px;
 }
-.post-tags a:active {
-  /*.css-gradient(darken(@buttonColor, 5%),@buttonColor);*/
-
+.post .post-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em;
 }
-.post-meta {
+.post .post-content img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 0.5em #000000;
+  box-shadow: 0px 0px 0.5em #000000;
+}
+.post .post-content video,
+.post .post-content object {
+  max-width: 100%;
+}
+.post .post-content pre,
+.post .post-content code {
+  background: #eee;
+  border: 1px solid #cecece;
+  padding: 10px;
+}
+.post .post-footer {
+  margin-top: 24px;
   text-align: center;
   font-style: italic;
   line-height: 24px;
   padding: 12px 0;
   border-bottom: solid 1px #dcdcdc;
   border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-top: solid 1px #dcdcdc;
+  border-top: solid 1px #dcdcdc;
+  border-top: solid 1px #dcdcdc;
 }
-.post-meta span {
+/** single.php style for photo and video posts **/
+.photo-post .post-header .post-feature-image,
+.video-post .post-header .post-feature-image {
   display: none;
+  /** Don't show feature image for video and photo posts **/
+
+}
+/** single.php style for video posts **/
+.video-post .post-content p {
+  margin: 0;
 }
 .category-photo .post-content {
   text-align: center;
@@ -2596,87 +2700,15 @@ POSTS & CONTENT STYLES
   height: auto;
   max-width: 100%;
 }
-.post-text {
-  min-height: 250px;
-}
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
-/* general post style */
 /* general article on a page style */
 /* general style on an attatchment */
 /* sticky post style */
 /* hentry class */
 /* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
-/* post meta */
-.meta {
-  color: #999;
-}
-/* post content */
-.post-content {
-  margin-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: solid 1px #dcdcdc;
-  border-bottom: solid 1px #dcdcdc;
-  /*
-	image alignment on a screen this size may be
-	a bit difficult. It's set to start aligning 
-	and floating images at the next breakpoint,
-	but it's up to you. Feel free to change it up.
-	*/
-
-}
-.post-content span {
-  display: none;
-}
-.post-content p {
-  margin-top: 12px;
-}
-.post-content ul,
-.post-content ol,
-.post-content table,
-.post-content dl {
-  margin: 0;
-  padding: 0 0 0 24px;
-}
-.post-content ul li {
-  list-style: none;
-}
-.post-content blockquote {
-  background: #f8f8f8 url(../images/quote.png) no-repeat 17px 21px;
-  font-style: italic;
-  font-size: 15px;
-  line-height: 24px;
-  padding: 24px 24px 24px 48px;
-}
-.post-content blockquote small {
-  font-size: 12px;
-}
-.post-content dd {
-  margin-left: 0;
-  font-size: 0.9em;
-  color: #787878;
-  margin-bottom: 1.5em;
-}
-.post-content img {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0px 0px 0.5em #000000;
-  box-shadow: 0px 0px 0.5em #000000;
-}
-.post-content video,
-.post-content object {
-  max-width: 100%;
-}
-.post-content pre,
-.post-content code {
-  background: #eee;
-  border: 1px solid #cecece;
-  padding: 10px;
-}
-/* end .post-content */
-.wp-caption {
+/* style by tag (i.e. tag-news) */.wp-caption {
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
@@ -2700,14 +2732,12 @@ PAGE NAVI STYLES
 .subpage-navigation {
   border-bottom: solid 1px #dcdcdc;
   border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
   margin: 0;
   padding: 0;
   list-style-type: none;
   width: 100%;
   text-align: center;
-}
-.subpage-navigation span {
-  display: none;
 }
 .subpage-navigation li {
   display: inline;

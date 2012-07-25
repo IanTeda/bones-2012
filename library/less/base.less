@@ -217,11 +217,6 @@ IMAGE STYLES
 	max-width: 100%; 
 }
 
-.post-feature-image {
-	.resizeable;
-	.image-box-shadow;
-}
-
 /*********************
 LINK STYLES
 *********************/
@@ -303,9 +298,11 @@ h5, .h5 {
 }
 
 .underlined {
-	span {
-		display: none;		
-	}
+	border-bottom: solid 1px @greyLight;
+}
+
+.overlined {
+	border-top: solid 1px @greyLight;	
 }
 
 /*********************
@@ -410,7 +407,7 @@ LIST STYLES
 		a {
 			width: 220px;
 			margin: 0 auto;
-			border-bottom: solid 1px @greyLight;
+			.underlined;
 			img {
 				display: block;
 			}
@@ -635,44 +632,139 @@ LIST STYLES
 }
 
 /*********************
-POSTS & CONTENT STYLES
+     POST STYLES
 *********************/
-.photo-post,
-.video-post {
-	.post-feature-image {
-		display: none;	
-	}
+
+/** single.php post style **/
+.post { 
+	/** Post header **/
+	.post-header {
+		/** Post title **/
+		.post-title {
+			.underlined;
+			 /** Navigation within post title **/
+			.post-title-navigation {
+				float: right;
+				a {
+					font: @font-size-6 @sans-serif;
+				}
+			}
+		} /** end post-title **/
+		
+		/** Post feature image style **/
+		.post-feature-image {
+			.resizeable;
+			.image-box-shadow;
+			margin: @vertSpacing auto 0 auto;
+		} /** end post-feature-image **/
+		
+		/** Post tags **/
+		.post-tags {
+			margin-top: @vertSpacing;
+			a {
+				.button-small
+			}
+		} /** end post-tags **/
+	} /** end post-header **/
+	
+	/* post content */
+	.post-content {
+		margin-top: @vertSpacing;
+		min-height: 250px;
+		p {
+			margin-top: @vertSpacing / 2;
+		}
+		ul, ol, table, dl {
+			margin: 0;
+			padding: 0 0 0 24px;	
+		}
+		ul, ol {
+			li {}
+		}
+		ul {
+			li {
+				list-style: none;
+			}
+		}
+		ol {
+			li {}
+		}
+		blockquote {
+			background: #f8f8f8 url(../images/quote.png) no-repeat 17px 21px;
+			font-style: italic;
+			font-size: @font-size-4;
+			line-height: @vertSpacing;
+			padding: @vertSpacing @vertSpacing @vertSpacing (@vertSpacing * 2);
+			&:before {}
+		}
+		blockquote small { 
+			font-size: @font-size-6; 
+		}
+		dl {}
+		dt {}
+		dd {
+			margin-left: 0;
+			font-size: 0.9em;
+			color: #787878;
+			margin-bottom: 1.5em;
+		}
+		img { 
+			max-width: 100%;
+			height: auto;
+			.image-box-shadow;
+		}
+				
+		/*
+		image alignment on a screen this size may be
+		a bit difficult. It's set to start aligning 
+		and floating images at the next breakpoint,
+		but it's up to you. Feel free to change it up.
+		*/
+		.alignleft, img.alignleft {}
+		.alignright, img.alignright {}
+		.aligncenter, img.aligncenter {}
+				
+		video, object { 
+			max-width: 100%; 
+		}
+				
+		pre, code {
+			background: #eee;
+			border: 1px solid #cecece;
+			padding: 10px;
+		}
+	} /* end .post-content */
+	
+	/** Post footer **/
+	.post-footer {
+		margin-top: @vertSpacing;
+		text-align: center;
+		font-style: italic;	
+		line-height: @vertSpacing;
+		padding: (@vertSpacing / 2) 0;
+		.underlined;
+		.overlined;
+	} /** end post-footer **/
 }
 
-
-#post-header {
-	float: left;
-	img {
-		margin: @vertSpacing auto 0 auto;
-	}
-	h3 {
-		span {
-			float: right;
-			a {
-				font: @font-size-6 @sans-serif;
-			}
+/** single.php style for photo and video posts **/
+.photo-post,
+.video-post {
+	.post-header {
+		.post-feature-image {
+			display: none;	/** Don't show feature image for video and photo posts **/
 		}
 	}
 }
 
-.post-tags {
-	margin-top: @vertSpacing /2;
-	a {
-		.button-small
+/** single.php style for video posts **/
+.video-post {
+	.post-content {
+		p {
+			margin: 0;	
+		}
 	}
-}
-
-.post-meta {
-	text-align: center;
-	font-style: italic;	
-	line-height: @vertSpacing;
-	padding: (@vertSpacing / 2) 0;
-	.underlined;
+	
 }
 
 .category-photo {
@@ -682,10 +774,6 @@ POSTS & CONTENT STYLES
 			.resizeable;
 		}
 	}
-}
-
-.post-text {
-	min-height: 250px;	
 }
 
 #content { 
@@ -708,88 +796,12 @@ POSTS & CONTENT STYLES
 	
 /* want to style individual post classes? Booya! */
 .post-id {} /* post by id (i.e. post-3) */
-.post {} /* general post style */
 .page {} /* general article on a page style */
 .attachment {} /* general style on an attatchment */
 .sticky {} /* sticky post style */
 .hentry {} /* hentry class */
 .category-slug {} /* style by category (i.e. category-videos) */
-.tag-slug {} /* style by tag (i.e. tag-news) */
-	
-/* post meta */
-.meta {
-	color: #999;
-	time {}
-}
-			
-/* post content */
-.post-content {
-	margin-top: @vertSpacing;
-	padding-bottom: @vertSpacing;
-	.underlined;
-	p {
-		margin-top: @vertSpacing / 2;
-	}
-	ul, ol, table, dl {
-		margin: 0;
-		padding: 0 0 0 24px;	
-	}
-	ul, ol {
-		li {}
-	}
-	ul {
-		li {
-			list-style: none;
-		}
-	}
-	ol {
-		li {}
-	}
-	blockquote {
-		background: #f8f8f8 url(../images/quote.png) no-repeat 17px 21px;
-		font-style: italic;
-		font-size: @font-size-4;
-		line-height: @vertSpacing;
-		padding: @vertSpacing @vertSpacing @vertSpacing (@vertSpacing * 2);
-		&:before {}
-	}
-	blockquote small { 
-		font-size: @font-size-6; 
-	}
-	dl {}
-	dt {}
-	dd {
-		margin-left: 0;
-		font-size: 0.9em;
-		color: #787878;
-		margin-bottom: 1.5em;
-	}
-	img { 
-		max-width: 100%;
-		height: auto;
-		.image-box-shadow;
-	}
-			
-	/*
-	image alignment on a screen this size may be
-	a bit difficult. It's set to start aligning 
-	and floating images at the next breakpoint,
-	but it's up to you. Feel free to change it up.
-	*/
-	.alignleft, img.alignleft {}
-	.alignright, img.alignright {}
-	.aligncenter, img.aligncenter {}
-			
-	video, object { 
-		max-width: 100%; 
-	}
-			
-	pre, code {
-		background: #eee;
-		border: 1px solid #cecece;
-		padding: 10px;
-	}
-} /* end .post-content */
+.tag-slug {} /* style by tag (i.e. tag-news) */		
 			
 .wp-caption {
 	background: #eee;

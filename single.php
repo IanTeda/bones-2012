@@ -3,55 +3,29 @@
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="clearfix twelveCol first" role="main">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" class="clearfix <?php get_category_slug(); ?>-post" role="article">
+				<article id="post-<?php the_ID(); ?>" class="post <?php get_category_slug(); ?>-post clearfix" role="article">
 				
-					<header id="post-header" class="fourCol first">
-						<h3 class="underlined clearfix">
+					<header class="post-header fourCol first">
+						<h3 class="post-title">
 							<?php the_title(); ?>
-							<span>
+							<span class="post-title-navigation">
 								<?php previous_post_link('%link','Prev'); ?> &bull; <?php next_post_link('%link','Next'); ?>
 							</span>
 						</h3>
 						
 						<?php feature_image_1140x336(); ?>
 						
+						<?php the_tags('<p class="post-tags">', ' ', '</p>'); ?>
+						
 					</header> <!-- end article header -->
 						
-					<section class="post-content clearfix underlined eightCol last">
-                       	<div class="post-text ">
+					<section class="post-content clearfix eightCol last">
 							<?php the_content(); ?>
-                        </div>
 					</section> <!-- end article section -->
-					
-					<?php the_tags('<p class="post-tags fourCol first">', ' ', '</p>'); ?>
 							
-					<footer class="post-meta clearfix fourCol first">
+					<footer class="post-footer clearfix fourCol first">
 						<div id="post-meta-wrapper">
 							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
-						</div>
-						<div id="meta-category-list">
-							<ul id="post-category-list">
-								<li>
-									<a href="<?php bloginfo('url'); ?>/category/blog">
-										<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_blog.png" class="resizeable"/></img>
-									</a>
-								</li>
-								<li>
-									<a href="<?php bloginfo('url'); ?>/category/photo">
-										<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_photo.png" class="resizeable"/></img>
-									</a>
-								</li>
-								<li>
-									<a href="<?php bloginfo('url'); ?>/category/trail">
-										<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_trail.png" class="resizeable"/></img>
-									</a>
-								</li>
-								<li>
-									<a href="<?php bloginfo('url'); ?>/category/video">
-										<img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_cat_video.png" class="resizeable"/></img>
-									</a>
-								</li>
-							</ul>
 						</div>
 					</footer> <!-- end article footer -->
 					
@@ -85,5 +59,13 @@
 	</div> <!-- end #inner-content -->
     
 </div> <!-- end #content -->
+
+<?php
+	// Find out what category the post is in and load fitvids if video
+	$post = $wp_query->post;
+	if (in_category('video')) {
+		load_fitvids();
+	}
+?>
 
 <?php get_footer(); ?>

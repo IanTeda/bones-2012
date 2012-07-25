@@ -20,27 +20,29 @@
 					</header> <!-- end article header -->
 						
 					<section class="post-content clearfix eightCol last">
-						<?php
+						<?php 
 							if (in_category('blog')) {
 								the_content_without_images();
 							} else {
 								the_content();
 							}
 						?>
-
 					</section> <!-- end article section -->
 							
 					<footer class="post-footer clearfix fourCol first">
+					
 						<div id="post-meta-wrapper">
 							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
 						</div>
 						
-						<div id="post-footer-images">
-							<ul id="post-image-list">
-								<?php the_content_images(); ?>
-							</ul>
-						</div>
-						
+						<?php if (in_category('blog')) { ?>
+							<div id="post-footer-images">
+								<ul id="post-image-list">
+									<?php the_content_images(); ?>
+								</ul>
+							</div>
+						<?php } ?>
+	
 					</footer> <!-- end article footer -->
 					
 					<div id="related-posts" class="fourCol first">

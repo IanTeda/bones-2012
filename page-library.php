@@ -34,6 +34,7 @@ Template Name: Goodreads Bookself Template
 					
 						    <section class="clearfix">
 							    <div id="goodreads-container">
+									<h3>Latest 50 Books Read</h3>
 									<ul id="library-bookself-read">
 										<?php if(function_exists('bookshelf')) { 
 											bookshelf(); 

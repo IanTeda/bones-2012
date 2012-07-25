@@ -1089,6 +1089,7 @@ MENU STYLES - This is a mess, needs tidy up
 #main-menu ul li ul.sub-menu li a:focus,
 #main-menu ul li ul.children li a:focus {
   border-bottom: 1px solid #ab362e;
+  color: #ab362e;
   /** Transition to roll over color **/
 
   -webkit-transition: 0.4s linear all;

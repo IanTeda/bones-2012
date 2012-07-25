@@ -1493,16 +1493,6 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
-#resize-me {
-  display: block;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  height: 80px;
-  width: 80px;
-  background: url(../images/resize.png);
-  z-index: 10000;
-}
 /*
 check your menus here. do they look good?
 do they need tweaking?
@@ -2725,6 +2715,7 @@ MENU STYLES - This is a mess, needs tidy up
 #main-menu ul li ul.sub-menu li a:focus,
 #main-menu ul li ul.children li a:focus {
   border-bottom: 1px solid #ab362e;
+  color: #ab362e;
   /** Transition to roll over color **/
 
   -webkit-transition: 0.4s linear all;
@@ -3051,7 +3042,4 @@ header.php file to see what they are:
 .wrap {
   min-width: 960px;
   margin: 0 auto;
-}
-#resize-me {
-  display: none;
 }

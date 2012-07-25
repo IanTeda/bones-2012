@@ -45,8 +45,6 @@
 					
  				</div> <!-- end #inner-footer -->
 				
-				<div id="resize-me"></div>
-				
 			</footer> <!-- end footer -->
 		
 		</div> <!-- end #container -->

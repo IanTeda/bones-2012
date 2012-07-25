@@ -1869,6 +1869,13 @@ IMAGE STYLES
   height: auto;
   max-width: 100%;
 }
+.post-feature-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0px 0px 0.5em #000000;
+  box-shadow: 0px 0px 0.5em #000000;
+}
 /*********************
 LINK STYLES
 *********************/
@@ -2451,6 +2458,10 @@ LIST STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.photo-post .post-feature-image,
+.video-post .post-feature-image {
+  display: none;
+}
 #post-header {
   float: left;
 }

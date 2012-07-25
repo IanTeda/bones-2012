@@ -217,6 +217,11 @@ IMAGE STYLES
 	max-width: 100%; 
 }
 
+.post-feature-image {
+	.resizeable;
+	.image-box-shadow;
+}
+
 /*********************
 LINK STYLES
 *********************/
@@ -632,6 +637,14 @@ LIST STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.photo-post,
+.video-post {
+	.post-feature-image {
+		display: none;	
+	}
+}
+
+
 #post-header {
 	float: left;
 	img {

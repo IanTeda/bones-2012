@@ -88,9 +88,9 @@ function feature_image_220x144(){
 
 function feature_image_1140x336(){
 	if ( has_post_thumbnail() ) {
-	 	the_post_thumbnail( array( 1140, 336 ), array('class' => 'resizeable image-box-shadow') );
+	 	the_post_thumbnail( array( 1140, 336 ), array('class' => 'post-feature-image') );
 	} else { ?>
-		<img class="resizeable image-box-shadow" src="<?php bloginfo('template_url')?>/library/images/no_image_(1140x336).png" alt="No Feature Image Set" />
+		<img class="post-feature-image" src="<?php bloginfo('template_url')?>/library/images/no_image_(1140x336).png" alt="No Feature Image Set" />
 	<?php };
 }
 
@@ -224,6 +224,15 @@ function category_name(){
 	foreach((get_the_category()) as $category) { 
 		if (!in_array($category->cat_name, $exclude)) {
 			echo $category->cat_name . ''; ?><?php
+		}
+	} 	
+}
+
+function get_category_slug(){
+	$exclude = array("featured");
+	foreach((get_the_category()) as $category) { 
+		if (!in_array($category->slug, $exclude)) {
+			echo $category->slug . ''; ?><?php
 		}
 	} 	
 }

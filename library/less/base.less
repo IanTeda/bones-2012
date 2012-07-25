@@ -190,12 +190,6 @@ IMAGE STYLES
 	padding: 1px;
 }
 
-.post-image {
-	width: 100%;
-	height: auto;
-	.image-box-shadow;
-}
-
 .footer-icon {
 	max-width: 32px;
 	width: @vertSpacing;
@@ -618,6 +612,13 @@ LIST STYLES
 	li {
 		list-style: none;
 		margin-top: @vertSpacing / 2;
+		a {
+			img {
+				width: 100%;
+				height: auto;
+				.image-box-shadow;
+			}	
+		}
 	}
 }
 

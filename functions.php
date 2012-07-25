@@ -349,45 +349,4 @@ function strip_images($content){
 	return preg_replace('/<img[^>]+./','',$content);
 }
 
-function the_content_images(){
-	// admin image API
-	require_once(ABSPATH . '/wp-admin/includes/image.php');
-	
-	// Get the post ID
-    $iPostID = get_the_ID();
- 
-    // Get images for this post
-    $arrImages =& get_children('post_type=attachment&post_mime_type=image&post_parent=' . $iPostID );
- 
-    // If images exist for this page
-    if($arrImages) {
- 
-        // Get array keys representing attached image numbers
-        $arrKeys = array_keys($arrImages);
- 
-        // Get the first image attachment
-        //$iNum = $arrKeys[0];
- 
- 		foreach ($arrKeys as $iNum) {
- 
-			// Get the thumbnail url for the attachment
-			$sThumbUrl = wp_get_attachment_thumb_url($iNum);
-	 
-			$img = substr($sThumbUrl, strpos($sThumbUrl, 'wp-content'));
-			
-			// resize the image
-			$thumb = image_resize($img,300,169,true,100);
-			
-			$sThumbUrl = (is_string($thumb)) ? get_bloginfo('wpurl') . '/' .  $thumb : "";
-	 
-			// Build the <img> string
-			$sImgString = '<li><img src="' . $sThumbUrl . '" class="post-image" /></li>';
-	 
-			// Print the image
-			echo $sImgString;
-		}
-    }
-}
-
-
 ?>

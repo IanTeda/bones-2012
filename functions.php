@@ -342,10 +342,10 @@ Extract images from posts
 
 function the_content_without_images(){
 	add_filter('the_content', 'strip_images',2);
-	the_content;
+	the_content();
 }
 
-function strip_images(){
+function strip_images($content){
 	return preg_replace('/<img[^>]+./','',$content);
 }
 
@@ -378,5 +378,6 @@ function the_content_images(){
         echo $sImgString;
     }
 }
+
 
 ?>

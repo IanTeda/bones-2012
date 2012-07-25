@@ -336,14 +336,17 @@ function rm_bread_crumbs() {
 	 echo $crumbs;
 }
 
-/*****************************************
-Add allowable mime types uploaded
-********************************************/
-function add_upload_mimes($mimes=array()) {
-    $mimes['kml']='application/vnd.google-earth.kml+xml';
-    $mimes['kmz']='application/vnd.google-earth.kmz';
-    return $mimes;
+/*******************************
+Extract images from posts
+********************************/
+
+function the_content_without_images(){
+	add_filter('the_content', 'strip_images',2);
+	the_content();
 }
-add_filter("upload_mimes","add_upload_mimes");
+
+function strip_images($content){
+	return preg_replace('/<img[^>]+./','',$content);
+}
 
 ?>

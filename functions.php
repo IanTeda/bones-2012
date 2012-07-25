@@ -342,11 +342,41 @@ Extract images from posts
 
 function the_content_without_images(){
 	add_filter('the_content', 'strip_images',2);
-	the_content();
+	the_content;
 }
 
-function strip_images($content){
+function strip_images(){
 	return preg_replace('/<img[^>]+./','',$content);
+}
+
+function the_content_images(){
+	// Get the post ID
+    $iPostID = get_the_ID();
+ 
+    // Get images for this post
+    $arrImages =& get_children('post_type=attachment&post_mime_type=image&post_parent=' . $iPostID );
+ 
+    // If images exist for this page
+    if($arrImages) {
+ 
+        // Get array keys representing attached image numbers
+        $arrKeys = array_keys($arrImages);
+ 
+        // Get the first image attachment
+        $iNum = $arrKeys[0];
+ 
+        // Get the thumbnail url for the attachment
+        $sThumbUrl = wp_get_attachment_thumb_url($iNum);
+ 
+        // UNCOMMENT THIS IF YOU WANT THE FULL SIZE IMAGE INSTEAD OF THE THUMBNAIL
+        //$sImageUrl = wp_get_attachment_url($iNum);
+ 
+        // Build the <img> string
+        $sImgString = '<li><img src="' . $sThumbUrl . '" class="post-meta-images" /></li>';
+ 
+        // Print the image
+        echo $sImgString;
+    }
 }
 
 ?>

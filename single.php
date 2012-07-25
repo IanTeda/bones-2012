@@ -27,6 +27,7 @@
 								the_content();
 							}
 						?>
+
 					</section> <!-- end article section -->
 							
 					<footer class="post-footer clearfix fourCol first">
@@ -34,6 +35,11 @@
 							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
 						</div>
 						
+						<div id="post-footer-images">
+							<ul id="post-image-list">
+								<?php the_content_images(); ?>
+							</ul>
+						</div>
 						
 					</footer> <!-- end article footer -->
 					

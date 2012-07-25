@@ -288,8 +288,7 @@ function load_slider(){
 		});
 	</script>
 	<?php
-}
-	
+}	
 
 /***************************************
 Excerpt function

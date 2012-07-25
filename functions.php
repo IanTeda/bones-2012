@@ -350,6 +350,9 @@ function strip_images($content){
 }
 
 function the_content_images(){
+	// admin image API
+	require_once(ABSPATH . '/wp-admin/includes/image.php');
+	
 	// Get the post ID
     $iPostID = get_the_ID();
  
@@ -368,11 +371,15 @@ function the_content_images(){
         // Get the thumbnail url for the attachment
         $sThumbUrl = wp_get_attachment_thumb_url($iNum);
  
-        // UNCOMMENT THIS IF YOU WANT THE FULL SIZE IMAGE INSTEAD OF THE THUMBNAIL
-        //$sImageUrl = wp_get_attachment_url($iNum);
+ 		$img = substr($sThumbUrl, strpos($sThumbUrl, 'wp-content'));
+		
+		// resize the image
+		$thumb = image_resize($img,300,169,true,100);
+		
+		$sThumbUrl = (is_string($thumb)) ? get_bloginfo('wpurl') . '/' .  $thumb : "";
  
         // Build the <img> string
-        $sImgString = '<li><img src="' . $sThumbUrl . '" class="post-meta-images" /></li>';
+        $sImgString = '<li><img src="' . $sThumbUrl . '" class="post-image" /></li>';
  
         // Print the image
         echo $sImgString;

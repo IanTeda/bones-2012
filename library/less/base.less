@@ -190,6 +190,12 @@ IMAGE STYLES
 	padding: 1px;
 }
 
+.post-image {
+	width: 100%;
+	height: auto;
+	.image-box-shadow;
+}
+
 .footer-icon {
 	max-width: 32px;
 	width: @vertSpacing;
@@ -608,6 +614,12 @@ LIST STYLES
 	}
 }
 
+#post-image-list {
+	li {
+		list-style: none;	
+	}
+}
+
 #related-posts {
 	ol {
 		li {
@@ -737,13 +749,19 @@ LIST STYLES
 	
 	/** Post footer **/
 	.post-footer {
-		margin-top: @vertSpacing;
-		text-align: center;
-		font-style: italic;	
-		line-height: @vertSpacing;
-		padding: (@vertSpacing / 2) 0;
-		.underlined;
-		.overlined;
+		.post-footer-meta {
+			margin-top: @vertSpacing;
+			text-align: center;
+			font-style: italic;	
+			line-height: @vertSpacing;
+			padding: (@vertSpacing / 2) 0;
+			.underlined;
+			.overlined;
+		}
+		
+		.post-footer-images {
+			margin-top: @vertSpacing;	
+		}
 	} /** end post-footer **/
 }
 

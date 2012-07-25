@@ -31,12 +31,12 @@
 							
 					<footer class="post-footer clearfix fourCol first">
 					
-						<div id="post-meta-wrapper">
+						<div class="post-footer-meta">
 							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
 						</div>
 						
 						<?php if (in_category('blog')) { ?>
-							<div id="post-footer-images">
+							<div class="post-footer-images">
 								<ul id="post-image-list">
 									<?php the_content_images(); ?>
 								</ul>

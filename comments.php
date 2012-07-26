@@ -20,7 +20,7 @@ The comments page for Bones
 
 <?php if ( have_comments() ) : ?>
 	
-	<h3 id="comments" class="h2"><?php comments_number('<span>No</span> Responses', '<span>One</span> Response', '<span>%</span> Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments"><?php comments_number('<span>No</span> Responses', '<span>One</span> Response', '<span>%</span> Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<nav id="comment-nav">
 		<ul class="clearfix">
@@ -59,7 +59,7 @@ The comments page for Bones
 
 <section id="respond" class="respond-form">
 
-	<h3 id="comment-form-title" class="h2"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+	<h3 id="comment-form-title"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
 
 	<div id="cancel-comment-reply">
 		<p class="small"><?php cancel_comment_reply_link(); ?></p>

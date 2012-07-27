@@ -50,7 +50,7 @@
 									if ($attachments) {
 										foreach ($attachments as $attachment) {
 											echo '<li>';
-											the_attachment_link($attachment->ID, false);
+											the_attachment_link($attachment->ID, true, 'large');
 											echo '</li>';
 										}
 									} ?>

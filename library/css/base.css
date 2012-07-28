@@ -1102,6 +1102,13 @@ h5,
 .overlined {
   border-top: solid 1px #dcdcdc;
 }
+.index-heading {
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+}
+.index-heading .index-heading-more {
+  display: none;
+}
 /*********************
 HEADER SYTLES
 *********************/

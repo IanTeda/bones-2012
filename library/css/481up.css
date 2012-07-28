@@ -812,11 +812,11 @@ LAYOUT & GRID STYLES
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-.underlined span {
+.index-heading .index-heading-more {
   display: block;
   float: right;
 }
-.underlined span a {
+.index-heading .index-heading-more a {
   font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
 /*********************
@@ -852,13 +852,6 @@ MENU STYLES
   min-width: 433px;
   width: 100%;
   border-bottom: solid 1px #dcdcdc;
-}
-#main-menu span {
-  display: block;
-  float: right;
-}
-#main-menu span a {
-  font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
 #main-menu ul {
   text-align: center;

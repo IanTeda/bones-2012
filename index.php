@@ -34,7 +34,7 @@ Template Name: Index.php
 			</div><!-- end #flexslider-wrapper -->
 		
 			<div id="latest-posts-container" class="twelveCol first clearfix">
-				<h3 class="underlined">Latest Posts<span><a href="<?php bloginfo('url'); ?>/sitemap#sitemap-posts-wrapper">Check out more posts &#8230;</a></span></h3>
+				<h3 class="index-heading">Latest Posts<span class="index-heading-more"><a href="<?php bloginfo('url'); ?>/sitemap#sitemap-posts-wrapper">Check out more posts &#8230;</a></span></h3>
 
 			    <ul id="latest-post-list" class="twelveCol first">
 					<?php $summary = new WP_query('showposts=8&cat=-13'); //Only the 8 latest posts ?>
@@ -53,7 +53,7 @@ Template Name: Index.php
 			</div><!-- end #latest-posts-container -->
 			
 			<div id="post-categories" class="twelveCol first clearfix">
-				<h3 class="underlined">Categories</h3>
+				<h3 class="index-heading">Categories</h3>
 				<ul id="post-category-list">
 					<li>
 						<a href="<?php bloginfo('url'); ?>/category/blog">
@@ -102,7 +102,7 @@ Template Name: Index.php
     
 			<div id="row-four-container" class="twelveCol first clearfix">
 				<div id="popular-posts-container" class="sixCol first clearfix">
-					<h3 class="underlined">Popular Posts <span><a href="<?php bloginfo('url'); ?>/sitemap/popular-posts">View the hit list &#8230;</a></span></h3>
+					<h3 class="index-heading">Popular Posts<span class="index-heading-more"><a href="<?php bloginfo('url'); ?>/sitemap/popular-posts">View the hit list &#8230;</a></span></h3>
 					
 					<?php if (function_exists('WPPP_show_popular_posts')) {
 						WPPP_show_popular_posts("title=&number=7&days=0&magic_number=1&list_tag=ol&time_format=D, d-M-Y&format=
@@ -147,7 +147,7 @@ Template Name: Index.php
 				</div><!-- end #popular-posts-container -->
 				
 				<div id="instagram-container" class="sixCol last clearfix">
-                	<h3 class="underlined">Photo Blog <span><a href="<?php bloginfo('url'); ?>/category/photo/">View the matrix &#8230;</a></span></h3>
+                	<h3 class="index-heading">Photo Blog<span class="index-heading-more"><a href="<?php bloginfo('url'); ?>/category/photo/">View the matrix &#8230;</a></span></h3>
                 
                 	<ul id="photo-list" class="image-matrix">
 						<?php $featured = new WP_Query("category_name=photo&showposts=9"); ?>

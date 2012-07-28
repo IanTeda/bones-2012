@@ -102,7 +102,7 @@ Template Name: Index.php
     
 			<div id="row-four-container" class="twelveCol first clearfix">
 				<div id="popular-posts-container" class="sixCol first clearfix">
-					<h3 class="underlined">Popular Posts <span><a href="#">View the hit list &#8230;</a></span></h3>
+					<h3 class="underlined">Popular Posts <span><a href="<?php bloginfo('url'); ?>/sitemap/popular-posts">View the hit list &#8230;</a></span></h3>
 					
 					<?php if (function_exists('WPPP_show_popular_posts')) {
 						WPPP_show_popular_posts("title=&number=7&days=0&magic_number=1&list_tag=ol&time_format=D, d-M-Y&format=

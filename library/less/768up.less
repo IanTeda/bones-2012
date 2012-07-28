@@ -69,94 +69,6 @@ style a page via class
 .paged-1 {}                     	/* individual paged (i.e. body.paged-3) */
 
 /*********************
-LAYOUT & GRID STYLES
-*********************/
-.wrap {
-	/** Equivalent to row in 1140 grid **/
-	max-width: 1140px;
-}
-
-/**** Mixens ****/
-@onecol:	5.801104972%;
-@twocol:	14.364640883%;
-@threecol:	22.928176794%;
-@fourcol:	31.491712705%;
-@fivecol:	40.055248616%;
-@sixcol:	48.618784527%;
-@sevencol:	57.182320438000005%;
-@eightcol:	65.74585634900001%;
-@ninecol:	74.30939226%;
-@tencol:	82.87292817100001%;
-@elevencol:	91.436464082%;
-@twelvecol:	99.999999993%;
-@gutter:	2.762430939%;
-
-
-
-
-/*
-This is a combination of the 1140 grid and Twitter Boostrap.
-I liked 1140 but Boostrap's grid was way more detailed so
-I merged them together, let's see how this works out.
-If you want to use 1140, the original values are commented
-out on each line.
-*/
-.oneCol    { width: @onecol;  }		/* 4.85%;  } /* grid_1  */
-.twoCol    { width: @twocol; }		/* 13.45%; } /* grid_2  */
-.threeCol  { width: @threecol; }	/* 22.05%; } /* grid_3  */
-.fourCol   { width: @fourcol; }		/* 30.75%; } /* grid_4  */
-.fiveCol   { width: @fivecol; }		/* 39.45%; } /* grid_5  */
-.sixCol    { width: @sixcol; }		/* 48%;    } /* grid_6  */
-.sevenCol  { width: @sevencol; }	/* 56.75%; } /* grid_7  */
-.eightCol  { width: @eightcol; }	/* 65.4%;  } /* grid_8  */
-.nineCol   { width: @ninecol; }		/* 74.05%; } /* grid_9  */
-.tenCol    { width: @tencol; }		/* 82.7%;  } /* grid_10 */
-.elevenCol { width: @elevencol; }	/* 91.35%; } /* grid_11 */
-.twelveCol { width: @twelvecol; }	/* 100%;   } /* grid_12 */
-	
-/* layout & column defaults */
-.oneCol, .twoCol, .threeCol, .fourCol, .fiveCol, .sixCol, .sevenCol, .eightCol, .nineCol, .tenCol, .elevenCol, .twelveCol { 
-	position: relative;
-	float: left; 
-	margin-left: @gutter;
-}
-	
-.first {
-	margin-left: 0;
-}
-
-.last {
-	float: right;
-}
-
-.pushOne	{ margin-left: (@onecol + @gutter); }
-.pushTwo	{ margin-left: (@twocol + @gutter); }
-.pushThree	{ margin-left: (@threecol + @gutter); }
-.pushFour	{ margin-left: (@fourcol + @gutter); }
-.pushFive	{ margin-left: (@fivecol + @gutter); }
-.pushSix	{ margin-left: (@sixcol + @gutter); }
-.pushSeven	{ margin-left: (@sevencol + @gutter); }
-.pushEight	{ margin-left: (@eightcol + @gutter); }
-.pushNine	{ margin-left: (@ninecol + @gutter); }
-.pushTen	{ margin-left: (@tencol + @gutter); }
-.pushEleven { margin-left: (@elevencol + @gutter); }
-.pushTwelve { margin-left: (@twelvecol + @gutter); }
-
-
-.spanOne	{ padding-left: (@onecol + @gutter); }
-.spanTwo	{ padding-left: (@twocol + @gutter); }
-.spanThree	{ padding-left: (@threecol + @gutter); }
-.spanFour	{ padding-left: (@fourcol + @gutter); }
-.spanFive	{ padding-left: (@fivecol + @gutter); }
-.spanSix	{ padding-left: (@sixcol + @gutter); }
-.spanSeven	{ padding-left: (@sevencol + @gutter); }
-.spanEight	{ padding-left: (@eightcol + @gutter); }
-.spanNine	{ padding-left: (@ninecol + @gutter); }
-.spanTen	{ padding-left: (@tencol + @gutter); }
-.spanEleven { padding-left: (@elevencol + @gutter); }
-.spanTwelve { padding-left: (@twelvecol + @gutter); }
-
-/*********************
 HEADER SYTLES
 *********************/
 
@@ -185,92 +97,6 @@ NAVIGATION STYLES
 		width: 35px;
 	}	
 }
-
-/*******************************************
-MENU STYLES - This is a mess, needs tidy up
-*******************************************/
-#main-menu {
-	border-bottom: none;
-	width: @sevencol;
-	ul {
-		li {
-			margin-top: -6px;
-      		border-top: 6px solid @brown;
-			a {
-				display: block;
-			  }
-			&:hover, &:focus {
-				margin-top: -6px;
-				border-top: 6px solid @autumn;
-				border-bottom: 1px solid @autumn;
-				.hover-transition;
-			}
-			&:first-child {}
-			&:last-child {}
-      
-			ul.sub-menu, ul.children {
-				text-align: left;
-				border: 1px solid #ccc;
-				position: absolute;
-				display: none; /** Hide until hover **/
-				z-index: 8999;
-				background-color: @greyLight;
-				box-shadow: 0px 0px 0.1em #000000;
-				margin-top: 1px;
-				
-				li {
-				  float: none;
-				  border: 0; /** Reset inherents **/
-				  margin: 0; /** Reset inherents **/
-				  a {
-					border: 0; /** Reset inherents **/
-					margin: 0; /** Reset inherents **/
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
-					color: @turquesa;
-					&:hover, &:focus {
-					  border-bottom: 1px solid @autumn;
-					  color: @autumn;
-					  .hover-transition;
-					}
-					&:link {}
-				  }
-				  &:first-child {}
-				  &:last-child {
-					a {
-					  border-bottom: 0;
-					}
-				  }
-				}
-				/* highlight sub-menu current page */
-				li.current-menu-item, li.current_page_item, li.current-page-ancestor {
-				  a {
-					margin: 0; /** Reset inherents **/
-					color: @autumn;
-				  }
-				}
-			  }
-			  
-			  /* showing sub-menus */
-			  &:hover ul {
-				top: auto;
-				display: block;
-			  }
-			} /** end #main-menu ul li **/
-		
-		/** highlight current page **/
-		li.current-menu-item, li.current_page_item, li.current-page-ancestor {
-			a {
-				margin: -6px 0 0 0;
-				border-top: 6px solid @autumn;
-				color: @autumn;
-			  }
-		}  /** end current highlighters **/
-	} /** end #main-menu ul **/
-} /** end #main-menu **/
 
 /*********************
 LIST STYLES
@@ -330,8 +156,6 @@ LIST STYLES
 	}
 }
 
-
-
 #popular-post-list {
 	li {
 		width: 100%;
@@ -352,30 +176,6 @@ LIST STYLES
 	a:hover {
 		img {
 			opacity: 1;	
-		}
-	}
-}
-
-#sitemap-pages-list,
-#sitemap-categories-list {
-	li {
-		.twelveCol;
-		.first;
-		margin: 0;
-		a {
-			.fourCol;
-			.first;
-		}
-		ul {
-			li {
-				.eightCol;
-				.last;
-				padding: 0 0 @vertSpacing 0;
-				a { 
-					.eightCol;
-					.first;
-				}
-			}
 		}
 	}
 }

@@ -405,6 +405,19 @@ MENU STYLES
 LIST STYLES
 *********************/
 
+.liquid-matrix {
+	padding: 0;
+	li {
+		width: 100%;
+		display: block;
+		margin-top: @vertSpacing;
+		a {
+			text-decoration: none;
+			display: block;
+		}
+	}
+}
+
 #latest-post-list {
 	.liquid-matrix;
 	max-height: @latest-post-height * 6;
@@ -449,6 +462,45 @@ LIST STYLES
 				display: none;
 			}
 		}
+	}
+}
+
+.numbered-list,
+.wppp_list{
+	font-style: italic;
+	color: @autumn;
+	line-height: @vertSpacing;
+	margin: 0 0 0 20px; /** Pad in the numbers **/
+	padding: 0;
+	li {
+		display: list-item;
+		margin-top: @vertSpacing;
+		a {
+			font-size: @font-size-4;
+			font-style: normal;
+			text-transform: uppercase;
+			font-family: @sans-serif-heading;
+			span {
+				color: @black;	
+			}
+			p {
+				text-transform: none;
+				font-family: @sans-serif;
+				color: @greyDark;
+				margin-top: -8px;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+#photo-matrix {
+	.liquid-matrix;
+	list-style: none;
+	li {
+		float: left;
+		width: 100% / 3;
+		text-align: center;
 	}
 }
 
@@ -525,35 +577,6 @@ LIST STYLES
 	}
 }
 
-.numbered-list,
-.wppp_list{
-	font-style: italic;
-	color: @autumn;
-	line-height: @vertSpacing;
-	margin: 0 0 0 20px; /** Pad in the numbers **/
-	padding: 0;
-	li {
-		display: list-item;
-		margin-top: @vertSpacing;
-		a {
-			font-size: @font-size-4;
-			font-style: normal;
-			text-transform: uppercase;
-			font-family: @sans-serif-heading;
-			span {
-				color: @black;	
-			}
-			p {
-				text-transform: none;
-				font-family: @sans-serif;
-				color: @greyDark;
-				margin-top: -8px;
-				font-style: italic;
-			}
-		}
-	}
-}
-
 #sitemap-pages-list,
 #sitemap-categories-list {
 	margin-top: @vertSpacing;
@@ -600,6 +623,8 @@ LIST STYLES
 		}
 	}
 }
+
+
 
 #lastfm-records,
 #library-bookself-read {
@@ -745,6 +770,12 @@ LIST STYLES
 		.post-feature-image {
 			display: none;	/** Don't show feature image for video and photo posts **/
 		}
+	}
+}
+
+.photo-post {
+	.post-content {
+		text-align: center;
 	}
 }
 

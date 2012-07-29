@@ -323,37 +323,22 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-.copyright {
-	float: left;
-	margin-top: 2px;
-	text-align: left;
-}
 
-#social-list-container {
-	margin-top: @vertSpacing / 2;
-	float: right;
-	width: 247px;
-}
-
-
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/* 
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
+#footer {
+	#inner-footer {
+		
+		/** Website Copyright Info **/
+		#footer-copyright {
+			float: left;
+			margin-top: 2px;
+			text-align: left;
+		} /** end #footer-copyright **/
+		
+		/** list of social sites **/
+		#social-list {
+			margin-top: @vertSpacing / 2;
+			float: right;
+			width: 247px;
 		}
 	}
-} /* end .footer-links */
-			
+}		

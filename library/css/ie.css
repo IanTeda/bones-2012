@@ -1599,11 +1599,7 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
-/*
-check your menus here. do they look good?
-do they need tweaking?
-*/
-/* end .footer-links */
+/** All footer styels in base and 768up **/
 /******************************************************************
 Site Name: 
 Author: 
@@ -2811,30 +2807,24 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-.copyright {
+#footer #inner-footer {
+  /** Website Copyright Info **/
+
+  /** end #footer-copyright **/
+
+  /** list of social sites **/
+
+}
+#footer #inner-footer #footer-copyright {
   float: left;
   margin-top: 2px;
   text-align: left;
 }
-#social-list-container {
+#footer #inner-footer #social-list {
   margin-top: 12px;
   float: right;
   width: 247px;
 }
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links ul li {
-  /* 
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-
-}
-/* end .footer-links */
 /******************************************************************
 Site Name: 
 Author: 

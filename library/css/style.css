@@ -2231,25 +2231,6 @@ LIST STYLES
 #post-category-list li a span {
   display: none;
 }
-.image-matrix {
-  padding: 0;
-  list-style: none;
-  margin: 0 auto;
-  min-width: 300px;
-  /** Might make this a fixed width??? **/
-
-}
-.image-matrix li {
-  float: left;
-  width: 33.333333333333336%;
-  margin-top: 24px;
-}
-.image-matrix li a {
-  display: block;
-  text-align: center;
-  /** Not sure if this will center image across all browsers**/
-
-}
 .archive-year {
   border-top: solid 1px #dcdcdc;
   border-top: solid 1px #dcdcdc;
@@ -2274,22 +2255,6 @@ LIST STYLES
 }
 #photo-archive-list li a img {
   display: block;
-}
-.social-list {
-  padding: 0;
-  list-style: none;
-  margin: 0 auto;
-  width: 300px;
-}
-.social-list li {
-  float: left;
-  width: 14.285714285714286%;
-}
-.social-list li a {
-  display: block;
-  text-align: center;
-  /** Not sure if this will center image across all browsers**/
-
 }
 #search-results .new-year,
 #blog-archive .new-year,
@@ -3054,14 +3019,22 @@ ARCHIVE STYLES
 /*********************
 FOOTER STYLES
 *********************/
-.footer {
+#footer {
   margin-top: 24px;
   min-height: 36px;
   background-color: #dcdcdc;
   color: #656565;
   border-top: 1px solid #ab362e;
 }
-.copyright {
+#footer #inner-footer {
+  /** Website Copyright Info **/
+
+  /** end #footer-copyright **/
+
+  /** list of social sites **/
+
+}
+#footer #inner-footer #footer-copyright {
   font-family: BebasNeueRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0;
@@ -3069,22 +3042,27 @@ FOOTER STYLES
   line-height: 48px;
   text-align: center;
 }
-.copyright a {
+#footer #inner-footer #footer-copyright a {
   color: #000000;
 }
-#resize-me {
-  display: none;
+#footer #inner-footer #social-list {
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  /** center list in small screen sizes **/
+
+  width: 300px;
 }
-/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to 
-	override these styles for the desktop
-	view.
-	*/
-/* end .footer-links */
+#footer #inner-footer #social-list li {
+  float: left;
+  width: 14.285714285714286%;
+}
+#footer #inner-footer #social-list li a {
+  display: block;
+  text-align: center;
+  /** Not sure if this will center image across all browsers**/
+
+}
 /******************************************************************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's 
@@ -4015,11 +3993,7 @@ tweeners.
   /*********************
   FOOTER STYLES
   *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */
+  /** All footer styels in base and 768up **/
 }
 /* end of media query */
 /******************************************************************
@@ -5006,30 +4980,24 @@ you can add resource intensive styles.
   /*********************
   FOOTER STYLES
   *********************/
-  .copyright {
+  #footer #inner-footer {
+    /** Website Copyright Info **/
+  
+    /** end #footer-copyright **/
+  
+    /** list of social sites **/
+  
+  }
+  #footer #inner-footer #footer-copyright {
     float: left;
     margin-top: 2px;
     text-align: left;
   }
-  #social-list-container {
+  #footer #inner-footer #social-list {
     margin-top: 12px;
     float: right;
     width: 247px;
   }
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  .footer-links ul li {
-    /* 
-  			be careful with the depth of your menus.
-  			it's very rare to have multi-depth menus in
-  			the footer.
-  			*/
-  
-  }
-  /* end .footer-links */
 }
 /* end of media query */
 /******************************************************************

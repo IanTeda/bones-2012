@@ -452,26 +452,6 @@ LIST STYLES
 	}
 }
 
-#popular-post-list {
-
-}
-
-.image-matrix {
-	padding: 0;
-	list-style: none;
-	margin: 0 auto;
-	min-width: @mobileWidth; /** Might make this a fixed width??? **/
-	li {
-		float: left;
-		width: 100% / 3;
-		margin-top: @vertSpacing ;
-		a {
-			display: block;
-			text-align: center; /** Not sure if this will center image across all browsers**/
-		}
-	}
-}
-
 .archive-year {
 	.overlined;
 	margin: @vertSpacing 0 0 0;
@@ -488,21 +468,6 @@ LIST STYLES
 			}
 		}
 	}
-}
-
-.social-list {
-	padding: 0;
-	list-style: none;
-	margin: 0 auto;
-	width: @mobileWidth;
-	li {
-		float: left;
-		width: 100% / 7;
-		a {
-			display: block;
-			text-align: center; /** Not sure if this will center image across all browsers**/
-		}
-	}		
 }
 
 #search-results,
@@ -1313,44 +1278,42 @@ ARCHIVE STYLES
 FOOTER STYLES
 *********************/
 
-.footer {
+#footer {
 	margin-top: @vertSpacing;
 	min-height: @vertSpacing * 1.5;
 	background-color: @greyLight;
 	color: @greyDark;
 	border-top: 1px solid @autumn;
-}
-
-.copyright {
-	font-family: @sans-serif-title;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
-	line-height: @vertSpacing * 2;
-	text-align: center;
-	a {
-		color: @black;
+	#inner-footer {
+		
+		/** Website Copyright Info **/
+		#footer-copyright {
+			font-family: @sans-serif-title;
+			font-weight: normal;
+			margin: 0;
+			padding: 0;
+			line-height: @vertSpacing * 2;
+			text-align: center;
+			a {
+				color: @black;
+			}
+		} /** end #footer-copyright **/
+		
+		/** list of social sites **/
+		#social-list {
+			padding: 0;
+			list-style: none;
+			margin: 0 auto; /** center list in small screen sizes **/
+			width: @mobileWidth;
+			li {
+				float: left;
+				width: 100% / 7;
+				a {
+					display: block;
+					text-align: center; /** Not sure if this will center image across all browsers**/
+				}
+			}		
+		}
+		
 	}
 }
-
-#resize-me {
-	display: none;
-}
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to 
-	override these styles for the desktop
-	view.
-	*/
-.footer-links {
-	ul {
-		li {}
-	}
-} /* end .footer-links */
-
-			
-.attribution {}
-	

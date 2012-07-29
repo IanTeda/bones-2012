@@ -815,6 +815,96 @@ HEADER SYTLES
 #description-wrapper {
   margin-top: 24px;
 }
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+/** start of landing page index **/
+#index {
+  /** start website catch phrase / description **/
+
+  /** end index-description **/
+
+  /** start flex slider **/
+
+  /** end #index-flexslider **/
+
+  /** start latest posts **/
+
+  /** end #index-latest-posts **/
+
+  /** start post category **/
+
+  /** end #index-post-categories **/
+
+}
+#index #index-flexslider {
+  display: block;
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+#index #index-latest-posts #latest-post-list {
+  max-height: 530px;
+}
+#index #index-latest-posts #latest-post-list li {
+  width: 33.333333333333336%;
+  /** 768down assumed phone tablet so no hover **/
+
+}
+#index #index-latest-posts #latest-post-list li a img {
+  opacity: 0.8;
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
+}
+#index #index-latest-posts #latest-post-list li a span {
+  /** Transition to roll over color **/
+
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -ms-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
+}
+#index #index-latest-posts #latest-post-list li a:hover {
+  border-bottom: solid 1px #ab362e;
+}
+#index #index-latest-posts #latest-post-list li a:hover img {
+  opacity: 1;
+}
+#index #index-latest-posts #latest-post-list li a:hover span {
+  color: #656565;
+}
+#index #index-post-categories {
+  /** end #post-category-list **/
+
+}
+#index #index-post-categories #post-category-list li a {
+  border-bottom: solid 1px #dcdcdc;
+}
+#index #index-post-categories #post-category-list li a h4 {
+  display: block;
+  padding-top: 36px;
+}
+#index #index-post-categories #post-category-list li a span {
+  display: block;
+  padding-bottom: 20px;
+  margin-top: -4px;
+  font-style: italic;
+  color: #8f8f8f;
+}
+#index #index-post-categories #post-category-list li a:hover,
+#index #index-post-categories #post-category-list li a:focus {
+  border-bottom: solid 1px #ab362e;
+}
+#index #index-post-categories #post-category-list li a:hover span,
+#index #index-post-categories #post-category-list li a:focus span {
+  color: #656565;
+}
+/** end #index **/
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -828,67 +918,6 @@ NAVIGATION STYLES
 /*********************
 LIST STYLES
 *********************/
-#latest-post-list {
-  max-height: 530px;
-}
-#latest-post-list li {
-  width: 33.333333333333336%;
-  /** 768down assumed phone tablet so no hover **/
-
-}
-#latest-post-list li a img {
-  opacity: 0.8;
-  /** Transition to roll over color **/
-
-  -webkit-transition: 0.4s linear all;
-  -moz-transition: 0.4s linear all;
-  -ms-transition: 0.4s linear all;
-  -o-transition: 0.4s linear all;
-  transition: 0.4s linear all;
-}
-#latest-post-list li a span {
-  /** Transition to roll over color **/
-
-  -webkit-transition: 0.4s linear all;
-  -moz-transition: 0.4s linear all;
-  -ms-transition: 0.4s linear all;
-  -o-transition: 0.4s linear all;
-  transition: 0.4s linear all;
-}
-#latest-post-list li a:hover {
-  border-bottom: solid 1px #ab362e;
-}
-#latest-post-list li a:hover img {
-  opacity: 1;
-}
-#latest-post-list li a:hover span {
-  color: #656565;
-}
-#post-category-list li a {
-  border-bottom: solid 1px #dcdcdc;
-}
-#post-category-list li a h4 {
-  display: block;
-  padding-top: 36px;
-}
-#post-category-list li a span {
-  display: block;
-  padding-bottom: 20px;
-  margin-top: -4px;
-  font-style: italic;
-  color: #8f8f8f;
-}
-#post-category-list li a:hover,
-#post-category-list li a:focus {
-  border-bottom: solid 1px #ab362e;
-}
-#post-category-list li a:hover span,
-#post-category-list li a:focus span {
-  color: #656565;
-}
-#popular-post-list li {
-  width: 100%;
-}
 #photo-archive-list {
   margin-top: -40px;
 }
@@ -908,13 +937,6 @@ LIST STYLES
 #lastfm-records li,
 #library-bookself-read li {
   width: 16.666666666666668%;
-}
-/***************************
-SLIDER STYLES
-***************************/
-.flexslider-container {
-  display: block;
-  margin-top: 24px;
 }
 /*********************
 SIDEBARS & ASIDES

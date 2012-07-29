@@ -90,30 +90,6 @@ article {
 	}
 }
 
-.liquid-matrix {
-	padding: 0;
-	li {
-		width: 100%;
-		display: block;
-		margin-top: @vertSpacing;
-		a {
-			text-decoration: none;
-			display: block;
-		}
-	}
-}
-
-.flexslider-container {
-	display: none;	
-}
-
-#latest-posts-container,
-#popular-posts-container,
-#goodreads-container,
-#instagram-container {
-		
-}
-
 #sitemap-search-wrapper,
 #sitemap-search,
 #sitemap-search-form,
@@ -304,13 +280,6 @@ h5, .h5 {
 .overlined {
 	border-top: solid 1px @greyLight;	
 }
-
-.index-heading {
-	.underlined;
-	.index-heading-more {
-		display: none;
-	}
-}
 /*********************
 HEADER SYTLES
 *********************/
@@ -333,9 +302,7 @@ HEADER SYTLES
 }
 
 .description {
-	margin: @vertSpacing 0 0 0;
-	font-size: @font-size-3;
-	font-weight: 300;
+
 }
 
 #page-header-image-wrapper {
@@ -343,7 +310,158 @@ HEADER SYTLES
 }
 
 #logo {}
+
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+
+/** base class for responsive image grids **/
+.liquid-matrix {
+	padding: 0;
+	li {
+		width: 100%;
+		display: block;
+		margin-top: @vertSpacing;
+		a {
+			text-decoration: none;
+			display: block;
+		}
+	}
+} /** end .liquid-matrix **/
+
+/** start of landing page index **/
+#index {
 	
+	/** class for section headings in index **/
+	.index-heading {
+		.underlined;
+		.index-heading-more {
+			display: none;
+		}
+	} /** end .index-heding **/
+	
+	/** start website catch phrase / description **/
+	#index-description {
+		margin-top: @vertSpacing;
+		font-size: @font-size-3;
+		font-weight: 300;
+		text-align: center;
+	} /** end #index-description **/
+	
+	/** start flex slider **/
+	#index-flexslider {
+		display: none;	/** hide slider on smaller screens **/
+	} /** end #index-flexslider **/
+	
+	/** start lastest posts **/
+	#index-latest-posts {
+		#latest-post-list {
+			.liquid-matrix;
+			max-height: @latest-post-height * 6;
+			overflow: hidden;
+			li {
+				a {
+					width: 220px;
+					margin: 0 auto;
+					.underlined;
+					img {
+						display: block;
+					}
+					h4 {
+						padding-top: @vertSpacing * 1.5;
+					}
+					span {
+						display: block;
+						padding-bottom: @vertSpacing - 4;
+						margin-top: -4px;
+						font-style: italic;
+						color: @grey;
+					}
+				}
+			}
+		}
+	} /** end #index-latest-posts **/
+	
+	/** start post category **/
+	#index-post-categories {
+		#post-category-list {
+			.liquid-matrix;
+			list-style: none;
+			li {
+				float: left;
+				width: 100% / 4;
+				text-align: center;
+				a {
+					width: 95%;
+					max-width: 220px;
+					margin: 0 auto;
+					h4 {
+						display: none;
+					}
+					span {
+						display: none;
+					}
+				}
+			}
+		} /** end #post-category-list **/
+	} /** end #index-post-categories **/
+	
+	/** start index-row-four **/
+	#index-row-four { /** container div for responsive row layout **/
+		#index-popular-posts {
+			.wppp_list{
+				font-style: italic;
+				color: @autumn;
+				line-height: @vertSpacing;
+				margin: 0 0 0 20px; /** Pad in the numbers **/
+				padding: 0;
+				li {
+					display: list-item;
+					margin-top: @vertSpacing;
+					
+					/** post title link **/
+					.wppp-post-title {
+						font-size: @font-size-4;
+						font-style: normal;
+						text-transform: uppercase;
+						font-family: @sans-serif-heading;
+						
+						/** post title category **/
+						.wppp-post-category {
+							color: @black;	
+						}
+						
+						/** post meta data **/
+						.wppp-post-meta-data {
+							text-transform: none;
+							font-family: @sans-serif;
+							color: @greyDark;
+							margin-top: -8px;
+							font-style: italic;
+						}
+					}
+				}
+			}
+		} /** end #index-popular-posts **/
+	} /** end #index-row-four **/
+	
+	/** start photo blog matrix **/
+	#index-photo-matrix {
+		#photo-matrix {
+			.liquid-matrix;
+			list-style: none;
+			li {
+				float: left;
+				width: 100% / 3;
+				text-align: center;
+			}
+		}
+	} /** end #index-photo-matrix **/
+	
+} /** end #index **/
+
+
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -404,105 +522,6 @@ MENU STYLES
 /*********************
 LIST STYLES
 *********************/
-
-.liquid-matrix {
-	padding: 0;
-	li {
-		width: 100%;
-		display: block;
-		margin-top: @vertSpacing;
-		a {
-			text-decoration: none;
-			display: block;
-		}
-	}
-}
-
-#latest-post-list {
-	.liquid-matrix;
-	max-height: @latest-post-height * 6;
-	overflow: hidden;
-	li {
-		a {
-			width: 220px;
-			margin: 0 auto;
-			.underlined;
-			img {
-				display: block;
-			}
-			h4 {
-				padding-top: @vertSpacing * 1.5;
-			}
-			span {
-				display: block;
-				padding-bottom: @vertSpacing - 4;
-				margin-top: -4px;
-				font-style: italic;
-				color: @grey;
-			}
-		}
-	}
-}
-
-#post-category-list {
-	.liquid-matrix;
-	list-style: none;
-	li {
-		float: left;
-		width: 100% / 4;
-		text-align: center;
-		a {
-			width: 95%;
-			max-width: 220px;
-			margin: 0 auto;
-			h4 {
-				display: none;
-			}
-			span {
-				display: none;
-			}
-		}
-	}
-}
-
-.numbered-list,
-.wppp_list{
-	font-style: italic;
-	color: @autumn;
-	line-height: @vertSpacing;
-	margin: 0 0 0 20px; /** Pad in the numbers **/
-	padding: 0;
-	li {
-		display: list-item;
-		margin-top: @vertSpacing;
-		a {
-			font-size: @font-size-4;
-			font-style: normal;
-			text-transform: uppercase;
-			font-family: @sans-serif-heading;
-			span {
-				color: @black;	
-			}
-			p {
-				text-transform: none;
-				font-family: @sans-serif;
-				color: @greyDark;
-				margin-top: -8px;
-				font-style: italic;
-			}
-		}
-	}
-}
-
-#photo-matrix {
-	.liquid-matrix;
-	list-style: none;
-	li {
-		float: left;
-		width: 100% / 3;
-		text-align: center;
-	}
-}
 
 .archive-year {
 	.overlined;

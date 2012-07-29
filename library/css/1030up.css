@@ -926,6 +926,20 @@ out on each line.
 .spanTwelve {
   padding-left: 102.762430932%;
 }
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+/** start of landing page index **/
+#index {
+  /** start latest posts **/
+
+  /** end #index-latest-posts **/
+
+}
+#index #index-latest-posts #latest-post-list li {
+  width: 25%;
+}
+/** end #index **/
 /*******************************************
 MENU STYLES - This is a mess, needs tidy up
 *******************************************/
@@ -1083,12 +1097,6 @@ MENU STYLES - This is a mess, needs tidy up
 /*********************
 LIST STYLES
 *********************/
-#latest-post-list li {
-  width: 25%;
-}
-#popular-post-list li {
-  width: 50%;
-}
 #lastfm-records li,
 #library-bookself-read li {
   width: 14.285714285714286%;

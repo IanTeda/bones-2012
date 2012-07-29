@@ -85,7 +85,88 @@ HEADER SYTLES
 }
 
 #logo {}
+
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+
+/** start of landing page index **/
+#index {
+	/** start website catch phrase / description **/
+	#index-description {
+	} /** end index-description **/
 	
+	/** start flex slider **/
+	#index-flexslider {
+		display: block;	
+		margin-top: @vertSpacing;
+		padding-bottom: @vertSpacing;
+	} /** end #index-flexslider **/
+	
+	/** start latest posts **/
+	#index-latest-posts {
+		#latest-post-list {
+			max-height: @latest-post-height * 2;
+			li {
+				width: 100% / 3;
+				/** 768down assumed phone tablet so no hover **/
+				a {
+					img {
+						opacity: 0.8;
+						.hover-transition;
+					}
+					span {
+						.hover-transition;
+					}
+				}
+				a:hover {
+					border-bottom: solid 1px @autumn;
+					img {
+						opacity: 1;	
+					}
+					span {
+						color: @greyDark;	
+					}
+				}
+			}
+		} 
+	} /** end #index-latest-posts **/
+	
+	/** start post category **/
+	#index-post-categories {
+		#post-category-list {
+			li {
+				a {
+					border-bottom: solid 1px @greyLight;
+					img {
+						
+					}
+					h4 {
+						display: block;
+						padding-top: @vertSpacing * 1.5;
+					}
+					span {
+						display: block;
+						padding-bottom: @vertSpacing - 4;
+						margin-top: -4px;
+						font-style: italic;
+						color: @grey;
+					}
+					&:hover, &:focus {
+						border-bottom: solid 1px @autumn;
+						span {
+							color: @greyDark;	
+						}
+					}
+				}
+			}
+		} /** end #post-category-list **/
+	} /** end #index-post-categories **/
+	
+} /** end #index **/
+
+
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -101,67 +182,6 @@ NAVIGATION STYLES
 /*********************
 LIST STYLES
 *********************/
-
-#latest-post-list {
-	max-height: @latest-post-height * 2;
-	li {
-		width: 100% / 3;
-		/** 768down assumed phone tablet so no hover **/
-		a {
-			img {
-				opacity: 0.8;
-				.hover-transition;
-			}
-			span {
-				.hover-transition;
-			}
-		}
-		a:hover {
-			border-bottom: solid 1px @autumn;
-			img {
-				opacity: 1;	
-			}
-			span {
-				color: @greyDark;	
-			}
-		}
-	}
-}
-
-#post-category-list {
-	li {
-		a {
-			border-bottom: solid 1px @greyLight;
-			img {
-				
-			}
-			h4 {
-				display: block;
-				padding-top: @vertSpacing * 1.5;
-			}
-			span {
-				display: block;
-				padding-bottom: @vertSpacing - 4;
-				margin-top: -4px;
-				font-style: italic;
-				color: @grey;
-			}
-			&:hover, &:focus {
-				border-bottom: solid 1px @autumn;
-				span {
-					color: @greyDark;	
-				}
-			}
-		}
-	}
-}
-
-#popular-post-list {
-	li {
-		width: 100%;
-	}
-}
-
 #photo-archive-list {
 	margin-top: -40px;
 }
@@ -185,16 +205,6 @@ LIST STYLES
 	li {
 		width: 100% / 6;
 	}
-}
-
-
-/***************************
-SLIDER STYLES
-***************************/
-
-.flexslider-container {
-	display: block;	
-	margin-top: @vertSpacing;
 }
 
 /*********************

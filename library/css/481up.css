@@ -779,6 +779,46 @@ HEADER SYTLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+/** start of landing page index **/
+#index {
+  /** start website catch phrase / description **/
+
+  /** end index-description **/
+
+  /** start flex slider **/
+
+  /** end #index-flexslider **/
+
+  /** class for section headings in index **/
+
+  /** start lastest posts **/
+
+  /** end #index-latest-posts **/
+
+}
+#index .index-heading .index-heading-more {
+  display: block;
+  float: right;
+}
+#index .index-heading .index-heading-more a {
+  font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+}
+#index #index-latest-posts {
+  /** end #latest-post-list **/
+
+}
+#index #index-latest-posts #latest-post-list {
+  max-height: 795px;
+  overflow: hidden;
+}
+#index #index-latest-posts #latest-post-list li {
+  float: left;
+  width: 50%;
+}
+/** end #index **/
 #sitemap-search-form form #sitemap-search-box {
   width: 70%;
   margin-right: 2%;
@@ -787,16 +827,6 @@ LAYOUT & GRID STYLES
   float: left;
   width: 25%;
   margin: 0;
-}
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
-.index-heading .index-heading-more {
-  display: block;
-  float: right;
-}
-.index-heading .index-heading-more a {
-  font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
 /*********************
 IMAGE STYLES
@@ -852,18 +882,6 @@ MENU STYLES
 /*********************
 LIST STYLES
 *********************/
-#latest-post-list {
-  max-height: 795px;
-  overflow: hidden;
-}
-#latest-post-list li {
-  float: left;
-  width: 50%;
-}
-#popular-post-list li {
-  float: left;
-  width: 50%;
-}
 #lastfm-records li,
 #library-bookself-read li {
   width: 25%;

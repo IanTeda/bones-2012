@@ -1721,21 +1721,6 @@ article {
 article a img {
   margin-bottom: 12px;
 }
-.liquid-matrix {
-  padding: 0;
-}
-.liquid-matrix li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-.liquid-matrix li a {
-  text-decoration: none;
-  display: block;
-}
-.flexslider-container {
-  display: none;
-}
 #sitemap-search-wrapper,
 #sitemap-search,
 #sitemap-search-form,
@@ -2040,14 +2025,6 @@ h5,
 .overlined {
   border-top: solid 1px #dcdcdc;
 }
-.index-heading {
-  border-bottom: solid 1px #dcdcdc;
-  border-bottom: solid 1px #dcdcdc;
-  border-bottom: solid 1px #dcdcdc;
-}
-.index-heading .index-heading-more {
-  display: none;
-}
 /*********************
 HEADER SYTLES
 *********************/
@@ -2065,14 +2042,203 @@ HEADER SYTLES
 .header #inner-header .logo span {
   color: #000000;
 }
-.description {
-  margin: 24px 0 0 0;
-  font-size: 17px;
-  font-weight: 300;
-}
 #page-header-image-wrapper {
   margin-top: 24px;
 }
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+/** base class for responsive image grids **/
+.liquid-matrix {
+  padding: 0;
+}
+.liquid-matrix li {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+}
+.liquid-matrix li a {
+  text-decoration: none;
+  display: block;
+}
+/** end .liquid-matrix **/
+/** start of landing page index **/
+#index {
+  /** class for section headings in index **/
+
+  /** end .index-heding **/
+
+  /** start website catch phrase / description **/
+
+  /** end #index-description **/
+
+  /** start flex slider **/
+
+  /** end #index-flexslider **/
+
+  /** start lastest posts **/
+
+  /** end #index-latest-posts **/
+
+  /** start post category **/
+
+  /** end #index-post-categories **/
+
+  /** start index-row-four **/
+
+  /** end #index-row-four **/
+
+  /** start photo blog matrix **/
+
+  /** end #index-photo-matrix **/
+
+}
+#index .index-heading {
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+}
+#index .index-heading .index-heading-more {
+  display: none;
+}
+#index #index-description {
+  margin-top: 24px;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+}
+#index #index-flexslider {
+  display: none;
+  /** hide slider on smaller screens **/
+
+}
+#index #index-latest-posts #latest-post-list {
+  padding: 0;
+  max-height: 1590px;
+  overflow: hidden;
+}
+#index #index-latest-posts #latest-post-list li {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+}
+#index #index-latest-posts #latest-post-list li a {
+  text-decoration: none;
+  display: block;
+}
+#index #index-latest-posts #latest-post-list li a {
+  width: 220px;
+  margin: 0 auto;
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+}
+#index #index-latest-posts #latest-post-list li a img {
+  display: block;
+}
+#index #index-latest-posts #latest-post-list li a h4 {
+  padding-top: 36px;
+}
+#index #index-latest-posts #latest-post-list li a span {
+  display: block;
+  padding-bottom: 20px;
+  margin-top: -4px;
+  font-style: italic;
+  color: #8f8f8f;
+}
+#index #index-post-categories {
+  /** end #post-category-list **/
+
+}
+#index #index-post-categories #post-category-list {
+  padding: 0;
+  list-style: none;
+}
+#index #index-post-categories #post-category-list li {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+}
+#index #index-post-categories #post-category-list li a {
+  text-decoration: none;
+  display: block;
+}
+#index #index-post-categories #post-category-list li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+#index #index-post-categories #post-category-list li a {
+  width: 95%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+#index #index-post-categories #post-category-list li a h4 {
+  display: none;
+}
+#index #index-post-categories #post-category-list li a span {
+  display: none;
+}
+#index #index-row-four {
+  /** container div for responsive row layout **/
+
+  /** end #index-popular-posts **/
+
+}
+#index #index-row-four #index-popular-posts .wppp_list {
+  font-style: italic;
+  color: #ab362e;
+  line-height: 24px;
+  margin: 0 0 0 20px;
+  /** Pad in the numbers **/
+
+  padding: 0;
+}
+#index #index-row-four #index-popular-posts .wppp_list li {
+  display: list-item;
+  margin-top: 24px;
+  /** post title link **/
+
+}
+#index #index-row-four #index-popular-posts .wppp_list li .wppp-post-title {
+  font-size: 15px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  /** post title category **/
+
+  /** post meta data **/
+
+}
+#index #index-row-four #index-popular-posts .wppp_list li .wppp-post-title .wppp-post-category {
+  color: #000000;
+}
+#index #index-row-four #index-popular-posts .wppp_list li .wppp-post-title .wppp-post-meta-data {
+  text-transform: none;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  color: #656565;
+  margin-top: -8px;
+  font-style: italic;
+}
+#index #index-photo-matrix #photo-matrix {
+  padding: 0;
+  list-style: none;
+}
+#index #index-photo-matrix #photo-matrix li {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+}
+#index #index-photo-matrix #photo-matrix li a {
+  text-decoration: none;
+  display: block;
+}
+#index #index-photo-matrix #photo-matrix li {
+  float: left;
+  width: 33.333333333333336%;
+  text-align: center;
+}
+/** end #index **/
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -2126,163 +2292,6 @@ MENU STYLES
 /*********************
 LIST STYLES
 *********************/
-.liquid-matrix {
-  padding: 0;
-}
-.liquid-matrix li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-.liquid-matrix li a {
-  text-decoration: none;
-  display: block;
-}
-#latest-post-list {
-  padding: 0;
-  padding: 0;
-  max-height: 1590px;
-  overflow: hidden;
-}
-#latest-post-list li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#latest-post-list li a {
-  text-decoration: none;
-  display: block;
-}
-#latest-post-list li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#latest-post-list li a {
-  text-decoration: none;
-  display: block;
-}
-#latest-post-list li a {
-  width: 220px;
-  margin: 0 auto;
-  border-bottom: solid 1px #dcdcdc;
-  border-bottom: solid 1px #dcdcdc;
-  border-bottom: solid 1px #dcdcdc;
-}
-#latest-post-list li a img {
-  display: block;
-}
-#latest-post-list li a h4 {
-  padding-top: 36px;
-}
-#latest-post-list li a span {
-  display: block;
-  padding-bottom: 20px;
-  margin-top: -4px;
-  font-style: italic;
-  color: #8f8f8f;
-}
-#post-category-list {
-  padding: 0;
-  padding: 0;
-  list-style: none;
-}
-#post-category-list li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#post-category-list li a {
-  text-decoration: none;
-  display: block;
-}
-#post-category-list li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#post-category-list li a {
-  text-decoration: none;
-  display: block;
-}
-#post-category-list li {
-  float: left;
-  width: 25%;
-  text-align: center;
-}
-#post-category-list li a {
-  width: 95%;
-  max-width: 220px;
-  margin: 0 auto;
-}
-#post-category-list li a h4 {
-  display: none;
-}
-#post-category-list li a span {
-  display: none;
-}
-.numbered-list,
-.wppp_list {
-  font-style: italic;
-  color: #ab362e;
-  line-height: 24px;
-  margin: 0 0 0 20px;
-  /** Pad in the numbers **/
-
-  padding: 0;
-}
-.numbered-list li,
-.wppp_list li {
-  display: list-item;
-  margin-top: 24px;
-}
-.numbered-list li a,
-.wppp_list li a {
-  font-size: 15px;
-  font-style: normal;
-  text-transform: uppercase;
-  font-family: OpenSansExtraBold, "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-}
-.numbered-list li a span,
-.wppp_list li a span {
-  color: #000000;
-}
-.numbered-list li a p,
-.wppp_list li a p {
-  text-transform: none;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  color: #656565;
-  margin-top: -8px;
-  font-style: italic;
-}
-#photo-matrix {
-  padding: 0;
-  padding: 0;
-  list-style: none;
-}
-#photo-matrix li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#photo-matrix li a {
-  text-decoration: none;
-  display: block;
-}
-#photo-matrix li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#photo-matrix li a {
-  text-decoration: none;
-  display: block;
-}
-#photo-matrix li {
-  float: left;
-  width: 33.333333333333336%;
-  text-align: center;
-}
 .archive-year {
   border-top: solid 1px #dcdcdc;
   border-top: solid 1px #dcdcdc;
@@ -2291,16 +2300,6 @@ LIST STYLES
 }
 #photo-archive-list {
   padding: 0;
-  padding: 0;
-}
-#photo-archive-list li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#photo-archive-list li a {
-  text-decoration: none;
-  display: block;
 }
 #photo-archive-list li {
   width: 100%;
@@ -2449,18 +2448,6 @@ LIST STYLES
 #lastfm-records,
 #library-bookself-read {
   padding: 0;
-  padding: 0;
-}
-#lastfm-records li,
-#library-bookself-read li {
-  width: 100%;
-  display: block;
-  margin-top: 24px;
-}
-#lastfm-records li a,
-#library-bookself-read li a {
-  text-decoration: none;
-  display: block;
 }
 #lastfm-records li,
 #library-bookself-read li {
@@ -3895,6 +3882,46 @@ tweeners.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
+  /***************************
+    INDEX.PHP / LANDING PAGE
+  ****************************/
+  /** start of landing page index **/
+  #index {
+    /** start website catch phrase / description **/
+  
+    /** end index-description **/
+  
+    /** start flex slider **/
+  
+    /** end #index-flexslider **/
+  
+    /** class for section headings in index **/
+  
+    /** start lastest posts **/
+  
+    /** end #index-latest-posts **/
+  
+  }
+  #index .index-heading .index-heading-more {
+    display: block;
+    float: right;
+  }
+  #index .index-heading .index-heading-more a {
+    font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  }
+  #index #index-latest-posts {
+    /** end #latest-post-list **/
+  
+  }
+  #index #index-latest-posts #latest-post-list {
+    max-height: 795px;
+    overflow: hidden;
+  }
+  #index #index-latest-posts #latest-post-list li {
+    float: left;
+    width: 50%;
+  }
+  /** end #index **/
   #sitemap-search-form form #sitemap-search-box {
     width: 70%;
     margin-right: 2%;
@@ -3903,16 +3930,6 @@ tweeners.
     float: left;
     width: 25%;
     margin: 0;
-  }
-  /******************************************************************
-  H1, H2, H3, H4, H5 STYLES
-  ******************************************************************/
-  .index-heading .index-heading-more {
-    display: block;
-    float: right;
-  }
-  .index-heading .index-heading-more a {
-    font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   }
   /*********************
   IMAGE STYLES
@@ -3968,18 +3985,6 @@ tweeners.
   /*********************
   LIST STYLES
   *********************/
-  #latest-post-list {
-    max-height: 795px;
-    overflow: hidden;
-  }
-  #latest-post-list li {
-    float: left;
-    width: 50%;
-  }
-  #popular-post-list li {
-    float: left;
-    width: 50%;
-  }
   #lastfm-records li,
   #library-bookself-read li {
     width: 25%;
@@ -4843,6 +4848,96 @@ you can add resource intensive styles.
   #description-wrapper {
     margin-top: 24px;
   }
+  /***************************
+    INDEX.PHP / LANDING PAGE
+  ****************************/
+  /** start of landing page index **/
+  #index {
+    /** start website catch phrase / description **/
+  
+    /** end index-description **/
+  
+    /** start flex slider **/
+  
+    /** end #index-flexslider **/
+  
+    /** start latest posts **/
+  
+    /** end #index-latest-posts **/
+  
+    /** start post category **/
+  
+    /** end #index-post-categories **/
+  
+  }
+  #index #index-flexslider {
+    display: block;
+    margin-top: 24px;
+    padding-bottom: 24px;
+  }
+  #index #index-latest-posts #latest-post-list {
+    max-height: 530px;
+  }
+  #index #index-latest-posts #latest-post-list li {
+    width: 33.333333333333336%;
+    /** 768down assumed phone tablet so no hover **/
+  
+  }
+  #index #index-latest-posts #latest-post-list li a img {
+    opacity: 0.8;
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -ms-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+  }
+  #index #index-latest-posts #latest-post-list li a span {
+    /** Transition to roll over color **/
+  
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -ms-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+  }
+  #index #index-latest-posts #latest-post-list li a:hover {
+    border-bottom: solid 1px #ab362e;
+  }
+  #index #index-latest-posts #latest-post-list li a:hover img {
+    opacity: 1;
+  }
+  #index #index-latest-posts #latest-post-list li a:hover span {
+    color: #656565;
+  }
+  #index #index-post-categories {
+    /** end #post-category-list **/
+  
+  }
+  #index #index-post-categories #post-category-list li a {
+    border-bottom: solid 1px #dcdcdc;
+  }
+  #index #index-post-categories #post-category-list li a h4 {
+    display: block;
+    padding-top: 36px;
+  }
+  #index #index-post-categories #post-category-list li a span {
+    display: block;
+    padding-bottom: 20px;
+    margin-top: -4px;
+    font-style: italic;
+    color: #8f8f8f;
+  }
+  #index #index-post-categories #post-category-list li a:hover,
+  #index #index-post-categories #post-category-list li a:focus {
+    border-bottom: solid 1px #ab362e;
+  }
+  #index #index-post-categories #post-category-list li a:hover span,
+  #index #index-post-categories #post-category-list li a:focus span {
+    color: #656565;
+  }
+  /** end #index **/
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -4856,67 +4951,6 @@ you can add resource intensive styles.
   /*********************
   LIST STYLES
   *********************/
-  #latest-post-list {
-    max-height: 530px;
-  }
-  #latest-post-list li {
-    width: 33.333333333333336%;
-    /** 768down assumed phone tablet so no hover **/
-  
-  }
-  #latest-post-list li a img {
-    opacity: 0.8;
-    /** Transition to roll over color **/
-  
-    -webkit-transition: 0.4s linear all;
-    -moz-transition: 0.4s linear all;
-    -ms-transition: 0.4s linear all;
-    -o-transition: 0.4s linear all;
-    transition: 0.4s linear all;
-  }
-  #latest-post-list li a span {
-    /** Transition to roll over color **/
-  
-    -webkit-transition: 0.4s linear all;
-    -moz-transition: 0.4s linear all;
-    -ms-transition: 0.4s linear all;
-    -o-transition: 0.4s linear all;
-    transition: 0.4s linear all;
-  }
-  #latest-post-list li a:hover {
-    border-bottom: solid 1px #ab362e;
-  }
-  #latest-post-list li a:hover img {
-    opacity: 1;
-  }
-  #latest-post-list li a:hover span {
-    color: #656565;
-  }
-  #post-category-list li a {
-    border-bottom: solid 1px #dcdcdc;
-  }
-  #post-category-list li a h4 {
-    display: block;
-    padding-top: 36px;
-  }
-  #post-category-list li a span {
-    display: block;
-    padding-bottom: 20px;
-    margin-top: -4px;
-    font-style: italic;
-    color: #8f8f8f;
-  }
-  #post-category-list li a:hover,
-  #post-category-list li a:focus {
-    border-bottom: solid 1px #ab362e;
-  }
-  #post-category-list li a:hover span,
-  #post-category-list li a:focus span {
-    color: #656565;
-  }
-  #popular-post-list li {
-    width: 100%;
-  }
   #photo-archive-list {
     margin-top: -40px;
   }
@@ -4936,13 +4970,6 @@ you can add resource intensive styles.
   #lastfm-records li,
   #library-bookself-read li {
     width: 16.666666666666668%;
-  }
-  /***************************
-  SLIDER STYLES
-  ***************************/
-  .flexslider-container {
-    display: block;
-    margin-top: 24px;
   }
   /*********************
   SIDEBARS & ASIDES
@@ -5937,6 +5964,20 @@ you can add resource intensive styles.
   .spanTwelve {
     padding-left: 102.762430932%;
   }
+  /***************************
+    INDEX.PHP / LANDING PAGE
+  ****************************/
+  /** start of landing page index **/
+  #index {
+    /** start latest posts **/
+  
+    /** end #index-latest-posts **/
+  
+  }
+  #index #index-latest-posts #latest-post-list li {
+    width: 25%;
+  }
+  /** end #index **/
   /*******************************************
   MENU STYLES - This is a mess, needs tidy up
   *******************************************/
@@ -6094,12 +6135,6 @@ you can add resource intensive styles.
   /*********************
   LIST STYLES
   *********************/
-  #latest-post-list li {
-    width: 25%;
-  }
-  #popular-post-list li {
-    width: 50%;
-  }
   #lastfm-records li,
   #library-bookself-read li {
     width: 14.285714285714286%;

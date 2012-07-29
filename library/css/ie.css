@@ -1434,6 +1434,46 @@ HEADER SYTLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+/** start of landing page index **/
+#index {
+  /** start website catch phrase / description **/
+
+  /** end index-description **/
+
+  /** start flex slider **/
+
+  /** end #index-flexslider **/
+
+  /** class for section headings in index **/
+
+  /** start lastest posts **/
+
+  /** end #index-latest-posts **/
+
+}
+#index .index-heading .index-heading-more {
+  display: block;
+  float: right;
+}
+#index .index-heading .index-heading-more a {
+  font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+}
+#index #index-latest-posts {
+  /** end #latest-post-list **/
+
+}
+#index #index-latest-posts #latest-post-list {
+  max-height: 795px;
+  overflow: hidden;
+}
+#index #index-latest-posts #latest-post-list li {
+  float: left;
+  width: 50%;
+}
+/** end #index **/
 #sitemap-search-form form #sitemap-search-box {
   width: 70%;
   margin-right: 2%;
@@ -1442,16 +1482,6 @@ LAYOUT & GRID STYLES
   float: left;
   width: 25%;
   margin: 0;
-}
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
-.index-heading .index-heading-more {
-  display: block;
-  float: right;
-}
-.index-heading .index-heading-more a {
-  font: 12px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 }
 /*********************
 IMAGE STYLES
@@ -1510,18 +1540,6 @@ MENU STYLES
 /*********************
 LIST STYLES
 *********************/
-#latest-post-list {
-  max-height: 795px;
-  overflow: hidden;
-}
-#latest-post-list li {
-  float: left;
-  width: 50%;
-}
-#popular-post-list li {
-  float: left;
-  width: 50%;
-}
 #lastfm-records li,
 #library-bookself-read li {
   width: 25%;
@@ -2543,28 +2561,42 @@ HEADER SYTLES
 #description-wrapper {
   margin-top: 24px;
 }
-/*********************
-NAVIGATION STYLES
-*********************/
-.social-list {
-  margin: 0;
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+/** start of landing page index **/
+#index {
+  /** start website catch phrase / description **/
+
+  /** end index-description **/
+
+  /** start flex slider **/
+
+  /** end #index-flexslider **/
+
+  /** start latest posts **/
+
+  /** end #index-latest-posts **/
+
+  /** start post category **/
+
+  /** end #index-post-categories **/
+
 }
-.social-list li {
-  float: left;
-  width: 35px;
+#index #index-flexslider {
+  display: block;
+  margin-top: 24px;
+  padding-bottom: 24px;
 }
-/*********************
-LIST STYLES
-*********************/
-#latest-post-list {
+#index #index-latest-posts #latest-post-list {
   max-height: 530px;
 }
-#latest-post-list li {
+#index #index-latest-posts #latest-post-list li {
   width: 33.333333333333336%;
   /** 768down assumed phone tablet so no hover **/
 
 }
-#latest-post-list li a img {
+#index #index-latest-posts #latest-post-list li a img {
   opacity: 0.8;
   /** Transition to roll over color **/
 
@@ -2595,7 +2627,7 @@ LIST STYLES
   -o-transition: 0.4s linear all;
   transition: 0.4s linear all;
 }
-#latest-post-list li a span {
+#index #index-latest-posts #latest-post-list li a span {
   /** Transition to roll over color **/
 
   -webkit-transition: 0.4s linear all;
@@ -2625,40 +2657,55 @@ LIST STYLES
   -o-transition: 0.4s linear all;
   transition: 0.4s linear all;
 }
-#latest-post-list li a:hover {
+#index #index-latest-posts #latest-post-list li a:hover {
   border-bottom: solid 1px #ab362e;
 }
-#latest-post-list li a:hover img {
+#index #index-latest-posts #latest-post-list li a:hover img {
   opacity: 1;
 }
-#latest-post-list li a:hover span {
+#index #index-latest-posts #latest-post-list li a:hover span {
   color: #656565;
 }
-#post-category-list li a {
+#index #index-post-categories {
+  /** end #post-category-list **/
+
+}
+#index #index-post-categories #post-category-list li a {
   border-bottom: solid 1px #dcdcdc;
 }
-#post-category-list li a h4 {
+#index #index-post-categories #post-category-list li a h4 {
   display: block;
   padding-top: 36px;
 }
-#post-category-list li a span {
+#index #index-post-categories #post-category-list li a span {
   display: block;
   padding-bottom: 20px;
   margin-top: -4px;
   font-style: italic;
   color: #8f8f8f;
 }
-#post-category-list li a:hover,
-#post-category-list li a:focus {
+#index #index-post-categories #post-category-list li a:hover,
+#index #index-post-categories #post-category-list li a:focus {
   border-bottom: solid 1px #ab362e;
 }
-#post-category-list li a:hover span,
-#post-category-list li a:focus span {
+#index #index-post-categories #post-category-list li a:hover span,
+#index #index-post-categories #post-category-list li a:focus span {
   color: #656565;
 }
-#popular-post-list li {
-  width: 100%;
+/** end #index **/
+/*********************
+NAVIGATION STYLES
+*********************/
+.social-list {
+  margin: 0;
 }
+.social-list li {
+  float: left;
+  width: 35px;
+}
+/*********************
+LIST STYLES
+*********************/
 #photo-archive-list {
   margin-top: -40px;
 }
@@ -2699,13 +2746,6 @@ LIST STYLES
 #lastfm-records li,
 #library-bookself-read li {
   width: 16.666666666666668%;
-}
-/***************************
-SLIDER STYLES
-***************************/
-.flexslider-container {
-  display: block;
-  margin-top: 24px;
 }
 /*********************
 SIDEBARS & ASIDES
@@ -3858,6 +3898,20 @@ out on each line.
 .spanTwelve {
   padding-left: 102.762430932%;
 }
+/***************************
+  INDEX.PHP / LANDING PAGE
+****************************/
+/** start of landing page index **/
+#index {
+  /** start latest posts **/
+
+  /** end #index-latest-posts **/
+
+}
+#index #index-latest-posts #latest-post-list li {
+  width: 25%;
+}
+/** end #index **/
 /*******************************************
 MENU STYLES - This is a mess, needs tidy up
 *******************************************/
@@ -4057,12 +4111,6 @@ MENU STYLES - This is a mess, needs tidy up
 /*********************
 LIST STYLES
 *********************/
-#latest-post-list li {
-  width: 25%;
-}
-#popular-post-list li {
-  width: 50%;
-}
 #lastfm-records li,
 #library-bookself-read li {
   width: 14.285714285714286%;

@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
-		<div id="main" class="clearfix" role="main">
+		<div id="page" class="clearfix" role="main">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" class="post <?php get_category_slug(); ?>-post clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+				<article id="post-<?php the_ID(); ?>" class="post clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 					
 					<header class="post-header">
 						

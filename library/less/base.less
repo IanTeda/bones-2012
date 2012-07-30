@@ -409,38 +409,8 @@ HEADER SYTLES
 	/** start index-row-four **/
 	#index-row-four { /** container div for responsive row layout **/
 		#index-popular-posts {
-			.wppp_list{
-				font-style: italic;
-				color: @autumn;
-				line-height: @vertSpacing;
-				margin: 0 0 0 20px; /** Pad in the numbers **/
-				padding: 0;
-				li {
-					display: list-item;
-					margin-top: @vertSpacing;
-					
-					/** post title link **/
-					.wppp-post-title {
-						font-size: @font-size-4;
-						font-style: normal;
-						text-transform: uppercase;
-						font-family: @sans-serif-heading;
-						
-						/** post title category **/
-						.wppp-post-category {
-							color: @black;	
-						}
-						
-						/** post meta data **/
-						.wppp-post-meta-data {
-							text-transform: none;
-							font-family: @sans-serif;
-							color: @greyDark;
-							margin-top: -8px;
-							font-style: italic;
-						}
-					}
-				}
+			.wppp_list {
+				.popular-post-list;
 			}
 		} /** end #index-popular-posts **/
 	} /** end #index-row-four **/
@@ -522,6 +492,40 @@ MENU STYLES
 /*********************
 LIST STYLES
 *********************/
+
+.popular-post-list {
+	font-style: italic;
+	color: @autumn;
+	line-height: @vertSpacing;
+	margin: 0 0 0 20px; /** Pad in the numbers **/
+	padding: 0;
+	li {
+		display: list-item;
+		margin-top: @vertSpacing;
+					
+		/** post title link **/
+		a {
+			font-size: @font-size-4;
+			font-style: normal;
+			text-transform: uppercase;
+			font-family: @sans-serif-heading;
+						
+			/** post title category **/
+			span {
+				color: @black;	
+			}
+					
+			/** post meta data **/
+			p {
+				text-transform: none;
+				font-family: @sans-serif;
+				color: @greyDark;
+				margin-top: -8px;
+				font-style: italic;
+			}
+		}
+	}
+}
 
 .archive-year {
 	.overlined;
@@ -762,11 +766,18 @@ LIST STYLES
 			border: 1px solid #cecece;
 			padding: 10px;
 		}
+		
+		#popular-posts	{
+			.wppp_list {
+				.popular-post-list;
+			}
+		} /** end #popular-posts **/
 	} /* end .post-content */
 	
 	/** Post footer **/
-	.post-footer {
-		.post-footer-meta {
+	#post-footer {
+		/** meta data for past **/
+		#post-footer-meta {
 			margin-top: @vertSpacing;
 			text-align: center;
 			font-style: italic;	
@@ -776,8 +787,15 @@ LIST STYLES
 			.overlined;
 		}
 		
-		.post-footer-images {
+		/** extracted images from post **/
+		#post-footer-images {
 			margin-top: @vertSpacing;	
+		}
+		
+		#post-related {
+			.numbered-list {
+				.popular-post-list;
+			} /** end .numbered_list **/
 		}
 	} /** end post-footer **/
 }
@@ -828,11 +846,6 @@ LIST STYLES
 		
 .single-title, 
 .page-title {}
-		
-.single-title {}
-		
-.page-title {}
-		
 .archive_title { }
 	
 /* want to style individual post classes? Booya! */

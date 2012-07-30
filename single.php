@@ -22,23 +22,23 @@
 					<section class="post-content clearfix eightCol last">
 						<?php 
 							if (in_category('blog') || in_category('trail')) {
-								the_content_without_images();
+								the_content_without_images(); // Show content without images, images in sidebar
 							} else {
 								the_content();
 							}
 						?>
 					</section> <!-- end article section -->
 							
-					<footer class="post-footer clearfix fourCol first">
+					<footer id="post-footer" class="clearfix fourCol first">
 					
-						<div class="post-footer-meta">
+						<div id="post-footer-meta">
 							<strong><?php the_title(); ?></strong> was posted by <?php the_author() ?> on <?php the_time('D, d-M-y') ?> and was filed under <?php the_category(', ') ?>
-						</div>
+						</div> <!-- end #post-footer-meta -->
 						
 						<?php if (in_category('blog') || in_category('trail')) { ?>
-							<div class="post-footer-images">
+							<div id="post-footer-images">
 								<ul id="post-image-list">
-									<?php $args = array(
+									<?php $args = array( // Get post images
 										'post_type' => 'attachment',
 										'numberposts' => null,
 										'post_status' => null,
@@ -55,17 +55,34 @@
 										}
 									} ?>
 								</ul>
-							</div>
+							</div> <!-- end #post-footer-images -->
 						<?php } ?>
-	
+					
+						<div id="post-related">
+							<?php if (function_exists('related_posts')) {  
+								related_entries();
+							} else { ?>
+								<ol class="numbered-list">
+									<li>
+										<a href='http://www.teda.id.au/mtb/' title='Mountain Biking'>
+											<span>Trail:</span> Cronulla/Kurnell Sand Dunes
+										</a>
+									</li>
+									<li>
+										<a href='http://www.teda.id.au/mtb/' title='Mountain Biking'>
+											<span>Blog:</span> Mountain Biking
+										</a>
+									</li>
+									<li>
+										<a href='http://www.teda.id.au/photo/rubiks-cube-3x3-%e2%80%93-how-to-solve-in-6-seconds/' title='Rubik&#039;s Cube 3x3 – 6 Second Solve'>
+											<span>Photoblog:</span> Rubik&#039;s Cube 3x3 – 6 Second Solve
+										</a>
+									</li> 
+								</ol>
+							<?php }; ?>
+						</div> <!-- end #post-related -->
 					</footer> <!-- end article footer -->
 					
-					<div id="related-posts" class="fourCol first">
-						<?php if (function_exists('related_posts')){ ?>  
-							<?php related_entries();?>  
-						<?php }?> 
-					</div>
-						
 				</article> <!-- end article -->
 						
 				<?php comments_template(); ?>

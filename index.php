@@ -99,7 +99,7 @@ Template Name: Index.php
 			<?php endif; ?>
     
 			<div id="index-row-four" class="twelveCol first clearfix">
-				<div id="index-popular-posts" class="sixCol first clearfix">
+				<div id="index-popular-posts" class="sixCol first">
 					<h3 class="index-heading">Popular Posts<span class="index-heading-more"><a href="<?php bloginfo('url'); ?>/sitemap/popular-posts">View the hit list &#8230;</a></span></h3>
 					
 					<?php if (function_exists('WPPP_show_popular_posts')) {
@@ -144,7 +144,7 @@ Template Name: Index.php
 					<?php }; ?>
 				</div><!-- end #popular-posts-container -->
 				
-				<div id="index-photo-matrix" class="sixCol last clearfix">
+				<div id="index-photo-matrix" class="sixCol last">
                 	<h3 class="index-heading">Photo Blog<span class="index-heading-more"><a href="<?php bloginfo('url'); ?>/category/photo/">View the matrix &#8230;</a></span></h3>
                 
                 	<ul id="photo-matrix"  class="image-matrix">

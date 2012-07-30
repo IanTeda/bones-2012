@@ -7,7 +7,7 @@ Template Name: Sitemap Page Template
 <?php get_header(); ?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
-		<div id="main" class="clearfix" role="main">
+		<div id="page" class="clearfix" role="main">
 		
 			<div id="archive">
 			
